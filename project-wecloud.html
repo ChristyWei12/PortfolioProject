@@ -48,13 +48,13 @@
             <img src="image/Dashboard-1-Home.svg" alt="MobileDemo">
             <img src="image/Dashboard-2-Files.svg" alt="MobileDemo">
             <div class="button">
-              <h6>View iOS Prototype</h6>
+              <button type="button" name="button"><h6>View iOS Prototype</h6></button>
             </div>
          </div>
          <div class="DesktopDemo">
            <img src="image/DesktopDemo-WeCloud.svg" alt="Desktop Demo">
            <div class="button">
-             <h6>View Desktop Prototype</h6>
+             <button type="button" name="button"><h6>View Desktop Prototype</h6></button>
             </div>
           </div>
         </section>
@@ -80,19 +80,19 @@
           </div>
         </section>
         <!--Problem and Solution-->
-        <section class="ProblemandSolution">
+        <section class="ProblemandSolution" style="background-color:#202020;"> <!--I will remove the color to CSS, here is for display purpose only since there are icons in white-->
           <div class="Problem">
             <img src="image/logo/Interface-Essential/Help/help-question-network.svg" alt="icon">
-            <h3>Problem</h3>
-            <p>Nowadays the cloud storage and organization product is becoming more and more popular,
+            <h3 style="color:#ffffff;">Problem</h3>
+            <p style="color:#ffffff;">Nowadays the cloud storage and organization product is becoming more and more popular,
             however, most of the existing products are too complicated - users often find it hard to
             organize the files due to complexity of the structure, or lacking fun to use - the UI is
             looking too serious and formal.</p>
           </div>
           <div class="Solution">
             <img src="image/logo/Interface-Essential/Login/logout/login-key.svg" alt="icon">
-            <h3>Solution</h3>
-            <p>WeCloud wants to blow a new fresh air into this field providing a more colorful, relaxing
+            <h3 style="color:#ffffff;">Solution</h3>
+            <p style="color:#ffffff;">WeCloud wants to blow a new fresh air into this field providing a more colorful, relaxing
               and fun user experience that users can upload files, save files and collaborate with others
               especially under the current trend of working and collaborating remotely.</p>
           </div>
@@ -187,7 +187,7 @@ What are the deterrents that make them look for another app/website?<br>How do t
         <!--Branding-->
         <section class="Branding" style="background-color:#202020;">
           <img src="image/logo/Content/Books/book-library-2.svg" alt="icon">
-          <h3 style="color:#ffffff;">Branding</h3> <!--I will remove the color:#ffffff and edit in CSS later, here just for display purpose since the icon is exported as white, so I need to add a black background -->
+          <h2 style="color:#ffffff;">Branding</h2> <!--I will remove the color:#ffffff and edit in CSS later, here just for display purpose since the icon is exported as white, so I need to add a black background -->
           <hr style="color:#ffffff;">
           <!--Identity-->
           <div class="identity">
@@ -240,7 +240,155 @@ What are the deterrents that make them look for another app/website?<br>How do t
         </section>
         <!--Information Architecture-->
         <section class="Information Architecture">
+          <img src="Image/logo/Files-Folders/Folders/folder-connect.svg" alt="icon">
+          <h2>Information Architecture</h2>
+          <hr>
+          <!--User Story and User Flow-->
+          <div class="UserStoryandFlow">
+            <img src="image/logo/Files-Folders/Files-Copyright/file-copyright-user.svg" alt="icon">
+            <h3>User Story & User Flow</h3>
+            <p>Creating and prioritizing user stories can help me better organize the user flows as well as site map for information architecture.</p>
+            <h5>Top User Stories</h5>
+            <hr>
+            <h6>Create an account (new user)<br>Sign in (returning user)<br>Find and reset password (returning user)<br>
+Upload files (regular user)<br>Share files with others (regular user)<br>Create content (regular user)</h6>
+            <hr>
+            <img src="image/WeCloudUserFlow.svg" alt="icon">
+          </div>
+          <!--Paper Prototype-->
+          <div class="Paperprototype">
+            <img src="image/logo/Interface-Essential/Form-Edition/pencil-write-3.svg" alt="icon">
+            <h3>Paper Prototype</h3>
+            <p>Before moving to Figma for digital mockup, I started with pen and paper to sketch out the basic structure of the app.</p>
+            <img src="image/WeCloudPaper1.svg" alt="icon">
+            <img src="image/WeCloudPaper2.svg" alt="icon">
+          </div>
+          <!--Wireframe-->
+          <div class="Wireframe">
+            <img src="image/logo/Interface-Essential/Form-Edition/checklist-pen.svg" alt="icon">
+            <h3>Wireframe</h3>
+            <p>When the paper prototype was sketched out, I moved to low-fi wireframes to fill in more detailed content.</p>
+            <img src="image/WeCloudWireframe.svg" alt="icon">
+          </div>
+          <!--Usability Testing-->
+          <div class="ut">
+            <img src="image/logo/Interface-Essential/Form-Edition/checklist.svg" alt="icon">
+            <h3>Usability Testing on Wireframes</h3>
+            <p>Usability testing is conducted to test the low-fi wireframe either in person or over Zoom. There are 4 tasks in
+              total that testers are asked to complete under instructions. Tasks are listed below:</p>
+            <hr>
+            <h6>1. Sign up<br>2. Upload pictures from their mobile device to the cloud space<br>3. Record an audio and save at the cloud<br>4. Organize files</h6>
+            <hr>
+            <p>Overall, all 3 participants can perform the tasks without any external help and they said it was not hard.</p>
+            <p>Below is the Affinity Map for analyzing the feedback:</p>
+            <img src="image/WeCloudAffinityMap.svg" alt="icon">
+            <img src="imgae/WeCloudUT.svg" alt="icon">
+            <p>Here are key improvements from the usability testing:<p>
+            <p>1, The Sign up process should keep shorter and allows users freedom to skip certain part<br>2, Use standard Google login page
+<br>3, Allow users to drag file to different folders<br>4, Add 'Create a new folder' under existing folders</p>
+          </div>
+          <!--A/B Preference Testing-->
+          <div class="ABTesting">
+            <img src="image/logo/Interface-Essential/Password/touch-password-approved-1.svg" alt="icon">
+            <h3>A/B Preference Testing</h3>
+            <p>Three preference testings are conducted at Usability Hub to help me decide some details:</p>
+            <div class="Test1">
+              <p>Test 1: Tab Icon Color Selection on Desktop Version</p>
+              <img src="image/WeCloudUT1-1.svg" alt="Desktop Example">
+              <img src="image/WeCloudUT1-2.svg" alt="Desktop Example">
+              <img src="image/WeCloudUT1-3.svg" alt="Desktop Example">
+            </div>
+            <div class="Test2">
+              <p>Test 2: Location of Profile Setting Icon</p>
+              <img src="image/WeCloudUT2-1.svg" alt="Desktop Example">
+              <img src="image/WeCloudUT2-2.svg" alt="Desktop Example">
+            </div>
+            <div class="Test3">
+              <p>Test 3: The Shape of Checkbox</p>
+              <img src="image/WeCloudUT3-1.svg" alt="Desktop Example">
+              <img src="image/WeCloudUT3-2.svg" alt="Desktop Example">
+            </div>
+          </div>
         </section>
+        <section class="Visual Design" style="background-color:#202020">
+          <img src="image/logo/Images-Photography/Retouching/Enhancing/retouch-landscape.svg" alt="icon">
+          <h2 style="color:#ffffff;">Visual Design</h2>
+          <hr style="color:#ffffff;">
+          <div class="Onboarding">
+            <img class="icon" src="image/logo/Interface-Essential/Login/Logout/User-logout.svg" alt="icon">
+            <h3 style="color:#ffffff;">Onboarding</h3>
+            <p style="color:#ffffff;">There are 2 types of accounts on WeCloud: Personal and Business Account. WeCloud users can sign in via Google account and also sign in by entering registered email address.</p>
+            <div class="iOS">
+              <img src="image/WeCloudFM1.svg" alt="icon">
+              <img src="image/WeCloudFM2.svg" alt="icon">
+              <img src="image/WeCloudFM3.svg" alt="icon">
+            </div>
+            <div class="Desktop">
+              <img src="image/WeCloudFD1.svg" alt="icon">
+            </div>
+          </div>
+          <div class="Upload">
+            <img class="icon" src="image/logo/Emails/Drawers/drawer-upload.svg" alt="icon">
+            <h3 style="color:#ffffff;">Upload Files</h3>
+            <p style="color:#ffffff;">People can upload files in different ways: uploading picture/videos from local album, taking a picture/video,
+              recording audio, uploading text files, scanning letters or text and converting to text file etc.</p>
+            <img src="image/WeCloudF2.svg" alt="icon">
+          </div>
+          <div class="Share">
+            <img src="image/WeCloudF3.svg" alt="icon">
+            <img class="icon" src="image/logo/Interface-Essential/Share/share.svg" alt="icon">
+            <h3 style="color:#ffffff;">Share Files</h3>
+            <p style="color:#ffffff;">Files on WeCloud can be shared with others via email invitation, shareable link, QR code, or zip folder. While sharing files,
+              people can manage the access level of whether others can comment, edit or just view. Sharing files are protected by password.</p>
+          </div>
+          <div class="Organize Files">
+            <img class="icon" src="image/logo/Files-Folders/Folders/folder-file-1.svg" alt="icon">
+            <h3 style="color:#ffffff;">Organize Files</h3>
+            <p style="color:#ffffff;">Files are organized under different folders. It is very easy for users to drag or change the location of files. People can also
+              set the favorable file with star so it will be listed in the star folder as well.</p>
+            <img src="image/WeCloudF4.svg" alt="icon">
+          </div>
+          <div class="Responsive Design">
+            <img class="icon" src="image/logo/Files-Folders/Common-Files/common-file-give-hand-1.svg" alt="icon">
+            <h3 style="color:#ffffff;">Responsive Design</h3>
+            <img src="image/WeCloudF5-1.svg" alt="icon">
+            <img src="image/WeCloudF5-2.svg" alt="icon">
+          </div>
+        </section>
+        <!--Final Toughts-->
+        <section class="final">
+          <img class="icon" src="image/logo/Interface-Essential/Form-Edition/checklist-pen.svg" alt="icon">
+          <h2>Final Thoughts</h2>
+          <hr>
+          <p>This is my first project when I began to study UX design. As a solo project, I would like to say thanks to
+            my mentor as well as the grading team for supporting me a lot. This project enables me to work, think and talk
+            as a real designer. I am excited to see its growth from nothing to a refined product. Due to the limited time and
+            budget, there is still a lot of space that WeCloud can improve. For example, it is still very similar to Google Drive
+            and Dropbox in many functions. To stand out among the competitions, WeCloud needs to figure out its uniqueness.</p>
+          <p>If given more time on this project, I would like to focus on developing the social collaboration feature of WeCloud.
+            For example, I would like to create common groups or common rooms (or we can call it common cubes) for teams. So teams
+            can create a virtual space on WeCloud so team members can get access from their WeCloud dashboard with different access.
+            It is like Slack chat channel but more like a folder space.</p>
+            <h4>Back to Top</h4>
+        </section>
+        <!--Next Project-->
+        <section class="NextProject">
+          <h1>Next Project</h1>
+          <img src="image/RooMateWelcome.svg" alt="RooMate Screen">
+          <img src="image/RooMateHome.svg" alt="RooMate Screen">
+          <img src="image/RooMateChat.svg" alt="RooMate Screen">
+          <button type="button" name="button"><h6>View Case Study</h6></button>
+        </section>
+        <!--Footer-->
+        <footer style="background-color:#202020;">
+          <h3 style="background-color:#202020;">Get In Touch</h3>
+          <h6 style="background-color:#202020;">Email me: ChristyWei31@gmail.com</h6>
+          <a href="#"><img src="image/logo/Emails/Email-Actions/email-action-unread.svg" alt="Email"></a>
+          <a href="https://www.linkedin.com/in/chuchuwei/">
+            <img src="image/logo/LinkedIn.svg" alt="LinkedIn">  <!-- Why there is a block of black? -->
+          </a>
+          <a href="https://github.com/ChristyWei12"><img src="image/logo/Github.svg" alt="Github"></a>
+      </footer>
     </div>
   </body>
 
