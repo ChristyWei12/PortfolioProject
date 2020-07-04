@@ -1,0 +1,80 @@
+/*CSS file for Portfolio Home Page*/
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+/*  padding:0;
+  margin:0;
+  outline:0;*/
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.header {
+  display: block;
+  position: absolute;
+  height: 46px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: green;
+  position: fixed;
+}
+
+.logo {
+  width: 20rem;
+  display: block;
+  background-color: red;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10px;
+}
+
+.logo img {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.toggle {
+  display: block;
+  position: absolute;
+  width: 2.5rem;
+  background-color: purple;
+  top: 16px;
+  right: 35px;
+}
+
+.toggle img {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*@media screen and (min-width: 575px) {
+  .logo {
+    width: 20rem;
+    height: auto;
+    display: block;
+    background-color: blue;
+  }
+
+/*.header .logo {
+    position: static;
+    margin: 0 auto;
+  } */
+}*/
