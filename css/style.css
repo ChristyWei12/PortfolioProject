@@ -94,7 +94,7 @@ ul li{
   padding: 16px 14px;
 }
 
-ul li:hover {
+ul li:hover{
   background: #8883bb;
 }
 
@@ -120,6 +120,7 @@ ul li a{
 
 .hero h1{
   font-size: 4.8rem;
+  font-family: Montserrat;
 }
 
 .hero p{
@@ -141,6 +142,12 @@ ul li a{
   position: relative;
 }
 
+.Project2{
+  padding: 6rem 20%;
+  display: block;
+  position: relative;
+}
+
 .display1{
   width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
   height: 500px;
@@ -148,25 +155,135 @@ ul li a{
   background-size: 150%;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 1.5rem;
+  /*border-radius: 1.5rem;*/
   position: relative;
-  float: left;
+}
+
+.display2{
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: 500px;
+  background: url("../image/WeCloud-Display.svg");
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*border-radius: 1.5rem;*/
+  position: relative;
 }
 
 .projecttext1{
-  display: none;
-}
-
-.display1:hover + .projecttext1{
+  background-color: #ffffff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
   display: block;
 }
 
-.display1 .projecttext1{
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: none;
+.projecttext2{
+  background-color: #ffffff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+  display: block;
 }
+
+.projecttext1 h2{
+  text-align: center;
+  font-size: 4.8rem;
+  font-family: Montserrat;
+}
+
+.projecttext2 h2{
+  text-align: center;
+  font-size: 4.8rem;
+  font-family: Montserrat;
+}
+
+.projecttext1 h5{
+  text-align: center;
+  font-size: 2.4rem;
+  padding-top: 1.5rem;
+}
+
+.projecttext2 h5{
+  text-align: center;
+  font-size: 2.4rem;
+  padding-top: 1.5rem;
+}
+
+.projecttext1 h6{
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+}
+
+.projecttext2 h6{
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+}
+
+.button1{
+  background-color: #2ABECC;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.button1 h6{
+  font-size: 1.8rem;
+  padding-top: 0.9rem;
+}
+
+.button1 h6:hover{
+  color: #ffffff;
+}
+
+.button2{
+  background-color: #8883BB;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.button2 h6{
+  font-size: 1.8rem;
+  padding-top: 0.9rem;
+}
+
+.button2 h6:hover{
+  color: #ffffff;
+}
+
+footer{
+  background-color: #202020;
+  margin-top: 6rem;
+  width: 100%;
+  height: 30rem;
+  padding-top: 6rem;
+}
+
+footer h3{
+  font-size: 3.2rem;
+  text-align: center;
+  color: #ffffff;
+  font-family: Montserrat;
+}
+
+footer h6{
+  font-size: 2.4rem;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 3rem;
+}
+
 
 @media (max-width: 768px){
   .toggle{
