@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <!--this is About page-->
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Christy Wei">
-    <meta name="keywords" content="Christy, Wei, Portfolio, UX, Design">
-    <meta name="description" content="A website of Christy Wei as a UX Designer.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Page</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <!--<link rel="stylesheet" href="css/style-about.css">-->
-  </head>
-  <body>
-    <div class="container">
-      <nav class="topbar">
-        <img src="image/logo/cw-logo.svg" alt="Christy Wei Logo">
-        <h7 class="logofont">Christy Wei</h7>
-        <div class="toggle"> <!-- Media Query here -->
-         <img src="image/logo/hamburgerbutton.svg" alt="Menu">
-        </div>
-        <ul>
-         <li><a href="#">Work</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Resume</a></li>
-        </ul>
-      </nav>
-      <script src="homepage.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Christy Wei">
+  <meta name="keywords" content="Christy, Wei, Portfolio, UX, Design">
+  <meta name="description" content="A website of Christy Wei as a UX Designer.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Christy Wei's Portfolio: About Page</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style-about.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="header">
+      <a href="index.html" class="logo">
+          <img src="image/logo/signaturelogo.svg" alt="logoimage">
+      </a>
+         <!--<img class="logoimage" src="image/logo/signaturelogo.svg" alt="SignatureLogo">-->
+      <a href="#" class="toggle"> <!-- Media Query here -->
+       <img class="menu" src="image/logo/hamburgerbutton.svg" alt="Menu">
+     </a>
+     <!--Nav-->
+     <ul id="navlist">
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Resume</a></li>
+     </ul>
+    </nav>
+
+    <!--hero-->
       <div class="hero">
         <img src="image/HeroImage.jpg" alt="Christy Wei's profile">
       </div>
-      <section>
+
+    <!--text-->
+      <section class="text">
         <div class="whoami">
           <h2>Who am I?</h2>
           <p>Hey, I am Christy Wei, a UX designer based in the San Francisco bay area,
@@ -83,15 +90,30 @@
             make people’s life easier and more pleasurable.</p>
         </div>
       </section>
-      <footer style="background-color:#202020;">
-        <h3 style="background-color:#ffffff;">Get In Touch</h3>
-        <h6 style="background-color:#ffffff;">Email me: ChristyWei31@gmail.com</h6>
-        <a href="#"><img src="image/logo/Emails/Email-Actions/email-action-unread.svg" alt="Email"></a>
-        <a href="https://www.linkedin.com/in/chuchuwei/">
-          <img src="image/logo/LinkedIn.svg" alt="LinkedIn">  <!-- Why there is a block of black? -->
-        </a>
-        <a href="https://github.com/ChristyWei12"><img src="image/logo/Github.svg" alt="Github"></a>
-    </footer>
-    </div>
+      <footer>
+        <h3>Get In Touch</h3>
+        <h6>Email me: ChristyWei31@gmail.com</h6>
+        <div class="iconset">
+          <ul>
+            <li>
+              <a href="#" class="Email">
+                <img class="icon" src="image/logo/Emails/Email-Actions/email-action-unread.svg" alt="Email">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/chuchuwei/" class="LinkedIn">
+                <img class="icon" src="image/logo/LinkedIn.svg" alt="LinkedIn">  <!-- Why there is a block of black? -->
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ChristyWei12" class="Github">
+                <img class="icon" src="image/logo/Github.svg" alt="Github">
+              </a>
+            </li>
+        </ul>
+      </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script src="homepage.js"></script>
   </body>
 </html>
