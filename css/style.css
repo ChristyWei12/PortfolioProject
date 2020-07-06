@@ -18,6 +18,7 @@ body{
   line-height: 1.4;
 }
 
+/*header*/
 .header{
   display: block;
   position: absolute;
@@ -89,6 +90,7 @@ a{
   font-size: 1.8rem;
 }
 
+/*Hero*/
 .hero{
   display: block;
   position: relative;
@@ -96,6 +98,7 @@ a{
   padding-top: 150px;
   padding-bottom: 200px;
   padding-left: 20%;
+  padding-right: 20%;
 }
 
 .hero img{
@@ -115,6 +118,7 @@ a{
   line-height: 3.6rem;
 }
 
+/*fp*/
 .FP{
   font-size: 3.2rem;
   font-family: Montserrat;
@@ -285,6 +289,8 @@ footer h6{
   position: relative;
   display: block;
   list-style-type: disc;
+  top: auto;
+  background-color: #202020;
 }
 
 .iconset ul li{
@@ -298,17 +304,23 @@ footer h6{
     display: block;
   }
 
-  .header ul{
-    width: 100%;
+  ul{
     display: none;
+  }
+
+  .header ul{
+    top: 29px;
+    width: 100%;
+    right: 0;
     position: relative;
-    top: 50px;
     background-color: #ffffff;
   }
 
   .header ul li{
     display: block;
     text-align: center;
+    width: 100%;
+    background-color: #ffffff;
   }
 
   .header ul li a{
@@ -336,10 +348,18 @@ footer h6{
     top: 0.5rem;
   }
 
-  .hero{
-    padding-left: 20%;
-    padding-right: 20%;
-  }
+/*hero*/
+.hero{
+  padding-top: 150px;
+  padding-bottom: 180px;
+}
+.hero img{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6rem;
+}
 
   .hero h1{
     font-size: 3rem;
@@ -348,14 +368,12 @@ footer h6{
 
   .hero p{
     font-size: 1.8rem;
-    width: 54rem;
     margin-top: 3rem;
-    line-height: 3.6rem;
+    width: 100%;
   }
 
+/*fp*/
   .FP{
     font-size: 2rem;
-    font-family: Montserrat;
-    padding-left: 20%;
   }
 }
