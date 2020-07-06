@@ -125,6 +125,7 @@ a{
   padding-left: 20%;
 }
 
+/*Project*/
 .Project1{
   padding: 6rem 20%;
   display: block;
@@ -251,6 +252,7 @@ a{
   color: #ffffff;
 }
 
+/*footer*/
 footer{
   background-color: #202020;
   margin-top: 6rem;
@@ -376,4 +378,109 @@ footer h6{
   .FP{
     font-size: 2rem;
   }
+
+/*project*/
+  .Project1{
+    padding: 6rem 20%;
+  }
+
+  .Project2{
+    padding: 6rem 20%;
+  }
+
+  .display1{
+    height: 400px;
+    background-size: 200%;
+    background-position: center;
+  }
+
+  .display2{
+    height: 400px;
+    background-size: 270%;
+    background-position: left top;
+  }
+
+/*  .projecttext1{
+    background-color: #ffffff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    display: block;
+  }
+
+  .projecttext2{
+    background-color: #ffffff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    display: block;
+  }*/
+
+  .projecttext1 h2{
+    font-size: 2.4rem;
+  }
+
+  .projecttext2 h2{
+    font-size: 2.4rem;
+  }
+
+  .projecttext1 h5{
+    font-size: 1.7rem;
+  }
+
+  .projecttext2 h5{
+    font-size: 1.7rem;
+  }
+
+  .projecttext1 h6{
+    font-size: 1.6rem;
+  }
+
+  .projecttext2 h6{
+    font-size: 1.6rem;
+  }
+
+  .button1{
+    width: 18rem;
+    height: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button1 h6{
+    font-size: 1.6rem;
+    padding-top: 0.6rem;
+  }
+
+  .button2{
+    width: 18rem;
+    height: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button2 h6{
+    font-size: 1.6rem;
+    padding-top: 0.6rem;
+  }
+
+  /*footer*/
+/*
+  footer{
+    background-color: #202020;
+    margin-top: 6rem;
+    width: 100%;
+    height: 30rem;
+    padding-top: 6rem;
+  }*/
+
+  footer h3{
+    font-size: 2rem;
+  }
+
+  footer h6{
+    font-size: 1.6rem;
+  }
+
+
 }
