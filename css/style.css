@@ -34,7 +34,7 @@ body{
 .logo{
   width: 20rem;
   display: block;
-  /*background-color: red;*/
+  /*background-color: red; test purpose*/
   position: relative;
   left: 60px;
   top: 10px;
@@ -45,21 +45,6 @@ body{
   display: block;
   position: relative;
 }
-
-/*.toggle {
-  display: block;
-  position: absolute;
-  width: 2.5rem;
-  background-color: purple;
-  top: 16px;
-  right: 35px;
-}
-
-.toggle img {
-  width: 100%;
-  display: block;
-  position: relative;
-}*/
 
 a{
   color: inherit;
@@ -79,7 +64,7 @@ a{
   display: none;
 }
 
-ul{
+.header ul{
   width: 253px;
   right: 46px;
   height: 46px;
@@ -88,17 +73,17 @@ ul{
   background-color: #ffffff;
 }
 
-ul li{
+.header ul li{
   list-style: none;
   display: inline-block;
   padding: 16px 14px;
 }
 
-ul li:hover{
-  background: #8883bb;
+.header ul li a:hover{
+  color: #FF7072;
 }
 
-ul li a{
+.header ul li a{
   color: #000000;
   text-decoration: none;
   font-size: 1.8rem;
@@ -284,13 +269,36 @@ footer h6{
   padding-top: 3rem;
 }
 
+.iconset{
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 1.2rem;
+  margin-bottom: 4.9rem;
+}
+
+
+.iconset ul{
+  width: 218px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: block;
+  list-style-type: disc;
+}
+
+.iconset ul li{
+  list-style: disc;
+  display: inline-block;
+  padding: 16px 20px;
+}
 
 @media (max-width: 768px){
   .toggle{
     display: block;
   }
 
-  ul{
+  .header ul{
     width: 100%;
     display: none;
     position: relative;
@@ -298,12 +306,12 @@ footer h6{
     background-color: #ffffff;
   }
 
-  ul li{
+  .header ul li{
     display: block;
     text-align: center;
   }
 
-  ul li a{
+  .header ul li a{
     font-size: 1.4rem;
   }
 
@@ -326,5 +334,28 @@ footer h6{
     display: block;
     position: relative;
     top: 0.5rem;
+  }
+
+  .hero{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .hero h1{
+    font-size: 3rem;
+    font-family: Montserrat;
+  }
+
+  .hero p{
+    font-size: 1.8rem;
+    width: 54rem;
+    margin-top: 3rem;
+    line-height: 3.6rem;
+  }
+
+  .FP{
+    font-size: 2rem;
+    font-family: Montserrat;
+    padding-left: 20%;
   }
 }
