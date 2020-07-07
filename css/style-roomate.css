@@ -1,0 +1,501 @@
+/*CSS file for Portfolio Project RooMate Page*/
+
+
+*, *:before, *:after{
+  box-sizing: border-box;
+/*  padding:0;
+  margin:0;
+  outline:0;*/
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+  background-color: #ffffff;
+  font-family: muli;
+  line-height: 1.5;
+}
+
+/*header*/
+.header{
+  display: block;
+  position: absolute;
+  height: 4.6rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: #ffffff;
+  position: fixed;
+}
+
+.logo{
+  width: 20rem;
+  display: block;
+  /*background-color: red; test purpose*/
+  position: relative;
+  left: 60px;
+  top: 10px;
+}
+
+.logo img{
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.toggle{
+  width: 2.7rem;
+  position: absolute;
+  right: 35px;
+  top: 16px;
+  background: #ffffff;
+  text-align: right;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 1.8rem;
+  display: none;
+}
+
+.header ul{
+  width: 253px;
+  right: 46px;
+  height: 46px;
+  position: absolute;
+  top: 0px;
+  background-color: #ffffff;
+}
+
+.header ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 16px 14px;
+}
+
+.header ul li a:hover{
+  color: #FF7072;
+}
+
+.header ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+/*font size*/
+h1{
+  font-size: 4.8rem;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 3.4rem;
+}
+
+h4{
+  font-size: 3.6rem;
+}
+
+h5{
+  font-size: 2.4rem;
+}
+
+h6{
+  font-size: 1.8rem;
+}
+
+p{
+  font-size: 2.1rem;
+}
+
+section{
+  padding: 6rem 20% 6rem 20%;
+}
+
+/*grid container
+.gridcontainer{
+  display: grid;
+}*/
+
+/*hero section*/
+.hero{
+  display: block;
+  position: relative;
+  top: 46px;
+  padding: 15rem 20% 6rem 20%;
+  grid-area: hero; /*grid area*/
+}
+
+.herologo{
+  width: 7rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.herotext{
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.herotext h1{
+  padding-top: 3rem;
+}
+
+.herotext h3{
+  padding-top: 3rem;
+}
+
+/*what is roomate*/
+.Intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //display: block;
+  //position: relative;
+  padding: 6rem 20% 6rem 20%;
+  grid-area: Intro;
+}
+
+.Introicon{
+  width: 4.5rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Introtext{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Introtext h3{
+  padding-top: 3rem;
+}
+
+.Introtext p{
+ padding-top: 3rem;
+}
+
+/*Display Solution*/
+.DS{
+  display: flex;
+  flex-direction: column;
+  background-color: #202020;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: DS;
+}
+
+.iOSDemo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.DS .button{
+  background-color: #2ABECC;
+  width: 22rem;
+  height: 4.2rem;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button h6{
+  font-size: 1.8rem;
+  padding-top: 0.9rem;
+  text-align: center;
+}
+
+.button h6:hover{
+  color: #ffffff;
+}
+
+/*Design Spec*/
+.Designspec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Designspec h5{
+  font-size: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Designspec .Line{
+  width: 6.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Designspec .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+.Designspec p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.DesignRoles{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 0;
+}
+
+.Deliverables{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 0;
+}
+
+.Tools{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 0;
+}
+
+/*Challenge and Solution*/
+.CS{
+  background-color: #202020;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Challenge{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Solution{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.CS .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+.CS h3{
+  color: #ffffff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+.CS p{
+  color: #ffffff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+/*Transition Image*/
+
+/*Discovery*/
+
+/*footer*/
+footer{
+  background-color: #202020;
+  margin-top: 6rem;
+  width: 100%;
+  height: 30rem;
+  padding-top: 6rem;
+}
+
+footer h3{
+  font-size: 3.2rem;
+  text-align: center;
+  color: #ffffff;
+  font-family: Montserrat;
+}
+
+footer h6{
+  font-size: 2.4rem;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 3rem;
+}
+
+.iconset{
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 1.2rem;
+  margin-bottom: 4.9rem;
+}
+
+
+.iconset ul{
+  width: 218px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: block;
+  list-style-type: disc;
+  top: auto;
+  background-color: #202020;
+}
+
+.iconset ul li{
+  list-style: disc;
+  display: inline-block;
+  padding: 16px 20px;
+}
+
+@media (max-width: 768px){
+  .toggle{
+    display: block;
+  }
+
+  ul{
+    display: none;
+  }
+
+  .header ul{
+    top: 29px;
+    width: 100%;
+    right: 0;
+    position: relative;
+    background-color: #ffffff;
+  }
+
+  .header ul li{
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .header ul li a{
+    font-size: 1.4rem;
+  }
+
+  .active{
+    display: block;
+  }
+
+  .logo{
+    width: 20rem;
+    display: block;
+    /*background-color: red;*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10px;
+  }
+
+  .logo img{
+    width: 60%;
+    display: block;
+    position: relative;
+    top: 0.5rem;
+  }
+
+  /*Design Spec8*/
+  .Designspec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .DesignRoles{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    padding-top: 0;
+  }
+
+  .Deliverables{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    padding-top: 3rem;
+  }
+
+  .Tools{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    padding-top: 3rem;
+  }
+
+  /*footer*/
+/*
+  footer{
+    background-color: #202020;
+    margin-top: 6rem;
+    width: 100%;
+    height: 30rem;
+    padding-top: 6rem;
+  }*/
+
+  footer h3{
+    font-size: 2rem;
+  }
+
+  footer h6{
+    font-size: 1.6rem;
+  }
+}

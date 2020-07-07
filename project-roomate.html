@@ -1,94 +1,107 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Christy Wei">
-    <meta name="keywords" content="Christy, Wei, Portfolio, UX, Design">
-    <meta name="description" content="A website of Christy Wei as a UX Designer.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project: RooMate</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
-  </head>
-  <body>
-    <div class="container">
-      <!--Navigation-->
-      <nav class="topbar">
-        <img class="logo" src="image/logo/cw-logo.svg" alt="Christy Wei Logo">
-        <h7 class="logo">Christy Wei</h7>
-        <div class="toggle"> <!-- Media Query here -->
-          <img class="icon" src="image/logo/hamburgerbutton.svg" alt="Menu">
-        </div>
-        <ul>
-         <li><a href="#">Work</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Resume</a></li>
-        </ul>
-      </nav>
-      <script src="homepage.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Christy Wei">
+  <meta name="keywords" content="Christy, Wei, Portfolio, UX, Design">
+  <meta name="description" content="A website of Christy Wei as a UX Designer.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Christy Wei's Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style-roomate.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="header">
+      <a href="index.html" class="logo">
+          <img src="image/logo/signaturelogo.svg" alt="logoimage">
+      </a>
+         <!--<img class="logoimage" src="image/logo/signaturelogo.svg" alt="SignatureLogo">-->
+      <a href="#" class="toggle"> <!-- Media Query here -->
+       <img class="menu" src="image/logo/hamburgerbutton.svg" alt="Menu">
+     </a>
+     <!--Nav-->
+     <ul id="navlist">
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Resume</a></li>
+     </ul>
+    </nav>
+
       <!--Hero Area-->
-      <div class="hero">
-        <img class="logo" src="image/logo/RooMate.svg" alt="RooMate Logo">
-        <h1>RooMate</h1>
-        <h3>Meet Your Next Roommate<br>On RooMate</h3>
-      </div>
+    <div class="grid-container">
+      <section class="hero">
+        <img class="herologo" src="image/logo/RooMate.svg" alt="RooMate Logo">
+        <div class="herotext">
+          <h1>RooMate</h1>
+          <h3>Meet Your Next Roommate<br>On RooMate</h3>
+        </div>
+      </section>
+
       <!--What is RooMate?-->
-      <section class="IntrotoWeCloud">
-        <img class="icon" src="image/logo/Interface-Essential/Help/laptop-help-message.svg">
-        <h3>What is RooMate?</h3>
-        <p>RooMate app is aiming to help people, especially millennials living in cities,
+      <section class="Intro">
+        <img class="Introicon" src="image/logo/Interface-Essential/Help/laptop-help-message.svg">
+        <div class="Introtext">
+          <h3>What is RooMate?</h3>
+          <p>RooMate app is aiming to help people, especially millennials living in cities,
           find ideal roommates, no matter when they are renting out their spare room or are
           looking for a place.</p>
+        </div>
       </section>
+
       <!--Solution Display-->
-      <section class="displaysolutions">
+      <section class="DS">
         <div class="iOSDemo">
           <img src="image/RooMateSkew1.svg" alt="MobileDemo">
           <img src="image/RooMateSkew2.svg" alt="MobileDemo">
           <img src="image/RooMateSkew3.svg" alt="MobileDemo">
         </div>
         <div class="button">
-          <button type="button" name="button"><h6>View Prototype</h6></button>
+          <h6>View Prototype</h6>
         </div>
       </section>
+
       <!--Design Roles, Deliverables, Tools-->
       <section class="Designspec">
         <div class="DesignRoles">
           <img class="icon" src="image/logo/Users/Geometric-Close-Up-Single-User-Neutral/single-neutral-id-card-3.svg" alt="icon">
-          <h2>Design Roles</h2>
-          <hr>
+          <h5>Design Roles</h5>
+          <img class="Line" src="image/Line.svg" alt="dividing line">
           <p>UX Research<br>UX Design<br>Information Architecture<br>Visual Design<br>Brand & Identity</p>
         </div>
         <div class="Deliverables">
           <img class="icon" src="image/logo/Interface-Essential/Dashboard/layout-dashboard-1.svg" alt="icon">
-          <h2>Deliverables</h2>
-          <hr>
+          <h5>Deliverables</h5>
+          <img class="Line" src="image/Line.svg" alt="dividing line">
           <p>User Surveys<br>Competitive Analysis<br>Interviews<br>Personas<br>User Story<br>User Flow<br>Wireframe<br>Usability Testing<br>Branding<br>Hi-Fi Mockup<br>Prototype</p>
         </div>
         <div class="Tools">
           <img class="icon" src="image/logo/Computers-Devices-Electronics/Desktop-Computers/Desktop-computer.svg" alt="icon">
-          <h2>Tools</h2>
-          <hr>
+          <h5>Tools</h5>
+          <img class="Line" src="image/Line.svg" alt="dividing line">
           <p>Figma<br>InVision<br>Google Forms<br>SWOT Analysis<br>Miro<br>Asana<br>Whimsical<br>Maze</p>
         </div>
       </section>
+
       <!--Challenge and Solution-->
-      <section class="ChallengeandSolution" style="background-color:#202020;"> <!--I will remove the color to CSS, here is for display purpose only since there are icons in white-->
+      <section class="CS">
         <div class="Challenge">
           <img class="icon" src="image/logo/Interface-Essential/Help/help-question-network.svg" alt="icon">
-          <h3 style="color:#ffffff;">Challenge</h3>
-          <p style="color:#ffffff;">There are a few trends of note: 54% of the world’s population live in urban communities, the average marriage age for men is 29 (up from 26 two decades ago)
+          <h3>Challenge</h3>
+          <p>There are a few trends of note: 54% of the world’s population live in urban communities, the average marriage age for men is 29 (up from 26 two decades ago)
             and for women is 27 (up from 23 in the same time period). Given these trends, city dwellers tend to spend most of their twenties living with roommates. Finding and keeping a good
             roommate, however, gets harder as more and more people live in cities.</p>
         </div>
         <div class="Solution">
           <img class="icon" src="image/logo/Interface-Essential/Login/logout/login-key.svg" alt="icon">
-          <h3 style="color:#ffffff;">Solution</h3>
-          <p style="color:#ffffff;">RooMate is a roommate-seeker app, which helps people find, match, and communicate with future roommates. People can either post on RooMate or search others’ posts
+          <h3>Solution</h3>
+          <p>RooMate is a roommate-seeker app, which helps people find, match, and communicate with future roommates. People can either post on RooMate or search others’ posts
             to find the ideal roommate. At the same, RooMate is also matching roommates basing on people’s preference automatically. The goal is to streamline the roommate matching process and make it easier, faster and more fun.</p>
         </div>
       </section>
+      
       <!--Transition image-->
       <section class="Transition">
         <img src="image/RooMatePic.svg" alt="Image">
@@ -373,6 +386,7 @@
 Another point that can improve in future is keeping out the spam or fake post. It can be done by verifying the authenticity of the address, and adding more interactions between users, e.g. exploring online open house tour etc.</p>
           <h4>Back to Top</h4>
       </section>
+    </div>
       <!--Next Project-->
       <section class="NextProject">
         <h1>Next Project</h1>
@@ -381,15 +395,30 @@ Another point that can improve in future is keeping out the spam or fake post. I
         <button type="button" name="button"><h6>View Case Study</h6></button>
       </section>
       <!--Footer-->
-      <footer style="background-color:#202020;">
-        <h3 style="background-color:#ffffff;">Get In Touch</h3>
-        <h6 style="background-color:#ffffff;">Email me: ChristyWei31@gmail.com</h6>
-        <a href="#"><img src="image/logo/Emails/Email-Actions/email-action-unread.svg" alt="Email"></a>
-        <a href="https://www.linkedin.com/in/chuchuwei/">
-          <img src="image/logo/LinkedIn.svg" alt="LinkedIn">  <!-- Why there is a block of black? -->
-        </a>
-        <a href="https://github.com/ChristyWei12"><img src="image/logo/Github.svg" alt="Github"></a>
-    </footer>
-    </div>
+      <footer>
+        <h3>Get In Touch</h3>
+        <h6>Email me: ChristyWei31@gmail.com</h6>
+        <div class="iconset">
+          <ul>
+            <li>
+              <a href="#" class="Email">
+                <img class="icon" src="image/logo/Emails/Email-Actions/email-action-unread.svg" alt="Email">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/chuchuwei/" class="LinkedIn">
+                <img class="icon" src="image/logo/LinkedIn.svg" alt="LinkedIn">  <!-- Why there is a block of black? -->
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ChristyWei12" class="Github">
+                <img class="icon" src="image/logo/Github.svg" alt="Github">
+              </a>
+            </li>
+        </ul>
+      </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script src="homepage.js"></script>
   </body>
 </html>
