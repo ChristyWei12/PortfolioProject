@@ -345,8 +345,366 @@ section{
 }
 
 /*Transition Image*/
+.Transition{
+  display: block;
+  position: relative;
+  padding: 0;
+}
+
+.Transition img{
+  width: 100%;
+}
 
 /*Discovery*/
+/*title part*/
+.Discovery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Dtitle{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.Dtitle .icon{
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Dtitle h2{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Dtitle .Line{
+  width: 6.6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Discovery-User Survey*/
+.UserSurvey{
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.UserSurvey .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UserSurvey h3{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.UserSurvey p{
+  width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.UserSurvey .Line2{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.UserSurvey .question{
+  text-align: center;
+  font-size: 2rem;
+  color: #2ABECC;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.UserSurvey ul{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.UserSurvey ul li{
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.UserSurvey ul li h4{
+  text-align: right;
+  width: 30%;
+  margin-right: 10%;
+}
+
+.UserSurvey ul li h6{
+  text-align: left;
+  font-size: 2.4rem;
+  width: 60%;
+}
+
+/*Interview*/
+.Interview{
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 100%;
+}
+
+.left img{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left h3{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.left p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.right{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+  width: 100%;
+}
+
+.right img{
+  width: 100%;
+}
+
+/*Personas*/
+.Personas{
+  padding-top: 6rem;
+}
+
+.top{
+   display: flex;
+   flex-direction: column;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 5%;
+   padding-right: 5%;
+}
+
+.Personas .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Personas h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Personas p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.Pcontainer{
+  display: flex;
+  flex-direction: row;
+  //justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+}
+
+.Persona1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  width: 33%;
+}
+
+.Persona2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  width: 33%;
+}
+
+.Persona3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  width: 33%;
+}
+
+.Persona1 .profile{
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Persona2 .profile{
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Persona3 .profile{
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Persona1 h4{
+  font-size: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Persona2 h4{
+  font-size: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Persona3 h4{
+  font-size: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Persona1 h5{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Persona2 h5{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Persona3 h5{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Persona1 p{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.Persona2 p{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.Persona3 p{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.Persona1 .mark{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.Persona2 .mark{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.Persona3 .mark{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
 
 /*footer*/
 footer{
