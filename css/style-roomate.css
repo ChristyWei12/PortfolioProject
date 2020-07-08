@@ -549,7 +549,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Personas p{
+.top p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -568,31 +568,28 @@ section{
 .Persona1{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 0;
-  width: 33%;
+  width: 100%;
 }
 
 .Persona2{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 0;
-  width: 33%;
+  width: 100%;
 }
 
 .Persona3{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 0;
-  width: 33%;
+  width: 100%;
 }
 
 .Persona1 .profile{
@@ -662,48 +659,211 @@ section{
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .Persona2 p{
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .Persona3 p{
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .Persona1 .mark{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .Persona2 .mark{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .Persona3 .mark{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+/*Competitor Analysis*/
+.CA{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.Ctop{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Ctop img{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Ctop h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Ctop p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.Brand{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.RR{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 100%;
+}
+
+.logoset{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+.Roomi{
+  width: 4.5rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.RoomEasy{
+  width: 4.5rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.RR p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Airbnb{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 100%;
+}
+
+.Airbnb img{
+   margin-left: auto;
+   margin-right: auto;
+   width: 4.5rem;
+   padding-bottom: 2.5rem;
+}
+
+.Airbnb p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*Branding*/
+.Branding{
+  background-color: #202020;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.Btop{
+  display: flex;
+  flex-direction: column;
+}
+
+.Btop .icon{
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Btop h2{
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Btop .Line{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Branding-Identity*/
+.Identity{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Identity .part1{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.Identity .part1 .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Identity .part1 h3{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.Identity .part1 p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  width: 60%;
 }
 
 /*footer*/
