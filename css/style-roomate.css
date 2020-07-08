@@ -851,6 +851,7 @@ section{
 
 .Identity .part1 h3{
   width: 100%;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -865,6 +866,223 @@ section{
   color: #ffffff;
   width: 60%;
 }
+
+.part2{
+  color: #ffffff;
+  display: flex;
+  flex-direction:column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.part2 li{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+}
+
+.last{
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  color: #ffffff;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.last p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+/*Branding-logo*/
+.LogoPart{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.logotext{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.logotext .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logotext h3{
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.logotext p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  width: 60%;
+}
+
+.logoskecth{
+  padding-top:6rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.logoskecth .image1{
+   width: 50%;
+}
+
+.logoskecth .image2{
+   width: 50%;
+}
+
+/*Branding-color*/
+.Color{
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Color .text{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.Color .text img{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Color .text h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  color: #ffffff;
+}
+
+.Color .display{
+  display: flex;
+  flex-direction: row;
+  padding-top: 6rem;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Color .display h5{
+  color: #ffffff;
+}
+
+.Blue{
+  display: flex;
+  flex-direction: column;
+  margin: auto 15%;
+}
+
+.Black{
+  display: flex;
+  flex-direction: column;
+  margin: auto 15%;
+}
+
+.White{
+  display: flex;
+  flex-direction: column;
+  margin: auto 15%;
+}
+
+.display h5{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+}
+
+/*Branding-Typography*/
+.Typography{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Typography .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Typography .left img{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Typography .left h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.Typography .left p{
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+.Typography .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Typography .right .Quicksand{
+  color: #ffffff;
+  font-family: Quicksand;
+  font-size: 4rem;
+  font-weight: medium;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Typography .right .Karla{
+  color: #ffffff;
+  font-family: Karla;
+  font-size: 4rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Typography .right .vl{
+  width: 10%;
+}
+
+
 
 /*footer*/
 footer{
