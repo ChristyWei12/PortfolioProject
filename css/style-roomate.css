@@ -1082,12 +1082,666 @@ section{
   width: 10%;
 }
 
+/*Information Architecture*/
+.IA{
+  padding: 6rem 0;
+}
 
+.IA .top{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.IA .top .icon{
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.IA .top h2{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.IA .top .Line{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*User Story and User Flow*/
+.USUF{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.USUF .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.USUF .left .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.USUF .left h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.USUF .left p{
+  text-align: center;
+  width: 100%;
+}
+
+.USUF .image{
+  margin-top: 6rem;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.map img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*IA-sitemap*/
+.Sitemap{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Sitemap .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Sitemap h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Sitemap .map{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*IA-Paper Prototype*/
+.PP{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.PP .top{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.PP .top .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PP .top h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.PP .top p{
+  text-align: center;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.PP .image{
+  display: flex;
+  flex-direction: row;
+  padding-top: 6rem;
+}
+
+.PP .image1{
+  width: 50%;
+}
+
+.PP .image2{
+  width: 50%;
+}
+
+/*IA-Wireframe*/
+.Wireframe{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Wireframe .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Wireframe h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.Wireframe p{
+  text-align: center;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.Wireframe .image{
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*IA-User Testing*/
+.UT{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.UT .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UT h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.UT p{
+  text-align: center;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.UT .Line2{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.UT h6{
+  text-align: center;
+  font-size: 2rem;
+  color: #2ABECC;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.UT .button{
+  background-color: #2ABECC;
+  width: 22rem;
+  height: 4.2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UT .button h6{
+  font-size: 1.8rem;
+  padding-top: 0.9rem;
+  text-align: center;
+  color: #000000;
+  font-weight: normal;
+  }
+
+.UT .button h6:hover{
+  color: #ffffff;
+}
+
+.feedback{
+  display: flex;
+  flex-direction: row;
+  padding-top: 6rem;
+}
+
+.signup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.signup h2{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+.signup p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.search{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.search h2{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+.search p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/*Visual Design*/
+.VisualDesign{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #202020;
+}
+
+.VisualDesign .top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.VisualDesign .top .icon{
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.VisualDesign .top h2{
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.VisualDesign .top .Line{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*VD-Pnboarding*/
+.Onboarding{
+  padding-top: 6rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Onboarding .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Onboarding h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.Onboarding p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.onboardingdisplay{
+  display: flex;
+  flex-direction: row;
+  padding-top: 6rem;
+  justify-content: center;
+}
+
+.onboardingdisplay .image1{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.onboardingdisplay .image2{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.onboardingdisplay .image3{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/*VD-Lookforaroom*/
+.Lookforaroom{
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.Lookforaroom .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Lookforaroom .left .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Lookforaroom .left h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.Lookforaroom .left p{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+  width: 70%;
+}
+
+.Lookforaroom .image{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+
+/*VD-LookForaroommate*/
+.LookForaroommate{
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.LookForaroommate .image{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+
+.LookForaroommate .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.LookForaroommate .right .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.LookForaroommate .right h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.LookForaroommate .right p{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+  width: 70%;
+}
+
+/*VD-post*/
+.Post{
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.Post .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Post .left .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Post .left h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.Post .left p{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+  width: 70%;
+}
+
+.Post .image{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+
+/*VD-Chat*/
+.Chat{
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.Chat .image{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+
+.Chat .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Chat .right .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Chat .right h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.Chat .right p{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+  width: 70%;
+}
+
+/*Final*/
+.Final{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Final .icon{
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Final h2{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Final .Line{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.Final p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Final a{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18rem;
+  margin-bottom: 6rem;
+}
+
+.Final h4{
+  margin-left: auto;
+  margin-right: auto;
+  color: #2ABECC;
+  text-decoration: underline;
+}
+
+/*Next Project*/
+.NextProject{
+  padding-top: 6rem;
+  background-color: #8883BB;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.NextProject .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.NextProject .text h2{
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+}
+
+.NextProject .text a{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+}
+
+.NextProject .text h6{
+  color: #ffffff;
+}
+
+.NextProject .desktop{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.NextProject .mobile{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 /*footer*/
 footer{
   background-color: #202020;
-  margin-top: 6rem;
   width: 100%;
   height: 30rem;
   padding-top: 6rem;
