@@ -493,7 +493,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.left p{
+.Interview .left p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -511,7 +511,7 @@ section{
   width: 100%;
 }
 
-/*Personas*/
+/*Discovery-Personas*/
 .Personas{
   padding-top: 6rem;
 }
@@ -1515,6 +1515,7 @@ section{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  text-align: center;
   color: #ffffff;
   width: 100%;
 }
@@ -1612,6 +1613,7 @@ section{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  text-align: center;
   color: #ffffff;
   width: 100%;
 }
@@ -1670,6 +1672,38 @@ section{
   color: #ffffff;
   width: 100%;
 }
+
+/*VD-Prototype*/
+.VisualDesign .prototype{
+  padding-top: 12rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.VisualDesign .prototype p{
+  color: #ffffff;
+}
+
+.VisualDesign .button{
+  background-color: #2ABECC;
+  width: 22rem;
+  height: 4.2rem;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+}
+
+.button h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  text-align: center;
+}
+
+.button h6:hover{
+  color: #ffffff;
+}
+
 
 /*Final*/
 .Final{
@@ -1982,21 +2016,390 @@ p{
   font-size: 1.6rem;
 }
 
-  /*footer*/
-/*
-  footer{
-    background-color: #202020;
-    margin-top: 6rem;
-    width: 100%;
-    height: 30rem;
-    padding-top: 6rem;
-  }*/
+/*Discovery-Interview*/
+.Interview .left p{
+  width: 80%;
+}
 
-  footer h3{
-    font-size: 2rem;
+/*Discover-Personas*/
+.top p{
+  width: 80%;
+}
+
+.Pcontainer{
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+}
+
+.Persona2{
+  padding-top: 6rem;
+}
+
+.Persona3{
+  padding-top: 6rem;
+}
+
+.Persona1 h4{
+  font-size: 1.8rem;
+}
+
+.Persona2 h4{
+  font-size: 1.8rem;
+}
+
+.Persona3 h4{
+  font-size: 1.8rem;
+}
+
+.Persona1 p{
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  width: 80%;
+}
+
+.Persona2 p{
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  width: 80%;
+}
+
+.Persona3 p{
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  width: 80%;
+}
+
+/*Discovery-CA*/
+.Ctop p{
+  width: 80%;
+}
+
+.Brand{
+  display: flex;
+  flex-direction: column;
+}
+
+.RR{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.RR p{
+  width: 80%;
+}
+
+.Airbnb{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+}
+
+.Airbnb p{
+  width: 80%;
+}
+
+/*Branding*/
+/*Branding-Identity*/
+.Identity .part1 p{
+  width: 80%;
+}
+
+.part2{
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.last p{
+  width: 80%;
+}
+
+/*Branding-Logo*/
+.logotext p{
+  width: 80%;
+}
+
+.logoskecth{
+  display: flex;
+  flex-direction: column;
+}
+
+.logoskecth .image1{
+   width: 100%;
+}
+
+.logoskecth .image2{
+   width: 100%;
+}
+
+/*Branding-color*/
+.Color .display{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Color .display h5{
+  padding-top: 2.5rem;
+}
+
+.Black{
+  padding-top: 6rem;
+}
+
+.White{
+  padding-top: 6rem;
+}
+
+/*Branding-Typography*/
+.Typography{
+  display: flex;
+  flex-direction: column;
+}
+
+.Typography .left{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Typography .left p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.Typography .right{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Information Architecture*/
+/*IA-USUF*/
+.USUF .left p{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*IA-PP*/
+.PP .top p{
+  width: 80%;
+}
+
+.PP .image{
+  display: flex;
+  flex-direction: column;
+}
+
+.PP .image1{
+  width: 100%;
+}
+
+.PP .image2{
+  width: 100%;
+}
+
+/*IA-Wireframe*/
+.Wireframe p{
+  width: 80%;
+}
+
+/*IA-User Testing*/
+.UT p{
+  width: 80%;
+}
+
+.UT .Line2{
+  width: 80%;
+}
+
+.UT h6{
+  font-size: 1.6rem;
+  color: #2ABECC;
+}
+
+.feedback{
+  display: flex;
+  flex-direction: column;
+}
+
+.signup{
+  width: 100%;
+}
+
+.signup p{
+  width: 80%;
+}
+
+.search{
+  width: 100%;
+  padding-top: 6rem;
+}
+
+.search p{
+  width: 80%;
+}
+
+.UT .button h6{
+  font-size: 1.6rem;
   }
 
-  footer h6{
-    font-size: 1.6rem;
-  }
+/*VD-Pnboarding*/
+.Onboarding p{
+  width: 80%;
+}
+
+.onboardingdisplay{
+  display: flex;
+  flex-direction: column;
+}
+
+.onboardingdisplay .image1{
+  display: none;
+}
+
+.onboardingdisplay .image2{
+  padding-top: 0rem;
+}
+
+.onboardingdisplay .image3{
+  display: none;
+}
+
+  /*VD-Lookforaroom*/
+.Lookforaroom{
+  padding-top: 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Lookforaroom .left{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 6rem;
+}
+
+.Lookforaroom .left p{
+  width: 80%;
+  text-align: center;
+}
+
+.Lookforaroom .image{
+  padding-top: 6rem;
+}
+
+/*VD-LookForaroommate*/
+.LookForaroommate{
+  padding-top: 0rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.LookForaroommate .image{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;;
+}
+
+.LookForaroommate .right{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+}
+
+.LookForaroommate .right p{
+  width: 80%;
+}
+
+/*VD-post*/
+.Post{
+  padding-top: 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Post .left{
+  width: 100%;
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Post .left p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.Post .image{
+  padding-top: 6rem;
+}
+
+/*VD-Chat*/
+.Chat{
+  padding-top: 0rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.Chat .image{
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Chat .right{
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.Chat .right p{
+  width: 80%;
+}
+
+.button h6{
+  font-size: 1.6rem;
+}
+
+/*Final*/
+.Final p{
+  width: 80%;
+}
+
+/*Next Project*/
+.NextProject .demo{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.NextProject .desktop{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NextProject .mobile{
+  display: none;
+}
+
+
+/*footer*/
+footer h3{
+  font-size: 2rem;
+}
+
+footer h6{
+  font-size: 1.6rem;
+}
 }
