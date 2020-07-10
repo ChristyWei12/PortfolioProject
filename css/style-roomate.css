@@ -1816,6 +1816,7 @@ footer h6{
 }
 
 @media (max-width: 768px){
+  /*header*/
   .toggle{
     display: block;
   }
@@ -1864,40 +1865,122 @@ footer h6{
     top: 0.5rem;
   }
 
-  /*Design Spec8*/
-  .Designspec{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
+/*font size*/
+h1{
+  font-size: 3rem;
+}
 
-  .DesignRoles{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
-    padding-top: 0;
-  }
+h2{
+  font-size: 2.4rem;
+}
 
-  .Deliverables{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
-    padding-top: 3rem;
-  }
+h3{
+  font-size: 2rem;
+}
 
-  .Tools{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
-    padding-top: 3rem;
-  }
+h4{
+  font-size: 1.8rem;
+}
+
+h5{
+  font-size: 1.7rem;
+}
+
+h6{
+  font-size: 1.6rem;
+}
+
+p{
+  font-size: 1.7rem;
+}
+
+/*Intro*/
+.Intro p{
+ width: 80%;
+}
+
+/*Solution*/
+.DS img{
+  width: 35%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/*Design Spec8*/
+.Designspec{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.DesignRoles{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 0;
+}
+
+.Deliverables{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 3rem;
+}
+
+.Tools{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 3rem;
+}
+
+/*Challeng and Solution*/
+.CS{
+  display: flex;
+  flex-direction: column;
+}
+
+.Challenge{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.Solution{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.CS p{
+  width: 80%;
+}
+
+/*Discovery-user survy*/
+.UserSurvey p{
+  width: 80%;
+}
+
+.UserSurvey .Line2{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.UserSurvey .question{
+  font-size: 1.7rem;
+}
+
+.UserSurvey ul li h6{
+  font-size: 1.6rem;
+}
 
   /*footer*/
 /*
