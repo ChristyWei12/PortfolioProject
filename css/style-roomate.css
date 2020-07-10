@@ -132,7 +132,7 @@ p{
 }
 
 section{
-  padding: 12rem 20% 12rem 20%;
+  padding: 12rem 10%;
 }
 
 /*hero section*/
@@ -140,7 +140,7 @@ section{
   display: block;
   position: relative;
   top: 46px;
-  padding: 15rem 20% 0 20%;
+  padding: 15rem 10% 0 10%;
 }
 
 .herologo{
@@ -202,17 +202,21 @@ section{
   background-color: #202020;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .iOSDemo{
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  //flex-wrap: nowrap;
   justify-content: center;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
+.DS img{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 .DS .button{
   background-color: #2ABECC;
@@ -241,8 +245,6 @@ section{
   justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .Designspec h5{
@@ -299,8 +301,6 @@ section{
 /*Challenge and Solution*/
 .CS{
   background-color: #202020;
-  padding-left: 10%;
-  padding-right: 10%;
   display: flex;
   flex-direction: row;
 }
@@ -361,8 +361,6 @@ section{
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .Dtitle{
@@ -421,8 +419,6 @@ section{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .UserSurvey .Line2{
@@ -440,8 +436,6 @@ section{
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .UserSurvey ul{
@@ -476,8 +470,6 @@ section{
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .left{
@@ -522,8 +514,6 @@ section{
 /*Personas*/
 .Personas{
   padding-top: 6rem;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .top{
@@ -531,8 +521,6 @@ section{
    flex-direction: column;
    margin-left: auto;
    margin-right: auto;
-   padding-left: 5%;
-   padding-right: 5%;
 }
 
 .Personas .icon{
@@ -705,7 +693,6 @@ section{
 /*Competitor Analysis*/
 .CA{
   padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 .Ctop{
@@ -840,8 +827,8 @@ section{
 .Identity .part1{
   display: flex;
   flex-direction: column;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .Identity .part1 .icon{
@@ -880,6 +867,7 @@ section{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
+  color: #2ABECC;
 }
 
 .last{
@@ -888,8 +876,8 @@ section{
   margin-right: auto;
   width: 100%;
   color: #ffffff;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .last p{
@@ -909,8 +897,8 @@ section{
 .logotext{
   display: flex;
   flex-direction: column;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .logotext .icon{
@@ -963,8 +951,6 @@ section{
 .Color .text{
   display: flex;
   flex-direction: column;
-  padding-left: 20%;
-  padding-right: 20%;
 }
 
 .Color .text img{
@@ -1053,7 +1039,7 @@ section{
 .Typography .left p{
   color: #ffffff;
   text-align: center;
-  width: 80%;
+  width: 70%;
 }
 
 .Typography .right{
@@ -1130,8 +1116,8 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .USUF .left .icon{
@@ -1209,8 +1195,8 @@ section{
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .PP .top .icon{
@@ -1229,9 +1215,7 @@ section{
 
 .PP .top p{
   text-align: center;
-  width: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
+  width: 60%;
 }
 
 .PP .image{
@@ -1274,9 +1258,9 @@ section{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  padding-left: 20%;
-  padding-right: 20%;
+  width: 60%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .Wireframe .image{
@@ -1295,6 +1279,8 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .UT .icon{
@@ -1313,9 +1299,7 @@ section{
 
 .UT p{
   text-align: center;
-  width: 80%;
-  padding-left: 20%;
-  padding-right: 20%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1335,8 +1319,6 @@ section{
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .UT .button{
@@ -1366,8 +1348,6 @@ section{
   display: flex;
   flex-direction: row;
   padding-top: 6rem;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .signup{
@@ -1387,8 +1367,7 @@ section{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 4%;
-  padding-right: 4%;
+  width: 80%;
 }
 
 .search{
@@ -1408,13 +1387,11 @@ section{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 4%;
-  padding-right: 4%;
+  width: 80%;
 }
 
 /*Visual Design*/
 .VisualDesign{
-  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   background-color: #202020;
@@ -1453,8 +1430,8 @@ section{
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .Onboarding .icon{
@@ -1696,12 +1673,9 @@ section{
 
 /*Final*/
 .Final{
-  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 15%;
-  padding-right: 15%;
 }
 
 .Final .icon{
@@ -1714,7 +1688,6 @@ section{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .Final .Line{
@@ -1747,25 +1720,22 @@ section{
 
 /*Next Project*/
 .NextProject{
-  padding-top: 6rem;
   background-color: #8883BB;
   display: flex;
-  flex-direction: row;
-  padding-left: 10%;
-  padding-right: 10%;
+  flex-direction: column;
 }
 
 .NextProject .text{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  //justify-content: center;
+  padding-bottom: 6rem;
 }
 
 .NextProject .text h2{
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6rem;
 }
 
 .NextProject .text a{
@@ -1779,14 +1749,22 @@ section{
   text-decoration: underline;
 }
 
+.NextProject .demo{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
 .NextProject .desktop{
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .NextProject .mobile{
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 /*footer*/
