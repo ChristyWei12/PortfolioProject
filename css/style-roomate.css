@@ -3,19 +3,31 @@
 
 *, *:before, *:after{
   box-sizing: border-box;
-/*  padding:0;
+  padding:0;
   margin:0;
-  outline:0;*/
+  outline:0;
 }
+
+/*Debug
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
 
 html{
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body{
   background-color: #ffffff;
   font-family: muli;
   line-height: 1.5;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
 }
 
 /*header*/
@@ -120,21 +132,15 @@ p{
 }
 
 section{
-  padding: 6rem 20% 6rem 20%;
+  padding: 12rem 20% 12rem 20%;
 }
-
-/*grid container
-.gridcontainer{
-  display: grid;
-}*/
 
 /*hero section*/
 .hero{
   display: block;
   position: relative;
   top: 46px;
-  padding: 15rem 20% 6rem 20%;
-  grid-area: hero; /*grid area*/
+  padding: 15rem 20% 0 20%;
 }
 
 .herologo{
@@ -167,36 +173,26 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //display: block;
-  //position: relative;
-  padding: 6rem 20% 6rem 20%;
-  grid-area: Intro;
 }
 
-.Introicon{
+.Intro .icon{
   width: 4.5rem;
-  display: block;
-  position: relative;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Introtext{
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.Intro h3{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 
-.Introtext h3{
-  padding-top: 3rem;
-}
-
-.Introtext p{
- padding-top: 3rem;
+.Intro p{
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ width: 60%;
 }
 
 /*Display Solution*/
@@ -204,10 +200,10 @@ section{
   display: flex;
   flex-direction: column;
   background-color: #202020;
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  grid-area: DS;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .iOSDemo{
@@ -217,18 +213,20 @@ section{
   justify-content: center;
 }
 
+
 .DS .button{
   background-color: #2ABECC;
   width: 22rem;
   height: 4.2rem;
-  margin-top: 6rem;
+  margin-top: 8rem;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 3px;
 }
 
 .button h6{
   font-size: 1.8rem;
-  padding-top: 0.9rem;
+  padding-top: 0.8rem;
   text-align: center;
 }
 
@@ -310,15 +308,15 @@ section{
 .Challenge{
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .Solution{
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .CS .icon{
@@ -485,9 +483,8 @@ section{
 .left{
   display: flex;
   flex-direction: column;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .left img{
@@ -525,6 +522,8 @@ section{
 /*Personas*/
 .Personas{
   padding-top: 6rem;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .top{
@@ -714,6 +713,8 @@ section{
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .Ctop img{
@@ -745,8 +746,8 @@ section{
 .RR{
   display: flex;
   flex-direction: column;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 4%;
+  margin-right: 4%;
   width: 100%;
 }
 
@@ -780,8 +781,8 @@ section{
 .Airbnb{
   display: flex;
   flex-direction: column;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 4%;
+  margin-right: 4%;
   width: 100%;
 }
 
@@ -1031,6 +1032,8 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .Typography .left img{
@@ -1050,13 +1053,15 @@ section{
 .Typography .left p{
   color: #ffffff;
   text-align: center;
-  width: 100%;
+  width: 80%;
 }
 
 .Typography .right{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .Typography .right .Quicksand{
@@ -1084,7 +1089,7 @@ section{
 
 /*Information Architecture*/
 .IA{
-  padding: 6rem 0;
+  padding: 12rem 0;
 }
 
 .IA .top{
@@ -1116,9 +1121,7 @@ section{
 .USUF{
   padding-top: 6rem;
   display: flex;
-  flex-direction: row;
-  padding-left: 10%;
-  padding-right: 10%;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1127,7 +1130,8 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .USUF .left .icon{
@@ -1145,13 +1149,19 @@ section{
 
 .USUF .left p{
   text-align: center;
-  width: 100%;
+  width: 60%;
 }
 
 .USUF .image{
-  margin-top: 6rem;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.USUF .image img{
+  width: 100%;
+  object-fit: fill;
+  object-position: center;
 }
 
 .map img{
@@ -1163,7 +1173,6 @@ section{
 /*IA-sitemap*/
 .Sitemap{
   padding-top: 6rem;
-  padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1179,7 +1188,7 @@ section{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 6rem;
 }
 
 .Sitemap .map{
@@ -1263,7 +1272,9 @@ section{
 
 .Wireframe p{
   text-align: center;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -1272,6 +1283,10 @@ section{
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.Wireframe .image img{
+  width: 100%;
 }
 
 /*IA-User Testing*/
@@ -1298,9 +1313,11 @@ section{
 
 .UT p{
   text-align: center;
-  width: 100%;
+  width: 80%;
   padding-left: 20%;
   padding-right: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .UT .Line2{
@@ -1330,11 +1347,12 @@ section{
   margin-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 3px;
 }
 
 .UT .button h6{
   font-size: 1.8rem;
-  padding-top: 0.9rem;
+  padding-top: 0.8rem;
   text-align: center;
   color: #000000;
   font-weight: normal;
@@ -1348,12 +1366,13 @@ section{
   display: flex;
   flex-direction: row;
   padding-top: 6rem;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .signup{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 50%;
 }
 
@@ -1368,14 +1387,13 @@ section{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .search{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 50%;
 }
 
@@ -1390,8 +1408,8 @@ section{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 /*Visual Design*/
@@ -1400,6 +1418,8 @@ section{
   display: flex;
   flex-direction: column;
   background-color: #202020;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .VisualDesign .top{
@@ -1433,6 +1453,8 @@ section{
   justify-content: center;
   display: flex;
   flex-direction: column;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .Onboarding .icon{
@@ -1454,8 +1476,7 @@ section{
   margin-right: auto;
   text-align: center;
   color: #ffffff;
-  padding-left: 10%;
-  padding-right: 10%;
+  width: 60%;
 }
 
 .onboardingdisplay{
@@ -1485,12 +1506,17 @@ section{
   padding-top: 15rem;
   display: flex;
   flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .Lookforaroom .left{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 50%;
 }
 
 .Lookforaroom .left .icon{
@@ -1513,13 +1539,13 @@ section{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
-  width: 70%;
+  width: 100%;
 }
 
 .Lookforaroom .image{
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5rem;
+  padding-top: 0rem;
 }
 
 /*VD-LookForaroommate*/
@@ -1527,18 +1553,24 @@ section{
   padding-top: 15rem;
   display: flex;
   flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .LookForaroommate .image{
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5rem;
+  padding-top: 0px;
 }
 
 .LookForaroommate .right{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-top: 0px;
 }
 
 .LookForaroommate .right .icon{
@@ -1561,7 +1593,8 @@ section{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
-  width: 70%;
+  width: 100%;
+  text-align: center;
 }
 
 /*VD-post*/
@@ -1569,12 +1602,18 @@ section{
   padding-top: 15rem;
   display: flex;
   flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .Post .left{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 50%;
+  padding-top: 0px;
 }
 
 .Post .left .icon{
@@ -1597,13 +1636,13 @@ section{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
-  width: 70%;
+  width: 100%;
 }
 
 .Post .image{
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5rem;
+  padding-top: 0px;
 }
 
 /*VD-Chat*/
@@ -1611,18 +1650,24 @@ section{
   padding-top: 15rem;
   display: flex;
   flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .Chat .image{
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5rem;
+  padding-top: 0px;
 }
 
 .Chat .right{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 0px;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 50%;
 }
 
 .Chat .right .icon{
@@ -1644,8 +1689,9 @@ section{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  text-align: center;
   color: #ffffff;
-  width: 70%;
+  width: 100%;
 }
 
 /*Final*/
@@ -1654,6 +1700,8 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .Final .icon{
@@ -1672,24 +1720,25 @@ section{
 .Final .Line{
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2.5rem;
-  padding-right: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 6.6rem;
 }
 
 .Final p{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  width: 60%;
 }
 
 .Final a{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 18rem;
-  margin-bottom: 6rem;
+  margin-top: 6rem;
 }
 
-.Final h4{
+.Final h6{
   margin-left: auto;
   margin-right: auto;
   color: #2ABECC;
@@ -1727,6 +1776,7 @@ section{
 
 .NextProject .text h6{
   color: #ffffff;
+  text-decoration: underline;
 }
 
 .NextProject .desktop{
