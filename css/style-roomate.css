@@ -453,7 +453,7 @@ section{
 
 .UserSurvey ul li h4{
   text-align: right;
-  width: 30%;
+  width: 20%;
   margin-right: 10%;
 }
 
@@ -1940,7 +1940,18 @@ p{
   margin-right: 2%;
 }
 
-/*Design Spec8*/
+.DS .button{
+  width: 18rem;
+  height: 3.5rem;
+}
+
+.DS .button h6{
+  font-size: 1.6rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+/*Design Spec*/
 .Designspec{
   display: flex;
   flex-direction: column;
@@ -1995,7 +2006,7 @@ p{
   width: 80%;
 }
 
-/*Discovery-user survy*/
+/*Discovery-user survey*/
 .UserSurvey p{
   width: 80%;
 }
@@ -2245,9 +2256,16 @@ p{
   width: 80%;
 }
 
+.UT .button{
+  width: 18rem;
+  height: 3.5rem;
+}
+
 .UT .button h6{
   font-size: 1.6rem;
-  }
+  padding-top: 0.5rem;
+  text-align: center;
+}
 
 /*VD-Pnboarding*/
 .Onboarding p{
@@ -2366,8 +2384,15 @@ p{
   width: 80%;
 }
 
-.button h6{
+.prototype .button h6{
   font-size: 1.6rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.prototype .button{
+  width: 18rem;
+  height: 3.5rem;
 }
 
 /*Final*/

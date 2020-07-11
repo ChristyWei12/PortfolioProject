@@ -1,0 +1,1023 @@
+/*CSS file for Portfolio Project WeCloud Page*/
+
+
+*, *:before, *:after{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  outline:0;
+}
+
+/*Debug
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+
+html{
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #ffffff;
+  font-family: muli;
+  line-height: 1.5;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+/*header*/
+.header{
+  display: block;
+  position: absolute;
+  height: 4.6rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: #ffffff;
+  position: fixed;
+}
+
+.logo{
+  width: 20rem;
+  display: block;
+  /*background-color: red; test purpose*/
+  position: relative;
+  left: 60px;
+  top: 10px;
+}
+
+.logo img{
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.toggle{
+  width: 2.7rem;
+  position: absolute;
+  right: 35px;
+  top: 16px;
+  background: #ffffff;
+  text-align: right;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 1.8rem;
+  display: none;
+}
+
+.header ul{
+  width: 253px;
+  right: 46px;
+  height: 46px;
+  position: absolute;
+  top: 0px;
+  background-color: #ffffff;
+}
+
+.header ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 16px 14px;
+}
+
+.header ul li a:hover{
+  color: #FF7072;
+}
+
+.header ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+/*font size*/
+h1{
+  font-size: 4.8rem;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 3.4rem;
+}
+
+h4{
+  font-size: 3.6rem;
+}
+
+h5{
+  font-size: 2.4rem;
+}
+
+h6{
+  font-size: 1.8rem;
+}
+
+p{
+  font-size: 2.1rem;
+}
+
+section{
+  padding: 12rem 10%;
+}
+
+/*hero section*/
+.hero{
+  display: block;
+  position: relative;
+  top: 46px;
+  padding: 15rem 10% 0 10%;
+}
+
+.herologo{
+  width: 7rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.herotext{
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.herotext h1{
+  padding-top: 3rem;
+}
+
+.herotext h3{
+  padding-top: 3rem;
+}
+
+/*what is Wecloud*/
+.Intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Intro .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Intro h3{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Intro p{
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ width: 60%;
+}
+
+/*Display Solution*/
+.DS{
+  display: flex;
+  flex-direction: row;
+  background-color: #202020;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leftDemo{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.iOSDemo{
+  display: flex;
+  flex-direction: row;
+  //flex-wrap: nowrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.iOSDemo img{
+  width: 35%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.DS .button{
+  background-color: #8883BB;
+  width: 22rem;
+  height: 4.2rem;
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+}
+
+.rightDemo .button{
+  width: 24rem;
+  margin-top: 7.3rem;
+}
+
+.button h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  text-align: center;
+}
+
+.button h6:hover{
+  color: #ffffff;
+}
+
+.rightDemo{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.rightDemo{
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.rightDemo img{
+  width: 100%;
+}
+
+/*Design Spec*/
+.Designspec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Designspec h5{
+  font-size: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Designspec .Line{
+  width: 6.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Designspec .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+.Designspec p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.DesignRoles{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 0;
+}
+
+.Deliverables{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 0;
+}
+
+.Tools{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 0;
+}
+
+/*Challenge and Solution*/
+.CS{
+  background-color: #202020;
+  display: flex;
+  flex-direction: row;
+}
+
+.Challenge{
+  display: flex;
+  flex-direction: column;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.Solution{
+  display: flex;
+  flex-direction: column;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.CS .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+.CS h3{
+  color: #ffffff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+.CS p{
+  color: #ffffff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+/*Transition Image*/
+.Transition{
+  display: block;
+  position: relative;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.Transition img{
+  width: 100%;
+}
+
+/*Discovery*/
+/*title part*/
+.Discovery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7.8rem;
+}
+
+.Dtitle{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.Dtitle .icon{
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Dtitle h2{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Dtitle .Line{
+  width: 6.6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Discovery-User Survey*/
+.UserSurvey{
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.UserSurvey .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UserSurvey h3{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.UserSurvey p{
+  width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UserSurvey .Line2{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.UserSurvey .question{
+  text-align: center;
+  font-size: 2rem;
+  color: #2ABECC;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UserSurvey ul{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.UserSurvey ul li{
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.UserSurvey ul li h4{
+  text-align: right;
+  width: 20%;
+  margin-right: 10%;
+}
+
+.UserSurvey ul li h6{
+  text-align: left;
+  font-size: 2.4rem;
+  width: 60%;
+}
+
+/*Discovery-Personas*/
+.Personas{
+  padding-top: 6rem;
+}
+
+.top{
+   display: flex;
+   flex-direction: column;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.Personas .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Personas h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.top p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.groupintro{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Pcontainer{
+  display: flex;
+  flex-direction: row;
+  //justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+}
+
+.Persona1{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  width: 100%;
+}
+
+.Persona2{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  width: 100%;
+}
+
+.Persona1 .profile{
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Persona2 .profile{
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Persona1 h4{
+  font-size: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Persona2 h4{
+  font-size: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Persona1 h5{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Persona2 h5{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Persona1 p{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.Persona2 p{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.Persona1 .mark{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.Persona2 .mark{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.quotes{
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 4rem;
+}
+
+/*Competitor Analysis*/
+.CA{
+  padding-top: 6rem;
+}
+
+.Ctop{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Ctop img{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Ctop h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Ctop p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.Brand{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Google{
+  width: 12rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.Dropbox{
+  width: 12rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.Egnyte{
+  width: 12rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/*Branding*/
+.Branding{
+  background-color: #202020;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.Btop{
+  display: flex;
+  flex-direction: column;
+}
+
+.Btop .icon{
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Btop h2{
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Btop .Line{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+@media (max-width: 768px){
+  /*header*/
+  .toggle{
+    display: block;
+  }
+
+  ul{
+    display: none;
+  }
+
+  .header ul{
+    top: 29px;
+    width: 100%;
+    right: 0;
+    position: relative;
+    background-color: #ffffff;
+  }
+
+  .header ul li{
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .header ul li a{
+    font-size: 1.4rem;
+  }
+
+  .active{
+    display: block;
+  }
+
+  .logo{
+    width: 20rem;
+    display: block;
+    /*background-color: red;*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10px;
+  }
+
+  .logo img{
+    width: 60%;
+    display: block;
+    position: relative;
+    top: 0.5rem;
+  }
+
+/*font size*/
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2.4rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+h4{
+  font-size: 1.8rem;
+}
+
+h5{
+  font-size: 1.7rem;
+}
+
+h6{
+  font-size: 1.6rem;
+}
+
+p{
+  font-size: 1.7rem;
+}
+
+/*Intro*/
+.Intro p{
+ width: 80%;
+}
+
+/*Solution*/
+.DS{
+  display: flex;
+  flex-direction: column;
+}
+
+.leftDemo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iOSDemo{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iOSDemo img{
+  width: 35%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.DS .leftDemo .button{
+  width: 18rem;
+  height: 3.5rem;
+}
+
+.rightDemo .button{
+  width: 22rem;
+  height: 3.5rem;
+  margin-top: 7.3rem;
+}
+
+.button h6{
+  font-size: 1.6rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.rightDemo{
+  width: 100%;
+  padding-top: 6rem;
+}
+
+.rightDemo{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rightDemo img{
+  width: 100%;
+}
+
+/*Design Spec*/
+.Designspec{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.DesignRoles{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 0;
+}
+
+.Deliverables{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 3rem;
+}
+
+.Tools{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-top: 3rem;
+}
+
+/*Challeng and Solution*/
+.CS{
+  display: flex;
+  flex-direction: column;
+}
+
+.Challenge{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.Solution{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.CS p{
+  width: 80%;
+}
+
+/*Transition*/
+.Transition img{
+  width: 300%;
+}
+
+/*Discovery-user survey*/
+.UserSurvey p{
+  width: 80%;
+}
+
+.UserSurvey .Line2{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.UserSurvey .question{
+  font-size: 1.7rem;
+}
+
+.UserSurvey ul li h6{
+  font-size: 1.6rem;
+}
+
+/*Discover-Personas*/
+.top p{
+  width: 80%;
+}
+
+.Pcontainer{
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+}
+
+.Persona2{
+  padding-top: 6rem;
+}
+
+.Persona1 h4{
+  font-size: 1.8rem;
+}
+
+.Persona2 h4{
+  font-size: 1.8rem;
+}
+
+.Persona1 p{
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  width: 80%;
+}
+
+.Persona2 p{
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  width: 80%;
+}
+
+/*Discovery-CA*/
+.Ctop p{
+  width: 80%;
+}
+
+.Google{
+  width: 6rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.Dropbox{
+  width: 6rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.Egnyte{
+  width: 6rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+
+
+
+}

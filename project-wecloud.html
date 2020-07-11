@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-      <meta charset="utf-8">
-      <meta name="author" content="Christy Wei">
-      <meta name="keywords" content="Christy, Wei, Portfolio, UX, Design">
-      <meta name="description" content="A website of Christy Wei as a UX Designer.">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Project: WeCloud</title>
-      <link rel="stylesheet" href="css/reset.css">
-      <!--<link rel="stylesheet" href="css/style.css">-->
-  </head>
-  <body>
-      <div class="container">
-        <!--Navigation-->
-        <nav class="topbar">
-          <img class="logo" src="image/logo/cw-logo.svg" alt="Christy Wei Logo">
-          <h7 class="logo">Christy Wei</h7>
-          <div class="toggle"> <!-- Media Query here -->
-            <img class="icon" src="image/logo/hamburgerbutton.svg" alt="Menu">
-          </div>
-          <ul>
-           <li><a href="#">Work</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="#">Resume</a></li>
-          </ul>
-        </nav>
-        <script src="homepage.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Christy Wei">
+  <meta name="keywords" content="Christy, Wei, Portfolio, UX, Design">
+  <meta name="description" content="A website of Christy Wei as a UX Designer.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Christy Wei's Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style-wecloud.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="header">
+      <a href="index.html" class="logo">
+          <img src="image/logo/signaturelogo.svg" alt="logoimage">
+      </a>
+         <!--<img class="logoimage" src="image/logo/signaturelogo.svg" alt="SignatureLogo">-->
+      <a href="#" class="toggle"> <!-- Media Query here -->
+       <img class="menu" src="image/logo/hamburgerbutton.svg" alt="Menu">
+     </a>
+     <!--Nav-->
+     <ul id="navlist">
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Resume</a></li>
+     </ul>
+    </nav>
+
         <!--Hero Area-->
-        <div class="hero">
-          <img class="logo" src="image/logo/WeCloudLogo.svg" alt="WeCloud Logo">
-          <h1>WeCloud</h1>
-          <h3>Work On Your File<br>Anywhere, Anytime, With Anyone</h3>
-        </div>
+      <div class="grid-container">
+        <section class="hero">
+          <img class="herologo" src="image/logo/WeCloudLogo.svg" alt="WeCloud Logo">
+          <div class="herotext">
+            <h1>WeCloud</h1>
+            <h3>Work On Your File<br>Anywhere, Anytime, With Anyone</h3>
+          </div>
+        </section>
+
         <!--What is WeCloud?-->
-        <section class="IntrotoWeCloud">
+        <section class="Intro">
           <img class="icon" src="image/logo/Interface-Essential/Help/laptop-help-message.svg">
           <h3>What is WeCloud?</h3>
           <p>WeCloud is a secured online platform where you can save your files and
             share with others. It aims to bring a fun and easy experience for busy
             professions, especially in tech, and students in college and university.</p>
         </section>
+
         <!--Solution Display-->
-        <section class="displaysolutions">
+      <!--  <section class="displaysolutions">
           <div class="iOSDemo">
             <img src="image/Onboarding-2-PersonalvsBusiness.svg" alt="MobileDemo">
             <img src="image/Dashboard-1-Home.svg" alt="MobileDemo">
@@ -57,53 +66,80 @@
              <button type="button" name="button"><h6>View Desktop Prototype</h6></button>
             </div>
           </div>
+        </section>-->
+
+        <!--Solution Display-->
+        <section class="DS">
+          <div class="leftDemo">
+           <div class="iOSDemo">
+             <img class="image1" src="image/Onboarding-2-PersonalvsBusiness.svg" alt="MobileDemo">
+             <img class="image2" src="image/Dashboard-1-Home.svg" alt="MobileDemo">
+             <img class="image3" src="image/Dashboard-2-Files.svg" alt="MobileDemo">
+           </div>
+           <div class="button">
+            <h6>View iOS Prototype</h6>
+           </div>
+         </div>
+         <div class="rightDemo">
+           <img src="image/DesktopDemo-WeCloud.svg" alt="Desktop Demo">
+           <div class="button">
+             <h6>View Desktop Prototype</h6>
+            </div>
+          </div>
         </section>
+
         <!--Design Roles, Deliverables, Tools-->
         <section class="Designspec">
           <div class="DesignRoles">
             <img class="icon" src="image/logo/Users/Geometric-Close-Up-Single-User-Neutral/single-neutral-id-card-3.svg" alt="icon">
-            <h2>Design Roles</h2>
-            <hr>
+            <h5>Design Roles</h5>
+            <img class="Line" src="image/Line.svg" alt="dividing line">
             <p>UX Research<br>UX Design<br>Information Architecture<br>Visual Design<br>Brand & Identity</p>
           </div>
           <div class="Deliverables">
             <img class="icon" src="image/logo/Interface-Essential/Dashboard/layout-dashboard-1.svg" alt="icon">
-            <h2>Deliverables</h2>
-            <hr>
+            <h5>Deliverables</h5>
+            <img class="Line" src="image/Line.svg" alt="dividing line">
             <p>User Surveys<br>Competitive Analysis<br>Personas<br>User Story<br>User Flow<br>Wireframe<br>Usability Testing<br>Branding<br>Hi-Fi Mockup<br>A/B Preference Testing<br>Prototype</p>
           </div>
           <div class="Tools">
             <img class="icon" src="image/logo/Computers-Devices-Electronics/Desktop-Computers/Desktop-computer.svg" alt="icon">
-            <h2>Tools</h2>
-            <hr>
+            <h5>Tools</h5>
+            <img class="Line" src="image/Line.svg" alt="dividing line">
             <p>Figma<br>InVision<br>Google Forms<br>SWOT Analysis<br>Miro<br>Asana<br>Whimsical<br>Usability Hub</p>
           </div>
         </section>
-        <!--Problem and Solution-->
-        <section class="ProblemandSolution" style="background-color:#202020;"> <!--I will remove the color to CSS, here is for display purpose only since there are icons in white-->
-          <div class="Problem">
+
+        <!--Challenge and Solution-->
+        <section class="CS">
+          <div class="Challenge">
             <img class="icon" src="image/logo/Interface-Essential/Help/help-question-network.svg" alt="icon">
-            <h3 style="color:#ffffff;">Problem</h3>
-            <p style="color:#ffffff;">Nowadays the cloud storage and organization product is becoming more and more popular, however,
+            <h3>Challenge</h3>
+            <p>Nowadays the cloud storage and organization product is becoming more and more popular, however,
               the existing products are suffering from the complexity of the structure, or a lack of fun to use - the UI is looking too serious and formal.</p>
           </div>
           <div class="Solution">
             <img class="icon" src="image/logo/Interface-Essential/Login/logout/login-key.svg" alt="icon">
-            <h3 style="color:#ffffff;">Solution</h3>
-            <p style="color:#ffffff;">WeCloud wants to blow a new fresh air into this field providing a more colorful, relaxing
+            <h3>Solution</h3>
+            <p>WeCloud wants to blow a new fresh air into this field providing a more colorful, relaxing
               and fun user experience that users can upload files, save files and collaborate with others within a single platform
               especially under the current trend of working and collaborating remotely.</p>
           </div>
         </section>
+
         <!--Transition image-->
         <section class="Transition">
-          <img src="image/DesktopCombine.svg" alt="Image">
+          <img src="image/DesktopCombine.jpg" alt="Image">
         </section>
-        <!--Discover-->
-        <section class="Discovery">
-          <img class="icon" src="image/logo/Interface-Essential/View/binocular.svg" alt="icon">
-          <h2>Discovery</h2>
-          <hr>
+
+          <!--Discover-->
+          <section class="Discovery">
+            <div class="Dtitle">
+              <img class="icon" src="image/logo/Interface-Essential/View/binocular.svg" alt="icon">
+              <h2>Discovery</h2>
+              <img class="Line" src="image/Line.svg" alt="dividing line">
+            </div>
+
           <!--User Survey-->
           <div class="UserSurvey">
             <img class="icon" src="image/logo/Users/Geometric-Full-Body-Single-User-Actions-Neutral/single-neutral-actions-text.svg" alt="icon">
@@ -111,84 +147,97 @@
             <p>User survey is helping me better understand on how people think about the cloud management
               market and what is their real desire. Surveys are sent out via Google Forms. Keys questions
               are listed as below:</p>
-            <hr>
+            <img class="Line2" src="image/Line2.svg" alt="dividing line">
             <p class="question">What cloud management product do they use?<br>What features do they use most?<br>
 What are the deterrents that make them look for another app/website?<br>How do they like to share the file?<br>Are they using these kind of product for personal or business use?</p>
-            <hr>
+            <img class="Line2" src="image/Line2.svg" alt="dividing line">
             <p>Here are some key insights from survey:</p>
             <ul>
               <li>
-                <p4>89%</p4>
+                <h4>89%</h4>
                 <h6>of attendees have experience using cloud content management website/app</h6>
               </li>
               <li>
-                <p4>96%</p4>
+                <h4>96%</h4>
                 <h6>of attendees use the website/app to upload files to the cloud</h6>
               </li>
               <li>
-                <p4>76%</p4>
+                <h4>76%</h4>
                 <h6>of attendees will stop using the product if there is no free space or very limited space provided</h6>
               </li>
               <li>
-                <p4>64%</p4>
+                <h4>64%</h4>
                 <h6>of attendees would like to share the files via link</h6>
               </li>
             </ul>
           </div>
-          <!--Personas-->
-          <div class="Personas">
-            <img class="icon" src="image/logo/Users/Geometric-Close-Up-Single-User-Neutral/single-neutral-folder-box.svg" alt="icon">
-            <h3>Personas</h3>
-            <p>User survey provides a good basis for creating the user personas. 2 distinct groups are identified among
-              survey attendees:</p>
-            <p>the student group who are studying in university or graduate school and have the need to save files and
-             share with others for academic projects; </p>
-            <p>the business professionals who are working in a company and have needs to process work files and also collaborate with others at work.</p>
-            <div class="Group1">
-                <img src="image/Profile-Susan.svg" alt="Susan">
-                <h4>Susan Blake</h4>
-                <p>Age: 23<br>Profession: College Student<br>Region: UK</p>
-                <h5>Bio</h5>
-                <p>Susan is a college student in UK. Her major is international affairs. This semester, she has a few team projects to work on.</p>
-                <h5>Motivation</h5>
-                <p>To better conduct team work to finish the course requirement, Susan would like to find an online software that enables her to upload
-                   files as well as share with other team members. Cost is also a big concern for her.</p>
-                <h5>Frustration</h5>
-                <p>it is costly for additional space charge; slow upload speed</p>
-                <p class="quotes">“A product that is easy to use as well as cheap is important to me.”</p>
+
+         <!--Personas-->
+         <div class="Personas">
+           <div class="top">
+             <img class="icon" src="image/logo/Users/Geometric-Close-Up-Single-User-Neutral/single-neutral-folder-box.svg" alt="icon">
+             <h3>Personas</h3>
+             <p>User survey provides a good basis for creating the user personas. 2 distinct groups are identified among
+               survey attendees:</p>
+              <p class="groupintro">the student group who are studying in university or graduate school and have the need to save files and
+                share with others for academic projects; </p>
+              <p class="groupintro">the business professionals who are working in a company and have needs to process work files and also collaborate with others at work.</p>
            </div>
-           <div class="Group2">
-               <img src="image/Profile-Steve.svg" alt="Steve">
-               <h4>Steve Wang</h4>
-               <p>Age: 31<br>Profession: Product Manager<br>Region: Cupertino, CA</p>
+           <div class="Pcontainer">
+             <div class="Persona1">
+               <img class="profile" src="image/Profile-Susan.svg" alt="Susan">
+               <h4>Susan Blake</h4>
+               <p class="mark">Age: 23<br>Profession: College Student<br>Region: UK</p>
                <h5>Bio</h5>
-               <p>Steve is a product manager living in Cupertino, California. His daily work includes managing different projects and collaborating with other teams.</p>
+               <p>Susan is a college student in UK. Her major is international affairs. This semester, she has a few team projects to work on.</p>
                <h5>Motivation</h5>
-               <p>Steve cares very much about the efficiency and security of the product. He is looking for a product that is easier to use, has high upload speed and high level of security.</p>
+               <p>To better conduct team work to finish the course requirement, Susan would like to find an online software that enables her to upload
+                  files as well as share with other team members. Cost is also a big concern for her.</p>
                <h5>Frustration</h5>
-               <p>Data leaking issue, confusing navigations, slow upload speed and slow sync speed</p>
+               <p>1. it is costly for additional space charge<br>2. slow upload speed</p>
+               <p class="quotes">“A product that is easy to use as well as cheap is important to me.”</p>
+            </div>
+            <div class="Persona2">
+              <img class="profile" src="image/Profile-Steve.svg" alt="Steve">
+              <h4>Steve Wang</h4>
+              <p class="mark">Age: 31<br>Profession: Product Manager<br>Region: Cupertino, CA</p>
+              <h5>Bio</h5>
+              <p>Steve is a product manager living in Cupertino, California. His daily work includes managing different projects and collaborating with other teams.</p>
+              <h5>Motivation</h5>
+              <p>Steve cares very much about the efficiency and security of the product. He is looking for a product that is easier to use, has high upload speed and high level of security.</p>
+              <h5>Frustration</h5>
+              <p>1. data leaking issue<br>2. confusing navigations<br>3. slow upload speed<br>4. slow sync speed</p>
                <p class="quotes">“I am looking for a product that is easy to use and can protect our data as well.”</p>
-           </div>
-          </div>
-          <!--Comparative Analysis-->
-          <div class="comparativeanalysis">
+            </div>
+         </div>
+         </div>
+
+        <!--Comparative Analysis-->
+        <div class="CA">
+          <div class="Ctop">
             <img class="icon" src="image/logo/Interface-Essential/Dashboard/pie-line-graph.svg" alt="icon">
             <h3>Comparative Analysis</h3>
             <p>The competition in the cloud content management market is very fierce and many big brands are stepping into this field.
               I did a competitive Analysis of Google Drive, Dropbox and Egnyte, which are the big players in the market,
               and SWOT analysis enables me to study the markt, the audience and the service from every angle.</p>
-            <img src="image/logo/GoogleDrive.svg" alt="Google Drive">
-            <img src="image/logo/Dropbox.svg" alt="Dropbox">
-            <img src="image/logo/Egnyte.svg" alt="Egnyte">
           </div>
-        </section>
-        <!--Branding-->
-        <section class="Branding" style="background-color:#202020;">
-          <img class="icon" src="image/logo/Content/Books/book-library-2.svg" alt="icon">
-          <h2 style="color:#ffffff;">Branding</h2> <!--I will remove the color:#ffffff and edit in CSS later, here just for display purpose since the icon is exported as white, so I need to add a black background -->
-          <hr style="color:#ffffff;">
+          <div class="Brand">
+            <img class="Google" src="image/logo/GoogleDrive.svg" alt="Google Drive">
+            <img class="Dropbox" src="image/logo/Dropbox.svg" alt="Dropbox">
+            <img class="Egnyte" src="image/logo/Egnyte.svg" alt="Egnyte">
+        </div>
+      </section>
+
+          <!--Branding-->
+          <section class="Branding">
+            <div class="Btop">
+              <img class="icon" src="image/logo/Content/Books/book-library-2.svg" alt="icon">
+              <h2>Branding</h2> <!--I will remove the color:#ffffff and edit in CSS later, here just for display purpose since the icon is exported as white, so I need to add a black background -->
+              <img class="Line" src="image/LineWhite.svg" alt="Line">
+            </div>
+
           <!--Identity-->
-          <div class="identity">
+         <div class="identity">
             <img class="icon" src="image/logo/Content/Content-Creation/content-ink-pen-write.svg" alt="icon">
             <h3 style="color:#ffffff;">Identity</h3>
             <p style="color:#ffffff;">Branding is the linchpin since it conveys the first impression of the brand to its users, and it is desired
@@ -197,17 +246,33 @@ What are the deterrents that make them look for another app/website?<br>How do t
             <p style="color:#ffffff;">Among all the concepts above, I decided to choose WeCloud as the brand name. “Cloud” indicates the cloud space where files can be saved and shared
               and “We” indicates the collaboration between people.</p>
             <img src="image/MindMap.svg" alt="Mind Map">
+          </div>-->
+
+          <div class="Identity">
+           <div class="left">
+             <img class="icon" src="image/logo/Content/Content-Creation/content-ink-pen-write.svg" alt="icon">
+             <h3>Identity</h3>
+             <p>Branding is the linchpin since it conveys the first impression of the brand to its users, and it is desired
+               to be attractive and easy to remember, and at the same time expresses the core value and spirit of the product to people. In order to
+               find the ideal concepts, I did a mind map brainstorming various ideas.</p>
+            <p>Among all the concepts above, I decided to choose WeCloud as the brand name. “Cloud” indicates the cloud space where files can be saved and shared
+              and “We” indicates the collaboration between people.</p>
+           </div>
+            <div class="right">
+              <img src="image/MindMap.svg" alt="Mind Map">
+            </div>
           </div>
+
           <!--Logo-->
-          <div class="Logo">
+        <!--  <div class="Logo">
             <img class="icon" src="image/logo/Images-Photography/Pictures/picture-double-shapes-1.svg" alt="icon">
             <h3 style="color:#ffffff;">Logo</h3>
             <p style="color:#ffffff;">After the brand name got determined, I started sketching out the logo. The logo is expected to deliver the sharing spirit as well as a fun and pleasant feeling.</p>
             <img src="image/WeCloudSketchLogo.svg" alt="Sketching">
             <img src="image/WeCloudDigitalLogo.svg" alt="Digital Logo">
-          </div>
+          </div>-->
           <!--Color-->
-          <div class="Color">
+        <!--  <div class="Color">
             <img class="icon" src="image/logo/Images-Photography/Composition/composition-net.svg" alt="icon">
             <h3 style="color:#ffffff;">Color</h3>
             <div class="Purple">
@@ -222,9 +287,9 @@ What are the deterrents that make them look for another app/website?<br>How do t
               <img src="image/WeCloudPinkColor.svg" alt="Pink">
               <h5 style="color:#ffffff;">#ED6A7C</h5>
             </div>
-          </div>
+          </div>-->
           <!--Typography-->
-          <div class="Typography">
+        <!--  <div class="Typography">
             <img class="icon" src="image/logo/Interface-Essential/Edit/quill-circle.svg" alt="icon">
             <h3 style="color:#ffffff;">Typography</h3>
             <p style="color:#ffffff;">Montserrsat is chosen as the logo font and Open Sans
@@ -232,17 +297,17 @@ What are the deterrents that make them look for another app/website?<br>How do t
               using as logo font delivers the brand characteristic as being modern, clean and pleasant.
               Open Sans is selected to reflect WeCloud as a tool for work and study.</p>
             <h1 style="color:#ffffff;">Montserrat</h1>
-            <div class="vl"></div> <!--vertical line-->
-            <h1 style="color:#ffffff;">Open Sans</h1>
+            <div class="vl"></div> --><!--vertical line-->
+          <!--  <h1 style="color:#ffffff;">Open Sans</h1>
           </div>
-        </section>
+        </section>-->
         <!--Information Architecture-->
-        <section class="Information Architecture">
+      <!--  <section class="Information Architecture">
           <img class="icon" src="Image/logo/Files-Folders/Folders/folder-connect.svg" alt="icon">
           <h2>Information Architecture</h2>
-          <hr>
+          <hr>-->
           <!--User Story and User Flow-->
-          <div class="UserStoryandFlow">
+        <!--  <div class="UserStoryandFlow">
             <img class="icon" src="image/logo/Files-Folders/Files-Copyright/file-copyright-user.svg" alt="icon">
             <h3>User Story & User Flow</h3>
             <p>Creating and prioritizing user stories can help me better organize the user flows as well as site map for information architecture.</p>
@@ -252,24 +317,24 @@ What are the deterrents that make them look for another app/website?<br>How do t
 Upload files (regular user)<br>Share files with others (regular user)<br>Create content (regular user)</h6>
             <hr>
             <img src="image/WeCloudUserFlow.svg" alt="icon">
-          </div>
+          </div>-->
           <!--Paper Prototype-->
-          <div class="Paperprototype">
+        <!--  <div class="Paperprototype">
             <img class="icon" src="image/logo/Interface-Essential/Form-Edition/pencil-write-3.svg" alt="icon">
             <h3>Paper Prototype</h3>
             <p>Before moving to Figma for digital mockup, I started with pen and paper to sketch out the basic structure of the app.</p>
             <img src="image/WeCloudPaper1.svg" alt="Paper Prototype">
             <img src="image/WeCloudPaper2.svg" alt="Paper Prototype">
-          </div>
+          </div>-->
           <!--Wireframe-->
-          <div class="Wireframe">
+        <!--  <div class="Wireframe">
             <img class="icon" src="image/logo/Interface-Essential/Form-Edition/checklist-pen.svg" alt="icon">
             <h3>Wireframe</h3>
             <p>When the paper prototype was sketched out, I moved to low-fi wireframes to fill in more detailed content.</p>
             <img src="image/WeCloudWireframe.svg" alt="Wireframe">
-          </div>
+          </div>-->
           <!--Usability Testing-->
-          <div class="ut">
+        <!--  <div class="ut">
             <img class="icon" src="image/logo/Interface-Essential/Form-Edition/checklist.svg" alt="icon">
             <h3>Usability Testing on Wireframes</h3>
             <p>Usability testing is conducted to test the low-fi wireframe either in person or over Zoom. There are 4 tasks in
@@ -284,9 +349,9 @@ Upload files (regular user)<br>Share files with others (regular user)<br>Create 
             <p>Here are key improvements from the usability testing:<p>
             <p>1, The Sign up process should keep shorter and allows users freedom to skip certain part<br>2, Use standard Google login page
 <br>3, Allow users to drag file to different folders<br>4, Add 'Create a new folder' under existing folders</p>
-          </div>
+</div>-->
           <!--A/B Preference Testing-->
-          <div class="ABTesting">
+        <!--  <div class="ABTesting">
             <img class="icon" src="image/logo/Interface-Essential/Password/touch-password-approved-1.svg" alt="icon">
             <h3>A/B Preference Testing</h3>
             <p>Three preference testings are conducted at Usability Hub to help me decide some details:</p>
@@ -307,9 +372,9 @@ Upload files (regular user)<br>Share files with others (regular user)<br>Create 
               <img src="image/WeCloudUT3-2.svg" alt="Desktop Example">
             </div>
           </div>
-        </section>
+        </section>-->
         <!--Visual Design-->
-        <section class="Visual Design" style="background-color:#202020">
+      <!--  <section class="Visual Design" style="background-color:#202020">
           <img class="icon" src="image/logo/Images-Photography/Retouching/Enhancing/retouch-landscape.svg" alt="icon">
           <h2 style="color:#ffffff;">Visual Design</h2>
           <hr style="color:#ffffff;">
@@ -353,9 +418,9 @@ Upload files (regular user)<br>Share files with others (regular user)<br>Create 
             <img src="image/WeCloudF5-1.svg" alt="icon">
             <img src="image/WeCloudF5-2.svg" alt="icon">
           </div>
-        </section>
+        </section>-->
         <!--Final Toughts-->
-        <section class="final">
+      <!--  <section class="final">
           <img class="icon" src="image/logo/Interface-Essential/Form-Edition/checklist-pen.svg" alt="icon">
           <h2>Final Thoughts</h2>
           <hr>
@@ -369,25 +434,25 @@ Upload files (regular user)<br>Share files with others (regular user)<br>Create 
             can create a virtual space on WeCloud so team members can get access from their WeCloud dashboard with different access.
             It is like Slack chat channel but more like a folder space.</p>
             <h4>Back to Top</h4>
-        </section>
+        </section>-->
         <!--Next Project-->
-        <section class="NextProject">
+        <!--<section class="NextProject">
           <h1>Next Project</h1>
           <img src="image/RooMateWelcome.svg" alt="RooMate Screen">
           <img src="image/RooMateHome.svg" alt="RooMate Screen">
           <img src="image/RooMateChat.svg" alt="RooMate Screen">
           <button type="button" name="button"><h6>View Case Study</h6></button>
-        </section>
+        </section>-->
         <!--Footer-->
-        <footer style="background-color:#202020;">
+        <!--<footer style="background-color:#202020;">
           <h3 style="background-color:#ffffff;">Get In Touch</h3>
           <h6 style="background-color:#ffffff;">Email me: ChristyWei31@gmail.com</h6>
           <a href="#"><img src="image/logo/Emails/Email-Actions/email-action-unread.svg" alt="Email"></a>
           <a href="https://www.linkedin.com/in/chuchuwei/">
-            <img src="image/logo/LinkedIn.svg" alt="LinkedIn">  <!-- Why there is a block of black? -->
-          </a>
+            <img src="image/logo/LinkedIn.svg" alt="LinkedIn"> --> <!-- Why there is a block of black? -->
+        <!--  </a>
           <a href="https://github.com/ChristyWei12"><img src="image/logo/Github.svg" alt="Github"></a>
-      </footer>
+      </footer>-->
     </div>
   </body>
 </html>
