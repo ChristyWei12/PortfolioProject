@@ -141,7 +141,7 @@ a{
 .display1{
   width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
   height: 500px;
-  background: url("../image/RooMate-Display.svg");
+  background: url("../image/RooMate-Display.jpg");
   background-size: 120%;
   background-position: center;
   background-repeat: no-repeat;

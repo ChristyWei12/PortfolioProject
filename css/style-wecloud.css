@@ -769,15 +769,498 @@ section{
   padding-top: 2.5rem;
   padding-right: 2.5rem;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
 }
 
 .Identity .right{
   padding-top: 15rem;
   width: 50%;
+  margin-left: 4%;
+  margin-left: 4%;
 }
 
+/*Branding-logo*/
+.LogoPart{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
 
+.logotext{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logotext .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logotext h3{
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.logotext p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  width: 60%;
+}
+
+.logoskecth{
+  padding-top:6rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.logoskecth .image1{
+   width: 50%;
+}
+
+.logoskecth .image2{
+   width: 50%;
+}
+
+/*Branding-color*/
+.Color{
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Color .text{
+  display: flex;
+  flex-direction: column;
+}
+
+.Color .text img{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Color .text h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  color: #ffffff;
+}
+
+.Color .display{
+  display: flex;
+  flex-direction: row;
+  padding-top: 6rem;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Color .display h5{
+  color: #ffffff;
+}
+
+.Purple{
+  display: flex;
+  flex-direction: column;
+  margin: auto 15%;
+}
+
+.Blue{
+  display: flex;
+  flex-direction: column;
+  margin: auto 15%;
+}
+
+.Pink{
+  display: flex;
+  flex-direction: column;
+  margin: auto 15%;
+}
+
+.display h5{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+}
+
+/*Branding-Typography*/
+.Typography{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Typography .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.Typography .left img{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Typography .left h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.Typography .left p{
+  color: #ffffff;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Typography .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.Typography .right .Montserrat{
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 4rem;
+  font-weight: medium;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Typography .right .OpenSans{
+  color: #ffffff;
+  font-family: Open Sans;
+  font-size: 4rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Typography .right .vl{
+  width: 10%;
+}
+
+/*Information Architecture*/
+.IA{
+  padding: 12rem 0;
+}
+
+.IA .top{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.IA .top .icon{
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.IA .top h2{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.IA .top .Line{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*IA-User Story and User Flow*/
+.USUF{
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+}
+
+.USUF .top{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.USUF .top .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.USUF .top h3{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.USUF .top p{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.USUF .top h5{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+}
+
+.USUF .Line2{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.USUF h6{
+  color: #8883bb;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.USUF .image .mobile{
+  display: none;
+}
+
+.USUF .image{
+  padding-top: 3.5rem;
+  width: 100%;
+}
+
+.USUF .image img{
+  width: 100%;
+}
+
+/*IA-Paper Prototype*/
+.PP{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.PP .top{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.PP .top .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PP .top h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.PP .top p{
+  text-align: center;
+  width: 60%;
+}
+
+.PP .image{
+  display: flex;
+  flex-direction: row;
+  padding-top: 6rem;
+}
+
+.PP .image1{
+  width: 50%;
+}
+
+.PP .image2{
+  width: 50%;
+}
+
+/*IA-Wireframe*/
+.Wireframe{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Wireframe .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Wireframe h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.Wireframe p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Wireframe .image{
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Wireframe .image img{
+  width: 100%;
+}
+
+/*IA-User Testing*/
+.UT{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.UT .top{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.UT .top .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UT h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.UT .top p{
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UT .top .endingtext{
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+}
+
+.UT .Line2{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.UT h6{
+  text-align: center;
+  font-size: 2rem;
+  color: #8883bb;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UT .image{
+  display: flex;
+  flex-direction: row;
+  margin-top: 6rem;
+}
+
+.UT .AM{
+  width: 50%;
+}
+
+.UT .UTimage{
+  width: 50%;
+}
+
+.UT .ending{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.UT .ending p{
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UT .ending .ending1{
+  padding-top: 6rem;
+  padding-bottom: 2.5rem;
+}
 
 @media (max-width: 768px){
   /*header*/
@@ -1081,6 +1564,7 @@ p{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .Identity .right{
@@ -1094,5 +1578,152 @@ p{
   width: 100%;
 }
 
+/*Branding-Logo*/
+.logotext p{
+  width: 80%;
+}
+
+.logoskecth{
+  display: flex;
+  flex-direction: column;
+}
+
+.logoskecth .image1{
+   width: 100%;
+}
+
+.logoskecth .image2{
+   width: 100%;
+}
+
+/*Branding-color*/
+.Color .display{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Color .display h5{
+  padding-top: 2.5rem;
+}
+
+.Blue{
+  padding-top: 6rem;
+}
+
+.Pink{
+  padding-top: 6rem;
+}
+
+/*Branding-Typography*/
+.Typography{
+  display: flex;
+  flex-direction: column;
+}
+
+.Typography .left{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Typography .left p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.Typography .right{
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*IA-User Story and User Flow*/
+.USUF .top p{
+  width: 80%;
+}
+
+.USUF .Line2{
+  width: 80%;
+}
+
+.USUF h6{
+  font-size: 1.6rem;
+}
+
+.USUF .image .desktop{
+  display: none;
+}
+
+.USUF .image .mobile{
+  display: block;
+}
+
+.USUF .image img{
+  width: 100%;
+}
+
+/*IA-PP*/
+.PP .top p{
+  width: 80%;
+}
+
+.PP .image{
+  display: flex;
+  flex-direction: column;
+}
+
+.PP .image1{
+  width: 100%;
+}
+
+.PP .image2{
+  width: 100%;
+}
+
+/*IA-Wireframe*/
+.Wireframe p{
+  width: 80%;
+}
+
+/*IA-UT*/
+.UT .top p{
+  width: 80%;
+}
+
+.UT .top .endingtext{
+  width: 80%;
+}
+
+.UT .Line2{
+  width: 80%;
+}
+
+.UT h6{
+  font-size: 1.6rem;
+}
+
+.UT .image{
+  display: flex;
+  flex-direction: column;
+}
+
+.UT .AM{
+  width: 100%;
+}
+
+.UT .UTimage{
+  width: 100%;
+}
+
+.UT .ending p{
+  width: 80%;
+}
+
+.UT .ending .ending1{
+  padding-top: 6rem;
+  padding-bottom: 2.5rem;
+}
 
 }

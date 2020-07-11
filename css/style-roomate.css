@@ -1040,6 +1040,8 @@ section{
   color: #ffffff;
   text-align: center;
   width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Typography .right{
