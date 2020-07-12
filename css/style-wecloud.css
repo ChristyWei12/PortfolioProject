@@ -1262,6 +1262,542 @@ section{
   padding-bottom: 2.5rem;
 }
 
+/*IA-AB Testing*/
+.ABTesting{
+  background-color: rgba(136, 131, 187, 0.35);
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.ABTesting .top{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ABTesting .top .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ABTesting .top h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.ABTesting .top p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 60%;
+}
+
+.Test1{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+}
+
+.Test1 p{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Test1 img{
+  padding-top: 2.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.UT1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Test2{
+  padding-top: 6rem;
+  justify-content: center;
+}
+
+.Test2 p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Test2 img{
+  padding-top: 2.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.UT2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Test3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+}
+
+.Test3 p{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Test3 img{
+  padding-top: 2.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.UT3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*Visual Design*/
+.VisualDesign{
+  display: flex;
+  flex-direction: column;
+  background-color: #202020;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.VisualDesign .top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.VisualDesign .top .icon{
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.VisualDesign .top h2{
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.VisualDesign .top .Line{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*VD-Onboarding*/
+.Onboarding{
+  padding-top: 6rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Onboarding .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Onboarding h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.Onboarding p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #ffffff;
+  width: 60%;
+}
+
+.onboardingdisplay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.onboardingdisplay .iOS{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding-top: 6rem;
+}
+
+.onboardingdisplay .iOS img{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.onboardingdisplay .Desktop{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+}
+
+/*VD-Upload*/
+.Upload{
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Upload .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 50%;
+}
+
+.Upload .left .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Upload .left h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.Upload .left p{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+}
+
+.Upload .image{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0rem;
+}
+
+/*VD-Share Files*/
+/*VD-LookForaroommate*/
+.Share{
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Share .image{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+}
+
+.Share .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-top: 0px;
+}
+
+.Share .right .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Share .right h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.Share .right p{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+/*VD-Organize Files*/
+.OrganizeFiles{
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.OrganizeFiles .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 50%;
+  padding-top: 0px;
+}
+
+.OrganizeFiles .left .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.OrganizeFiles .left h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.OrganizeFiles .left p{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+}
+
+.OrganizeFiles .image{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+}
+
+/*VD-Responsive Design*/
+.ResponsiveDesign{
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.ResponsiveDesign .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ResponsiveDesign h3{
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.ResponsiveDesign .image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 6rem;
+}
+
+.ResponsiveDesign img{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*Final*/
+.Final{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Final .icon{
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Final h2{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+}
+
+.Final .Line{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  width: 6.6rem;
+}
+
+.Final .text{
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.Final p{
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+  width: 80%;
+}
+
+.Final a{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+}
+
+.Final h6{
+  margin-left: auto;
+  margin-right: auto;
+  color: #8883BB;
+  text-decoration: underline;
+}
+
+/*Next Project*/
+.NextProject{
+  background-color: #2ABECC;
+  display: flex;
+  flex-direction: column;
+}
+
+.NextProject .text{
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  padding-bottom: 6rem;
+}
+
+.NextProject .text h2{
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NextProject .text a{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+}
+
+.NextProject .text h6{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.NextProject .demo{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.NextProject .image1{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.NextProject .image2{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.NextProject .image3{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/*footer*/
+footer{
+  background-color: #202020;
+  width: 100%;
+  height: 30rem;
+  padding-top: 6rem;
+}
+
+footer h3{
+  font-size: 3.2rem;
+  text-align: center;
+  color: #ffffff;
+  font-family: Montserrat;
+}
+
+footer h6{
+  font-size: 2.4rem;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 3rem;
+}
+
+.iconset{
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 1.2rem;
+  margin-bottom: 4.9rem;
+}
+
+.iconset ul{
+  width: 218px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: block;
+  list-style-type: disc;
+  top: auto;
+  background-color: #202020;
+}
+
+.iconset ul li{
+  list-style: disc;
+  display: inline-block;
+  padding: 16px 20px;
+}
+
 @media (max-width: 768px){
   /*header*/
   .toggle{
@@ -1724,6 +2260,201 @@ p{
 .UT .ending .ending1{
   padding-top: 6rem;
   padding-bottom: 2.5rem;
+}
+
+/*AB Testing*/
+.ABTesting .top p{
+  width: 80%;
+}
+
+.UT1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.UT2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.UT3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Visual Design*/
+/*VD-Onboarding*/
+.onboardingdisplay .iOS{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.onboardingdisplay .iOS img{
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 6rem;
+  width: 35%;
+}
+
+.onboardingdisplay .iOS{
+  padding-top: 0;
+}
+
+.onboardingdisplay .Desktop{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+}
+
+.onboardingdisplay .Desktop img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*VD-Upload*/
+.Upload{
+  padding-top: 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Upload .left{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 6rem;
+}
+
+.Upload .left p{
+  width: 80%;
+  text-align: center;
+}
+
+.Upload .image{
+  padding-top: 6rem;
+}
+
+/*VD-Share Files*/
+.Share{
+  padding-top: 0rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.Share .image{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;;
+}
+
+.Share .image img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Share .right{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+}
+
+.Share .right p{
+  width: 80%;
+}
+
+/*VD-Organize Files*/
+.OrganizeFiles{
+  padding-top: 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.OrganizeFiles .left{
+  width: 100%;
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.OrganizeFiles .left p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.OrganizeFiles .image{
+  padding-top: 6rem;
+}
+
+/*VD-Rsponsive Design*/
+.ResponsiveDesign .image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.ResponsiveDesign img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+}
+
+.ResponsiveDesign .image1{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Final*/
+.Final .Line{
+  margin-bottom: 2.5rem;
+}
+
+.Final .text{
+  display: flex;
+  flex-direction: column;
+}
+
+.Final p{
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 80%;
+}
+
+/*Next Project*/
+.NextProject .image1{
+  display: none;
+}
+
+.NextProject .image2{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.NextProject .image3{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+/*footer*/
+footer h3{
+  font-size: 2rem;
+}
+
+footer h6{
+  font-size: 1.6rem;
 }
 
 }

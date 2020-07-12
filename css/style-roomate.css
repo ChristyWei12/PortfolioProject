@@ -1426,7 +1426,7 @@ section{
   margin-right: auto;
 }
 
-/*VD-Pnboarding*/
+/*VD-Onboarding*/
 .Onboarding{
   padding-top: 6rem;
   justify-content: center;
@@ -1832,7 +1832,6 @@ footer h6{
   margin-top: 1.2rem;
   margin-bottom: 4.9rem;
 }
-
 
 .iconset ul{
   width: 218px;
@@ -2419,7 +2418,6 @@ p{
 .NextProject .mobile{
   display: none;
 }
-
 
 /*footer*/
 footer h3{
