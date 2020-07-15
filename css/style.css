@@ -1598,10 +1598,12 @@ footer .Email img{
   object-position: center;
 }
 
-.RooMateUSUF .map img{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.RooMateUSUF .image .image1{
+	width: 100%;
+}
+
+.RooMateUSUF .image .image2{
+	display: none;
 }
 
 /*IA-sitemap*/
@@ -1635,6 +1637,15 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
 }
+
+.RooMateSitemap .map .image1{
+	display: block;
+}
+
+.RooMateSitemap .map .image2{
+	display: none;
+}
+
 
 /*IA-Paper Prototype*/
 .RooMatePP{
@@ -2265,7 +2276,7 @@ footer .Email img{
 
 /*Solution*/
 .RooMateDS img{
-  width: 45%;
+  width: 35%;
   margin-left: 0.1%;
   margin-right: 0.1%;
 }
@@ -2543,6 +2554,25 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
 }
+
+.RooMateUSUF .image .image2{
+	width: 100%;
+	display: block;
+}
+
+.RooMateUSUF .image .image1{
+	display: none;
+}
+
+/*Sitemap*/
+.RooMateSitemap .map .image2{
+	display: block;
+}
+
+.RooMateSitemap .map .image1{
+	display: none;
+}
+
 
 /*IA-PP*/
 .RooMatePP .top p{
