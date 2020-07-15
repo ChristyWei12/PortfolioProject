@@ -1,55 +1,5 @@
 /*CSS file for Portfolio Project WeCloud Page*/
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
 *, *:before, *:after{
   box-sizing: border-box;
   padding:0;
@@ -185,14 +135,14 @@ section{
 }
 
 /*hero section*/
-.hero{
+.WeCloudhero{
   display: block;
   position: relative;
   top: 46px;
   padding: 15rem 10% 0 10%;
 }
 
-.herologo{
+.WeCloudhero .herologo{
   width: 7rem;
   display: block;
   position: relative;
@@ -200,7 +150,7 @@ section{
   margin-right: auto;
 }
 
-.herotext{
+.WeCloudhero .herotext{
   width: 100%;
   display: block;
   position: relative;
@@ -209,35 +159,35 @@ section{
   text-align: center;
 }
 
-.herotext h1{
+.WeCloudhero .herotext h1{
   padding-top: 3rem;
 }
 
-.herotext h3{
+.WeCloudhero .herotext h3{
   padding-top: 3rem;
 }
 
 /*what is Wecloud*/
-.Intro{
+.WeCloudIntro{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Intro .icon{
+.WeCloudIntro .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Intro h3{
+.WeCloudIntro h3{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Intro p{
+.WeCloudIntro p{
  text-align: center;
  margin-left: auto;
  margin-right: auto;
@@ -245,7 +195,7 @@ section{
 }
 
 /*Display Solution*/
-.DS{
+.WeCloudDS{
   display: flex;
   flex-direction: row;
   background-color: #202020;
@@ -253,7 +203,7 @@ section{
   margin-right: auto;
 }
 
-.leftDemo{
+.WeCloudDS .leftDemo{
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -261,7 +211,7 @@ section{
   margin-right: 5%;
 }
 
-.iOSDemo{
+.WeCloudDS .iOSDemo{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -271,13 +221,13 @@ section{
   margin-right: 5%;
 }
 
-.iOSDemo img{
+.WeCloudDS .iOSDemo img{
   width: 35%;
   margin-left: 3%;
   margin-right: 3%;
 }
 
-.DS .button{
+.WeCloudDS .button{
   background-color: #8883BB;
   width: 22rem;
   height: 4.2rem;
@@ -287,40 +237,40 @@ section{
   border-radius: 3px;
 }
 
-.rightDemo .button{
+.WeCloudDS .rightDemo .button{
   width: 24rem;
   margin-top: 7.3rem;
 }
 
-.button h6{
+.WeCloudDS .button h6{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   text-align: center;
 }
 
-.button h6:hover{
+.WeCloudDS .button h6:hover{
   color: #ffffff;
 }
 
-.rightDemo{
+.WeCloudDS .rightDemo{
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.rightDemo{
+.WeCloudDS .rightDemo{
   margin-left: auto;
   margin-right: auto;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.rightDemo img{
+.WeCloudDS .rightDemo img{
   width: 100%;
 }
 
 /*Design Spec*/
-.Designspec{
+.WeCloudDesignspec{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -328,13 +278,13 @@ section{
   margin-right: auto;
 }
 
-.Designspec h5{
+.WeCloudDesignspec h5{
   font-size: 2.4rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Designspec .Line{
+.WeCloudDesignspec .Line{
   width: 6.6rem;
   margin-left: auto;
   margin-right: auto;
@@ -342,34 +292,34 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Designspec .icon{
+.WeCloudDesignspec .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
 }
 
-.Designspec p{
+.WeCloudDesignspec p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.DesignRoles{
+.WeCloudDesignspec .DesignRoles{
   width: 30%;
   display: flex;
   flex-direction: column;
   padding-top: 0;
 }
 
-.Deliverables{
+.WeCloudDesignspec .Deliverables{
   width: 30%;
   display: flex;
   flex-direction: column;
   padding-top: 0;
 }
 
-.Tools{
+.WeCloudDesignspec .Tools{
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -377,34 +327,34 @@ section{
 }
 
 /*Challenge and Solution*/
-.CS{
+.WeCloudCS{
   background-color: #202020;
   display: flex;
   flex-direction: row;
 }
 
-.Challenge{
+.WeCloudCS .Challenge{
   display: flex;
   flex-direction: column;
   margin-left: 4%;
   margin-right: 4%;
 }
 
-.Solution{
+.WeCloudCS .Solution{
   display: flex;
   flex-direction: column;
   margin-left: 4%;
   margin-right: 4%;
 }
 
-.CS .icon{
+.WeCloudCS .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
 }
 
-.CS h3{
+.WeCloudCS h3{
   color: #ffffff;
   text-align: center;
   margin-left: auto;
@@ -412,7 +362,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.CS p{
+.WeCloudCS p{
   color: #ffffff;
   text-align: center;
   margin-left: auto;
@@ -421,20 +371,20 @@ section{
 }
 
 /*Transition Image*/
-.Transition{
+.WeCloudTransition{
   display: block;
   position: relative;
   padding: 0;
   overflow-x: hidden;
 }
 
-.Transition img{
+.WeCloudTransition img{
   width: 100%;
 }
 
 /*Discovery*/
 /*title part*/
-.Discovery{
+.WeCloudDiscovery{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -443,7 +393,7 @@ section{
   padding-top: 7.8rem;
 }
 
-.Dtitle{
+.WeCloudDiscovery .Dtitle{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -451,13 +401,13 @@ section{
   justify-content: center;
 }
 
-.Dtitle .icon{
+.WeCloudDiscovery .Dtitle .icon{
   width: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Dtitle h2{
+.WeCloudDiscovery .Dtitle h2{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -465,14 +415,14 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Dtitle .Line{
+.WeCloudDiscovery .Dtitle .Line{
   width: 6.6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 /*Discovery-User Survey*/
-.UserSurvey{
+.WeCloudUserSurvey{
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
@@ -480,13 +430,13 @@ section{
   flex-direction: column;
 }
 
-.UserSurvey .icon{
+.WeCloudUserSurvey .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.UserSurvey h3{
+.WeCloudUserSurvey h3{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -494,14 +444,14 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.UserSurvey p{
+.WeCloudUserSurvey p{
   width: 60%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.UserSurvey .Line2{
+.WeCloudUserSurvey .Line2{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -509,7 +459,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.UserSurvey .question{
+.WeCloudUserSurvey .question{
   text-align: center;
   font-size: 2rem;
   color: #2ABECC;
@@ -518,69 +468,69 @@ section{
   margin-right: auto;
 }
 
-.UserSurvey ul{
+.WeCloudUserSurvey ul{
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
 }
 
-.UserSurvey ul li{
+.WeCloudUserSurvey ul li{
   padding-top: 2.5rem;
   display: flex;
   flex-direction: row;
 }
 
-.UserSurvey ul li h4{
+.WeCloudUserSurvey ul li h4{
   text-align: right;
   width: 20%;
   margin-right: 10%;
 }
 
-.UserSurvey ul li h6{
+.WeCloudUserSurvey ul li h6{
   text-align: left;
   font-size: 2.4rem;
   width: 60%;
 }
 
 /*Discovery-Personas*/
-.Personas{
+.WeCloudPersonas{
   padding-top: 6rem;
 }
 
-.top{
+.WeCloudPersonas .top{
    display: flex;
    flex-direction: column;
    margin-left: auto;
    margin-right: auto;
 }
 
-.Personas .icon{
+.WeCloudPersonas .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Personas h3{
+.WeCloudPersonas h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.top p{
+.WeCloudPersonas .top p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
 }
 
-.groupintro{
+.WeCloudPersonas .groupintro{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.Pcontainer{
+.WeCloudPersonas .Pcontainer{
   display: flex;
   flex-direction: row;
   margin-left: auto;
@@ -588,7 +538,7 @@ section{
   padding-top: 6rem;
 }
 
-.Persona1{
+.WeCloudPersonas .Persona1{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -597,7 +547,7 @@ section{
   width: 100%;
 }
 
-.Persona2{
+.WeCloudPersonas .Persona2{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -606,19 +556,19 @@ section{
   width: 100%;
 }
 
-.Persona1 .profile{
+.WeCloudPersonas .Persona1 .profile{
   width: 15rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Persona2 .profile{
+.WeCloudPersonas .Persona2 .profile{
   width: 15rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Persona1 h4{
+.WeCloudPersonas .Persona1 h4{
   font-size: 2.4rem;
   margin-left: auto;
   margin-right: auto;
@@ -626,7 +576,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Persona2 h4{
+.WeCloudPersonas .Persona2 h4{
   font-size: 2.4rem;
   margin-left: auto;
   margin-right: auto;
@@ -634,21 +584,21 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Persona1 h5{
+.WeCloudPersonas .Persona1 h5{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.Persona2 h5{
+.WeCloudPersonas .Persona2 h5{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.Persona1 p{
+.WeCloudPersonas .Persona1 p{
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -656,7 +606,7 @@ section{
   padding-right: 7%;
 }
 
-.Persona2 p{
+.WeCloudPersonas .Persona2 p{
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -664,7 +614,7 @@ section{
   padding-right: 7%;
 }
 
-.Persona1 .mark{
+.WeCloudPersonas .Persona1 .mark{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -672,7 +622,7 @@ section{
   padding-right: 7%;
 }
 
-.Persona2 .mark{
+.WeCloudPersonas .Persona2 .mark{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -680,18 +630,18 @@ section{
   padding-right: 7%;
 }
 
-.quotes{
+.WeCloudPersonas .quotes{
   font-weight: bold;
   font-style: italic;
   padding-top: 4rem;
 }
 
 /*Competitor Analysis*/
-.CA{
+.WeCloudCA{
   padding-top: 6rem;
 }
 
-.Ctop{
+.WeCloudCA .Ctop{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -700,27 +650,27 @@ section{
   padding-right: 10%;
 }
 
-.Ctop img{
+.WeCloudCA .Ctop img{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Ctop h3{
+.WeCloudCA .Ctop h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.Ctop p{
+.WeCloudCA .Ctop p{
   margin-left: auto;
   margin-right: auto;
   width: 60%;
   text-align: center;
 }
 
-.Brand{
+.WeCloudCA .Brand{
   padding-top: 6rem;
   display: flex;
   flex-direction: row;
@@ -729,43 +679,43 @@ section{
   margin-right: auto;
 }
 
-.Google{
+.WeCloudCA .Google{
   width: 12rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.Dropbox{
+.WeCloudCA .Dropbox{
   width: 12rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.Egnyte{
+.WeCloudCA .Egnyte{
   width: 12rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
 /*Branding*/
-.Branding{
+.WeCloudBranding{
   background-color: #202020;
   padding-left: 0;
   padding-right: 0;
 }
 
-.Btop{
+.WeCloudBranding .Btop{
   display: flex;
   flex-direction: column;
 }
 
-.Btop .icon{
+.WeCloudBranding .Btop .icon{
   width: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Btop h2{
+.WeCloudBranding .Btop h2{
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
@@ -773,13 +723,13 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Btop .Line{
+.WeCloudBranding .Btop .Line{
   margin-left: auto;
   margin-right: auto;
 }
 
 /*Branding-Identity*/
-.Identity{
+.WeCloudIdentity{
   padding-top: 6rem;
   display: flex;
   flex-direction: row;
@@ -788,7 +738,7 @@ section{
   padding-right: 10%;
 }
 
-.Identity .left{
+.WeCloudIdentity .left{
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -796,27 +746,27 @@ section{
   margin-right: 4%;
 }
 
-.Identity .left .icon{
+.WeCloudIdentity .left .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
 }
 
-.Identity .left h3{
+.WeCloudIdentity .left h3{
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
 }
 
-.Identity .left p{
+.WeCloudIdentity .left p{
   padding-top: 2.5rem;
   padding-right: 2.5rem;
   color: #ffffff;
   text-align: left;
 }
 
-.Identity .right{
+.WeCloudIdentity .right{
   padding-top: 15rem;
   width: 50%;
   margin-left: 4%;
@@ -824,26 +774,26 @@ section{
 }
 
 /*Branding-logo*/
-.LogoPart{
+.WeCloudLogoPart{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
 }
 
-.logotext{
+.WeCloudLogoPart .logotext{
   display: flex;
   flex-direction: column;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.logotext .icon{
+.WeCloudLogoPart .logotext .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.logotext h3{
+.WeCloudLogoPart .logotext h3{
   width: 100%;
   text-align: center;
   margin-left: auto;
@@ -853,7 +803,7 @@ section{
   color: #ffffff;
 }
 
-.logotext p{
+.WeCloudLogoPart .logotext p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -861,22 +811,22 @@ section{
   width: 60%;
 }
 
-.logoskecth{
+.WeCloudLogoPart .logoskecth{
   padding-top:6rem;
   display: flex;
   flex-direction: row;
 }
 
-.logoskecth .image1{
+.WeCloudLogoPart .logoskecth .image1{
    width: 50%;
 }
 
-.logoskecth .image2{
+.WeCloudLogoPart .logoskecth .image2{
    width: 50%;
 }
 
 /*Branding-color*/
-.Color{
+.WeCloudColor{
   display: flex;
   flex-direction: column;
   padding-top: 6rem;
@@ -884,25 +834,25 @@ section{
   margin-right: auto;
 }
 
-.Color .text{
+.WeCloudColor .text{
   display: flex;
   flex-direction: column;
 }
 
-.Color .text img{
+.WeCloudColor .text img{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Color .text h3{
+.WeCloudColor .text h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   color: #ffffff;
 }
 
-.Color .display{
+.WeCloudColor .display{
   display: flex;
   flex-direction: row;
   padding-top: 6rem;
@@ -913,36 +863,36 @@ section{
   padding-right: 5%;
 }
 
-.Color .display h5{
+.WeCloudColor .display h5{
   color: #ffffff;
 }
 
-.Purple{
+.WeCloudColor .Purple{
   display: flex;
   flex-direction: column;
   margin: auto 15%;
 }
 
-.Blue{
+.WeCloudColor .Blue{
   display: flex;
   flex-direction: column;
   margin: auto 15%;
 }
 
-.Pink{
+.WeCloudColor .Pink{
   display: flex;
   flex-direction: column;
   margin: auto 15%;
 }
 
-.display h5{
+.WeCloudColor .display h5{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
 }
 
 /*Branding-Typography*/
-.Typography{
+.WeCloudTypography{
   padding-top: 6rem;
   display: flex;
   flex-direction: row;
@@ -950,7 +900,7 @@ section{
   padding-right: 10%;
 }
 
-.Typography .left{
+.WeCloudTypography .left{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -958,13 +908,13 @@ section{
   margin-right: 4%;
 }
 
-.Typography .left img{
+.WeCloudTypography .left img{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Typography .left h3{
+.WeCloudTypography .left h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -972,7 +922,7 @@ section{
   color: #ffffff;
 }
 
-.Typography .left p{
+.WeCloudTypography .left p{
   color: #ffffff;
   text-align: center;
   width: 70%;
@@ -980,7 +930,7 @@ section{
   margin-right: auto;
 }
 
-.Typography .right{
+.WeCloudTypography .right{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -988,7 +938,7 @@ section{
   margin-right: 4%;
 }
 
-.Typography .right .Montserrat{
+.WeCloudTypography .right .Montserrat{
   color: #ffffff;
   font-family: Montserrat;
   font-size: 4rem;
@@ -998,7 +948,7 @@ section{
   margin-right: auto;
 }
 
-.Typography .right .OpenSans{
+.WeCloudTypography .right .OpenSans{
   color: #ffffff;
   font-family: Open Sans;
   font-size: 4rem;
@@ -1007,48 +957,48 @@ section{
   margin-right: auto;
 }
 
-.Typography .right .vl{
+.WeCloudTypography .right .vl{
   width: 10%;
 }
 
 /*Information Architecture*/
-.IA{
+.WeCloudIA{
   padding: 12rem 0;
 }
 
-.IA .top{
+.WeCloudIA .top{
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
 
-.IA .top .icon{
+.WeCloudIA .top .icon{
   width: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.IA .top h2{
+.WeCloudIA .top h2{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.IA .top .Line{
+.WeCloudIA .top .Line{
   margin-left: auto;
   margin-right: auto;
 }
 
 /*IA-User Story and User Flow*/
-.USUF{
+.WeCloudUSUF{
   display: flex;
   flex-direction: column;
   padding-top: 6rem;
 }
 
-.USUF .top{
+.WeCloudUSUF .top{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -1057,33 +1007,33 @@ section{
   padding-right: 10%;
 }
 
-.USUF .top .icon{
+.WeCloudUSUF .top .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.USUF .top h3{
+.WeCloudUSUF .top h3{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.USUF .top p{
+.WeCloudUSUF .top p{
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-.USUF .top h5{
+.WeCloudUSUF .top h5{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
 }
 
-.USUF .Line2{
+.WeCloudUSUF .Line2{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1091,7 +1041,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.USUF h6{
+.WeCloudUSUF h6{
   color: #8883bb;
   margin-left: auto;
   margin-right: auto;
@@ -1100,27 +1050,27 @@ section{
   font-weight: bold;
 }
 
-.USUF .image .mobile{
+.WeCloudUSUF .image .mobile{
   display: none;
 }
 
-.USUF .image{
+.WeCloudUSUF .image{
   padding-top: 3.5rem;
   width: 100%;
 }
 
-.USUF .image img{
+.WeCloudUSUF .image img{
   width: 100%;
 }
 
 /*IA-Paper Prototype*/
-.PP{
+.WeCloudPP{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
 }
 
-.PP .top{
+.WeCloudPP .top{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -1130,13 +1080,13 @@ section{
   padding-right: 10%;
 }
 
-.PP .top .icon{
+.WeCloudPP .top .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.PP .top h3{
+.WeCloudPP .top h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1144,40 +1094,42 @@ section{
   text-align: center;
 }
 
-.PP .top p{
+.WeCloudPP .top p{
   text-align: center;
   width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.PP .image{
+.WeCloudPP .image{
   display: flex;
   flex-direction: row;
   padding-top: 6rem;
 }
 
-.PP .image1{
+.WeCloudPP .image1{
   width: 50%;
 }
 
-.PP .image2{
+.WeCloudPP .image2{
   width: 50%;
 }
 
 /*IA-Wireframe*/
-.Wireframe{
+.WeCloudWireframe{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Wireframe .icon{
+.WeCloudWireframe .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Wireframe h3{
+.WeCloudWireframe h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1185,7 +1137,7 @@ section{
   text-align: center;
 }
 
-.Wireframe p{
+.WeCloudWireframe p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -1194,18 +1146,18 @@ section{
   padding-right: 10%;
 }
 
-.Wireframe .image{
+.WeCloudWireframe .image{
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Wireframe .image img{
+.WeCloudWireframe .image img{
   width: 100%;
 }
 
 /*IA-User Testing*/
-.UT{
+.WeCloudUT{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
@@ -1214,7 +1166,7 @@ section{
   padding-right: 0;
 }
 
-.UT .top{
+.WeCloudUT .top{
   padding-left: 10%;
   padding-right: 10%;
   margin-left: auto;
@@ -1224,13 +1176,13 @@ section{
   justify-content: center;
 }
 
-.UT .top .icon{
+.WeCloudUT .top .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.UT h3{
+.WeCloudUT h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1238,14 +1190,14 @@ section{
   text-align: center;
 }
 
-.UT .top p{
+.WeCloudUT .top p{
   text-align: center;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.UT .top .endingtext{
+.WeCloudUT .top .endingtext{
   text-align: center;
   width: 60%;
   margin-left: auto;
@@ -1253,7 +1205,7 @@ section{
   padding-top: 2.5rem;
 }
 
-.UT .Line2{
+.WeCloudUT .Line2{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1261,7 +1213,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.UT h6{
+.WeCloudUT h6{
   text-align: center;
   font-size: 2rem;
   color: #8883bb;
@@ -1270,21 +1222,21 @@ section{
   margin-right: auto;
 }
 
-.UT .image{
+.WeCloudUT .image{
   display: flex;
   flex-direction: row;
   margin-top: 6rem;
 }
 
-.UT .AM{
+.WeCloudUT .AM{
   width: 50%;
 }
 
-.UT .UTimage{
+.WeCloudUT .UTimage{
   width: 50%;
 }
 
-.UT .ending{
+.WeCloudUT .ending{
   padding-left: 10%;
   padding-right: 10%;
   margin-left: auto;
@@ -1294,20 +1246,20 @@ section{
   justify-content: center;
 }
 
-.UT .ending p{
+.WeCloudUT .ending p{
   text-align: center;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.UT .ending .ending1{
+.WeCloudUT .ending .ending1{
   padding-top: 6rem;
   padding-bottom: 2.5rem;
 }
 
 /*IA-AB Testing*/
-.ABTesting{
+.WeCloudABTesting{
   background-color: rgba(136, 131, 187, 0.35);
   display: flex;
   flex-direction: column;
@@ -1319,104 +1271,104 @@ section{
   padding-right: 10%;
 }
 
-.ABTesting .top{
+.WeCloudABTesting .top{
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
 
-.ABTesting .top .icon{
+.WeCloudABTesting .top .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.ABTesting .top h3{
+.WeCloudABTesting .top h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.ABTesting .top p{
+.WeCloudABTesting .top p{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   width: 60%;
 }
 
-.Test1{
+.WeCloudABTesting .Test1{
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;
 }
 
-.Test1 p{
+.WeCloudABTesting .Test1 p{
   margin-left: auto;
   margin-right: auto;
 }
 
-.Test1 img{
+.WeCloudABTesting .Test1 img{
   padding-top: 2.5rem;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.UT1{
+.WeCloudABTesting .UT1{
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.Test2{
+.WeCloudABTesting .Test2{
   padding-top: 6rem;
   justify-content: center;
 }
 
-.Test2 p{
+.WeCloudABTesting .Test2 p{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-.Test2 img{
+.WeCloudABTesting .Test2 img{
   padding-top: 2.5rem;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.UT2{
+.WeCloudABTesting .UT2{
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.Test3{
+.WeCloudABTesting .Test3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;
 }
 
-.Test3 p{
+.WeCloudABTesting .Test3 p{
   margin-left: auto;
   margin-right: auto;
 }
 
-.Test3 img{
+.WeCloudABTesting .Test3 img{
   padding-top: 2.5rem;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.UT3{
+.WeCloudABTesting .UT3{
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 /*Visual Design*/
-.VisualDesign{
+.WeCloudVisualDesign{
   display: flex;
   flex-direction: column;
   background-color: #202020;
@@ -1424,19 +1376,19 @@ section{
   padding-right: 0px;
 }
 
-.VisualDesign .top{
+.WeCloudVisualDesign .top{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.VisualDesign .top .icon{
+.WeCloudVisualDesign .top .icon{
   width: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.VisualDesign .top h2{
+.WeCloudVisualDesign .top h2{
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
@@ -1444,13 +1396,13 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.VisualDesign .top .Line{
+.WeCloudVisualDesign .top .Line{
   margin-left: auto;
   margin-right: auto;
 }
 
 /*VD-Onboarding*/
-.Onboarding{
+.WeCloudOnboarding{
   padding-top: 6rem;
   justify-content: center;
   display: flex;
@@ -1459,13 +1411,13 @@ section{
   padding-right: 10%;
 }
 
-.Onboarding .icon{
+.WeCloudOnboarding .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Onboarding h3{
+.WeCloudOnboarding h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1473,7 +1425,7 @@ section{
   color: #ffffff;
 }
 
-.Onboarding p{
+.WeCloudOnboarding p{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -1481,13 +1433,13 @@ section{
   width: 60%;
 }
 
-.onboardingdisplay{
+.WeCloudOnboarding .onboardingdisplay{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.onboardingdisplay .iOS{
+.WeCloudOnboarding .onboardingdisplay .iOS{
   display: flex;
   flex-direction: row;
   margin-left: auto;
@@ -1496,19 +1448,19 @@ section{
   padding-top: 6rem;
 }
 
-.onboardingdisplay .iOS img{
+.WeCloudOnboarding .onboardingdisplay .iOS img{
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.onboardingdisplay .Desktop{
+.WeCloudOnboarding .onboardingdisplay .Desktop{
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;
 }
 
 /*VD-Upload*/
-.Upload{
+.WeCloudUpload{
   padding-top: 15rem;
   display: flex;
   flex-direction: row;
@@ -1516,7 +1468,7 @@ section{
   padding-right: 10%;
 }
 
-.Upload .left{
+.WeCloudUpload .left{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1525,13 +1477,13 @@ section{
   width: 50%;
 }
 
-.Upload .left .icon{
+.WeCloudUpload .left .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Upload .left h3{
+.WeCloudUpload .left h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1539,7 +1491,7 @@ section{
   color: #ffffff;
 }
 
-.Upload .left p{
+.WeCloudUpload .left p{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1549,7 +1501,7 @@ section{
   width: 100%;
 }
 
-.Upload .image{
+.WeCloudUpload .image{
   margin-left: auto;
   margin-right: auto;
   padding-top: 0rem;
@@ -1557,7 +1509,7 @@ section{
 
 /*VD-Share Files*/
 /*VD-LookForaroommate*/
-.Share{
+.WeCloudShare{
   padding-top: 15rem;
   display: flex;
   flex-direction: row;
@@ -1565,13 +1517,13 @@ section{
   padding-right: 10%;
 }
 
-.Share .image{
+.WeCloudShare .image{
   margin-left: auto;
   margin-right: auto;
   padding-top: 0px;
 }
 
-.Share .right{
+.WeCloudShare .right{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1581,13 +1533,13 @@ section{
   padding-top: 0px;
 }
 
-.Share .right .icon{
+.WeCloudShare .right .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Share .right h3{
+.WeCloudShare .right h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1595,7 +1547,7 @@ section{
   color: #ffffff;
 }
 
-.Share .right p{
+.WeCloudShare .right p{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1606,7 +1558,7 @@ section{
 }
 
 /*VD-Organize Files*/
-.OrganizeFiles{
+.WeCloudOrganizeFiles{
   padding-top: 15rem;
   display: flex;
   flex-direction: row;
@@ -1614,7 +1566,7 @@ section{
   padding-right: 10%;
 }
 
-.OrganizeFiles .left{
+.WeCloudOrganizeFiles .left{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1624,13 +1576,13 @@ section{
   padding-top: 0px;
 }
 
-.OrganizeFiles .left .icon{
+.WeCloudOrganizeFiles .left .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.OrganizeFiles .left h3{
+.WeCloudOrganizeFiles .left h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1638,7 +1590,7 @@ section{
   color: #ffffff;
 }
 
-.OrganizeFiles .left p{
+.WeCloudOrganizeFiles .left p{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1648,14 +1600,14 @@ section{
   width: 100%;
 }
 
-.OrganizeFiles .image{
+.WeCloudOrganizeFiles .image{
   margin-left: auto;
   margin-right: auto;
   padding-top: 0px;
 }
 
 /*VD-Responsive Design*/
-.ResponsiveDesign{
+.WeCloudResponsiveDesign{
   padding-top: 15rem;
   display: flex;
   flex-direction: column;
@@ -1663,13 +1615,13 @@ section{
   padding-right: 10%;
 }
 
-.ResponsiveDesign .icon{
+.WeCloudResponsiveDesign .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.ResponsiveDesign h3{
+.WeCloudResponsiveDesign h3{
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
@@ -1677,64 +1629,64 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.ResponsiveDesign .image{
+.WeCloudResponsiveDesign .image{
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 6rem;
 }
 
-.ResponsiveDesign img{
+.WeCloudResponsiveDesign img{
   margin-left: 5%;
   margin-right: 5%;
 }
 
 /*Final*/
-.Final{
+.WeCloudFinal{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Final .icon{
+.WeCloudFinal .icon{
   width: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Final h2{
+.WeCloudFinal h2{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
 }
 
-.Final .Line{
+.WeCloudFinal .Line{
   margin-left: auto;
   margin-right: auto;
   margin-top: 2.5rem;
   width: 6.6rem;
 }
 
-.Final .text{
+.WeCloudFinal .text{
   padding-top: 2.5rem;
   display: flex;
   flex-direction: row;
 }
 
-.Final p{
+.WeCloudFinal p{
   margin-left: 5%;
   margin-right: 5%;
   text-align: left;
   width: 80%;
 }
 
-.Final a{
+.WeCloudFinal a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 6rem;
 }
 
-.Final h6{
+.WeCloudFinal h6{
   margin-left: auto;
   margin-right: auto;
   color: #8883BB;
@@ -1742,36 +1694,36 @@ section{
 }
 
 /*Next Project*/
-.NextProject{
+.WeCloudNextProject{
   background-color: #2ABECC;
   display: flex;
   flex-direction: column;
 }
 
-.NextProject .text{
+.WeCloudNextProject .text{
   display: flex;
   flex-direction: column;
   padding-bottom: 6rem;
 }
 
-.NextProject .text h2{
+.WeCloudNextProject .text h2{
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
 }
 
-.NextProject .text a{
+.WeCloudNextProject .text a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 2.5rem;
 }
 
-.NextProject .text h6{
+.WeCloudNextProject .text h6{
   color: #ffffff;
   text-decoration: underline;
 }
 
-.NextProject .demo{
+.WeCloudNextProject .demo{
   display: flex;
   flex-direction: row;
   margin-left: auto;
@@ -1779,17 +1731,17 @@ section{
   justify-content: center;
 }
 
-.NextProject .image1{
+.WeCloudNextProject .image1{
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.NextProject .image2{
+.WeCloudNextProject .image2{
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.NextProject .image3{
+.WeCloudNextProject .image3{
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -1921,17 +1873,17 @@ p{
 }
 
 /*Intro*/
-.Intro p{
+.WeCloudIntro p{
  width: 80%;
 }
 
 /*Solution*/
-.DS{
+.WeCloudDS{
   display: flex;
   flex-direction: column;
 }
 
-.leftDemo{
+.WeCloudDS .leftDemo{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1939,50 +1891,50 @@ p{
   margin-right: auto;
 }
 
-.iOSDemo{
+.WeCloudDS .iOSDemo{
   margin-left: auto;
   margin-right: auto;
 }
 
-.iOSDemo img{
+.WeCloudDS .iOSDemo img{
   width: 35%;
   margin-left: 3%;
   margin-right: 3%;
 }
 
-.DS .leftDemo .button{
+.WeCloudDS .leftDemo .button{
   width: 18rem;
   height: 3.5rem;
 }
 
-.rightDemo .button{
+.WeCloudDS .rightDemo .button{
   width: 22rem;
   height: 3.5rem;
   margin-top: 7.3rem;
 }
 
-.button h6{
+.WeCloudDS .button h6{
   font-size: 1.6rem;
   padding-top: 0.5rem;
   text-align: center;
 }
 
-.rightDemo{
+.WeCloudDS .rightDemo{
   width: 100%;
   padding-top: 6rem;
 }
 
-.rightDemo{
+.WeCloudDS .rightDemo{
   margin-left: auto;
   margin-right: auto;
 }
 
-.rightDemo img{
+.WeCloudDS .rightDemo img{
   width: 100%;
 }
 
 /*Design Spec*/
-.Designspec{
+.WeCloudDesignspec{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1992,21 +1944,21 @@ p{
   padding-right: 10%;
 }
 
-.DesignRoles{
+.WeCloudDesignspec .DesignRoles{
   width: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 0;
 }
 
-.Deliverables{
+.WeCloudDesignspec .Deliverables{
   width: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 3rem;
 }
 
-.Tools{
+.WeCloudDesignspec .Tools{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2014,36 +1966,36 @@ p{
 }
 
 /*Challeng and Solution*/
-.CS{
+.WeCloudCS{
   display: flex;
   flex-direction: column;
 }
 
-.Challenge{
+.WeCloudCS .Challenge{
   margin-left: 0px;
   margin-right: 0px;
 }
 
-.Solution{
+.WeCloudCS .Solution{
   margin-left: 0px;
   margin-right: 0px;
 }
 
-.CS p{
+.WeCloudCS p{
   width: 80%;
 }
 
 /*Transition*/
-.Transition img{
+.WeCloudTransition img{
   width: 300%;
 }
 
 /*Discovery-user survey*/
-.UserSurvey p{
+.WeCloudUserSurvey p{
   width: 80%;
 }
 
-.UserSurvey .Line2{
+.WeCloudUserSurvey .Line2{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -2051,45 +2003,45 @@ p{
   padding-bottom: 2.5rem;
 }
 
-.UserSurvey .question{
+.WeCloudUserSurvey .question{
   font-size: 1.7rem;
 }
 
-.UserSurvey ul li h6{
+.WeCloudUserSurvey ul li h6{
   font-size: 1.6rem;
 }
 
 /*Discover-Personas*/
-.top p{
+.WeCloudPersonas .top p{
   width: 80%;
 }
 
-.Pcontainer{
+.WeCloudPersonas .Pcontainer{
   display: flex;
   flex-direction: column;
   padding-top: 6rem;
 }
 
-.Persona2{
+.WeCloudPersonas .Persona2{
   padding-top: 6rem;
 }
 
-.Persona1 h4{
+.WeCloudPersonas .Persona1 h4{
   font-size: 1.8rem;
 }
 
-.Persona2 h4{
+.WeCloudPersonas .Persona2 h4{
   font-size: 1.8rem;
 }
 
-.Persona1 p{
+.WeCloudPersonas .Persona1 p{
   text-align: center;
   padding-left: 0;
   padding-right: 0;
   width: 80%;
 }
 
-.Persona2 p{
+.WeCloudPersonas .Persona2 p{
   text-align: center;
   padding-left: 0;
   padding-right: 0;
@@ -2097,30 +2049,30 @@ p{
 }
 
 /*Discovery-CA*/
-.Ctop p{
+.WeCloudCA .Ctop p{
   width: 80%;
 }
 
-.Google{
+.WeCloudCA .Google{
   width: 6rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.Dropbox{
+.WeCloudCA .Dropbox{
   width: 6rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.Egnyte{
+.WeCloudCA .Egnyte{
   width: 6rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
 /*Branding-Identity*/
-.Identity{
+.WeCloudIdentity{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
@@ -2128,7 +2080,7 @@ p{
   padding-right: 0;
 }
 
-.Identity .left{
+.WeCloudIdentity .left{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -2136,190 +2088,192 @@ p{
   padding-right: 10%;
 }
 
-.Identity .left p{
+.WeCloudIdentity .left p{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-.Identity .right{
+.WeCloudIdentity .right{
   padding-top: 6rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Identity .right img{
+.WeCloudIdentity .right img{
   width: 100%;
 }
 
 /*Branding-Logo*/
-.logotext p{
+.WeCloudLogoPart .logotext p{
   width: 80%;
 }
 
-.logoskecth{
+.WeCloudLogoPart .logoskecth{
   display: flex;
   flex-direction: column;
 }
 
-.logoskecth .image1{
+.WeCloudLogoPart .logoskecth .image1{
    width: 100%;
 }
 
-.logoskecth .image2{
+.WeCloudLogoPart .logoskecth .image2{
    width: 100%;
 }
 
 /*Branding-color*/
-.Color .display{
+.WeCloudColor .display{
   display: flex;
   flex-direction: column;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.Color .display h5{
+.WeCloudColor .display h5{
   padding-top: 2.5rem;
 }
 
-.Blue{
+.WeCloudColor .Blue{
   padding-top: 6rem;
 }
 
-.Pink{
+.WeCloudColor .Pink{
   padding-top: 6rem;
 }
 
 /*Branding-Typography*/
-.Typography{
+.WeCloudTypography{
   display: flex;
   flex-direction: column;
 }
 
-.Typography .left{
+.WeCloudTypography .left{
   margin-left: auto;
   margin-right: auto;
 }
 
-.Typography .left p{
+.WeCloudTypography .left p{
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
 
-.Typography .right{
+.WeCloudTypography .right{
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 /*IA-User Story and User Flow*/
-.USUF .top p{
+.WeCloudUSUF .top p{
   width: 80%;
 }
 
-.USUF .Line2{
+.WeCloudUSUF .Line2{
   width: 80%;
 }
 
-.USUF h6{
+.WeCloudUSUF h6{
   font-size: 1.6rem;
 }
 
-.USUF .image .desktop{
+.WeCloudUSUF .image .desktop{
   display: none;
 }
 
-.USUF .image .mobile{
+.WeCloudUSUF .image .mobile{
   display: block;
 }
 
-.USUF .image img{
+.WeCloudUSUF .image img{
   width: 100%;
 }
 
 /*IA-PP*/
-.PP .top p{
+.WeCloudPP .top p{
   width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.PP .image{
+.WeCloudPP .image{
   display: flex;
   flex-direction: column;
 }
 
-.PP .image1{
+.WeCloudPP .image1{
   width: 100%;
 }
 
-.PP .image2{
+.WeCloudPP .image2{
   width: 100%;
 }
 
 /*IA-Wireframe*/
-.Wireframe p{
+.WeCloudWireframe p{
   width: 80%;
 }
 
 /*IA-UT*/
-.UT .top p{
+.WeCloudUT .top p{
   width: 80%;
 }
 
-.UT .top .endingtext{
+.WeCloudUT .top .endingtext{
   width: 80%;
 }
 
-.UT .Line2{
+.WeCloudUT .Line2{
   width: 80%;
 }
 
-.UT h6{
+.WeCloudUT h6{
   font-size: 1.6rem;
 }
 
-.UT .image{
+.WeCloudUT .image{
   display: flex;
   flex-direction: column;
 }
 
-.UT .AM{
+.WeCloudUT .AM{
   width: 100%;
 }
 
-.UT .UTimage{
+.WeCloudUT .UTimage{
   width: 100%;
 }
 
-.UT .ending p{
+.WeCloudUT .ending p{
   width: 80%;
 }
 
-.UT .ending .ending1{
+.WeCloudUT .ending .ending1{
   padding-top: 6rem;
   padding-bottom: 2.5rem;
 }
 
 /*AB Testing*/
-.ABTesting .top p{
+.WeCloudABTesting .top p{
   width: 80%;
 }
 
-.UT1{
+.WeCloudABTesting .UT1{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.UT2{
+.WeCloudABTesting .UT2{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.UT3{
+.WeCloudABTesting .UT3{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2327,7 +2281,7 @@ p{
 
 /*Visual Design*/
 /*VD-Onboarding*/
-.onboardingdisplay .iOS{
+.WeCloudOnboarding .onboardingdisplay .iOS{
   display: flex;
   flex-direction: row;
   margin-left: auto;
@@ -2335,137 +2289,137 @@ p{
   justify-content: center;
 }
 
-.onboardingdisplay .iOS img{
+.WeCloudOnboarding .onboardingdisplay .iOS img{
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 6rem;
   width: 35%;
 }
 
-.onboardingdisplay .iOS{
+.WeCloudOnboarding .onboardingdisplay .iOS{
   padding-top: 0;
 }
 
-.onboardingdisplay .Desktop{
+.WeCloudOnboarding .onboardingdisplay .Desktop{
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;
 }
 
-.onboardingdisplay .Desktop img{
+.WeCloudOnboarding .onboardingdisplay .Desktop img{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 /*VD-Upload*/
-.Upload{
+.WeCloudUpload{
   padding-top: 0rem;
   display: flex;
   flex-direction: column;
 }
 
-.Upload .left{
+.WeCloudUpload .left{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   padding-top: 6rem;
 }
 
-.Upload .left p{
+.WeCloudUpload .left p{
   width: 80%;
   text-align: center;
 }
 
-.Upload .image{
+.WeCloudUpload .image{
   padding-top: 6rem;
 }
 
 /*VD-Share Files*/
-.Share{
+.WeCloudShare{
   padding-top: 0rem;
   display: flex;
   flex-direction: column-reverse;
 }
 
-.Share .image{
+.WeCloudShare .image{
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;;
 }
 
-.Share .image img{
+.WeCloudShare .image img{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Share .right{
+.WeCloudShare .right{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;
 }
 
-.Share .right p{
+.WeCloudShare .right p{
   width: 80%;
 }
 
 /*VD-Organize Files*/
-.OrganizeFiles{
+.WeCloudOrganizeFiles{
   padding-top: 0rem;
   display: flex;
   flex-direction: column;
 }
 
-.OrganizeFiles .left{
+.WeCloudOrganizeFiles .left{
   width: 100%;
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.OrganizeFiles .left p{
+.WeCloudOrganizeFiles .left p{
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
 
-.OrganizeFiles .image{
+.WeCloudOrganizeFiles .image{
   padding-top: 6rem;
 }
 
 /*VD-Rsponsive Design*/
-.ResponsiveDesign .image{
+.WeCloudResponsiveDesign .image{
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 0;
 }
 
-.ResponsiveDesign img{
+.WeCloudResponsiveDesign img{
   margin-left: auto;
   margin-right: auto;
   margin-top: 6rem;
 }
 
-.ResponsiveDesign .image1{
+.WeCloudResponsiveDesign .image1{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 /*Final*/
-.Final .Line{
+.WeCloudFinal .Line{
   margin-bottom: 2.5rem;
 }
 
-.Final .text{
+.WeCloudFinal .text{
   display: flex;
   flex-direction: column;
 }
 
-.Final p{
+.WeCloudFinal p{
   margin-top: 2.5rem;
   margin-left: auto;
   margin-right: auto;
@@ -2474,16 +2428,16 @@ p{
 }
 
 /*Next Project*/
-.NextProject .image1{
+.WeCloudNextProject .image1{
   display: none;
 }
 
-.NextProject .image2{
+.WeCloudNextProject .image2{
   margin-left: 3%;
   margin-right: 3%;
 }
 
-.NextProject .image3{
+.WeCloudNextProject .image3{
   margin-left: 3%;
   margin-right: 3%;
 }

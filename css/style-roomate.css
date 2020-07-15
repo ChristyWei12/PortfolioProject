@@ -1,55 +1,5 @@
 /*CSS file for Portfolio Project RooMate Page*/
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
 *, *:before, *:after{
   box-sizing: border-box;
   padding:0;
@@ -185,14 +135,14 @@ section{
 }
 
 /*hero section*/
-.hero{
+.RooMatehero{
   display: block;
   position: relative;
   top: 46px;
   padding: 15rem 10% 0 10%;
 }
 
-.herologo{
+.RooMatehero .herologo{
   width: 7rem;
   display: block;
   position: relative;
@@ -200,7 +150,7 @@ section{
   margin-right: auto;
 }
 
-.herotext{
+.RooMatehero .herotext{
   width: 100%;
   display: block;
   position: relative;
@@ -209,35 +159,35 @@ section{
   text-align: center;
 }
 
-.herotext h1{
+.RooMatehero .herotext h1{
   padding-top: 3rem;
 }
 
-.herotext h3{
+.RooMatehero .herotext h3{
   padding-top: 3rem;
 }
 
 /*what is roomate*/
-.Intro{
+.RooMateIntro{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Intro .icon{
+.RooMateIntro .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Intro h3{
+.RooMateIntro h3{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Intro p{
+.RooMateIntro p{
  text-align: center;
  margin-left: auto;
  margin-right: auto;
@@ -245,7 +195,7 @@ section{
 }
 
 /*Display Solution*/
-.DS{
+.RooMateDS{
   display: flex;
   flex-direction: column;
   background-color: #202020;
@@ -253,7 +203,7 @@ section{
   margin-right: auto;
 }
 
-.iOSDemo{
+.RooMateDS .iOSDemo{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -261,12 +211,12 @@ section{
   margin-right: 0px;
 }
 
-.DS img{
+.RooMateDS img{
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.DS .button{
+.RooMateDS .button{
   background-color: #2ABECC;
   width: 22rem;
   height: 4.2rem;
@@ -276,18 +226,18 @@ section{
   border-radius: 3px;
 }
 
-.button h6{
+.RooMateDS .button h6{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   text-align: center;
 }
 
-.button h6:hover{
+.RooMateDS .button h6:hover{
   color: #ffffff;
 }
 
 /*Design Spec*/
-.Designspec{
+.RooMateDesignspec{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -295,13 +245,13 @@ section{
   margin-right: auto;
 }
 
-.Designspec h5{
+.RooMateDesignspec h5{
   font-size: 2.4rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Designspec .Line{
+.RooMateDesignspec .Line{
   width: 6.6rem;
   margin-left: auto;
   margin-right: auto;
@@ -309,34 +259,34 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Designspec .icon{
+.RooMateDesignspec .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
 }
 
-.Designspec p{
+.RooMateDesignspec p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.DesignRoles{
+.RooMateDesignspec .DesignRoles{
   width: 30%;
   display: flex;
   flex-direction: column;
   padding-top: 0;
 }
 
-.Deliverables{
+.RooMateDesignspec .Deliverables{
   width: 30%;
   display: flex;
   flex-direction: column;
   padding-top: 0;
 }
 
-.Tools{
+.RooMateDesignspec .Tools{
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -344,34 +294,34 @@ section{
 }
 
 /*Challenge and Solution*/
-.CS{
+.RooMateCS{
   background-color: #202020;
   display: flex;
   flex-direction: row;
 }
 
-.Challenge{
+.RooMateCS .Challenge{
   display: flex;
   flex-direction: column;
   margin-left: 4%;
   margin-right: 4%;
 }
 
-.Solution{
+.RooMateCS .Solution{
   display: flex;
   flex-direction: column;
   margin-left: 4%;
   margin-right: 4%;
 }
 
-.CS .icon{
+.RooMateCS .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
 }
 
-.CS h3{
+.RooMateCS h3{
   color: #ffffff;
   text-align: center;
   margin-left: auto;
@@ -379,7 +329,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.CS p{
+.RooMateCS p{
   color: #ffffff;
   text-align: center;
   margin-left: auto;
@@ -388,19 +338,19 @@ section{
 }
 
 /*Transition Image*/
-.Transition{
+.RooMateTransition{
   display: block;
   position: relative;
   padding: 0;
 }
 
-.Transition img{
+.RooMateTransition img{
   width: 100%;
 }
 
 /*Discovery*/
 /*title part*/
-.Discovery{
+.RooMateDiscovery{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -408,7 +358,7 @@ section{
   margin-right: auto;
 }
 
-.Dtitle{
+.RooMateDiscovery .Dtitle{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -416,13 +366,13 @@ section{
   justify-content: center;
 }
 
-.Dtitle .icon{
+.RooMateDiscovery .Dtitle .icon{
   width: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Dtitle h2{
+.RooMateDiscovery .Dtitle h2{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -430,14 +380,14 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Dtitle .Line{
+.RooMateDiscovery .Dtitle .Line{
   width: 6.6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 /*Discovery-User Survey*/
-.UserSurvey{
+.RooMateUserSurvey{
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
@@ -445,13 +395,13 @@ section{
   flex-direction: column;
 }
 
-.UserSurvey .icon{
+.RooMateUserSurvey .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.UserSurvey h3{
+.RooMateUserSurvey h3{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -459,14 +409,14 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.UserSurvey p{
+.RooMateUserSurvey p{
   width: 60%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.UserSurvey .Line2{
+.RooMateUserSurvey .Line2{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -474,7 +424,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.UserSurvey .question{
+.RooMateUserSurvey .question{
   text-align: center;
   font-size: 2rem;
   color: #2ABECC;
@@ -483,33 +433,33 @@ section{
   margin-right: auto;
 }
 
-.UserSurvey ul{
+.RooMateUserSurvey ul{
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
 }
 
-.UserSurvey ul li{
+.RooMateUserSurvey ul li{
   padding-top: 2.5rem;
   display: flex;
   flex-direction: row;
 }
 
-.UserSurvey ul li h4{
+.RooMateUserSurvey ul li h4{
   text-align: right;
   width: 20%;
   margin-right: 10%;
 }
 
-.UserSurvey ul li h6{
+.RooMateUserSurvey ul li h6{
   text-align: left;
   font-size: 2.4rem;
   width: 60%;
 }
 
 /*Interview*/
-.Interview{
+.RooMateInterview{
   display: flex;
   flex-direction: column;
   padding-top: 6rem;
@@ -517,20 +467,20 @@ section{
   margin-right: auto;
 }
 
-.left{
+.RooMateInterview .left{
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
 
-.left img{
+.RooMateInterview .left img{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.left h3{
+.RooMateInterview .left h3{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -538,57 +488,57 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Interview .left p{
+.RooMateInterview .left p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
 }
 
-.right{
+.RooMateInterview .right{
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;
   width: 100%;
 }
 
-.right img{
+.RooMateInterview .right img{
   width: 100%;
 }
 
 /*Discovery-Personas*/
-.Personas{
+.RooMatePersonas{
   padding-top: 6rem;
 }
 
-.top{
+.RooMatePersonas .top{
    display: flex;
    flex-direction: column;
    margin-left: auto;
    margin-right: auto;
 }
 
-.Personas .icon{
+.RooMatePersonas .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Personas h3{
+.RooMatePersonas h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.top p{
+.RooMatePersonas .top p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
 }
 
-.Pcontainer{
+.RooMatePersonas .Pcontainer{
   display: flex;
   flex-direction: row;
   margin-left: auto;
@@ -596,7 +546,7 @@ section{
   padding-top: 6rem;
 }
 
-.Persona1{
+.RooMatePersonas .Persona1{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -605,7 +555,7 @@ section{
   width: 100%;
 }
 
-.Persona2{
+.RooMatePersonas .Persona2{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -614,7 +564,7 @@ section{
   width: 100%;
 }
 
-.Persona3{
+.RooMatePersonas .Persona3{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -623,25 +573,25 @@ section{
   width: 100%;
 }
 
-.Persona1 .profile{
+.RooMatePersonas .Persona1 .profile{
   width: 15rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Persona2 .profile{
+.RooMatePersonas .Persona2 .profile{
   width: 15rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Persona3 .profile{
+.RooMatePersonas .Persona3 .profile{
   width: 15rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Persona1 h4{
+.RooMatePersonas .Persona1 h4{
   font-size: 2.4rem;
   margin-left: auto;
   margin-right: auto;
@@ -649,7 +599,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Persona2 h4{
+.RooMatePersonas .Persona2 h4{
   font-size: 2.4rem;
   margin-left: auto;
   margin-right: auto;
@@ -657,7 +607,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Persona3 h4{
+.RooMatePersonas .Persona3 h4{
   font-size: 2.4rem;
   margin-left: auto;
   margin-right: auto;
@@ -665,28 +615,28 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Persona1 h5{
+.RooMatePersonas .Persona1 h5{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.Persona2 h5{
+.RooMatePersonas .Persona2 h5{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.Persona3 h5{
+.RooMatePersonas .Persona3 h5{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.Persona1 p{
+.RooMatePersonas .Persona1 p{
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -694,7 +644,7 @@ section{
   padding-right: 7%;
 }
 
-.Persona2 p{
+.RooMatePersonas .Persona2 p{
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -702,7 +652,7 @@ section{
   padding-right: 7%;
 }
 
-.Persona3 p{
+.RooMatePersonas .Persona3 p{
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -710,7 +660,7 @@ section{
   padding-right: 7%;
 }
 
-.Persona1 .mark{
+.RooMatePersonas .Persona1 .mark{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -718,7 +668,7 @@ section{
   padding-right: 7%;
 }
 
-.Persona2 .mark{
+.RooMatePersonas .Persona2 .mark{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -726,7 +676,7 @@ section{
   padding-right: 7%;
 }
 
-.Persona3 .mark{
+.RooMatePersonas .Persona3 .mark{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -735,11 +685,11 @@ section{
 }
 
 /*Competitor Analysis*/
-.CA{
+.RooMateCA{
   padding-top: 6rem;
 }
 
-.Ctop{
+.RooMateCA .Ctop{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -748,33 +698,33 @@ section{
   padding-right: 10%;
 }
 
-.Ctop img{
+.RooMateCA .Ctop img{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Ctop h3{
+.RooMateCA .Ctop h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.Ctop p{
+.RooMateCA .Ctop p{
   margin-left: auto;
   margin-right: auto;
   width: 60%;
   text-align: center;
 }
 
-.Brand{
+.RooMateCA .Brand{
   padding-top: 6rem;
   display: flex;
   flex-direction: row;
 }
 
-.RR{
+.RooMateCA .RR{
   display: flex;
   flex-direction: column;
   margin-left: 4%;
@@ -782,7 +732,7 @@ section{
   width: 100%;
 }
 
-.logoset{
+.RooMateCA .logoset{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -791,25 +741,25 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Roomi{
+.RooMateCA .Roomi{
   width: 4.5rem;
   margin-left: 20%;
   margin-right: 20%;
 }
 
-.RoomEasy{
+.RooMateCA .RoomEasy{
   width: 4.5rem;
   margin-left: 20%;
   margin-right: 20%;
 }
 
-.RR p{
+.RooMateCA .RR p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Airbnb{
+.RooMateCA .Airbnb{
   display: flex;
   flex-direction: column;
   margin-left: 4%;
@@ -817,38 +767,38 @@ section{
   width: 100%;
 }
 
-.Airbnb img{
+.RooMateCA .Airbnb img{
    margin-left: auto;
    margin-right: auto;
    width: 4.5rem;
    padding-bottom: 2.5rem;
 }
 
-.Airbnb p{
+.RooMateCA .Airbnb p{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 /*Branding*/
-.Branding{
+.RooMateBranding{
   background-color: #202020;
   padding-left: 0;
   padding-right: 0;
 }
 
-.Btop{
+.RooMateBranding .Btop{
   display: flex;
   flex-direction: column;
 }
 
-.Btop .icon{
+.RooMateBranding .Btop .icon{
   width: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Btop h2{
+.RooMateBranding .Btop h2{
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
@@ -856,32 +806,32 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.Btop .Line{
+.RooMateBranding .Btop .Line{
   margin-left: auto;
   margin-right: auto;
 }
 
 /*Branding-Identity*/
-.Identity{
+.RooMateIdentity{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
 }
 
-.Identity .part1{
+.RooMateIdentity .part1{
   display: flex;
   flex-direction: column;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.Identity .part1 .icon{
+.RooMateIdentity .part1 .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Identity .part1 h3{
+.RooMateIdentity .part1 h3{
   width: 100%;
   text-align: center;
   margin-left: auto;
@@ -891,7 +841,7 @@ section{
   color: #ffffff;
 }
 
-.Identity .part1 p{
+.RooMateIdentity .part1 p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -899,7 +849,7 @@ section{
   width: 60%;
 }
 
-.part2{
+.RooMateIdentity .part2{
   color: #ffffff;
   display: flex;
   flex-direction:column;
@@ -907,14 +857,14 @@ section{
   margin-right: auto;
 }
 
-.part2 li{
+.RooMateIdentity .part2 li{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   color: #2ABECC;
 }
 
-.last{
+.RooMateIdentity .last{
   margin-top: 2.5rem;
   margin-left: auto;
   margin-right: auto;
@@ -924,7 +874,7 @@ section{
   padding-right: 10%;
 }
 
-.last p{
+.RooMateIdentity .last p{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -932,26 +882,26 @@ section{
 }
 
 /*Branding-logo*/
-.LogoPart{
+.RooMateLogoPart{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
 }
 
-.logotext{
+.RooMateLogoPart .logotext{
   display: flex;
   flex-direction: column;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.logotext .icon{
+.RooMateLogoPart .logotext .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.logotext h3{
+.RooMateLogoPart .logotext h3{
   width: 100%;
   text-align: center;
   margin-left: auto;
@@ -961,7 +911,7 @@ section{
   color: #ffffff;
 }
 
-.logotext p{
+.RooMateLogoPart .logotext p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -969,22 +919,22 @@ section{
   width: 60%;
 }
 
-.logoskecth{
+.RooMateLogoPart .logoskecth{
   padding-top:6rem;
   display: flex;
   flex-direction: row;
 }
 
-.logoskecth .image1{
+.RooMateLogoPart .logoskecth .image1{
    width: 50%;
 }
 
-.logoskecth .image2{
+.RooMateLogoPart .logoskecth .image2{
    width: 50%;
 }
 
 /*Branding-color*/
-.Color{
+.RooMateColor{
   display: flex;
   flex-direction: column;
   padding-top: 6rem;
@@ -992,25 +942,25 @@ section{
   margin-right: auto;
 }
 
-.Color .text{
+.RooMateColor .text{
   display: flex;
   flex-direction: column;
 }
 
-.Color .text img{
+.RooMateColor .text img{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Color .text h3{
+.RooMateColor .text h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   color: #ffffff;
 }
 
-.Color .display{
+.RooMateColor .display{
   display: flex;
   flex-direction: row;
   padding-top: 6rem;
@@ -1021,36 +971,36 @@ section{
   padding-right: 5%;
 }
 
-.Color .display h5{
+.RooMateColor .display h5{
   color: #ffffff;
 }
 
-.Blue{
+.RooMateColor .Blue{
   display: flex;
   flex-direction: column;
   margin: auto 15%;
 }
 
-.Black{
+.RooMateColor .Black{
   display: flex;
   flex-direction: column;
   margin: auto 15%;
 }
 
-.White{
+.RooMateColor .White{
   display: flex;
   flex-direction: column;
   margin: auto 15%;
 }
 
-.display h5{
+.RooMateColor .display h5{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
 }
 
 /*Branding-Typography*/
-.Typography{
+.RooMateTypography{
   padding-top: 6rem;
   display: flex;
   flex-direction: row;
@@ -1058,7 +1008,7 @@ section{
   padding-right: 10%;
 }
 
-.Typography .left{
+.RooMateTypography .left{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1066,13 +1016,13 @@ section{
   margin-right: 4%;
 }
 
-.Typography .left img{
+.RooMateTypography .left img{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Typography .left h3{
+.RooMateTypography .left h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1080,7 +1030,7 @@ section{
   color: #ffffff;
 }
 
-.Typography .left p{
+.RooMateTypography .left p{
   color: #ffffff;
   text-align: center;
   width: 70%;
@@ -1088,7 +1038,7 @@ section{
   margin-right: auto;
 }
 
-.Typography .right{
+.RooMateTypography .right{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1096,7 +1046,7 @@ section{
   margin-right: 4%;
 }
 
-.Typography .right .Quicksand{
+.RooMateTypography .right .Quicksand{
   color: #ffffff;
   font-family: Quicksand;
   font-size: 4rem;
@@ -1106,7 +1056,7 @@ section{
   margin-right: auto;
 }
 
-.Typography .right .Karla{
+.RooMateTypography .right .Karla{
   color: #ffffff;
   font-family: Karla;
   font-size: 4rem;
@@ -1115,42 +1065,42 @@ section{
   margin-right: auto;
 }
 
-.Typography .right .vl{
+.RooMateTypography .right .vl{
   width: 10%;
 }
 
 /*Information Architecture*/
-.IA{
+.RooMateIA{
   padding: 12rem 0;
 }
 
-.IA .top{
+.RooMateIA .top{
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
 
-.IA .top .icon{
+.RooMateIA .top .icon{
   width: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.IA .top h2{
+.RooMateIA .top h2{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.IA .top .Line{
+.RooMateIA .top .Line{
   margin-left: auto;
   margin-right: auto;
 }
 
 /*User Story and User Flow*/
-.USUF{
+.RooMateUSUF{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
@@ -1158,7 +1108,7 @@ section{
   margin-right: auto;
 }
 
-.USUF .left{
+.RooMateUSUF .left{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1166,76 +1116,84 @@ section{
   padding-right: 10%;
 }
 
-.USUF .left .icon{
+.RooMateUSUF .left .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.USUF .left h3{
+.RooMateUSUF .left h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.USUF .left p{
+.RooMateUSUF .left p{
   text-align: center;
   width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.USUF .image{
+.RooMateUSUF .image{
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.USUF .image img{
+.RooMateUSUF .image img{
   width: 100%;
   object-fit: fill;
   object-position: center;
 }
 
-.map img{
+.RooMateUSUF .map img{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 /*IA-sitemap*/
-.Sitemap{
+.RooMateSitemap{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Sitemap .icon{
+.RooMateSitemap .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Sitemap h3{
+.RooMateSitemap h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 6rem;
 }
 
-.Sitemap .map{
+.RooMateSitemap .map{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.RooMateSitemap .map img{
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 /*IA-Paper Prototype*/
-.PP{
+.RooMatePP{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
 }
 
-.PP .top{
+.RooMatePP .top{
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -1245,13 +1203,13 @@ section{
   padding-right: 10%;
 }
 
-.PP .top .icon{
+.RooMatePP .top .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.PP .top h3{
+.RooMatePP .top h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1259,40 +1217,42 @@ section{
   text-align: center;
 }
 
-.PP .top p{
+.RooMatePP .top p{
   text-align: center;
   width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.PP .image{
+.RooMatePP .image{
   display: flex;
   flex-direction: row;
   padding-top: 6rem;
 }
 
-.PP .image1{
+.RooMatePP .image1{
   width: 50%;
 }
 
-.PP .image2{
+.RooMatePP .image2{
   width: 50%;
 }
 
 /*IA-Wireframe*/
-.Wireframe{
+.RooMateWireframe{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Wireframe .icon{
+.RooMateWireframe .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Wireframe h3{
+.RooMateWireframe h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1300,7 +1260,7 @@ section{
   text-align: center;
 }
 
-.Wireframe p{
+.RooMateWireframe p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -1309,18 +1269,18 @@ section{
   padding-right: 10%;
 }
 
-.Wireframe .image{
+.RooMateWireframe .image{
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Wireframe .image img{
+.RooMateWireframe .image img{
   width: 100%;
 }
 
 /*IA-User Testing*/
-.UT{
+.RooMateUT{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
@@ -1329,13 +1289,13 @@ section{
   padding-right: 10%;
 }
 
-.UT .icon{
+.RooMateUT .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.UT h3{
+.RooMateUT h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1343,14 +1303,14 @@ section{
   text-align: center;
 }
 
-.UT p{
+.RooMateUT p{
   text-align: center;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.UT .Line2{
+.RooMateUT .Line2{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1358,7 +1318,7 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.UT h6{
+.RooMateUT h6{
   text-align: center;
   font-size: 2rem;
   color: #2ABECC;
@@ -1367,7 +1327,7 @@ section{
   margin-right: auto;
 }
 
-.UT .button{
+.RooMateUT .button{
   background-color: #2ABECC;
   width: 22rem;
   height: 4.2rem;
@@ -1378,7 +1338,7 @@ section{
   border-radius: 3px;
 }
 
-.UT .button h6{
+.RooMateUT .button h6{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   text-align: center;
@@ -1386,50 +1346,50 @@ section{
   font-weight: normal;
   }
 
-.UT .button h6:hover{
+.RooMateUT .button h6:hover{
   color: #ffffff;
 }
 
-.feedback{
+.RooMateUT .feedback{
   display: flex;
   flex-direction: row;
   padding-top: 6rem;
 }
 
-.signup{
+.RooMateUT .signup{
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.signup h2{
+.RooMateUT .signup h2{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
 }
 
-.signup p{
+.RooMateUT .signup p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
 
-.search{
+.RooMateUT .search{
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.search h2{
+.RooMateUT .search h2{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
 }
 
-.search p{
+.RooMateUT .search p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -1437,7 +1397,7 @@ section{
 }
 
 /*Visual Design*/
-.VisualDesign{
+.RooMateVisualDesign{
   display: flex;
   flex-direction: column;
   background-color: #202020;
@@ -1445,19 +1405,19 @@ section{
   padding-right: 0px;
 }
 
-.VisualDesign .top{
+.RooMateVisualDesign .top{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.VisualDesign .top .icon{
+.RooMateVisualDesign .top .icon{
   width: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.VisualDesign .top h2{
+.RooMateVisualDesign .top h2{
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
@@ -1465,13 +1425,13 @@ section{
   padding-bottom: 2.5rem;
 }
 
-.VisualDesign .top .Line{
+.RooMateVisualDesign .top .Line{
   margin-left: auto;
   margin-right: auto;
 }
 
 /*VD-Onboarding*/
-.Onboarding{
+.RooMateOnboarding{
   padding-top: 6rem;
   justify-content: center;
   display: flex;
@@ -1480,13 +1440,13 @@ section{
   padding-right: 10%;
 }
 
-.Onboarding .icon{
+.RooMateOnboarding .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Onboarding h3{
+.RooMateOnboarding h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1494,7 +1454,7 @@ section{
   color: #ffffff;
 }
 
-.Onboarding p{
+.RooMateOnboarding p{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -1502,30 +1462,30 @@ section{
   width: 60%;
 }
 
-.onboardingdisplay{
+.RooMateOnboarding .onboardingdisplay{
   display: flex;
   flex-direction: row;
   padding-top: 6rem;
   justify-content: center;
 }
 
-.onboardingdisplay .image1{
+.RooMateOnboarding .onboardingdisplay .image1{
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.onboardingdisplay .image2{
+.RooMateOnboarding .onboardingdisplay .image2{
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.onboardingdisplay .image3{
+.RooMateOnboarding .onboardingdisplay .image3{
   margin-left: 10%;
   margin-right: 10%;
 }
 
 /*VD-Lookforaroom*/
-.Lookforaroom{
+.RooMateLookforaroom{
   padding-top: 15rem;
   display: flex;
   flex-direction: row;
@@ -1533,7 +1493,7 @@ section{
   padding-right: 10%;
 }
 
-.Lookforaroom .left{
+.RooMateLookforaroom .left{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1542,13 +1502,13 @@ section{
   width: 50%;
 }
 
-.Lookforaroom .left .icon{
+.RooMateLookforaroom .left .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Lookforaroom .left h3{
+.RooMateLookforaroom .left h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1556,7 +1516,7 @@ section{
   color: #ffffff;
 }
 
-.Lookforaroom .left p{
+.RooMateLookforaroom .left p{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1566,14 +1526,14 @@ section{
   width: 100%;
 }
 
-.Lookforaroom .image{
+.RooMateLookforaroom .image{
   margin-left: auto;
   margin-right: auto;
   padding-top: 0rem;
 }
 
 /*VD-LookForaroommate*/
-.LookForaroommate{
+.RooMateLookForaroommate{
   padding-top: 15rem;
   display: flex;
   flex-direction: row;
@@ -1581,13 +1541,13 @@ section{
   padding-right: 10%;
 }
 
-.LookForaroommate .image{
+.RooMateLookForaroommate .image{
   margin-left: auto;
   margin-right: auto;
   padding-top: 0px;
 }
 
-.LookForaroommate .right{
+.RooMateLookForaroommate .right{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1597,13 +1557,13 @@ section{
   padding-top: 0px;
 }
 
-.LookForaroommate .right .icon{
+.RooMateLookForaroommate .right .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.LookForaroommate .right h3{
+.RooMateLookForaroommate .right h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1611,7 +1571,7 @@ section{
   color: #ffffff;
 }
 
-.LookForaroommate .right p{
+.RooMateLookForaroommate .right p{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1622,7 +1582,7 @@ section{
 }
 
 /*VD-post*/
-.Post{
+.RooMatePost{
   padding-top: 15rem;
   display: flex;
   flex-direction: row;
@@ -1630,7 +1590,7 @@ section{
   padding-right: 10%;
 }
 
-.Post .left{
+.RooMatePost .left{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1640,13 +1600,13 @@ section{
   padding-top: 0px;
 }
 
-.Post .left .icon{
+.RooMatePost .left .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Post .left h3{
+.RooMatePost .left h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1654,7 +1614,7 @@ section{
   color: #ffffff;
 }
 
-.Post .left p{
+.RooMatePost .left p{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1664,14 +1624,14 @@ section{
   width: 100%;
 }
 
-.Post .image{
+.RooMatePost .image{
   margin-left: auto;
   margin-right: auto;
   padding-top: 0px;
 }
 
 /*VD-Chat*/
-.Chat{
+.RooMateChat{
   padding-top: 15rem;
   display: flex;
   flex-direction: row;
@@ -1679,13 +1639,13 @@ section{
   padding-right: 10%;
 }
 
-.Chat .image{
+.RooMateChat .image{
   margin-left: auto;
   margin-right: auto;
   padding-top: 0px;
 }
 
-.Chat .right{
+.RooMateChat .right{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1695,13 +1655,13 @@ section{
   width: 50%;
 }
 
-.Chat .right .icon{
+.RooMateChat .right .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Chat .right h3{
+.RooMateChat .right h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1709,7 +1669,7 @@ section{
   color: #ffffff;
 }
 
-.Chat .right p{
+.RooMateChat .right p{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1720,17 +1680,17 @@ section{
 }
 
 /*VD-Prototype*/
-.VisualDesign .prototype{
+.RooMateVisualDesign .RooMateprototype{
   padding-top: 12rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.VisualDesign .prototype p{
+.RooMateVisualDesign .RooMateprototype p{
   color: #ffffff;
 }
 
-.VisualDesign .button{
+.RooMateVisualDesign .button{
   background-color: #2ABECC;
   width: 22rem;
   height: 4.2rem;
@@ -1740,37 +1700,37 @@ section{
   border-radius: 3px;
 }
 
-.button h6{
+.RooMateVisualDesign .button h6{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   text-align: center;
 }
 
-.button h6:hover{
+.RooMateVisualDesign .button h6:hover{
   color: #ffffff;
 }
 
 
 /*Final*/
-.Final{
+.RooMateFinal{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Final .icon{
+.RooMateFinal .icon{
   width: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Final h2{
+.RooMateFinal h2{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
 }
 
-.Final .Line{
+.RooMateFinal .Line{
   margin-left: auto;
   margin-right: auto;
   margin-top: 2.5rem;
@@ -1778,20 +1738,20 @@ section{
   width: 6.6rem;
 }
 
-.Final p{
+.RooMateFinal p{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   width: 60%;
 }
 
-.Final a{
+.RooMateFinal a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 6rem;
 }
 
-.Final h6{
+.RooMateFinal h6{
   margin-left: auto;
   margin-right: auto;
   color: #2ABECC;
@@ -1799,36 +1759,36 @@ section{
 }
 
 /*Next Project*/
-.NextProject{
+.RooMateNextProject{
   background-color: #8883BB;
   display: flex;
   flex-direction: column;
 }
 
-.NextProject .text{
+.RooMateNextProject .text{
   display: flex;
   flex-direction: column;
   padding-bottom: 6rem;
 }
 
-.NextProject .text h2{
+.RooMateNextProject .text h2{
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
 }
 
-.NextProject .text a{
+.RooMateNextProject .text a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 2.5rem;
 }
 
-.NextProject .text h6{
+.RooMateNextProject .text h6{
   color: #ffffff;
   text-decoration: underline;
 }
 
-.NextProject .demo{
+.RooMateNextProject .demo{
   display: flex;
   flex-direction: row;
   margin-left: auto;
@@ -1836,12 +1796,12 @@ section{
   justify-content: center;
 }
 
-.NextProject .desktop{
+.RooMateNextProject .desktop{
   margin-left: 8%;
   margin-right: 8%;
 }
 
-.NextProject .mobile{
+.RooMateNextProject .mobile{
   margin-left: 8%;
   margin-right: 8%;
 }
@@ -1973,30 +1933,30 @@ p{
 }
 
 /*Intro*/
-.Intro p{
+.RooMateIntro p{
  width: 80%;
 }
 
 /*Solution*/
-.DS img{
+.RooMateDS img{
   width: 35%;
   margin-left: 2%;
   margin-right: 2%;
 }
 
-.DS .button{
+.RooMateDS .button{
   width: 18rem;
   height: 3.5rem;
 }
 
-.DS .button h6{
+.RooMateDS .button h6{
   font-size: 1.6rem;
   padding-top: 0.5rem;
   text-align: center;
 }
 
 /*Design Spec*/
-.Designspec{
+.RooMateDesignspec{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -2006,21 +1966,21 @@ p{
   padding-right: 10%;
 }
 
-.DesignRoles{
+.RooMateDesignspec .DesignRoles{
   width: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 0;
 }
 
-.Deliverables{
+.RooMateDesignspec .Deliverables{
   width: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 3rem;
 }
 
-.Tools{
+.RooMateDesignspec .Tools{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2028,31 +1988,36 @@ p{
 }
 
 /*Challeng and Solution*/
-.CS{
+.RooMateCS{
   display: flex;
   flex-direction: column;
 }
 
-.Challenge{
+.RooMateCS .Challenge{
   margin-left: 0px;
   margin-right: 0px;
 }
 
-.Solution{
+.RooMateCS .Solution{
   margin-left: 0px;
   margin-right: 0px;
 }
 
-.CS p{
+.RooMateCS p{
   width: 80%;
+}
+
+/*Transition*/
+.RooMateTransition img{
+	width: 200%;
 }
 
 /*Discovery-user survey*/
-.UserSurvey p{
+.RooMateUserSurvey p{
   width: 80%;
 }
 
-.UserSurvey .Line2{
+.RooMateUserSurvey .Line2{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -2060,65 +2025,69 @@ p{
   padding-bottom: 2.5rem;
 }
 
-.UserSurvey .question{
+.RooMateUserSurvey .question{
   font-size: 1.7rem;
 }
 
-.UserSurvey ul li h6{
+.RooMateUserSurvey ul li h6{
   font-size: 1.6rem;
 }
 
 /*Discovery-Interview*/
-.Interview .left p{
+.RooMateInterview .left p{
   width: 80%;
+}
+
+.RooMateInterview .right img{
+  width: 100%;
 }
 
 /*Discover-Personas*/
-.top p{
+.RooMatePersonas .top p{
   width: 80%;
 }
 
-.Pcontainer{
+.RooMatePersonas .Pcontainer{
   display: flex;
   flex-direction: column;
   padding-top: 6rem;
 }
 
-.Persona2{
+.RooMatePersonas .Persona2{
   padding-top: 6rem;
 }
 
-.Persona3{
+.RooMatePersonas .Persona3{
   padding-top: 6rem;
 }
 
-.Persona1 h4{
+.RooMatePersonas .Persona1 h4{
   font-size: 1.8rem;
 }
 
-.Persona2 h4{
+.RooMatePersonas .Persona2 h4{
   font-size: 1.8rem;
 }
 
-.Persona3 h4{
+.RooMatePersonas .Persona3 h4{
   font-size: 1.8rem;
 }
 
-.Persona1 p{
+.RooMatePersonas .Persona1 p{
   text-align: center;
   padding-left: 0;
   padding-right: 0;
   width: 80%;
 }
 
-.Persona2 p{
+.RooMatePersonas .Persona2 p{
   text-align: center;
   padding-left: 0;
   padding-right: 0;
   width: 80%;
 }
 
-.Persona3 p{
+.RooMatePersonas .Persona3 p{
   text-align: center;
   padding-left: 0;
   padding-right: 0;
@@ -2126,323 +2095,324 @@ p{
 }
 
 /*Discovery-CA*/
-.Ctop p{
+.RooMateCA .Ctop p{
   width: 80%;
 }
 
-.Brand{
+.RooMateCA .Brand{
   display: flex;
   flex-direction: column;
 }
 
-.RR{
+.RooMateCA .RR{
   margin-left: auto;
   margin-right: auto;
 }
 
-.RR p{
+.RooMateCA .RR p{
   width: 80%;
 }
 
-.Airbnb{
+.RooMateCA .Airbnb{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
 }
 
-.Airbnb p{
+.RooMateCA .Airbnb p{
   width: 80%;
 }
 
 /*Branding*/
 /*Branding-Identity*/
-.Identity .part1 p{
+.RooMateIdentity .part1 p{
   width: 80%;
 }
 
-.part2{
+.RooMateIdentity .part2{
   padding-left: 10%;
   padding-right: 10%;
   text-align: center;
 }
 
-.last p{
+.RooMateIdentity .last p{
   width: 80%;
 }
 
 /*Branding-Logo*/
-.logotext p{
+.RooMateLogoPart .logotext p{
   width: 80%;
 }
 
-.logoskecth{
+.RooMateLogoPart .logoskecth{
   display: flex;
   flex-direction: column;
 }
 
-.logoskecth .image1{
+.RooMateLogoPart .logoskecth .image1{
    width: 100%;
 }
 
-.logoskecth .image2{
+.RooMateLogoPart .logoskecth .image2{
    width: 100%;
 }
 
 /*Branding-color*/
-.Color .display{
+.RooMateColor .display{
   display: flex;
   flex-direction: column;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.Color .display h5{
+.RooMateColor .display h5{
   padding-top: 2.5rem;
 }
 
-.Black{
+.RooMateColor .Black{
   padding-top: 6rem;
 }
 
-.White{
+.RooMateColor .White{
   padding-top: 6rem;
 }
 
 /*Branding-Typography*/
-.Typography{
+.RooMateTypography{
   display: flex;
   flex-direction: column;
 }
 
-.Typography .left{
+.RooMateTypography .left{
   margin-left: auto;
   margin-right: auto;
 }
 
-.Typography .left p{
+.RooMateTypography .left p{
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
 
-.Typography .right{
+.RooMateTypography .right{
   margin-left: auto;
   margin-right: auto;
+	padding-top: 6rem;
 }
 
 /*Information Architecture*/
 /*IA-USUF*/
-.USUF .left p{
+.RooMateUSUF .left p{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
 /*IA-PP*/
-.PP .top p{
+.RooMatePP .top p{
   width: 80%;
 }
 
-.PP .image{
+.RooMatePP .image{
   display: flex;
   flex-direction: column;
 }
 
-.PP .image1{
+.RooMatePP .image1{
   width: 100%;
 }
 
-.PP .image2{
+.RooMatePP .image2{
   width: 100%;
 }
 
 /*IA-Wireframe*/
-.Wireframe p{
+.RooMateWireframe p{
   width: 80%;
 }
 
 /*IA-User Testing*/
-.UT p{
+.RooMateUT p{
   width: 80%;
 }
 
-.UT .Line2{
+.RooMateUT .Line2{
   width: 80%;
 }
 
-.UT h6{
+.RooMateUT h6{
   font-size: 1.6rem;
   color: #2ABECC;
 }
 
-.feedback{
+.RooMateUT .feedback{
   display: flex;
   flex-direction: column;
 }
 
-.signup{
+.RooMateUT .signup{
   width: 100%;
 }
 
-.signup p{
+.RooMateUT .signup p{
   width: 80%;
 }
 
-.search{
+.RooMateUT .search{
   width: 100%;
   padding-top: 6rem;
 }
 
-.search p{
+.RooMateUT .search p{
   width: 80%;
 }
 
-.UT .button{
+.RooMateUT .button{
   width: 18rem;
   height: 3.5rem;
 }
 
-.UT .button h6{
+.RooMateUT .button h6{
   font-size: 1.6rem;
   padding-top: 0.5rem;
   text-align: center;
 }
 
 /*VD-Pnboarding*/
-.Onboarding p{
+.RooMateOnboarding p{
   width: 80%;
 }
 
-.onboardingdisplay{
+.RooMateOnboarding .onboardingdisplay{
   display: flex;
   flex-direction: column;
 }
 
-.onboardingdisplay .image1{
+.RooMateOnboarding .onboardingdisplay .image1{
   display: none;
 }
 
-.onboardingdisplay .image2{
+.RooMateOnboarding .onboardingdisplay .image2{
   padding-top: 0rem;
 }
 
-.onboardingdisplay .image3{
+.RooMateOnboarding .onboardingdisplay .image3{
   display: none;
 }
 
   /*VD-Lookforaroom*/
-.Lookforaroom{
+.RooMateLookforaroom{
   padding-top: 0rem;
   display: flex;
   flex-direction: column;
 }
 
-.Lookforaroom .left{
+.RooMateLookforaroom .left{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   padding-top: 6rem;
 }
 
-.Lookforaroom .left p{
+.RooMateLookforaroom .left p{
   width: 80%;
   text-align: center;
 }
 
-.Lookforaroom .image{
+.RooMateLookforaroom .image{
   padding-top: 6rem;
 }
 
 /*VD-LookForaroommate*/
-.LookForaroommate{
+.RooMateLookForaroommate{
   padding-top: 0rem;
   display: flex;
   flex-direction: column-reverse;
 }
 
-.LookForaroommate .image{
+.RooMateLookForaroommate .image{
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;;
 }
 
-.LookForaroommate .right{
+.RooMateLookForaroommate .right{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;
 }
 
-.LookForaroommate .right p{
+.RooMateLookForaroommate .right p{
   width: 80%;
 }
 
 /*VD-post*/
-.Post{
+.RooMatePost{
   padding-top: 0rem;
   display: flex;
   flex-direction: column;
 }
 
-.Post .left{
+.RooMatePost .left{
   width: 100%;
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Post .left p{
+.RooMatePost .left p{
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
 
-.Post .image{
+.RooMatePost .image{
   padding-top: 6rem;
 }
 
 /*VD-Chat*/
-.Chat{
+.RooMateChat{
   padding-top: 0rem;
   display: flex;
   flex-direction: column-reverse;
 }
 
-.Chat .image{
+.RooMateChat .image{
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Chat .right{
+.RooMateChat .right{
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
-.Chat .right p{
+.RooMateChat .right p{
   width: 80%;
 }
 
-.prototype .button h6{
+.RooMateprototype .button h6{
   font-size: 1.6rem;
   padding-top: 0.5rem;
   text-align: center;
 }
 
-.prototype .button{
+.RooMateprototype .button{
   width: 18rem;
   height: 3.5rem;
 }
 
 /*Final*/
-.Final p{
+.RooMateFinal p{
   width: 80%;
 }
 
 /*Next Project*/
-.NextProject .demo{
+.RooMateNextProject .demo{
   display: flex;
   flex-direction: row;
   margin-left: auto;
@@ -2450,12 +2420,12 @@ p{
   justify-content: center;
 }
 
-.NextProject .desktop{
+.RooMateNextProject .desktop{
   margin-left: auto;
   margin-right: auto;
 }
 
-.NextProject .mobile{
+.RooMateNextProject .mobile{
   display: none;
 }
 
