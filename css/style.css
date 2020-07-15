@@ -2754,6 +2754,7 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+	overflow-x: hidden;
 }
 
 .RooMateNextProject .desktop{
