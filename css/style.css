@@ -2277,8 +2277,8 @@ footer .Email img{
 /*Solution*/
 .RooMateDS img{
   width: 100%;
-  margin-left: 0.1%;
-  margin-right: 0.1%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .RooMateDS .button{
