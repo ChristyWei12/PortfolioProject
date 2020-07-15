@@ -14,7 +14,7 @@ html{
 
 body{
   background-color: #ffffff;
-  font-family: muli;
+  font-family: Muli;
   line-height: 1.5;
 }
 
@@ -312,7 +312,7 @@ footer h6{
 footer .iconset ul{
 	display: flex;
 	flex-direction: row;
-	justify-content:
+	justify-content: center;
 	margin-top: 1.2rem;
 	margin-bottom: 4.9rem;
 	width: 218px;
@@ -1500,7 +1500,7 @@ footer .Email img{
   color: #ffffff;
   font-family: Quicksand;
   font-size: 4rem;
-  font-weight: medium;
+  font-weight: normal;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
