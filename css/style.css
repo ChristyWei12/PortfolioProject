@@ -3579,7 +3579,7 @@ footer .Email img{
 
 /*Information Architecture*/
 .WeCloudIA{
-  padding: 12rem 0;
+  padding: 12rem 0 0 0;
 }
 
 .WeCloudIA .top{
@@ -3775,6 +3775,7 @@ footer .Email img{
 /*IA-User Testing*/
 .WeCloudUT{
   padding-top: 6rem;
+	padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
