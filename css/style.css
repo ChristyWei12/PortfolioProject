@@ -656,9 +656,9 @@ footer .Email img{
 }
 
 .RooMateDS img{
-	width: 20%;
-  margin-left: 5%;
-  margin-right: 5%;
+	width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .RooMateDS .button{
@@ -2276,7 +2276,7 @@ footer .Email img{
 
 /*Solution*/
 .RooMateDS img{
-  width: 35%;
+  width: 100%;
   margin-left: 0.1%;
   margin-right: 0.1%;
 }
@@ -4934,6 +4934,10 @@ footer .Email img{
 }
 
 /*VD-Rsponsive Design*/
+.WeCloudResponsiveDesign{
+  padding-top: 0rem;
+}
+
 .WeCloudResponsiveDesign .image{
   display: flex;
   flex-direction: column;
