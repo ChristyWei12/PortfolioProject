@@ -789,8 +789,13 @@ footer .Email img{
   padding: 0;
 }
 
-.RooMateTransition img{
+.RooMateTransition .image1{
   width: 100%;
+}
+
+.RooMateTransition .image2{
+  width: 100%;
+	display: none;
 }
 
 /*Discovery*/
@@ -2330,8 +2335,17 @@ footer .Email img{
 }
 
 /*Transition*/
-.RooMateTransition img{
+/*.RooMateTransition img{
 	width: 200%;
+}*/
+
+.RooMateTransition .image1{
+  display: none;
+}
+
+.RooMateTransition .image2{
+  width: 100%;
+	display: block;
 }
 
 /*Discovery-user survey*/
