@@ -9,6 +9,7 @@
 
 html{
   font-size: 10px;
+	overflow-x: hidden;
 }
 
 body{
@@ -103,7 +104,7 @@ a{
   height: 46px;
   position: absolute;
   top: 0px;
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 .header ul li{
@@ -349,7 +350,7 @@ footer .Email img{
     display: block;
     text-align: center;
     width: 100%;
-    background-color: #ffffff;
+    background-color: rgba(255, 164, 131, 0.5);
   }
 
   .header ul li a{
@@ -655,6 +656,7 @@ footer .Email img{
 }
 
 .RooMateDS img{
+	width: 20%;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -2258,14 +2260,15 @@ footer .Email img{
 
 /*Solution*/
 .RooMateDS img{
-  width: 35%;
-  margin-left: 2%;
-  margin-right: 2%;
+  width: 45%;
+  margin-left: 0.1%;
+  margin-right: 0.1%;
 }
 
 .RooMateDS .button{
   width: 18rem;
   height: 3.5rem;
+	margin-top: 4.5rem;
 }
 
 .RooMateDS .button h6{
