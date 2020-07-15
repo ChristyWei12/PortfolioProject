@@ -3311,8 +3311,6 @@ footer .Email img{
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .WeCloudCA .Ctop img{
@@ -3397,7 +3395,7 @@ footer .Email img{
 .WeCloudIdentity{
   padding-top: 6rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   padding-left: 10%;
   padding-right: 10%;
@@ -3406,9 +3404,8 @@ footer .Email img{
 .WeCloudIdentity .left{
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .WeCloudIdentity .left .icon{
@@ -3426,16 +3423,17 @@ footer .Email img{
 
 .WeCloudIdentity .left p{
   padding-top: 2.5rem;
-  padding-right: 2.5rem;
   color: #ffffff;
-  text-align: left;
+  text-align: center;
+	width: 60%;
+	margin-left: auto;
+  margin-right: auto;
 }
 
 .WeCloudIdentity .right{
-  padding-top: 15rem;
-  width: 50%;
-  margin-left: 4%;
-  margin-left: 4%;
+  padding-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Branding-logo*/
@@ -4447,12 +4445,13 @@ footer .Email img{
 .WeCloudDS .leftDemo .button{
   width: 18rem;
   height: 3.5rem;
+	margin-top: 6rem;
 }
 
 .WeCloudDS .rightDemo .button{
   width: 22rem;
   height: 3.5rem;
-  margin-top: 7.3rem;
+  margin-top: 6rem;
 }
 
 .WeCloudDS .button h6{
@@ -4623,7 +4622,6 @@ footer .Email img{
 }
 
 .WeCloudIdentity .left{
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10%;
@@ -4829,6 +4827,10 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+}
+
+.WeCloudOnboarding p{
+  width: 80%;
 }
 
 .WeCloudOnboarding .onboardingdisplay .iOS img{
