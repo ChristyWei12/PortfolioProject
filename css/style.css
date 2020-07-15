@@ -350,7 +350,7 @@ footer .Email img{
     display: block;
     text-align: center;
     width: 100%;
-    background-color: rgba(255, 164, 131, 0.5);
+    background-color: rgba(255, 164, 131, 0.7);
   }
 
   .header ul li a{
@@ -2276,7 +2276,6 @@ footer .Email img{
 
 /*Solution*/
 .RooMateDS img{
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
