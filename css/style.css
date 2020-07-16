@@ -694,6 +694,7 @@ footer .Email img{
   font-size: 2.4rem;
   margin-left: auto;
   margin-right: auto;
+	text-align: center;
 }
 
 .RooMateDesignspec .Line{
@@ -979,6 +980,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMatePersonas .top p{
@@ -1047,6 +1049,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMatePersonas .Persona2 h4{
@@ -1055,6 +1058,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMatePersonas .Persona3 h4{
@@ -1063,6 +1067,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMatePersonas .Persona1 h5{
@@ -1070,6 +1075,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMatePersonas .Persona2 h5{
@@ -1077,6 +1083,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMatePersonas .Persona3 h5{
@@ -1084,6 +1091,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMatePersonas .Persona1 p{
@@ -1159,6 +1167,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMateCA .Ctop p{
@@ -1254,6 +1263,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMateBranding .Btop .Line{
@@ -1305,6 +1315,7 @@ footer .Email img{
   flex-direction:column;
   margin-left: auto;
   margin-right: auto;
+	text-align: center;
 }
 
 .RooMateIdentity .part2 li{
@@ -1408,6 +1419,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .RooMateColor .display{
@@ -1478,6 +1490,7 @@ footer .Email img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .RooMateTypography .left p{
@@ -1542,6 +1555,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMateIA .top .Line{
@@ -1577,6 +1591,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMateUSUF .left p{
@@ -1625,6 +1640,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 6rem;
+	text-align: center;
 }
 
 .RooMateSitemap .map{
@@ -1884,6 +1900,7 @@ footer .Email img{
   color: #ffffff;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .RooMateVisualDesign .top .Line{
@@ -1913,6 +1930,7 @@ footer .Email img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .RooMateOnboarding p{
@@ -1975,6 +1993,7 @@ footer .Email img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .RooMateLookforaroom .left p{
@@ -2030,6 +2049,7 @@ footer .Email img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .RooMateLookForaroommate .right p{
@@ -2073,6 +2093,7 @@ footer .Email img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .RooMatePost .left p{
@@ -2128,6 +2149,7 @@ footer .Email img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .RooMateChat .right p{
@@ -2149,6 +2171,7 @@ footer .Email img{
 
 .RooMateVisualDesign .RooMateprototype p{
   color: #ffffff;
+	text-align: center;
 }
 
 .RooMateVisualDesign .button{
@@ -2189,6 +2212,7 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
+	text-align: center;
 }
 
 .RooMateFinal .Line{
@@ -2217,6 +2241,7 @@ footer .Email img{
   margin-right: auto;
   color: #2ABECC;
   text-decoration: underline;
+	text-align: center;
 }
 
 /*Next Project*/
@@ -2236,6 +2261,7 @@ footer .Email img{
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
+	text-align: center;
 }
 
 .RooMateNextProject .text a{
@@ -2247,6 +2273,7 @@ footer .Email img{
 .RooMateNextProject .text h6{
   color: #ffffff;
   text-decoration: underline;
+	text-align: center;
 }
 
 .RooMateNextProject .demo{
