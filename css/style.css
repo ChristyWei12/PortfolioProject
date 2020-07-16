@@ -70,7 +70,7 @@ section{
   width: 20rem;
   display: block;
   position: relative;
-  left: 60px;
+  left: 5%;
   top: 10px;
 }
 
@@ -100,7 +100,7 @@ a{
 
 .header ul{
   width: 253px;
-  right: 46px;
+  right: 5%;
   height: 46px;
   position: absolute;
   top: 0px;
