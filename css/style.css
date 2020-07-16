@@ -2878,6 +2878,7 @@ footer .Email img{
   padding-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
+	text-align: center;
 }
 
 .WeCloudIntro p{
@@ -2975,6 +2976,7 @@ footer .Email img{
   font-size: 2.4rem;
   margin-left: auto;
   margin-right: auto;
+	text-align: center;
 }
 
 .WeCloudDesignspec .Line{
@@ -3209,6 +3211,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudPersonas .top p{
@@ -3267,6 +3270,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudPersonas .Persona2 h4{
@@ -3275,6 +3279,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudPersonas .Persona1 h5{
@@ -3282,6 +3287,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudPersonas .Persona2 h5{
@@ -3289,6 +3295,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudPersonas .Persona1 p{
@@ -3352,6 +3359,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudCA .Ctop p{
@@ -3412,6 +3420,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudBranding .Btop .Line{
@@ -3447,6 +3456,7 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
+	text-align: center;
 }
 
 .WeCloudIdentity .left p{
@@ -3462,6 +3472,7 @@ footer .Email img{
   padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
+	text-align: center;
 }
 
 /*Branding-logo*/
@@ -3541,6 +3552,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .WeCloudColor .display{
@@ -3611,6 +3623,7 @@ footer .Email img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .WeCloudTypography .left p{
@@ -3675,6 +3688,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudIA .top .Line{
@@ -3709,6 +3723,7 @@ footer .Email img{
   padding-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
+	text-align: center;
 }
 
 .WeCloudUSUF .top p{
@@ -3722,6 +3737,7 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudUSUF .Line2{
@@ -3981,6 +3997,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudABTesting .top p{
@@ -3999,6 +4016,7 @@ footer .Email img{
 .WeCloudABTesting .Test1 p{
   margin-left: auto;
   margin-right: auto;
+	text-align: center;
 }
 
 .WeCloudABTesting .Test1 img{
@@ -4045,6 +4063,7 @@ footer .Email img{
 .WeCloudABTesting .Test3 p{
   margin-left: auto;
   margin-right: auto;
+	text-align: center;
 }
 
 .WeCloudABTesting .Test3 img{
@@ -4086,6 +4105,7 @@ footer .Email img{
   color: #ffffff;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudVisualDesign .top .Line{
@@ -4115,6 +4135,7 @@ footer .Email img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .WeCloudOnboarding p{
@@ -4149,6 +4170,7 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;
+	text-align: center;
 }
 
 /*VD-Upload*/
@@ -4181,6 +4203,7 @@ footer .Email img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .WeCloudUpload .left p{
@@ -4237,6 +4260,7 @@ footer .Email img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .WeCloudShare .right p{
@@ -4280,6 +4304,7 @@ footer .Email img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #ffffff;
+	text-align: center;
 }
 
 .WeCloudOrganizeFiles .left p{
@@ -4319,6 +4344,7 @@ footer .Email img{
   color: #ffffff;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudResponsiveDesign .image{
@@ -4350,6 +4376,7 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
+	text-align: center;
 }
 
 .WeCloudFinal .Line{
@@ -4383,6 +4410,7 @@ footer .Email img{
   margin-right: auto;
   color: #8883BB;
   text-decoration: underline;
+	text-align: center;
 }
 
 /*Next Project*/
@@ -4402,6 +4430,7 @@ footer .Email img{
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
+	text-align: center;
 }
 
 .WeCloudNextProject .text a{
@@ -4413,6 +4442,7 @@ footer .Email img{
 .WeCloudNextProject .text h6{
   color: #ffffff;
   text-decoration: underline;
+	text-align: center;
 }
 
 .WeCloudNextProject .demo{
