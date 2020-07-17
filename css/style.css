@@ -545,6 +545,14 @@ footer .Email img{
   padding-bottom: 6rem;
 }
 
+.SmartCloset{
+	text-decoration: underline;
+}
+
+.SmartCloset:hover{
+	color: #FF685F;
+}
+
 /*About Page Media Query*/
 @media (max-width: 768px){
   /*hero*/
