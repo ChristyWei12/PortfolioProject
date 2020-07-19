@@ -744,7 +744,7 @@ footer .Email img{
  width: 60%;
 }
 
-/*Display Solution*/
+/*Display Solution - Desktop*/
 .RooMateDS{
   display: flex;
   flex-direction: column;
@@ -2348,7 +2348,7 @@ footer .Email img{
 	text-align: center;
 }
 
-/*Next Project*/
+/*Next Project - Desktop*/
 .RooMateNextProject{
   display: flex;
   flex-direction: column;
@@ -2386,17 +2386,15 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+	height: auto;
 }
 
-.RooMateNextProject .desktop{
+.RooMateNextProject img{
   margin-left: auto;
   margin-right: auto;
 	width: 100%;
 	display: block;
-}
-
-.RooMateNextProject .mobile{
-	display: none;
+	height: auto;
 }
 
 /*RooMate Media Query*/
@@ -2406,7 +2404,7 @@ footer .Email img{
  width: 80%;
 }
 
-/*Solution*/
+/*Solution - Mobile*/
 .RooMateDS img{
 	width: 100%;
 	height: auto;
@@ -2921,15 +2919,11 @@ footer .Email img{
 	height: auto;
 }
 
-.RooMateNextProject .desktop{
+.RooMateNextProject img{
 	width: 100%;
   margin-left: auto;
   margin-right: auto;
 	height: auto;
-}
-
-.RooMateNextProject .mobile{
-  display: none;
 }
 }
 
