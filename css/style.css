@@ -2924,6 +2924,7 @@ footer .Email img{
 	width: 100%;
   margin-left: auto;
   margin-right: auto;
+	height: auto;
 }
 
 .RooMateNextProject .mobile{
@@ -4518,7 +4519,7 @@ footer .Email img{
 	text-align: center;
 }
 
-/*Next Project*/
+/*Next Project - Desktop*/
 .WeCloudNextProject{
   background-color: #2ABECC;
   display: flex;
@@ -5138,7 +5139,7 @@ footer .Email img{
   width: 80%;
 }
 
-/*Next Project*/
+/*Next Project - Mobile*/
 .WeCloudNextProject .image1{
   display: none;
 }
