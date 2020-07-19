@@ -5235,7 +5235,7 @@ footer .Email img{
 	width: 4.5rem;
 }
 
-.SmartClosetDesignspec h5{
+.SmartClosetDesignspec h3{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -5309,7 +5309,6 @@ footer .Email img{
 }
 
 /*Smart Closet - work with engineering team - desktop*/
-/*Smart Closet User Survey & Interview - Desktop*/
 .SmartClosetLaunch{
 	display: flex;
 	flex-direction: row-reverse;
@@ -5500,4 +5499,168 @@ footer .Email img{
   margin-right: auto;
   text-decoration: underline;
 	text-align: center;
+}
+
+@media (max-width: 768px){
+/*Smart Closet hero - mobile*/
+.SmartClosetHero h3{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Intro - Mobile*/
+.SmartClosetIntro p{
+ width: 80%;
+}
+
+/*Smart Closet DS1 - Mobile*/
+.SmartClosetDS1 .iOSDemo .image1{
+	display: none;
+}
+
+.SmartClosetDS1 .iOSDemo .image2{
+	display: block;
+}
+
+.SmartClosetDS1 .store{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.SmartClosetDS1 .store .download1{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.SmartClosetDS1 .store .download2{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+}
+
+.SmartClosetDS1 .store img{
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Smart Closet DS2 - Mobile*/
+.SmartClosetDS2 .button h6{
+	font-size: 1.6rem;
+	padding-top: 0.6rem;
+}
+
+.SmartClosetDS2 .button{
+	width: 18rem;
+	height: 3.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Smart Closet DesignSpec - Mobile*/
+.SmartClosetDesignspec p{
+  width: 80%;
+}
+
+/*Smart Closet User Survey & Interview - Mobile*/
+.SmartClosetSurvey{
+	display: flex;
+	flex-direction: column;
+}
+
+.SmartClosetSurvey .left{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.SmartClosetSurvey .left p{
+	width: 80%;
+}
+
+.SmartClosetSurvey .image{
+	width: 100%;
+	padding-top: 6rem;
+}
+
+/*Smart Closet - work with engineering team - Mobile*/
+.SmartClosetLaunch{
+	display: flex;
+	flex-direction: column;
+}
+
+.SmartClosetLaunch .right{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.SmartClosetLaunch .right p{
+	width: 80%;
+}
+
+.SmartClosetLaunch .image{
+	width: 100%;
+	padding-top: 6rem;
+}
+
+.SmartClosetLaunch .image img{
+	width: 100%;
+}
+
+/*Smart Closet Community - Mobile*/
+.SmartClosetCommunity h3{
+	width: 60%;
+}
+
+.SmartClosetCommunity p{
+	width: 80%;
+}
+
+.SmartClosetCommunity .Collage{
+	width: 100%;
+}
+
+.SmartClosetCommunity .Collage img{
+  width: 100%;
+}
+
+/*Smart Closet Marketing - Mobile*/
+.SmartClosetMarketing p{
+	width: 80%;
+}
+
+.SmartClosetMarketing .image{
+	width: 100%;
+}
+
+.SmartClosetMarketing .image img{
+  width: 100%;
+}
+
+/*Smart Closet Tutorial - Mobile*/
+.SmartClosetTutorial p{
+	width: 80%;
+}
+
+.SmartClosetTutorial .gif{
+	width: 60%;
+}
+
+.SmartClosetTutorial .gif img{
+  width: 100%;
+}
+
+.SmartClosetTutorial h6{
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: underline;
+	text-align: center;
+}
+
 }
