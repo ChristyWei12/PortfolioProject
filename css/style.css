@@ -5055,3 +5055,203 @@ footer .Email img{
   margin-right: 3%;
 }
 }
+
+/*SmartCloset*/
+/*Desktop*/
+/*RooMate Project*/
+/*hero section - Desktop*/
+.SmartClosetHero{
+  display: block;
+  position: relative;
+  top: 46px;
+  padding: 15rem 10% 0 10%;
+}
+
+.SmartClosetHero .herologo{
+  width: 10rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SmartClosetHero .herotext{
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.SmartClosetHero .herotext h1{
+  padding-top: 3rem;
+	font-family: Playfair Display SC;
+}
+
+.SmartClosetHero .herotext h3{
+  padding-top: 3rem;
+}
+
+/*what is Smart Closet - Desktop*/
+.SmartClosetIntro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	padding-bottom: 0;
+}
+
+.SmartClosetIntro .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SmartClosetIntro h3{
+  padding-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+	text-align: center;
+}
+
+.SmartClosetIntro p{
+ padding-top: 2.5rem;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ width: 60%;
+}
+
+/*Smart Closet DS1*/
+/*Display Solution 1*/
+.SmartClosetDS1{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.SmartClosetDS1 .iOSDemo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SmartClosetDS1 .iOSDemo img{
+	width: 100%;
+	height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SmartClosetDS1 .iOSDemo .image1{
+	display: block;
+}
+
+.SmartClosetDS1 .iOSDemo .image2{
+	display: none;
+}
+
+.SmartClosetDS1 .store{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.SmartClosetDS1 .store .download1{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.SmartClosetDS1 .store .download2{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.SmartClosetDS1 .store img{
+	display: block;
+	width: 100%;
+}
+
+/*Smart Closet DS2*/
+
+.SmartClosetDS2{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12rem 15%;
+}
+
+.SmartClosetDS2 .DesktopDemo{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.SmartClosetDS2 .DesktopDemo img{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.SmartClosetDS2 .button{
+  background-color: #202020;
+  width: 22rem;
+  height: 4.2rem;
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+}
+
+.SmartClosetDS2 .button h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  text-align: center;
+	color: #ffffff;
+}
+
+.SmartClosetDS2 .button h6:hover{
+  color: #ACACAC;
+}
+
+/*SmartCloset Design Roles - Desktop*/
+.SmartClosetDesignspec{
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 0;
+}
+
+.SmartClosetDesignspec .icon{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 4.5rem;
+}
+
+.SmartClosetDesignspec h5{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 2.5rem;
+}
+
+.SmartClosetDesignspec .Line{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 2.5rem;
+}
+
+.SmartClosetDesignspec p{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 2.5rem;
+}
