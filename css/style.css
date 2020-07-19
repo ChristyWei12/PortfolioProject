@@ -2381,24 +2381,16 @@ footer .Email img{
 }
 
 .RooMateNextProject .DesktopDemo{
-  display: flex;
-  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
-	height: auto;
 }
 
 .RooMateNextProject .Image{
   margin-left: auto;
   margin-right: auto;
 	width: 100%;
-	height: auto;
 }
 
-.RooMateNextProject .Image2{
-	display: none;
-}
 
 /*RooMate Media Query*/
 @media (max-width: 768px){
@@ -2913,25 +2905,8 @@ footer .Email img{
 
 /*Next Project - mobile*/
 .RooMateNextProject .DesktopDemo{
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
 	overflow-x: hidden;
 	height: auto;
-}
-
-.RooMateNextProject .Image2{
-	width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-	height: auto;
-	display: block;
-}
-
-.RooMateNextProject .Image{
-	display: none;
 }
 }
 
