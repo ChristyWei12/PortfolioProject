@@ -2389,11 +2389,15 @@ footer .Email img{
 	height: auto;
 }
 
-.RooMateNextProject img{
+.RooMateNextProject .Image{
   margin-left: auto;
   margin-right: auto;
 	width: 100%;
 	height: auto;
+}
+
+.RooMateNextProject .Image2{
+	display: none;
 }
 
 /*RooMate Media Query*/
@@ -2918,11 +2922,16 @@ footer .Email img{
 	height: auto;
 }
 
-.RooMateNextProject img{
+.RooMateNextProject .Image2{
 	width: 100%;
   margin-left: auto;
   margin-right: auto;
 	height: auto;
+	display: block;
+}
+
+.RooMateNextProject .Image{
+	display: none;
 }
 }
 
