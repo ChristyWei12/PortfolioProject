@@ -477,6 +477,8 @@ footer .Email img{
 .Homepagehero{
   padding-top: 150px;
   padding-bottom: 180px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .Homepagehero img{
@@ -523,6 +525,19 @@ footer .Email img{
     background-size: 270%;
     background-position: left top;
   }
+
+  .HomepageProject1{
+    padding: 6rem 15%;
+  }
+
+  .HomepageProject3{
+    padding: 6rem 15%;
+  }
+
+  .HomepageProject2{
+    padding: 6rem 15% 12rem 15%;
+  }
+
 
   .Homepageprojecttext1 h2{
     font-size: 2.4rem;
