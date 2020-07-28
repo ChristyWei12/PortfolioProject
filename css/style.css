@@ -71,7 +71,7 @@ section{
   display: block;
   position: relative;
   left: 5%;
-  top: 10px;
+  top: 15px;
 }
 
 .logo img{
@@ -122,7 +122,7 @@ a{
   text-decoration: none;
   font-size: 1.8rem;
 }
-/*Homepage*/
+/*Homepage - desktop*/
 /*Homepage-Hero*/
 .Homepagehero{
   display: block;
@@ -303,10 +303,11 @@ a{
 .HomepageProject1 .button1 h6{
   font-size: 1.8rem;
   padding-top: 0.8rem;
+  color: #ffffff;
 }
 
 .HomepageProject1 .button1 h6:hover{
-  color: #ffffff;
+  color: #000000;
 }
 
 
@@ -347,10 +348,11 @@ a{
 .HomepageProject2 .button2 h6{
   font-size: 1.8rem;
   padding-top: 0.8rem;
+  color: #ffffff;
 }
 
 .HomepageProject2 .button2 h6:hover{
-  color: #ffffff;
+  color: #000000;
 }
 
 /*footer*/
