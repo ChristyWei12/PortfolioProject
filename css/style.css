@@ -3067,10 +3067,11 @@ footer .Email img{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   text-align: center;
+  color: #ffffff;
 }
 
 .WeCloudDS .button h6:hover{
-  color: #ffffff;
+  color: #000000;
 }
 
 .WeCloudDS .rightDemo{
@@ -3274,7 +3275,6 @@ footer .Email img{
 }
 
 .WeCloudUserSurvey .Line2{
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -3868,7 +3868,6 @@ footer .Email img{
 }
 
 .WeCloudUSUF .Line2{
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -4041,7 +4040,6 @@ footer .Email img{
 }
 
 .WeCloudUT .Line2{
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -4689,14 +4687,14 @@ footer .Email img{
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 .WeCloudDesignspec .Tools{
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 /*Challeng and Solution*/
@@ -4713,6 +4711,7 @@ footer .Email img{
 .WeCloudCS .Solution{
   margin-left: 0px;
   margin-right: 0px;
+  padding-top: 3.5rem;
 }
 
 .WeCloudCS p{
@@ -5164,7 +5163,6 @@ footer .Email img{
   margin-top: 2.5rem;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   width: 80%;
 }
 
