@@ -993,7 +993,6 @@ footer .Email img{
 }
 
 .RooMateUserSurvey .Line2{
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -1912,7 +1911,6 @@ footer .Email img{
 }
 
 .RooMateUT .Line2{
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -2325,12 +2323,14 @@ footer .Email img{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .RooMateFinal .icon{
   width: 6rem;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .RooMateFinal h2{
