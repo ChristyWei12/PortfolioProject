@@ -2377,11 +2377,19 @@ footer .Email img{
   padding-bottom: 6rem;
 }
 
-.RooMateNextProject .text h2{
+.RooMateNextProject .text h5{
   color: #000000;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
+}
+
+.RooMateNextProject .text h1{
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+	text-align: center;
+  font-size: 7rem;
 }
 
 .RooMateNextProject .text a{
@@ -2923,6 +2931,15 @@ footer .Email img{
 	overflow-x: hidden;
 	height: auto;
 }
+
+.RooMateNextProject .text h1{
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+	text-align: center;
+  font-size: 4.5rem;
+}
+
 }
 
 /*WeCloud*/
@@ -4525,11 +4542,19 @@ footer .Email img{
   padding-bottom: 6rem;
 }
 
-.WeCloudNextProject .text h2{
+.WeCloudNextProject .text h5{
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
+}
+
+.WeCloudNextProject .text h1{
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+	text-align: center;
+  font-size: 7rem;
 }
 
 .WeCloudNextProject .text a{
@@ -5146,6 +5171,10 @@ footer .Email img{
   margin-left: 3%;
   margin-right: 3%;
 }
+
+.WeCloudNextProject .text h1{
+  font-size: 4.5rem;
+}
 }
 
 /*SmartCloset*/
@@ -5607,11 +5636,19 @@ footer .Email img{
   padding-bottom: 6rem;
 }
 
-.SmartClosetNextProject .text h2{
+.SmartClosetNextProject .text h5{
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
+}
+
+.SmartClosetNextProject .text h1{
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 7rem;
 }
 
 .SmartClosetNextProject .text a{
@@ -5821,6 +5858,10 @@ footer .Email img{
 	width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.SmartClosetNextProject .text h1{
+font-size: 4.5rem;
 }
 
 .SmartClosetNextProject .mobile{
