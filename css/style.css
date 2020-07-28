@@ -5725,12 +5725,14 @@ footer .Email img{
 .SmartClosetDS1 .store .download1{
 	margin-left: auto;
 	margin-right: auto;
+  width: 70%;
 }
 
 .SmartClosetDS1 .store .download2{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 3rem;
+  width: 70%;
 }
 
 .SmartClosetDS1 .store img{
