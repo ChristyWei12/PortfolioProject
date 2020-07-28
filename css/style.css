@@ -3604,6 +3604,11 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
+  width: 60%;
+}
+
+.WeCloudIdentity .right img{
+  width: 100%;
 }
 
 /*Branding-logo*/
