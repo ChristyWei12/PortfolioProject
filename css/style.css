@@ -799,10 +799,11 @@ footer .Email img{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   text-align: center;
+  color: #ffffff;
 }
 
 .RooMateDS .button h6:hover{
-  color: #ffffff;
+  color: #000000;
 }
 
 /*Design Spec*/
@@ -1942,12 +1943,12 @@ footer .Email img{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   font-weight: normal;
   }
 
 .RooMateUT .button h6:hover{
-  color: #ffffff;
+  color: #000000;
 }
 
 .RooMateUT .feedback{
@@ -2311,10 +2312,11 @@ footer .Email img{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   text-align: center;
+  color: #ffffff;
 }
 
 .RooMateVisualDesign .button h6:hover{
-  color: #ffffff;
+  color: #000000;
 }
 
 
@@ -2349,7 +2351,7 @@ footer .Email img{
 .RooMateFinal p{
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: left;
   width: 60%;
 }
 
@@ -2427,6 +2429,11 @@ footer .Email img{
 }
 
 /*Solution - Mobile*/
+.RooMateDS{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .RooMateDS img{
 	width: 100%;
 	height: auto;
@@ -2468,14 +2475,14 @@ footer .Email img{
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 .RooMateDesignspec .Tools{
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 /*Challeng and Solution*/
@@ -2492,6 +2499,7 @@ footer .Email img{
 .RooMateCS .Solution{
   margin-left: 0px;
   margin-right: 0px;
+  padding-top: 3.5rem;
 }
 
 .RooMateCS p{
