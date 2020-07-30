@@ -1661,7 +1661,7 @@ footer .Email img{
 
 /*Information Architecture*/
 .RooMateIA{
-  padding: 12rem 0;
+  padding: 12rem 0 0 0;
 }
 
 .RooMateIA .top{
@@ -1886,6 +1886,7 @@ footer .Email img{
 /*IA-User Testing*/
 .RooMateUT{
   padding-top: 6rem;
+  padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1997,6 +1998,121 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+}
+
+/*IA-AB Testing-desktop*/
+.RooMateABTesting{
+  background-color: #2ABECC;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.RooMateABTesting .top{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.RooMateABTesting .top .icon{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.RooMateABTesting .top h3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+	text-align: center;
+}
+
+.RooMateABTesting .top p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 60%;
+}
+
+.RooMateABTesting .Test1{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+}
+
+.RooMateABTesting .Test1 p{
+  margin-left: auto;
+  margin-right: auto;
+	text-align: center;
+}
+
+.RooMateABTesting .Test1 img{
+  padding-top: 2.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 25%;
+}
+
+.RooMateABTesting .UT1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.RooMateABTesting .Test2{
+  padding-top: 6rem;
+  justify-content: center;
+}
+
+.RooMateABTesting .Test2 p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.RooMateABTesting .Test2 img{
+  padding-top: 2.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 25%;
+}
+
+.RooMateABTesting .UT2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.RooMateABTesting .Test3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+}
+
+.RooMateABTesting .Test3 p{
+  margin-left: auto;
+  margin-right: auto;
+	text-align: center;
+}
+
+.RooMateABTesting .Test3 img{
+  padding-top: 2.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 25%;
+}
+
+.RooMateABTesting .UT3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*Visual Design*/
@@ -2807,6 +2923,61 @@ footer .Email img{
   padding-top: 0.5rem;
   text-align: center;
 }
+
+/*AB Testing - Mobile*/
+.RooMateABTesting p{
+  width: 80%;
+}
+
+.RooMateABTesting .Test1 img{
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.RooMateABTesting .UT1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.RooMateABTesting .Test2 img{
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.RooMateABTesting .UT2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.RooMateABTesting .Test3 img{
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  padding-top: 2.5rem;
+}
+
+.RooMateABTesting .UT3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 /*VD-Pnboarding*/
 .RooMateOnboarding p{
@@ -4998,7 +5169,7 @@ footer .Email img{
   padding-bottom: 2.5rem;
 }
 
-/*AB Testing*/
+/*AB Testing - Mobile*/
 .WeCloudABTesting .top p{
   width: 80%;
 }
