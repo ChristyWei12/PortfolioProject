@@ -1966,11 +1966,12 @@ footer .Email img{
   width: 50%;
 }
 
-.RooMateUT .signup h2{
+.RooMateUT .signup h5{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
+  font-weight: bold;
 }
 
 .RooMateUT .signup p{
@@ -1986,17 +1987,40 @@ footer .Email img{
   width: 50%;
 }
 
-.RooMateUT .search h2{
+.RooMateUT .search h5{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
+  font-weight: bold;
 }
 
 .RooMateUT .search p{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  width: 80%;
+}
+
+.UT1Display{
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UT1Display img{
+  width: 80%;
+}
+
+.RooMateUT .AM{
+  margin-top: 3rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.RooMateUT .AM img{
   width: 80%;
 }
 
