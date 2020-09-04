@@ -163,95 +163,59 @@ a{
   padding-left: 20%;
 }
 
-/*Project*/
+/*Project1*/
 .HomepageProject1{
   padding: 6rem 20%;
   display: block;
   position: relative;
 }
 
-.HomepageProject3{
-  padding: 6rem 20%;
-  display: block;
-  position: relative;
+.imageproject1{
+  width: 100%;
+  height: auto;
 }
 
-.HomepageProject2{
-  padding: 6rem 20% 12rem 20%;
+.project1{
+  width: 100%;
+  height: auto;
   display: block;
   position: relative;
 }
 
 .Homepagedisplay1{
+  display: block;
   width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
-  height: 500px;
-  background: url("../image/RooMate-Display.jpg");
-  background-size: 120%;
-  background-position: center;
-  background-repeat: no-repeat;
-  /*border-radius: 1.5rem;*/
-  position: relative;
-}
-
-.Homepagedisplay3{
-  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
-  height: 500px;
-  background: url("../image/SmartClosetPic.png");
-  background-size: 120%;
-  background-position: center;
-  background-repeat: no-repeat;
-  /*border-radius: 1.5rem;*/
-  position: relative;
-}
-
-.Homepagedisplay2{
-  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
-  height: 500px;
-  background: url("../image/WeCloud-Display.svg");
-  background-size: 110%;
-  background-position: center;
-  background-repeat: no-repeat;
-  /*border-radius: 1.5rem;*/
+  height: auto;
   position: relative;
 }
 
 .Homepageprojecttext1{
-  background-color: #ffffff;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  position: relative;
-  display: block;
+  background-color: rgba(255, 255, 255, 0.85);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
 }
 
-.Homepageprojecttext3{
-  background-color: #ffffff;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  position: relative;
-  display: block;
+.project1:hover .Homepageprojecttext1{
+  opacity: 1;
 }
 
-.Homepageprojecttext2{
-  background-color: #ffffff;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  position: relative;
-  display: block;
+
+.text1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .Homepageprojecttext1 h2{
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: Montserrat;
-}
-
-.Homepageprojecttext3 h2{
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: Montserrat;
-}
-
-.Homepageprojecttext2 h2{
   text-align: center;
   font-size: 3.6rem;
   font-family: Montserrat;
@@ -263,31 +227,7 @@ a{
   padding-top: 1.5rem;
 }
 
-.Homepageprojecttext3 h5{
-  text-align: center;
-  font-size: 2.4rem;
-  padding-top: 1.5rem;
-}
-
-.Homepageprojecttext2 h5{
-  text-align: center;
-  font-size: 2.4rem;
-  padding-top: 1.5rem;
-}
-
 .Homepageprojecttext1 h6{
-  text-align: center;
-  font-size: 1.8rem;
-  padding-top: 1.5rem;
-}
-
-.Homepageprojecttext3 h6{
-  text-align: center;
-  font-size: 1.8rem;
-  padding-top: 1.5rem;
-}
-
-.Homepageprojecttext2 h6{
   text-align: center;
   font-size: 1.8rem;
   padding-top: 1.5rem;
@@ -315,6 +255,87 @@ a{
   color: #000000;
 }
 
+.project1mobile{
+  display: none;
+}
+
+/*project3 Desktop*/
+
+.HomepageProject3{
+  padding: 6rem 20%;
+  display: block;
+  position: relative;
+}
+
+.imageproject3{
+  width: 100%;
+  height: auto;
+}
+
+.project3mobile{
+  display: none;
+}
+
+.project3{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+
+.Homepagedisplay3{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.Homepageprojecttext3{
+  background-color: rgba(255, 255, 255, 0.85);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+}
+
+.project3:hover .Homepageprojecttext3{
+  opacity: 1;
+}
+
+
+.text3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.Homepageprojecttext3 h2{
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: Montserrat;
+}
+
+.Homepageprojecttext3 h5{
+  text-align: center;
+  font-size: 2.4rem;
+  padding-top: 1.5rem;
+}
+
+.Homepageprojecttext3 h6{
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+}
+
 
 .HomepageProject3 .button3{
   background-color: #202020;
@@ -336,6 +357,83 @@ a{
 
 .HomepageProject3 .button3 h6:hover{
   color: #acacac;
+}
+
+
+/*project2 Desktop*/
+
+.HomepageProject2{
+  padding: 6rem 20% 12rem 20%;
+  display: block;
+  position: relative;
+}
+
+.imageproject2{
+  width: 100%;
+  height: auto;
+}
+
+.project2mobile{
+  display: none;
+}
+
+.project2{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.Homepagedisplay2{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.Homepageprojecttext2{
+  background-color: rgba(255, 255, 255, 0.85);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+}
+
+.project2:hover .Homepageprojecttext2{
+  opacity: 1;
+}
+
+
+.text2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.Homepageprojecttext2 h2{
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: Montserrat;
+}
+
+
+.Homepageprojecttext2 h5{
+  text-align: center;
+  font-size: 2.4rem;
+  padding-top: 1.5rem;
+}
+
+.Homepageprojecttext2 h6{
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
 }
 
 .HomepageProject2 .button2{
@@ -514,75 +612,45 @@ footer .Email img{
     padding-left: 15%;
   }
 
-/*project*/
-  .Homepagedisplay1{
+/*project1 mobile*/
+  .Homepagedisplay1-2{
     height: 400px;
     background-position: center;
 		background: url("../image/RooMate-Display-Mobile.jpg");
 	  background-size: 120%;
   }
 
-	.Homepagedisplay3{
-		height: 400px;
-		background-position: center;
-		background: url("../image/SmartClosetPic2.png");
-		background-size: 120%;
-	}
+  .project1{
+    display: none;
+  }
 
-  .Homepagedisplay2{
-    height: 400px;
-    background-size: 300%;
-    background-position: left top;
+  .project1mobile{
+    display: block;
   }
 
   .HomepageProject1{
     padding: 6rem 15%;
   }
 
-  .HomepageProject3{
-    padding: 6rem 15%;
-  }
-
-  .HomepageProject2{
-    padding: 6rem 15% 12rem 15%;
-  }
-
-
-  .Homepageprojecttext1 h2{
+  .Homepageprojecttext1-2 h2{
     font-size: 2.4rem;
+    text-align: center;
+    font-family: Montserrat;
+    padding-top: 2rem;
   }
 
-	.Homepageprojecttext3 h2{
-		font-size: 2.4rem;
-	}
-
-  .Homepageprojecttext2 h2{
-    font-size: 2.4rem;
-  }
-
-  .Homepageprojecttext1 h5{
+  .Homepageprojecttext1-2 h5{
     font-size: 1.7rem;
+    text-align: center;
+    padding-top: 1.5rem;
   }
 
-	.Homepageprojecttext3 h5{
-		font-size: 1.7rem;
-	}
-
-  .Homepageprojecttext2 h5{
-    font-size: 1.7rem;
-  }
-
-  .Homepageprojecttext1 h6{
+  .Homepageprojecttext1-2 h6{
     font-size: 1.6rem;
+    text-align: center;
+    padding-top: 1.5rem;
   }
 
-	.Homepageprojecttext3 h6{
-    font-size: 1.6rem;
-  }
-
-  .Homepageprojecttext2 h6{
-    font-size: 1.6rem;
-  }
 
   .HomepageProject1 .button1{
     width: 18rem;
@@ -594,7 +662,54 @@ footer .Email img{
   .HomepageProject1 .button1 h6{
     font-size: 1.6rem;
     padding-top: 0.6rem;
+    color: #ffffff;
   }
+
+  .HomepageProject1 .button1 h6:hover{
+    color: #000000;
+  }
+
+  /*project3 mobile*/
+
+	.Homepagedisplay3-2{
+		height: 400px;
+		background-position: center;
+		background: url("../image/SmartClosetPic2.png");
+		background-size: 120%;
+	}
+
+  .project3{
+    display: none;
+  }
+
+  .project3mobile{
+    display: block;
+  }
+
+  .HomepageProject3{
+    padding: 6rem 15%;
+  }
+
+
+
+	.Homepageprojecttext3-2 h2{
+		font-size: 2.4rem;
+    text-align: center;
+    font-family: Montserrat;
+    padding-top: 2rem;
+	}
+
+  .Homepageprojecttext3-2 h5{
+     font-size: 1.7rem;
+     text-align: center;
+     padding-top: 1.5rem;
+   }
+
+   .Homepageprojecttext3-2 h6{
+     font-size: 1.6rem;
+     text-align: center;
+     padding-top: 1.5rem;
+   }
 
 	.HomepageProject3 .button3{
 		width: 18rem;
@@ -606,19 +721,71 @@ footer .Email img{
 	.HomepageProject3 .button3 h6{
 		font-size: 1.6rem;
 		padding-top: 0.6rem;
+    color: #ffffff;
 	}
 
-  .HomepageProject2 .button2{
-    width: 18rem;
-    height: 3.5rem;
-    margin-left: auto;
-    margin-right: auto;
+  .HomepageProject3 .button3 h6:hover{
+    color: #000000;
   }
 
-  .HomepageProject2 .button2 h6{
-    font-size: 1.6rem;
-    padding-top: 0.6rem;
+
+  /*project2 mobile*/
+  .Homepagedisplay2-2{
+    height: 400px;
+    background-size: 300%;
+    background-position: left top;
+    background: url("../image/WeCloud-Display.jpg");
   }
+
+  .project2{
+     display: none;
+   }
+
+   .project2mobile{
+     display: block;
+   }
+
+   .HomepageProject2{
+     padding: 6rem 15%;
+   }
+
+   .Homepageprojecttext2-2 h2{
+     font-size: 2.4rem;
+     text-align: center;
+     font-family: Montserrat;
+     padding-top: 2rem;
+   }
+
+   .Homepageprojecttext2-2 h5{
+     font-size: 1.7rem;
+     text-align: center;
+     padding-top: 1.5rem;
+   }
+
+   .Homepageprojecttext2-2 h6{
+     font-size: 1.6rem;
+     text-align: center;
+     padding-top: 1.5rem;
+   }
+
+
+   .HomepageProject2 .button2{
+     width: 18rem;
+     height: 3.5rem;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+   .HomepageProject2 .button2 h6{
+     font-size: 1.6rem;
+     padding-top: 0.6rem;
+     color: #ffffff;
+   }
+
+   .HomepageProject2 .button2 h6:hover{
+     color: #000000;
+   }
+
 
   footer h3{
     font-size: 2rem;
