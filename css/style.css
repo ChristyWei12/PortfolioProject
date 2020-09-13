@@ -902,6 +902,10 @@ footer .Email img{
   margin-right: auto;
 }
 
+.RooMatehero .heromobile{
+  display: none;
+}
+
 .RooMatehero .herotext{
   width: 100%;
   display: block;
@@ -2758,8 +2762,11 @@ footer .Email img{
   padding: 4rem 10% 0 10%;
 }
 
-
 .RooMatehero .hero{
+  display: none;
+}
+
+.RooMatehero .heromobile{
   width: 100%;
   display: block;
   position: relative;
