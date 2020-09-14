@@ -951,6 +951,10 @@ footer .Email img{
  width: 60%;
 }
 
+.RooMateIntro .thinkful{
+  color: #FF6D72;
+}
+
 /*Display Solution - Desktop*/
 .RooMateDS{
   display: flex;
@@ -1555,6 +1559,28 @@ footer .Email img{
   text-align: center;
 }
 
+.RooMateCA .Craigslist{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+}
+
+.RooMateCA .Craigslist img{
+  width: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+.RooMateCA .Craigslist p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+}
+
 /*Branding*/
 .RooMateBranding{
   background-color: #202020;
@@ -1721,6 +1747,8 @@ footer .Email img{
 .RooMateColor .text{
   display: flex;
   flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .RooMateColor .text img{
@@ -1735,6 +1763,15 @@ footer .Email img{
   padding-top: 2.5rem;
   color: #ffffff;
 	text-align: center;
+}
+
+.RooMateColor .text p{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  width: 60%;
 }
 
 .RooMateColor .display{
@@ -2714,7 +2751,7 @@ footer .Email img{
 .RooMateNextProject .text{
   display: flex;
   flex-direction: column;
-  padding-bottom: 6rem;
+  padding-bottom: 0rem;
 }
 
 .RooMateNextProject .text h5{
@@ -2992,6 +3029,14 @@ footer .Email img{
   width: 80%;
 }
 
+.RooMateCA .Craigslist{
+  padding-top: 2.5rem;
+}
+
+.RooMateCA .Craigslist p{
+  width: 80%;
+}
+
 /*Branding*/
 /*Branding-Identity*/
 .RooMateIdentity .part1 p{
@@ -3027,6 +3072,10 @@ footer .Email img{
 }
 
 /*Branding-color*/
+.RooMateColor .text p{
+  width: 80%;
+}
+
 .RooMateColor .display{
   display: flex;
   flex-direction: column;
@@ -3366,6 +3415,10 @@ footer .Email img{
 }
 
 /*Next Project - mobile*/
+.RooMateNextProject .text{
+  padding-bottom: 6rem;
+}
+
 .RooMateNextProject .DesktopDemo{
 	overflow-x: hidden;
 	height: auto;
@@ -4982,7 +5035,7 @@ footer .Email img{
 .WeCloudNextProject .text{
   display: flex;
   flex-direction: column;
-  padding-bottom: 6rem;
+  padding-bottom: 0rem;
 }
 
 .WeCloudNextProject .text h5{
@@ -5611,6 +5664,12 @@ footer .Email img{
 }
 
 /*Next Project - Mobile*/
+.WeCloudNextProject .text{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6rem;
+}
+
 .WeCloudNextProject .image1{
   display: none;
 }
@@ -6086,7 +6145,7 @@ footer .Email img{
 .SmartClosetNextProject .text{
   display: flex;
   flex-direction: column;
-  padding-bottom: 6rem;
+  padding-bottom: 0rem;
 }
 
 .SmartClosetNextProject .text h5{
@@ -6130,6 +6189,7 @@ footer .Email img{
 }
 
 .SmartClosetNextProject .mobile{
+  display: none;
 	margin-left: 8%;
   margin-right: 8%;
 }
@@ -6300,6 +6360,10 @@ footer .Email img{
 
 /*Smart Closet Next Project - Mobile */
 /*Next Project*/
+.SmartClosetNextProject .text{
+  padding-bottom: 6rem;
+}
+
 .SmartClosetNextProject .demo{
   display: flex;
   flex-direction: row;
@@ -6309,17 +6373,18 @@ footer .Email img{
 	overflow-x: hidden;
 }
 
-.SmartClosetNextProject .desktop{
+.SmartClosetNextProject .mobile{
 	width: 100%;
   margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 
 .SmartClosetNextProject .text h1{
 font-size: 4.5rem;
 }
 
-.SmartClosetNextProject .mobile{
+.SmartClosetNextProject .desktop{
   display: none;
 }
 }
