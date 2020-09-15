@@ -674,8 +674,8 @@ footer .Email img{
 	.Homepagedisplay3-2{
 		height: 400px;
 		background-position: center;
-		background: url("../image/SmartClosetPic2.png");
-		background-size: 120%;
+		background: url("../image/P2m.jpg");
+		background-size: 130%;
 	}
 
   .project3{
@@ -732,9 +732,9 @@ footer .Email img{
   /*project2 mobile*/
   .Homepagedisplay2-2{
     height: 400px;
-    background-size: 300%;
     background-position: left top;
-    background: url("../image/WeCloud-Display.jpg");
+    background: url("../image/P3.jpg");
+    background-size: 200%;
   }
 
   .project2{
