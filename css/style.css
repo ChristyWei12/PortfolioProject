@@ -5073,19 +5073,13 @@ footer .Email img{
   justify-content: center;
 }
 
+.WeCloudNextProject .desktop{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .WeCloudNextProject .image1{
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.WeCloudNextProject .image2{
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.WeCloudNextProject .image3{
-  margin-left: 10%;
-  margin-right: 10%;
+  display: none;
 }
 
 /*WeCloud-Media Query*/
@@ -5664,25 +5658,20 @@ footer .Email img{
 }
 
 /*Next Project - Mobile*/
+.WeCloudNextProject .desktop{
+  display: none;
+}
+
+.WeCloudNextProject .image1{
+  display: block;
+}
+
 .WeCloudNextProject .text{
   display: flex;
   flex-direction: column;
   padding-bottom: 6rem;
 }
 
-.WeCloudNextProject .image1{
-  display: none;
-}
-
-.WeCloudNextProject .image2{
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-.WeCloudNextProject .image3{
-  margin-left: 3%;
-  margin-right: 3%;
-}
 
 .WeCloudNextProject .text h1{
   font-size: 4.5rem;
