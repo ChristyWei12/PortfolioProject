@@ -134,10 +134,14 @@ a{
   padding-right: 20%;
 }
 
-.Homepagehero img{
-  width: 25rem;
+.Homepagehero .illustration{
+  width: 30rem;
   margin-bottom: 6rem;
   text-align: center;
+}
+
+.Homepagehero .illustration2{
+  display: none;
 }
 
 .Homepagehero h1{
@@ -797,6 +801,65 @@ footer .Email img{
     font-size: 1.6rem;
   }
 
+}
+
+@media (min-width: 1800px){
+  .Homepagehero{
+    padding-top: 15rem;
+  }
+
+  .Homepagehero .illustration{
+    display: none;
+  }
+
+  .Homepagehero .illustration2{
+    display: block;
+    margin-right: 8%;
+  }
+
+  .Homepagehero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Homepagehero .hptext{
+    width: 65%;
+  }
+
+  .Homepagehero .illustration2{
+    width: 27%;
+  }
+}
+
+@media (min-width: 2500px){
+  .Homepagehero{
+    padding-top: 15rem;
+  }
+
+  .Homepagehero .illustration{
+    display: none;
+  }
+
+  .Homepagehero .illustration2{
+    display: block;
+    margin-right: 15%;
+  }
+
+  .Homepagehero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Homepagehero .hptext{
+    width: 65%;
+  }
+
+  .Homepagehero .illustration2{
+    width: 20%;
+    height: auto;
+  }
 }
 
 /*About Page*/
