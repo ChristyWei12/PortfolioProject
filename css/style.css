@@ -196,7 +196,7 @@ a{
 }
 
 .Homepageprojecttext1{
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
   top: 0;
   bottom: 0;
   left: 0;
@@ -298,7 +298,7 @@ a{
 }
 
 .Homepageprojecttext3{
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
   top: 0;
   bottom: 0;
   left: 0;
@@ -398,7 +398,7 @@ a{
 }
 
 .Homepageprojecttext2{
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
   top: 0;
   bottom: 0;
   left: 0;
@@ -803,7 +803,7 @@ footer .Email img{
 
 }
 
-@media (min-width: 1800px){
+@media (min-width: 1660px){
   .Homepagehero{
     padding-top: 15rem;
   }
@@ -814,7 +814,7 @@ footer .Email img{
 
   .Homepagehero .illustration2{
     display: block;
-    margin-right: 8%;
+    margin-right: 5%;
   }
 
   .Homepagehero{
@@ -828,7 +828,7 @@ footer .Email img{
   }
 
   .Homepagehero .illustration2{
-    width: 27%;
+    width: 30%;
   }
 }
 
