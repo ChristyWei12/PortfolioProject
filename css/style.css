@@ -369,7 +369,7 @@ a{
 /*project2 Desktop*/
 
 .HomepageProject2{
-  padding: 6rem 20% 12rem 20%;
+  padding: 6rem 20% 6rem 20%;
   display: block;
   position: relative;
 }
@@ -461,6 +461,106 @@ a{
 }
 
 .HomepageProject2 .button2 h6:hover{
+  color: #000000;
+}
+
+
+/*Playground*/
+/*project2 Desktop*/
+
+.HomepageProjectPG{
+  padding: 6rem 20% 12rem 20%;
+  display: block;
+  position: relative;
+}
+
+.imageprojectPG{
+  width: 100%;
+  height: auto;
+}
+
+.projectPGmobile{
+  display: none;
+}
+
+.projectPG{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.HomepagedisplayPG{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.HomepageprojecttextPG{
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+}
+
+.projectPG:hover .HomepageprojecttextPG{
+  opacity: 1;
+}
+
+
+.textPG{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.HomepageprojecttextPG h2{
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: Montserrat;
+}
+
+
+.HomepageprojecttextPG h5{
+  text-align: center;
+  font-size: 2.4rem;
+  padding-top: 1.5rem;
+}
+
+.HomepageprojecttextPG h6{
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+}
+
+.HomepageProjectPG .buttonPG{
+  background-color: #8883BB;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  border-radius: 3px;
+}
+
+.HomepageProjectPG .buttonPG h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #ffffff;
+}
+
+.HomepageProjectPG .buttonPG h6:hover{
   color: #000000;
 }
 
@@ -791,6 +891,63 @@ footer .Email img{
    .HomepageProject2 .button2 h6:hover{
      color: #000000;
    }
+
+   /*projectPG mobile*/
+   .HomepagedisplayPG-2{
+     height: 400px;
+     background-position: left top;
+     background: url("../image/PGm.jpg");
+     background-size: 100%;
+   }
+
+   .projectPG{
+      display: none;
+    }
+
+    .projectPGmobile{
+      display: block;
+    }
+
+    .HomepageProjectPG{
+      padding: 6rem 15%;
+    }
+
+    .HomepageprojecttextPG-2 h2{
+      font-size: 2.4rem;
+      text-align: center;
+      font-family: Montserrat;
+      padding-top: 2rem;
+    }
+
+    .HomepageprojecttextPG-2 h5{
+      font-size: 1.7rem;
+      text-align: center;
+      padding-top: 1.5rem;
+    }
+
+    .HomepageprojecttextPG-2 h6{
+      font-size: 1.6rem;
+      text-align: center;
+      padding-top: 1.5rem;
+    }
+
+
+    .HomepageProjectPG .buttonPG{
+      width: 18rem;
+      height: 3.5rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .HomepageProjectPG .buttonPG h6{
+      font-size: 1.6rem;
+      padding-top: 0.6rem;
+      color: #ffffff;
+    }
+
+    .HomepageProjectPG .buttonPG h6:hover{
+      color: #000000;
+    }
 
 
   footer h3{
