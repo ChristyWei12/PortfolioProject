@@ -1288,17 +1288,37 @@ footer .Email img{
 .RooMateCS{
   background-color: #202020;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.RooMateCS .Challenge{
+.RooMateCS .Statement{
+  display: flex;
+  flex-direction: column;
+}
+
+.RooMateCS .Statement p{
+  text-align: center;
+  width: 60%;
+}
+
+.RooMateCS .Problem{
+  display: flex;
+  flex-direction: row;
+  padding-top: 2.5rem;
+}
+
+.RooMateCS .Problem1{
   display: flex;
   flex-direction: column;
   margin-left: 4%;
   margin-right: 4%;
 }
 
-.RooMateCS .Solution{
+.RooMateCS .Problem p{
+  text-align: left;
+}
+
+.RooMateCS .Problem2{
   display: flex;
   flex-direction: column;
   margin-left: 4%;
@@ -1310,9 +1330,18 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
+  text-align: center;
 }
 
 .RooMateCS h3{
+  color: #ffffff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+}
+
+.RooMateCS h5{
   color: #ffffff;
   text-align: center;
   margin-left: auto;
@@ -1327,6 +1356,17 @@ footer .Email img{
   margin-right: auto;
   padding-bottom: 2.5rem;
 }
+
+.RooMateCS .Solution{
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+.RooMateCS .Solution p{
+  width: 60%;
+}
+
 
 /*Transition Image*/
 .RooMateTransition{
@@ -3111,21 +3151,38 @@ footer .Email img{
   padding-top: 6rem;
 }
 
-/*Challeng and Solution*/
+/*Challeng and Solution - mobile*/
 .RooMateCS{
   display: flex;
   flex-direction: column;
 }
 
-.RooMateCS .Challenge{
+.RooMateCS .Statement{
   margin-left: 0px;
   margin-right: 0px;
+}
+
+.RooMateCS .Statement p{
+  width: 80%;
+}
+
+.RooMateCS .Problem{
+  display: flex;
+  flex-direction: column;
+}
+
+.RooMateCS .Problem2{
+  padding-top: 2.5rem;
 }
 
 .RooMateCS .Solution{
   margin-left: 0px;
   margin-right: 0px;
   padding-top: 3.5rem;
+}
+
+.RooMateCS .Solution p{
+  width: 80%;
 }
 
 .RooMateCS p{
