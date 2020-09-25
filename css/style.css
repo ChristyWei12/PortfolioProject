@@ -44,7 +44,7 @@ h6{
 }
 
 p{
-  font-size: 2.1rem;
+  font-size: 1.8rem;
 }
 
 section{
@@ -1129,7 +1129,7 @@ footer .Email img{
 }
 
 .RooMatehero .herotext{
-  width: 100%;
+  width: 80%;
   display: block;
   position: relative;
   margin-left: auto;
@@ -1137,11 +1137,13 @@ footer .Email img{
   text-align: center;
 }
 
-.RooMatehero .herotext h1{
+.RooMatehero .herotext h2{
   padding-top: 3rem;
+  font-weight: bold;
+  font-style: normal;
 }
 
-.RooMatehero .herotext h3{
+.RooMatehero .herotext h5{
   padding-top: 3rem;
 }
 
@@ -1160,7 +1162,6 @@ footer .Email img{
 
 .RooMateIntro h3{
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
@@ -1171,6 +1172,7 @@ footer .Email img{
  margin-left: auto;
  margin-right: auto;
  width: 60%;
+ padding-top: 2.5rem;
 }
 
 .RooMateIntro .thinkful{
