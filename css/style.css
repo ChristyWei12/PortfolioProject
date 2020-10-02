@@ -1099,7 +1099,7 @@ footer .Email img{
 }
 }
 
-/*RooMate Project*/
+/*RooMate Project - desktop*/
 /*hero section*/
 .RooMatehero{
   display: block;
@@ -1168,10 +1168,10 @@ footer .Email img{
 }
 
 .RooMateIntro p{
- text-align: center;
+ text-align: left;
  margin-left: auto;
  margin-right: auto;
- width: 60%;
+ width: 68%;
  padding-top: 2.5rem;
 }
 
@@ -1284,7 +1284,7 @@ footer .Email img{
   padding-top: 0;
 }
 
-/*Challenge and Solution*/
+/*Problem and Solution - desktop*/
 .RooMateCS{
   background-color: #202020;
   display: flex;
@@ -1297,8 +1297,8 @@ footer .Email img{
 }
 
 .RooMateCS .Statement p{
-  text-align: center;
-  width: 60%;
+  text-align: left;
+  width: 68%;
 }
 
 .RooMateCS .Problem{
@@ -1351,7 +1351,6 @@ footer .Email img{
 
 .RooMateCS p{
   color: #ffffff;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
@@ -1364,11 +1363,12 @@ footer .Email img{
 }
 
 .RooMateCS .Solution p{
-  width: 60%;
+  width: 68%;
+  text-align: left;
 }
 
 
-/*Transition Image*/
+/*Transition Image - desktop*/
 .RooMateTransition{
   display: block;
   position: relative;
@@ -1384,7 +1384,7 @@ footer .Email img{
 	display: none;
 }
 
-/*Discovery*/
+/*Discovery - desktop*/
 /*title part*/
 .RooMateDiscovery{
   display: flex;
@@ -1420,9 +1420,22 @@ footer .Email img{
   width: 6.6rem;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 2.5rem;
 }
 
-/*Discovery-User Survey*/
+.RooMateDiscovery .Dtitle p{
+  padding-bottom: 2.5rem;
+  text-align: left;
+  width: 68%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.RooMateDiscovery .Dtitle .assumption{
+  text-align: left;
+}
+
+/*Discovery-User Survey - desktop*/
 .RooMateUserSurvey{
   padding-top: 6rem;
   margin-left: auto;
@@ -1446,8 +1459,8 @@ footer .Email img{
 }
 
 .RooMateUserSurvey p{
-  width: 60%;
-  text-align: center;
+  width: 68%;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1466,6 +1479,10 @@ footer .Email img{
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
+}
+
+.RooMateUserSurvey .key{
+  text-align: center;
 }
 
 .RooMateUserSurvey ul{
@@ -1493,7 +1510,7 @@ footer .Email img{
   width: 60%;
 }
 
-/*Interview*/
+/*Interview- desktop*/
 .RooMateInterview{
   display: flex;
   flex-direction: column;
@@ -1520,14 +1537,14 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .RooMateInterview .left p{
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 68%;
+  padding-top: 2.5rem;
 }
 
 .RooMateInterview .right{
@@ -1539,6 +1556,14 @@ footer .Email img{
 
 .RooMateInterview .right img{
   width: 100%;
+}
+
+.RooMateInterview .takeaway{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 68%;
+  padding-top: 2.5rem;
 }
 
 /*Discovery-Personas*/
@@ -1568,10 +1593,10 @@ footer .Email img{
 }
 
 .RooMatePersonas .top p{
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 68%;
 }
 
 .RooMatePersonas .Pcontainer{
@@ -1726,7 +1751,7 @@ footer .Email img{
   padding-right: 7%;
 }
 
-/*Competitor Analysis*/
+/*Competitor Analysis -  desktop*/
 .RooMateCA{
   padding-top: 6rem;
 }
@@ -1736,8 +1761,6 @@ footer .Email img{
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .RooMateCA .Ctop img{
@@ -1757,92 +1780,32 @@ footer .Email img{
 .RooMateCA .Ctop p{
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-  text-align: center;
+  width: 68%;
+  text-align: left;
 }
 
 .RooMateCA .Brand{
   padding-top: 6rem;
+  padding-bottom: 6rem;
   display: flex;
   flex-direction: row;
-}
-
-.RooMateCA .RR{
-  display: flex;
-  flex-direction: column;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-}
-
-.RooMateCA .logoset{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 2.5rem;
-}
-
-.RooMateCA .Roomi{
-  width: 4.5rem;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.RooMateCA .RoomEasy{
-  width: 4.5rem;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.RooMateCA .RR p{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.RooMateCA .Airbnb{
-  display: flex;
-  flex-direction: column;
-  margin-left: 4%;
-  margin-right: 4%;
-  width: 100%;
-}
-
-.RooMateCA .Airbnb img{
-   margin-left: auto;
-   margin-right: auto;
-   width: 4.5rem;
-   padding-bottom: 2.5rem;
-}
-
-.RooMateCA .Airbnb p{
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
-.RooMateCA .Craigslist{
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 6rem;
+.RooMateCA .Brand img{
+  width: 9%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
-.RooMateCA .Craigslist img{
-  width: 4.5rem;
+.RooMateCA .takeaway p{
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 2.5rem;
-}
-
-.RooMateCA .Craigslist p{
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  text-align: center;
+  width: 68%;
+  text-align: left;
 }
 
 /*Branding*/
@@ -1877,7 +1840,7 @@ footer .Email img{
   margin-right: auto;
 }
 
-/*Branding-Identity*/
+/*Branding-Identity -desktop*/
 .RooMateIdentity{
   padding-top: 6rem;
   display: flex;
@@ -1908,11 +1871,11 @@ footer .Email img{
 }
 
 .RooMateIdentity .part1 p{
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
-  width: 60%;
+  width: 68%;
 }
 
 .RooMateIdentity .part2{
@@ -1930,6 +1893,10 @@ footer .Email img{
   padding-top: 4.5rem;
 }
 
+.RooMateIdentity .part2 li p{
+  width: 100%;
+}
+
 .RooMateIdentity .last{
   margin-top: 4.5rem;
   margin-left: auto;
@@ -1941,10 +1908,10 @@ footer .Email img{
 }
 
 .RooMateIdentity .last p{
-    text-align: center;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 68%;
 }
 
 /*Branding-logo*/
@@ -1978,11 +1945,11 @@ footer .Email img{
 }
 
 .RooMateLogoPart .logotext p{
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
-  width: 60%;
+  width: 68%;
 }
 
 .RooMateLogoPart .logoskecth{
@@ -1999,7 +1966,7 @@ footer .Email img{
    width: 50%;
 }
 
-/*Branding-color*/
+/*Branding-color - desktop*/
 .RooMateColor{
   display: flex;
   flex-direction: column;
@@ -2035,7 +2002,7 @@ footer .Email img{
   padding-top: 2.5rem;
   color: #ffffff;
   text-align: center;
-  width: 60%;
+  width: 68%;
 }
 
 .RooMateColor .display{
@@ -2111,7 +2078,7 @@ footer .Email img{
 
 .RooMateTypography .left p{
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -2179,7 +2146,7 @@ footer .Email img{
   margin-right: auto;
 }
 
-/*User Story and User Flow*/
+/*User Story and User Flow-desktop*/
 .RooMateUSUF{
   padding-top: 6rem;
   display: flex;
@@ -2188,7 +2155,7 @@ footer .Email img{
   margin-right: auto;
 }
 
-.RooMateUSUF .left{
+.RooMateUSUF .top{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2196,13 +2163,13 @@ footer .Email img{
   padding-right: 10%;
 }
 
-.RooMateUSUF .left .icon{
+.RooMateUSUF .top .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.RooMateUSUF .left h3{
+.RooMateUSUF .top h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -2210,9 +2177,9 @@ footer .Email img{
 	text-align: center;
 }
 
-.RooMateUSUF .left p{
-  text-align: center;
-  width: 60%;
+.RooMateUSUF .top p{
+  text-align: left;
+  width: 68%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -2279,21 +2246,23 @@ footer .Email img{
 }
 
 
-/*IA-Paper Prototype*/
+/*IA-Paper Prototype - desktop*/
 .RooMatePP{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .RooMatePP .top{
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
   padding-left: 10%;
-  padding-right: 10%;
+  padding-right:10%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .RooMatePP .top .icon{
@@ -2311,8 +2280,8 @@ footer .Email img{
 }
 
 .RooMatePP .top p{
-  text-align: center;
-  width: 60%;
+  text-align: left;
+  width: 68%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -2331,21 +2300,32 @@ footer .Email img{
   width: 50%;
 }
 
-/*IA-Wireframe*/
+/*IA-Wireframe-desktop*/
 .RooMateWireframe{
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.RooMateWireframe .icon{
+.RooMateWireframe .top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 0;
+  margin-right:0;
+}
+
+.RooMateWireframe .top .icon{
   width: 4.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.RooMateWireframe h3{
+.RooMateWireframe .top h3{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
@@ -2353,13 +2333,11 @@ footer .Email img{
   text-align: center;
 }
 
-.RooMateWireframe p{
-  text-align: center;
+.RooMateWireframe .top p{
+  text-align: left;
+  width: 68%;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .RooMateWireframe .image{
@@ -2398,10 +2376,14 @@ footer .Email img{
 }
 
 .RooMateUT p{
-  text-align: center;
-  width: 60%;
+  text-align: left;
+  width: 68%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.RooMateUT .center{
+  text-align: center;
 }
 
 .RooMateUT .Line2{
@@ -2464,7 +2446,7 @@ footer .Email img{
 }
 
 .RooMateUT .signup p{
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -2485,7 +2467,7 @@ footer .Email img{
 }
 
 .RooMateUT .search p{
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -2522,15 +2504,15 @@ footer .Email img{
   margin-right: auto;
   padding-top: 6rem;
   padding-bottom: 12rem;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .RooMateABTesting .top{
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .RooMateABTesting .top .icon{
@@ -2550,21 +2532,23 @@ footer .Email img{
 .RooMateABTesting .top p{
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  width: 60%;
+  text-align: left;
+  width: 68%;
 }
 
 .RooMateABTesting .Test1{
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .RooMateABTesting .Test1 p{
   margin-left: auto;
   margin-right: auto;
-	text-align: center;
-  width: 60%;
+	text-align: left;
+  width: 68%;
 }
 
 .RooMateABTesting .Test1 img{
@@ -2583,13 +2567,17 @@ footer .Email img{
 .RooMateABTesting .Test2{
   padding-top: 6rem;
   justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .RooMateABTesting .Test2 p{
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  width: 60%;
+  text-align: left;
+  width: 68%;
 }
 
 .RooMateABTesting .Test2 img{
@@ -2606,16 +2594,18 @@ footer .Email img{
 }
 
 .RooMateABTesting .Test3{
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   padding-top: 6rem;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .RooMateABTesting .Test3 p{
   margin-left: auto;
   margin-right: auto;
-	text-align: center;
-  width: 60%;
+	text-align: left;
+  width: 68%;
 }
 
 .RooMateABTesting .Test3 img{
@@ -2694,9 +2684,9 @@ footer .Email img{
 .RooMateOnboarding p{
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
-  width: 60%;
+  width: 68%;
 }
 
 .RooMateOnboarding .onboardingdisplay{
@@ -2759,7 +2749,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
   width: 100%;
 }
@@ -2817,7 +2807,7 @@ footer .Email img{
   padding-bottom: 2.5rem;
   color: #ffffff;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 /*VD-post*/
@@ -2859,7 +2849,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
   width: 100%;
 }
@@ -2915,7 +2905,7 @@ footer .Email img{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
   width: 100%;
 }
@@ -2954,7 +2944,7 @@ footer .Email img{
 }
 
 
-/*Final*/
+/*Final - desktop*/
 .RooMateFinal{
   display: flex;
   flex-direction: column;
@@ -2988,7 +2978,11 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-  width: 60%;
+  width: 68%;
+}
+
+.RooMateFinal .bold{
+  font-weight: bold;
 }
 
 .RooMateFinal a{
@@ -3003,6 +2997,10 @@ footer .Email img{
   color: #2ABECC;
   text-decoration: underline;
 	text-align: center;
+}
+
+.RooMateFinal .learn{
+  padding-top: 6rem;
 }
 
 /*Next Project - Desktop*/
@@ -3203,7 +3201,12 @@ footer .Email img{
 	display: block;
 }
 
-/*Discovery-user survey*/
+/*Discovery-user survey - mobile*/
+.RooMateDiscovery .Dtitle p{
+  width: 80%;
+}
+
+
 .RooMateUserSurvey p{
   width: 80%;
 }
@@ -3224,8 +3227,12 @@ footer .Email img{
   font-size: 1.6rem;
 }
 
-/*Discovery-Interview*/
+/*Discovery-Interview - mobile*/
 .RooMateInterview .left p{
+  width: 80%;
+}
+
+.RooMateInterview .takeaway{
   width: 80%;
 }
 
@@ -3285,44 +3292,20 @@ footer .Email img{
   width: 80%;
 }
 
-/*Discovery-CA*/
+/*Discovery-CA-mobile*/
 .RooMateCA .Ctop p{
   width: 80%;
 }
 
 .RooMateCA .Brand{
   display: flex;
-  flex-direction: column;
+  flex-direction: grid;
 }
 
-.RooMateCA .RR{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.RooMateCA .RR p{
+.RooMateCA .takeaway p{
   width: 80%;
 }
-
-.RooMateCA .Airbnb{
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 2.5rem;
-}
-
-.RooMateCA .Airbnb p{
-  width: 80%;
-}
-
-.RooMateCA .Craigslist{
-  padding-top: 2.5rem;
-}
-
-.RooMateCA .Craigslist p{
-  width: 80%;
-}
-
-/*Branding*/
+/*Branding - mobile*/
 /*Branding-Identity*/
 .RooMateIdentity .part1 p{
   width: 80%;
@@ -3331,6 +3314,15 @@ footer .Email img{
 .RooMateIdentity .part2{
   padding-left: 10%;
   padding-right: 10%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.RooMateIdentity .part2 li p{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -3356,9 +3348,10 @@ footer .Email img{
    width: 100%;
 }
 
-/*Branding-color*/
+/*Branding-color - mobile*/
 .RooMateColor .text p{
   width: 80%;
+  text-align: left;
 }
 
 .RooMateColor .display{
@@ -3403,9 +3396,9 @@ footer .Email img{
 	padding-top: 6rem;
 }
 
-/*Information Architecture*/
+/*Information Architecture - mobile*/
 /*IA-USUF*/
-.RooMateUSUF .left p{
+.RooMateUSUF .top p{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -3431,6 +3424,11 @@ footer .Email img{
 
 
 /*IA-PP*/
+.RooMatePP .top{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .RooMatePP .top p{
   width: 80%;
 }
@@ -3449,7 +3447,7 @@ footer .Email img{
 }
 
 /*IA-Wireframe*/
-.RooMateWireframe p{
+.RooMateWireframe .top p{
   width: 80%;
 }
 
@@ -3588,7 +3586,7 @@ footer .Email img{
   display: none;
 }
 
-  /*VD-Lookforaroom*/
+  /*VD-Lookforaroom - mobile*/
 .RooMateLookforaroom{
   padding-top: 0rem;
   display: flex;
@@ -3604,7 +3602,7 @@ footer .Email img{
 
 .RooMateLookforaroom .left p{
   width: 80%;
-  text-align: center;
+  text-align: left;
 }
 
 .RooMateLookforaroom .image{
