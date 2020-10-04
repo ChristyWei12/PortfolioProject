@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- This is for Homepage -->
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172404977-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172404977-1');
+</script>
+    <meta charset="utf-8">
+    <meta name="author" content="Christy Wei">
+    <meta name="keywords" content="Christy, Wei, Portfolio, UX, Design">
+    <meta name="description" content="A website of Christy Wei as a UX Designer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Christy Wei's Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <link rel="icon" href="image/logo/favicon.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="header">
+        <a href="index.html" class="logo">
+            <img src="image/logo/signaturelogo.svg" alt="logoimage">
+        </a>
+           <!--<img class="logoimage" src="image/logo/signaturelogo.svg" alt="SignatureLogo">-->
+        <a href="#" class="toggle"> <!-- Media Query here -->
+         <img class="menu" src="image/logo/hamburgerbutton.svg" alt="Menu">
+       </a>
+       <!--Nav-->
+       <ul id="navlist">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="index.html">Playground</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+       </ul>
+      </nav>
+
+      <div class="PGHero">
+        <img class="image" src="image/Playgroundhero.jpg" alt="HeroImage">
+        <p>Welcome to my playground! Here list projects including side projects, design challenge projects etc. that I did in my spare time. Your opinion and comments are very precious to me and feel free to contact me to share your thoughts!</p>
+      </div>
+
+      <div class="grid-container">
+        <div class="item1">
+          <img class="Yoga" src="image/Yoga.jpg" alt="YogaApp">
+        </div>
+        <div class="item2">
+          <img class="Forest" src="image/Forest.jpg" alt="ForestWebDesign">
+        </div>
+        <div class="item3">
+          <img class="Cake" src="image/Cake.jpg" alt="CakeShopApp">
+        </div>
+      </div>  
+
+      <!--Footer-->
+      <footer>
+        <h3>Get In Touch</h3>
+        <div class="iconset">
+          <ul>
+            <li>
+              <a href="mailto:christywei31@gmail.com" class="Email" target="_blank">
+                <img class="icon" src="image/logo/Emails/Email-Actions/email-action-unread.svg" alt="Email">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/chuchuwei/" class="LinkedIn" target="_blank">
+                <img class="icon" src="image/logo/LinkedIn.svg" alt="LinkedIn">  <!-- Why there is a block of black? -->
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ChristyWei12" class="Github" target="_blank">
+                <img class="icon" src="image/logo/Github.svg" alt="Github">
+              </a>
+            </li>
+        </ul>
+      </div>
+      <h6>© Designed & Developed by Christy Wei 2020</h6>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script src="homepage.js"></script>
+    </body>
+    </html>
