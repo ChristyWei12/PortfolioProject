@@ -3062,6 +3062,10 @@ footer .Email img{
   display: none;
 }
 
+.RooMatehero .herotext{
+  width: 100%;
+}
+
 .RooMatehero .heromobile{
   width: 100%;
   display: block;
@@ -3150,7 +3154,7 @@ footer .Email img{
 }
 
 .RooMateCS .Statement p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateCS .Problem{
@@ -3169,11 +3173,11 @@ footer .Email img{
 }
 
 .RooMateCS .Solution p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateCS p{
-  width: 80%;
+  width: 100%;
 }
 
 /*Transition*/
@@ -3192,12 +3196,12 @@ footer .Email img{
 
 /*Discovery-user survey - mobile*/
 .RooMateDiscovery .Dtitle p{
-  width: 80%;
+  width: 100%;
 }
 
 
 .RooMateUserSurvey p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateUserSurvey .Line2{
@@ -3218,11 +3222,11 @@ footer .Email img{
 
 /*Discovery-Interview - mobile*/
 .RooMateInterview .left p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateInterview .takeaway{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateInterview .right img{
@@ -3231,7 +3235,7 @@ footer .Email img{
 
 /*Discover-Personas*/
 .RooMatePersonas .top p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMatePersonas .Pcontainer{
@@ -3264,26 +3268,26 @@ footer .Email img{
   text-align: center;
   padding-left: 0;
   padding-right: 0;
-  width: 80%;
+  width: 100%;
 }
 
 .RooMatePersonas .Persona2 p{
   text-align: center;
   padding-left: 0;
   padding-right: 0;
-  width: 80%;
+  width: 100%;
 }
 
 .RooMatePersonas .Persona3 p{
   text-align: center;
   padding-left: 0;
   padding-right: 0;
-  width: 80%;
+  width: 100%;
 }
 
 /*Discovery-CA-mobile*/
 .RooMateCA .Ctop p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateCA .Brand{
@@ -3292,12 +3296,12 @@ footer .Email img{
 }
 
 .RooMateCA .takeaway p{
-  width: 80%;
+  width: 100%;
 }
 /*Branding - mobile*/
 /*Branding-Identity*/
 .RooMateIdentity .part1 p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateIdentity .part2{
@@ -3309,19 +3313,19 @@ footer .Email img{
 }
 
 .RooMateIdentity .part2 li p{
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 .RooMateIdentity .last p{
-  width: 80%;
+  width: 100%;
 }
 
 /*Branding-Logo*/
 .RooMateLogoPart .logotext p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateLogoPart .logoskecth{
@@ -3339,7 +3343,7 @@ footer .Email img{
 
 /*Branding-color - mobile*/
 .RooMateColor .text p{
-  width: 80%;
+  width: 100%;
   text-align: left;
 }
 
@@ -3376,7 +3380,7 @@ footer .Email img{
 .RooMateTypography .left p{
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateTypography .right{
@@ -3388,7 +3392,7 @@ footer .Email img{
 /*Information Architecture - mobile*/
 /*IA-USUF*/
 .RooMateUSUF .top p{
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3419,7 +3423,7 @@ footer .Email img{
 }
 
 .RooMatePP .top p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMatePP .image{
@@ -3437,12 +3441,12 @@ footer .Email img{
 
 /*IA-Wireframe*/
 .RooMateWireframe .top p{
-  width: 80%;
+  width: 100%;
 }
 
 /*IA-User Testing*/
 .RooMateUT p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateUT .Line2{
@@ -3463,7 +3467,7 @@ footer .Email img{
 }
 
 .RooMateUT .signup p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateUT .search{
@@ -3472,7 +3476,7 @@ footer .Email img{
 }
 
 .RooMateUT .search p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateUT .button{
@@ -3488,11 +3492,11 @@ footer .Email img{
 
 /*AB Testing - Mobile*/
 .RooMateABTesting p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateABTesting .top p{
-width: 80%;
+width: 100%;
 }
 
 .RooMateABTesting .Test1 img{
@@ -3503,7 +3507,7 @@ width: 80%;
 }
 
 .RooMateABTesting .Test1 p{
- width: 80%;
+ width: 100%;
 }
 
 .RooMateABTesting .UT1{
@@ -3516,7 +3520,7 @@ width: 80%;
 }
 
 .RooMateABTesting .Test2 p{
- width: 80%;
+ width: 100%;
 }
 
 .RooMateABTesting .Test2 img{
@@ -3536,7 +3540,7 @@ width: 80%;
 }
 
 .RooMateABTesting .Test3 p{
- width: 80%;
+ width: 100%;
 }
 
 .RooMateABTesting .Test3 img{
@@ -3559,7 +3563,7 @@ width: 80%;
 
 /*VD-Pnboarding*/
 .RooMateOnboarding p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateOnboarding .onboardingdisplay{
@@ -3594,7 +3598,7 @@ width: 80%;
 }
 
 .RooMateLookforaroom .left p{
-  width: 80%;
+  width: 100%;
   text-align: left;
 }
 
@@ -3623,7 +3627,7 @@ width: 80%;
 }
 
 .RooMateLookForaroommate .right p{
-  width: 80%;
+  width: 100%;
 }
 
 /*VD-post*/
@@ -3643,7 +3647,7 @@ width: 80%;
 .RooMatePost .left p{
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
 }
 
 .RooMatePost .image{
@@ -3671,7 +3675,7 @@ width: 80%;
 }
 
 .RooMateChat .right p{
-  width: 80%;
+  width: 100%;
 }
 
 .RooMateprototype .button h6{
@@ -3687,7 +3691,7 @@ width: 80%;
 
 /*Final*/
 .RooMateFinal p{
-  width: 80%;
+  width: 100%;
 }
 
 /*Next Project - mobile*/
