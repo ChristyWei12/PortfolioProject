@@ -1022,9 +1022,9 @@ footer .Email img{
 /*hero*/
 .Abouthero{
   width: 100%;
-  padding-left: 21%;
-  padding-right: 21%;
-  margin-top: 10rem;
+  padding-left: 20%;
+  padding-right: 20%;
+  top:4.6rem;
   margin-bottom: 6rem;
   position: relative;
   display: block;
@@ -1040,16 +1040,11 @@ footer .Email img{
   display: block;
   padding-top: 6rem;
   padding-bottom: 6rem;
-  padding-left: 25%;
-  padding-right: 25%;
-}
-
-.Abouttext h2{
-  font-size: 3.4rem;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .Abouttext p{
-  font-size: 2.1rem;
   padding-top: 2.5rem;
   padding-bottom: 6rem;
 }
@@ -1079,22 +1074,17 @@ footer .Email img{
     display: block;
     padding-top: 0rem;
     padding-bottom: 0rem;
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-
-  .Abouttext h2{
-    font-size: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .Abouttext p{
-    font-size: 1.7rem;
     padding-top: 1.5rem;
     padding-bottom: 3rem;
   }
 
 .journey p{
-  padding-bottom: 12rem;
+  padding-bottom: 15rem;
 }
 }
 
@@ -6717,14 +6707,134 @@ font-size: 4.5rem;
 
 .item1 img{
   width: 100%;
+  display: block;
+  height: auto;
 }
 
 .item2 img{
   width: 100%;
+  display: block;
+  height: auto;
 }
 
 .item3 img{
   width: 100%;
+  display: block;
+  height: auto;
+}
+
+/*item1*/
+.item1{
+  position: relative;
+}
+
+.item1 .overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.item1:hover .overlay {
+  height: 100%;
+}
+
+.item1 .overlaytext{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.item1 .link{
+  text-decoration: underline;
+  font-size: 1.8rem;
+}
+
+/*item2*/
+.item2{
+  position: relative;
+}
+
+.item2 .overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.item2:hover .overlay {
+  height: 100%;
+}
+
+.item2 .overlaytext{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.item2 .link{
+  text-decoration: underline;
+  font-size: 1.8rem;
+}
+
+/*item3*/
+.item3{
+  position: relative;
+}
+
+.item3 .overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.item3:hover .overlay {
+  height: 100%;
+}
+
+.item3 .overlaytext{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.item3 .link{
+  text-decoration: underline;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 1000px){
@@ -6760,4 +6870,68 @@ font-size: 4.5rem;
     padding-right: 10%;
     padding-bottom: 15rem;
   }
+}
+
+/*Side Project - Yoga - desktop*/
+.YogaHero{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15rem;
+  top: 4.6rem;
+}
+
+.YogaHero img{
+  width: 100%;
+}
+
+/*Yoga Content - desktop*/
+.YogaContent{
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.YogaColor{
+  width: 25%;
+  padding-bottom: 6rem;
+}
+
+.YogaContent h3{
+  text-align: left;
+  padding-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight:bold;
+}
+
+.YogaContent p{
+  text-align: left;
+  padding-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.YogaContent h5{
+  padding-top:1.5rem;
+  font-weight:bold;
+}
+
+/*Side Project Yoga - mobile*/
+@media (max-width: 768px){
+  .YogaHero{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .YogaContent{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
 }
