@@ -6742,7 +6742,11 @@ font-size: 4.5rem;
   }
 }
 
-@media (max-width: 650px){
+@media (max-width:465px){
+  .PGHero img{
+    width: 60%;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 100%;
