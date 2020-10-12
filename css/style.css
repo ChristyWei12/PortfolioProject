@@ -7191,3 +7191,71 @@ font-size: 4.5rem;
   }
 
 }
+
+/*Side Project - Cake - desktop*/
+.CakeHero{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15rem;
+  top: 4.6rem;
+}
+
+.CakeHero img{
+  width: 100%;
+}
+
+/*Cake Content - desktop*/
+.CakeContent{
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.CakeColor{
+  width: 25%;
+  padding-bottom: 6rem;
+}
+
+.CakeContent h3{
+  text-align: left;
+  padding-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight:bold;
+}
+
+.CakeContent p{
+  text-align: left;
+  padding-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.CakeContent h5{
+  padding-top:1.5rem;
+  font-weight:bold;
+}
+
+.CakeContent .link{
+  color: #654597;
+}
+
+/*Side Project Cake - mobile*/
+@media (max-width: 768px){
+  .CakeHero{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .CakeContent{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}
