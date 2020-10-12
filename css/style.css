@@ -7089,6 +7089,10 @@ font-size: 4.5rem;
   font-weight:bold;
 }
 
+.YogaContent .link{
+  color: #654597;
+}
+
 /*Side Project Yoga - mobile*/
 @media (max-width: 768px){
   .YogaHero{
@@ -7097,6 +7101,85 @@ font-size: 4.5rem;
   }
 
   .YogaContent{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}
+
+/*Side Project - Forest - desktop*/
+.ForestHero{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15rem;
+  top: 4.6rem;
+}
+
+.ForestHero img{
+  width: 100%;
+}
+
+/*Forest Content - desktop*/
+.ForestContent{
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ForestColor{
+  width: 25%;
+  padding-bottom: 6rem;
+}
+
+.ForestContent h3{
+  text-align: left;
+  padding-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight:bold;
+}
+
+.ForestContent p{
+  text-align: left;
+  padding-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ForestContent h5{
+  padding-top:1.5rem;
+  font-weight:bold;
+}
+
+.ForestContent .link{
+  color: #355834;
+}
+
+.ForestContent .Original{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ForestContent .caption{
+  font-size: 1.4rem;
+  color: #ACACAC;
+}
+
+/*Side Project Forest - mobile*/
+@media (max-width: 768px){
+  .ForestHero{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .ForestContent{
     padding-left: 10%;
     padding-right: 10%;
   }
