@@ -7026,6 +7026,9 @@ font-size: 4.5rem;
     margin-right: auto;
   }
 
+  .PGHero p{
+    width: 100%;
+
   .grid-container {
     display: grid;
     grid-template-columns: 100%;
