@@ -1018,13 +1018,18 @@ footer .Email img{
   }
 }
 
-/*About Page*/
+/*About Page - desktop*/
 /*hero*/
+.Aboutcontainer{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
+
 .Abouthero{
-  width: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
-  top:4.6rem;
+  width: 40%;
+  top: 0;
   margin-bottom: 6rem;
   position: relative;
   display: block;
@@ -1038,15 +1043,16 @@ footer .Email img{
 /*text*/
 .Abouttext{
   display: block;
-  padding-top: 6rem;
+  width: 60%;
+  top: 0;
   padding-bottom: 6rem;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .Abouttext p{
-  padding-top: 2.5rem;
-  padding-bottom: 6rem;
+  padding-top: 0;
+  padding-bottom: 3rem;
 }
 
 .SmartCloset{
@@ -1057,16 +1063,24 @@ footer .Email img{
 	color: #FF685F;
 }
 
+.highlights{
+  font-weight: bold;
+  color: #FF6D72;
+}
+
 /*About Page Media Query*/
 @media (max-width: 768px){
   /*hero*/
+.Aboutcontainer{
+  flex-direction: column;
+}
+
   .Abouthero{
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 6rem;
+    margin-top: 0rem;
     margin-bottom: 6rem;
     position: relative;
     display: block;
+    width: 100%;
   }
 
   /*text*/
@@ -1074,17 +1088,18 @@ footer .Email img{
     display: block;
     padding-top: 0rem;
     padding-bottom: 0rem;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 100%;
   }
 
   .Abouttext p{
     padding-top: 1.5rem;
     padding-bottom: 3rem;
+    width: 100%;
   }
 
 .journey p{
-  padding-bottom: 15rem;
+  padding-bottom: 6rem;
+  width: 100%;
 }
 }
 
