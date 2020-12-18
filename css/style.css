@@ -62,7 +62,7 @@ section{
   left: 0;
   right: 0;
   z-index: 5;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 100);
   position: fixed;
 }
 
@@ -103,7 +103,7 @@ a{
   height: 46px;
   position: absolute;
   top: 0px;
-	background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 100);
 }
 
 .header ul li{
@@ -7026,7 +7026,7 @@ font-size: 4.5rem;
     grid-template-rows: auto;
     grid-template-areas:
       'Yoga Forest'
-      'Cake Cake';
+      'Cake .';
     grid-gap: 10px;
     padding-left: 10%;
     padding-right: 10%;
@@ -7068,8 +7068,10 @@ font-size: 4.5rem;
   margin-right: auto;
   padding-left: 20%;
   padding-right: 20%;
-  padding-bottom: 15rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
   top: 4.6rem;
+  background-color: #F5EFF9;
 }
 
 .YogaHero img{
@@ -7083,10 +7085,11 @@ font-size: 4.5rem;
   padding-bottom: 15rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .YogaColor{
-  width: 25%;
+  width: 20%;
   padding-bottom: 6rem;
 }
 
@@ -7119,11 +7122,17 @@ font-size: 4.5rem;
   .YogaHero{
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 5rem;
   }
 
   .YogaContent{
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .YogaColor{
+    width: 25%;
+    padding-top: 2rem;
   }
 
 }
@@ -7136,8 +7145,10 @@ font-size: 4.5rem;
   margin-right: auto;
   padding-left: 20%;
   padding-right: 20%;
-  padding-bottom: 15rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
   top: 4.6rem;
+  background-color: #AAB7B0;
 }
 
 .ForestHero img{
@@ -7151,10 +7162,11 @@ font-size: 4.5rem;
   padding-bottom: 15rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .ForestColor{
-  width: 25%;
+  width: 20%;
   padding-bottom: 6rem;
 }
 
@@ -7198,11 +7210,17 @@ font-size: 4.5rem;
   .ForestHero{
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 5rem;
   }
 
   .ForestContent{
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .ForestColor{
+    width: 25%;
+    padding-top: 2rem;
   }
 
 }
@@ -7215,8 +7233,10 @@ font-size: 4.5rem;
   margin-right: auto;
   padding-left: 20%;
   padding-right: 20%;
-  padding-bottom: 15rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
   top: 4.6rem;
+  background-color: #FFFDE4;
 }
 
 .CakeHero img{
@@ -7230,10 +7250,11 @@ font-size: 4.5rem;
   padding-bottom: 15rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .CakeColor{
-  width: 25%;
+  width: 20%;
   padding-bottom: 6rem;
 }
 
@@ -7271,6 +7292,11 @@ font-size: 4.5rem;
   .CakeContent{
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .CakeColor{
+    width: 25%;
+    padding-top: 2rem;
   }
 
 }
