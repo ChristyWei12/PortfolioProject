@@ -7396,6 +7396,11 @@ font-size: 4.5rem;
     margin-right: auto;
   }
 
+  .CBHplink{
+    text-decoration: underline;
+    color: #65B3F1;
+  }
+
   .CBHContent h5{
     padding-top:1.5rem;
     font-weight:bold;
@@ -7403,6 +7408,86 @@ font-size: 4.5rem;
 
   .CBHContent .link{
     color: #654597;
+  }
+
+  .CBHUS{
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .CBHS{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .CBHS1{
+    width: 50%;
+    margin-bottom: 1.5rem;
+  }
+
+  .CBHS2{
+    width: 50%;
+    margin-bottom: 1.5rem;
+  }
+
+  .CBHReS{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .CBHReS1{
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
+    margin-bottom: 1.5rem;
+  }
+
+  .change1{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .change2{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .change3{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .CBHReS-2{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .CBHReSS1{
+    width: 20%;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 1.5rem;
+  }
+
+  .CBHReSS2{
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1.5rem;
+  }
+
+  .CBHReSS3{
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-bottom: 1.5rem;
   }
 
   /*Side Project CBH - mobile*/
@@ -7421,6 +7506,53 @@ font-size: 4.5rem;
     .CBHColor{
       width: 25%;
       padding-top: 2rem;
+    }
+
+    .CBHS{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .CBHS1{
+      width: 100%;
+    }
+
+    .CBHS2{
+      width: 100%;
+    }
+
+    .CBHReS1{
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    .CBHReS-2{
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .CBHReSS1{
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-bottom: 1.5rem;
+    }
+
+    .CBHReSS2{
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-bottom: 1.5rem;
+    }
+
+    .CBHReSS3{
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-bottom: 1.5rem;
     }
 
   }

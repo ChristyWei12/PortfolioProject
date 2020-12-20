@@ -56,8 +56,10 @@
         <img class="CBHColor" src="image/CBHColor.svg" alt="Color Set Image">
         <h3>Clipboard Health (CBH) App Redesign</h3>
         <p>Project: CBH redesign for document collection section<br>
-Role: UX Designer<br>Deliverables: User Story, Sketch, Hi-fi Wireframe, Interactive Prototype<br>Tools: Figma, Google Doc<br>
-Target User: Healthcare Professional (HCP)</p>
+Role: UX Designer<br>Deliverables: User Story, Sketch, Hi-fi Wireframe,
+<a class="CBHplink" href="https://www.figma.com/proto/3pCiFyyhfbLxrb2j3OOVov/CBH-Redesign?node-id=1%3A2&viewport=176%2C190%2C0.2880059778690338&scaling=scale-down" target="_blank">Interactive Prototype</a>
+<br>Tools: Figma, Google Doc<br>
+Target User: Healthcare Professional (HCP)<br>Time: 2 hour exercise</p>
         <h5>CBH Overview</h5>
         <p>CBH is a marketplace that’s an Uber for healthcare professionals (HCPs) where healthcare
           facilities (HCFs) can request an HCP on demand or when they have a need, and where the HCP can pick and
@@ -69,21 +71,84 @@ Target User: Healthcare Professional (HCP)</p>
           many of the HCFs (facilities) require additional documentation in order to pick up their shifts.</p>
           <h5>Project Brief</h5>
           <p>This project is aiming to redesign the process for healthcare professionals (HCPs) to submit the
-            required document to CBH app. The redesign would address the following questions:</p>
+            required document to CBH app and find out the best solution to help HCP achieve the goal of picking up shift that they want in an easy way. The redesign would address the following questions:</p>
           <p>1. What documents do HCPs need to upload to work at CBH?<br>2. How do HCPs upload documents? Upload vs Reupload<br>3. What’s the status of docs?<br>4. Are any of the docs expiring? Do they need to upload new ones?<br>
 5. What do HCPs get if they upload some of the recommended / facility required docs?<br>
 </p>
-        <h5>How do I come up with the idea?</h5>
-        <p>While working at home nowadays during the pandemic, I began to fall in love with yoga. Practicing
-          yoga at home makes me feel focused, relaxed and peaceful. The color set in this challenge gives me a
-          feeling of mystery, power, balance and exploration which echoes what I feel for yoga. Thus I decided
-          to create an iOS design for an app to provide all-level yoga classes when people are at home.</p>
-        <h5>Highlight</h5>
-        <p>I notice that applying illustrations in the design is one of the trends so I have used and recreated
-          some illustrations from the website <a href="https://undraw.co/" class="link">Undraw.co</a>.</p>
-        <h5>Tools</h5>
-        <p>Sketch</p>
-        <p>Please let me know what you think and how you would like it to be improved. Hope you like my design and like yoga as well! Namaste</p>
+        <h5>Problem</h5>
+        <p>Most of the HCPs do not proactively check the document section in the app and keep their docs up-to-date. Currently HCPs reply on the phone calls
+          from the Customer Success Team, which is costly and not convenient.</p>
+        <h5>Solution</h5>
+        <p>Change the existing user flow and interface. In the current design, the document section is under the Account tab which is not standing out to
+          attract the HCP’s attention. Since submitting the required document is an important step for HCP to fill a shift, it should be given more priority.
+          Thus I decided to move this part and list it out separately as an independent app tab.</p>
+        <h5>Assumptions</h5>
+        <p>1, HCP prefers to check on the app instead of receiving the incoming calls from the Customer Success Team<br>
+2, HCP would like to preview or view the uploaded docs to make sure the doc is uploaded successfully<br>
+3, HCP would like to have more control over the document submission, like preview, delete or reupload docs<br>
+4, HCP wants to contact the Customer Success Team when they run into a problem </p>
+        <h5>Current Design and Flow</h5>
+        <p>Currently HCPs learn about which documents they need to upload when the customer success team calls them to fill a shift or the documents team reaches out to let them know that some of their docs are expired/expiring.
+          there is a section in the app where they can view their docs and upload new ones. Most of the HCPs do not proactively check this section and keep their docs up-to-date but the stakeholder wants to change this behavior.</p>
+        <p>HCPs can click into their Account -> Documents -> View Doc Requirements -> “View” Docs</p>
+        <img class="CBHUS" src="image/CBHCurrent.png" alt="current Interface">
+        <p>Current user story:</p>
+        <img class="CBHUS" src="image/CBHCurrentUserStory.jpg" alt="current user story">
+        <p>Due to the limitation of this project, I don't have resources to conduct the user research. Instead, I reviewed the user reviews from AppStore and talked to stakeholder
+          regarding the user feedback. Based on the information, I was able to sketch out the user story as follows:</p>
+        <img class="CBHUS" src="image/CBHRedesignedUserStory.jpg" alt="redesigned user story">
+        <h5>Sketch</h5>
+        <p>Then I sketched out the interface as follows.</p>
+        <div class="CBHS">
+          <img class="CBHS1" src="image/CBHSketch1.png" alt="Sketch 1">
+          <img class="CBHS2" src="image/CBHSketch2.png" alt="Sketch 2">
+        </div>
+        <h5>Redesigned Interface</h5>
+        <div class="change1">
+         <h6>1) Document Tab</h6>
+         <p>Changes made:<br>
+1, The document section is listed out separately as a tab, thus it will be easier to attract HCP’s attention. At the same time, if there is action or attention needed, it will appear a red spot on the icon to remind users.<br>
+2, ‘Core’ and ‘Recommended’ is changed to ‘Basic’ and ‘Additional’ to make it easier to understand terms.<br>
+3, Number of docs section is removed. The red dot number besides ‘Additional’ or ‘Core’ will only show the number of docs which needed action.<br>
+4, Different colors represent different status of the docs.<br>
+    Red: expire; Orange: Empty, need uploading new doc; Green: completed<br>
+5, Customer Success Team contact icon is added if users have any confusion/question about this section.
+</p>
+       <div class="CBHReS">
+         <img class="CBHReS1" src="image/CBHDocumentPage.png" alt="Document Tab">
+       </div>
+      </div>
+      <div class="change2">
+       <h6>2) New Document Upload Page</h6>
+       <p>Changes made:<br>
+1, Combine the upload options (take photo & select document) into one button, and when clicked, two options will show as overlays. This change will make the page clean and well organized.<br>
+2, Remove the Description and Instructions part.<br>
+3, Add Document Type.<br>
+4, Add the preview section in the most important place of the page - users can also click the preview section to upload new docs if no doc was uploaded before.<br>
+5, When uploaded successfully, users will be notified in the top banner.<br>
+6, Customer Success Team contact icon is added.
+</p>
+      <div class="CBHReS-2">
+        <img class="CBHReSS1" src="image/NewDocument1.png" alt="app screen">
+        <img class="CBHReSS2" src="image/NewDocument2.png" alt="app screen">
+        <img class="CBHReSS3" src="image/NewDocument3.png" alt="app screen">
+      </div>
+      </div>
+      <div class="change3">
+        <h6>3) Expired Document</h6>
+        <p>Changes made:<br>The preview section will become red to remind users that the doc has expired.</p>
+      <div class="CBHReS">
+        <img class="CBHReS1" src="image/ExpiredDocument.png" alt="app screen">
+      </div>
+      </div>
+      <h5>Prototype</h5>
+      <p>Click <a class="CBHplink" href="https://www.figma.com/proto/3pCiFyyhfbLxrb2j3OOVov/CBH-Redesign?node-id=1%3A2&viewport=176%2C190%2C0.2880059778690338&scaling=scale-down" target="_blank">here</a> to check prototype</p>
+      <h5>Future Improvement</h5>
+      <p>Since this is just a 2-hour redesign exercise, there is still much work that could be done if given more time and resources. Here are some future improvements to consider:<br>
+1, Conduct Usability Testing on the prototype<br>
+2, Conduct User Research, including surveys and interviews to know more about how HCP behaves<br>
+3, Take more constraints into the consideration<br>
+</p>
       </div>
 
       <!--Footer-->
