@@ -13,7 +13,7 @@ html{
 }
 
 body{
-  background-color: #ffffff;
+  background-color: #0A0A0A;
   font-family: Muli;
   line-height: 1.5;
 }
@@ -54,30 +54,47 @@ section{
 
 /*header*/
 .header{
-  display: block;
-  position: absolute;
-  height: 4.6rem;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  height: auto;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
+  padding-top: 3vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
   z-index: 5;
-  background-color: rgba(255, 255, 255, 100);
-  position: fixed;
+  background-color: rgba(10, 10, 10, 0.6);
+}
+
+.header .left{
+  display: block;
+  position: relative;
+  width: 50%;
+  left:0;
 }
 
 .logo{
-  width: 20rem;
+  height: 4.6rem;
   display: block;
   position: relative;
-  left: 5%;
-  top: 15px;
+  left: 0;
+  top: 0;
 }
 
 .logo img{
-  width: 100%;
+  height: 100%;
   display: block;
   position: relative;
+}
+
+.header .right{
+  display: block;
+  position: relative;
+  width: 50%;
+  right: 0;
 }
 
 a{
@@ -99,17 +116,23 @@ a{
 }
 
 .header ul{
-  right: 5%;
-  height: 46px;
-  position: absolute;
-  top: 0px;
-  background-color: rgba(255, 255, 255, 100);
+  right: 0;
+  height: 4.6rem;
+  width: 100%;
+  position: relative;
+  top: 0;
+  padding-right: 0;
+  text-align: right;
+  /*background-color: rgba(10, 10, 10, 0.6);*/
 }
 
 .header ul li{
   list-style: none;
   display: inline-block;
-  padding: 16px 14px;
+  position: relative;
+  padding: 15px 15px;
+  width: auto;
+  text-align: center;
 }
 
 .header ul li a:hover{
@@ -117,10 +140,12 @@ a{
 }
 
 .header ul li a{
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.8rem;
 }
+
+
 /*Homepage - desktop*/
 /*Homepage-Hero*/
 .Homepagehero{
@@ -605,9 +630,10 @@ footer .Email img{
 }
 
 /*Homepage-Mobile*/
-@media (max-width: 768px){
+@media (max-width: 822px){
   .toggle{
     display: block;
+    background-color: rgba(10, 10, 10, 0.6);
   }
 
   ul{
@@ -615,18 +641,18 @@ footer .Email img{
   }
 
   .header ul{
-    top: 29px;
-    width: 100%;
+    top: 40px;
+    /*width: 100%;
     right: 0;
     position: relative;
-    background-color: #ffffff;
+    background-color: #ffffff;*/
   }
 
   .header ul li{
     display: block;
     text-align: center;
     width: 100%;
-    background-color: rgba(255, 164, 131, 0.7);
+    background-color: rgba(255, 164, 131, 0.7);*
   }
 
   .header ul li a{
@@ -638,18 +664,14 @@ footer .Email img{
   }
 
   .logo{
-    width: 12rem;
-    display: block;
-    /*background-color: red;*/
-    position: relative;
+    /*width: 12rem;*/
+    background-color: none;
     margin-left: auto;
     margin-right: auto;
-    top: 10px;
-    left: 0;
   }
 
   .logo img{
-    width: 100%;
+    height: 60%;
     display: block;
     position: relative;
     top: 0.5rem;
