@@ -65,6 +65,7 @@ section{
   padding-top: 3vw;
   padding-left: 3vw;
   padding-right: 3vw;
+  padding-bottom: 1vw;
   z-index: 5;
   background-color: rgba(10, 10, 10, 0.6);
 }
@@ -207,17 +208,109 @@ a{
   margin-top: 1rem;
 }
 
-
-/*fp*/
+/*fp-transition*/
 .FP{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-/*Project1*/
+/*Projects*/
+.item1 { grid-area: HomepageProject4; }
+.item2 { grid-area: HomepageProject1; }
+.item3 { grid-area: HomepageProject3; }
+.item4 {grid-area: HomepageProject2;}
+.item5 {grid-area: HomepageProjectPG;}
+
+.Projects {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'HomepageProject4 HomepageProject1'
+    'HomepageProject3 HomepageProject2'
+    'HomepageProjectPG HomepageProjectPG';
+  grid-gap: 10px;
+}
+
+/*Project4-Bubble*/
+.HomepageProject4{
+  display: block;
+  position: relative;
+}
+
+.imageproject4{
+  width: 100%;
+  height: auto;
+}
+
+.project4{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.Homepagedisplay4{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.Homepageprojecttext4{
+  background-image: url("/image/BubbleHover.jpg");
+  background-size: cover;
+  background-color: #6B61EC;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project4:hover .Homepageprojecttext4{
+  opacity: 1;
+}
+
+
+.Homepageprojecttext4 h6{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.HomepageProject4 .button1{
+  background-color: #6B61EC;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  border-radius: 3px;
+}
+
+.HomepageProject4 .button1 h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #ffffff;
+}
+
+.HomepageProject4 .button1 h6:hover{
+  color: #000000;
+}
+
+
+/*Project1-RooMate*/
 .HomepageProject1{
-  padding: 6rem 20%;
   display: block;
   position: relative;
 }
@@ -242,7 +335,9 @@ a{
 }
 
 .Homepageprojecttext1{
-  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("/image/RooMateHover.jpg");
+  background-size: cover;
+  background-color: #2ABECC;
   top: 0;
   bottom: 0;
   left: 0;
@@ -252,31 +347,13 @@ a{
   opacity: 0;
   transition: .5s ease;
   position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project1:hover .Homepageprojecttext1{
   opacity: 1;
-}
-
-
-.text1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.Homepageprojecttext1 h2{
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: Montserrat;
-}
-
-.Homepageprojecttext1 h5{
-  text-align: center;
-  font-size: 2.4rem;
-  padding-top: 1.5rem;
 }
 
 .Homepageprojecttext1 h6{
@@ -294,12 +371,12 @@ a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
+  margin-top: 70%;
   border-radius: 3px;
 }
 
 .HomepageProject1 .button1 h6{
   font-size: 1.8rem;
-  padding-top: 0.8rem;
   color: #ffffff;
 }
 
@@ -307,14 +384,8 @@ a{
   color: #000000;
 }
 
-.project1mobile{
-  display: none;
-}
-
-/*project3 Desktop*/
-
+/*Project3-SmartCloset*/
 .HomepageProject3{
-  padding: 6rem 20%;
   display: block;
   position: relative;
 }
@@ -324,17 +395,12 @@ a{
   height: auto;
 }
 
-.project3mobile{
-  display: none;
-}
-
 .project3{
   width: 100%;
   height: auto;
   display: block;
   position: relative;
 }
-
 
 .Homepagedisplay3{
   display: block;
@@ -344,7 +410,9 @@ a{
 }
 
 .Homepageprojecttext3{
-  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("/image/SmartClosetHover.jpg");
+  background-size: cover;
+  background-color: #ffffff;
   top: 0;
   bottom: 0;
   left: 0;
@@ -354,32 +422,13 @@ a{
   opacity: 0;
   transition: .5s ease;
   position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project3:hover .Homepageprojecttext3{
   opacity: 1;
-}
-
-
-.text3{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-
-.Homepageprojecttext3 h2{
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: Montserrat;
-}
-
-.Homepageprojecttext3 h5{
-  text-align: center;
-  font-size: 2.4rem;
-  padding-top: 1.5rem;
 }
 
 .Homepageprojecttext3 h6{
@@ -388,9 +437,8 @@ a{
   padding-top: 1.5rem;
 }
 
-
-.HomepageProject3 .button3{
-  background-color: #202020;
+.HomepageProject3 .button1{
+  background-color: #ffffff00;
   width: 22rem;
   height: 4.2rem;
   display: block;
@@ -398,24 +446,21 @@ a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
+  margin-top: 70%;
   border-radius: 3px;
 }
 
-.HomepageProject3 .button3 h6{
+.HomepageProject3 .button1 h6{
   font-size: 1.8rem;
-  padding-top: 0.8rem;
-	color: #ffffff;
+  color: #ffffff;
 }
 
-.HomepageProject3 .button3 h6:hover{
-  color: #acacac;
+.HomepageProject3 .button1 h6:hover{
+  color: #AAAAAA;
 }
 
-
-/*project2 Desktop*/
-
-.HomepageProject2{
-  padding: 6rem 20% 6rem 20%;
+/*Project2-WeCloud - desktop*/
+.HomepageProject12{
   display: block;
   position: relative;
 }
@@ -423,10 +468,6 @@ a{
 .imageproject2{
   width: 100%;
   height: auto;
-}
-
-.project2mobile{
-  display: none;
 }
 
 .project2{
@@ -444,7 +485,9 @@ a{
 }
 
 .Homepageprojecttext2{
-  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("/image/WeCloudHover.jpg");
+  background-size: cover;
+  background-color: #8883BB;
   top: 0;
   bottom: 0;
   left: 0;
@@ -454,32 +497,13 @@ a{
   opacity: 0;
   transition: .5s ease;
   position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project2:hover .Homepageprojecttext2{
   opacity: 1;
-}
-
-
-.text2{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.Homepageprojecttext2 h2{
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: Montserrat;
-}
-
-
-.Homepageprojecttext2 h5{
-  text-align: center;
-  font-size: 2.4rem;
-  padding-top: 1.5rem;
 }
 
 .Homepageprojecttext2 h6{
@@ -488,7 +512,7 @@ a{
   padding-top: 1.5rem;
 }
 
-.HomepageProject2 .button2{
+.HomepageProject2 .button1{
   background-color: #8883BB;
   width: 22rem;
   height: 4.2rem;
@@ -497,122 +521,22 @@ a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
+  margin-top: 70%;
   border-radius: 3px;
 }
 
-.HomepageProject2 .button2 h6{
+.HomepageProject2 .button1 h6{
   font-size: 1.8rem;
-  padding-top: 0.8rem;
   color: #ffffff;
 }
 
-.HomepageProject2 .button2 h6:hover{
-  color: #000000;
-}
-
-
-/*Playground*/
-/*project2 Desktop*/
-
-.HomepageProjectPG{
-  padding: 6rem 20% 12rem 20%;
-  display: block;
-  position: relative;
-}
-
-.imageprojectPG{
-  width: 100%;
-  height: auto;
-}
-
-.projectPGmobile{
-  display: none;
-}
-
-.projectPG{
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-}
-
-.HomepagedisplayPG{
-  display: block;
-  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
-  height: auto;
-  position: relative;
-}
-
-.HomepageprojecttextPG{
-  background-color: rgba(255, 255, 255, 0.9);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  position: absolute;
-}
-
-.projectPG:hover .HomepageprojecttextPG{
-  opacity: 1;
-}
-
-
-.textPG{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.HomepageprojecttextPG h2{
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: Montserrat;
-}
-
-
-.HomepageprojecttextPG h5{
-  text-align: center;
-  font-size: 2.4rem;
-  padding-top: 1.5rem;
-}
-
-.HomepageprojecttextPG h6{
-  text-align: center;
-  font-size: 1.8rem;
-  padding-top: 1.5rem;
-}
-
-.HomepageProjectPG .buttonPG{
-  background-color: #2F2E41;
-  width: 22rem;
-  height: 4.2rem;
-  display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
-  border-radius: 3px;
-}
-
-.HomepageProjectPG .buttonPG h6{
-  font-size: 1.8rem;
-  padding-top: 0.8rem;
-  color: #ffffff;
-}
-
-.HomepageProjectPG .buttonPG h6:hover{
+.HomepageProject2 .button1 h6:hover{
   color: #000000;
 }
 
 /*footer*/
 footer{
-  background-color: #202020;
+  background-color: #0A0A0A;
   width: 100%;
   height: 30rem;
   padding-top: 6rem;
@@ -655,7 +579,7 @@ footer .Email img{
 @media (max-width: 822px){
   .toggle{
     display: block;
-    background-color: rgba(10, 10, 10, 0.6);
+    background-color: rgba(10, 10, 10, 0);
   }
 
   ul{
@@ -783,237 +707,19 @@ footer .Email img{
     -webkit-border-radius:40px;
   }*/
 
-
-/*project1 mobile*/
-  .Homepagedisplay1-2{
-    height: 400px;
-    background-position: center;
-		background: url("../image/P1m.jpg");
-	  background-size: 100%;
-  }
-
-  .project1{
-    display: none;
-  }
-
-  .project1mobile{
-    display: block;
-  }
-
-  .HomepageProject1{
-    padding: 6rem 15%;
-  }
-
-  .Homepageprojecttext1-2 h2{
-    font-size: 2.4rem;
-    text-align: center;
-    font-family: Montserrat;
-    padding-top: 2rem;
-  }
-
-  .Homepageprojecttext1-2 h5{
-    font-size: 1.7rem;
-    text-align: center;
-    padding-top: 1.5rem;
-  }
-
-  .Homepageprojecttext1-2 h6{
-    font-size: 1.6rem;
-    text-align: center;
-    padding-top: 1.5rem;
-  }
-
-
-  .HomepageProject1 .button1{
-    width: 18rem;
-    height: 3.5rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .HomepageProject1 .button1 h6{
-    font-size: 1.6rem;
-    padding-top: 0.6rem;
-    color: #ffffff;
-  }
-
-  .HomepageProject1 .button1 h6:hover{
-    color: #000000;
-  }
-
-  /*project3 mobile*/
-
-	.Homepagedisplay3-2{
-		height: 400px;
-		background-position: center;
-		background: url("../image/P2m.jpg");
-		background-size: 130%;
-	}
-
-  .project3{
-    display: none;
-  }
-
-  .project3mobile{
-    display: block;
-  }
-
-  .HomepageProject3{
-    padding: 6rem 15%;
-  }
-
-
-
-	.Homepageprojecttext3-2 h2{
-		font-size: 2.4rem;
-    text-align: center;
-    font-family: Montserrat;
-    padding-top: 2rem;
-	}
-
-  .Homepageprojecttext3-2 h5{
-     font-size: 1.7rem;
-     text-align: center;
-     padding-top: 1.5rem;
-   }
-
-   .Homepageprojecttext3-2 h6{
-     font-size: 1.6rem;
-     text-align: center;
-     padding-top: 1.5rem;
-   }
-
-	.HomepageProject3 .button3{
-		width: 18rem;
-		height: 3.5rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.HomepageProject3 .button3 h6{
-		font-size: 1.6rem;
-		padding-top: 0.6rem;
-    color: #ffffff;
-	}
-
-  .HomepageProject3 .button3 h6:hover{
-    color: #000000;
-  }
-
-
-  /*project2 mobile*/
-  .Homepagedisplay2-2{
-    height: 400px;
-    background-position: left top;
-    background: url("../image/P3.jpg");
-    background-size: 200%;
-  }
-
-  .project2{
-     display: none;
-   }
-
-   .project2mobile{
-     display: block;
-   }
-
-   .HomepageProject2{
-     padding: 6rem 15%;
-   }
-
-   .Homepageprojecttext2-2 h2{
-     font-size: 2.4rem;
-     text-align: center;
-     font-family: Montserrat;
-     padding-top: 2rem;
-   }
-
-   .Homepageprojecttext2-2 h5{
-     font-size: 1.7rem;
-     text-align: center;
-     padding-top: 1.5rem;
-   }
-
-   .Homepageprojecttext2-2 h6{
-     font-size: 1.6rem;
-     text-align: center;
-     padding-top: 1.5rem;
-   }
-
-
-   .HomepageProject2 .button2{
-     width: 18rem;
-     height: 3.5rem;
-     margin-left: auto;
-     margin-right: auto;
-   }
-
-   .HomepageProject2 .button2 h6{
-     font-size: 1.6rem;
-     padding-top: 0.6rem;
-     color: #ffffff;
-   }
-
-   .HomepageProject2 .button2 h6:hover{
-     color: #000000;
-   }
-
-   /*projectPG mobile*/
-   .HomepagedisplayPG-2{
-     height: 400px;
-     background-position: left top;
-     background: url("../image/PGm.jpg");
-     background-size: 100%;
-   }
-
-   .projectPG{
-      display: none;
-    }
-
-    .projectPGmobile{
-      display: block;
-    }
-
-    .HomepageProjectPG{
-      padding: 6rem 15%;
-    }
-
-    .HomepageprojecttextPG-2 h2{
-      font-size: 2.4rem;
-      text-align: center;
-      font-family: Montserrat;
-      padding-top: 2rem;
-    }
-
-    .HomepageprojecttextPG-2 h5{
-      font-size: 1.7rem;
-      text-align: center;
-      padding-top: 1.5rem;
-    }
-
-    .HomepageprojecttextPG-2 h6{
-      font-size: 1.6rem;
-      text-align: center;
-      padding-top: 1.5rem;
-    }
-
-
-    .HomepageProjectPG .buttonPG{
-      width: 18rem;
-      height: 3.5rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .HomepageProjectPG .buttonPG h6{
-      font-size: 1.6rem;
-      padding-top: 0.6rem;
-      color: #ffffff;
-    }
-
-    .HomepageProjectPG .buttonPG h6:hover{
-      color: #000000;
-    }
+/*Projects - Mobile*/
+.Projects {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'HomepageProject4'
+    'HomepageProject1'
+    'HomepageProject3'
+    'HomepageProject2'
+    'HomepageProjectPG';
+  grid-gap: 0px;
+}
 
 
   footer h3{
@@ -6941,7 +6647,7 @@ font-size: 4.5rem;
 .item1 { grid-area: Yoga; }
 .item2 { grid-area: Forest; }
 .item3 { grid-area: Cake; }
-.iten4 {grid-area: CBH;}
+.item4 {grid-area: CBH;}
 
 .grid-container {
   display: grid;
