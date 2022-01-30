@@ -48,7 +48,7 @@ p{
 }
 
 section{
-  padding: 12rem 10%;
+  padding: 12rem 5%;
 }
 
 
@@ -149,48 +149,70 @@ a{
 /*Homepage - desktop*/
 /*Homepage-Hero*/
 .Homepagehero{
+  display: flex;
+  flex-direction: row;
+  padding-top: 230px;
+  padding-bottom: 200px;
+  padding-left: 10%;
+  padding-right: 10%;
+  /*justify-content: center;*/
+}
+
+.video-mask{
   display: block;
   position: relative;
-  top: 46px;
-  padding-top: 27px;
-  padding-bottom: 200px;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.Homepagehero .illustration{
-  width: 30rem;
-  margin-bottom: 6rem;
   text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.Homepagehero .illustration2{
-  display: none;
+.video{
+  border-radius: 23px;
+  transform: rotate(-10deg);
 }
 
-.Homepagehero h1{
-  font-size: 4.8rem;
-  font-family: Montserrat;
+.hptext{
+  display: block;
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
 }
 
-.Homepagehero p{
-  font-size: 2.2rem;
-  width: 54rem;
-  margin-top: 3rem;
-  line-height: 3.6rem;
+.Homepagehero .sub-title{
+  color: #ADADAD;
+  font-weight: bold;
 }
 
-
-.Homepagehero a{
-  color: #FF6D72;
+.Homepagehero .title{
+  color: #ffffff;
+  font-weight: bolder;
 }
+
+.Homepagehero .introduction{
+  font-size: 2.4rem;
+  color: #ffffff;
+  font-weight: bold;
+  width: auto;
+  margin-top: 1rem;
+}
+
+.Homepagehero .hashtag{
+  font-size: 2.4rem;
+  color: #ADADAD;
+  font-weight: bold;
+  width: auto;
+  margin-top: 1rem;
+}
+
 
 /*fp*/
 .FP{
-  font-size: 3.2rem;
-  font-family: Montserrat;
-  padding-left: 20%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Project1*/
@@ -708,36 +730,59 @@ footer .Email img{
 
 /*hero*/
 .Homepagehero{
-  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
   padding-bottom: 180px;
-  padding-left: 15%;
-  padding-right: 15%;
 }
 
-.Homepagehero img{
+.video-mask{
   display: block;
   position: relative;
+  text-align: center;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 6rem;
-}
-
-.Homepagehero h1{
-  font-size: 3rem;
-  font-family: Montserrat;
-}
-
-.Homepagehero p{
-  font-size: 1.8rem;
-  margin-top: 3rem;
-  width: 100%;
   }
 
-/*fp*/
-  .FP{
-    font-size: 2rem;
-    padding-left: 15%;
+.video{
+  border-radius: 23px;
+  transform: rotate(0deg);
   }
+
+.hptext{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 18rem;
+    text-align: center;
+  }
+
+  .Homepagehero .sub-title{
+    font-size: 1.8rem;
+  }
+
+  .Homepagehero .introduction{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  .Homepagehero .hashtag{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+
+/*.video-mask{
+    border-radius: 25px;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-border-radius:40px;
+    -webkit-border-radius:40px;
+  }*/
+
 
 /*project1 mobile*/
   .Homepagedisplay1-2{
@@ -981,7 +1026,7 @@ footer .Email img{
 
 }
 
-@media (min-width: 1660px){
+/*@media (min-width: 1660px){
   .Homepagehero{
     padding-top: 15rem;
   }
@@ -1008,9 +1053,9 @@ footer .Email img{
   .Homepagehero .illustration2{
     width: 30%;
   }
-}
+}*/
 
-@media (min-width: 2500px){
+/*@media (min-width: 2500px){
   .Homepagehero{
     padding-top: 15rem;
   }
@@ -1038,7 +1083,7 @@ footer .Email img{
     width: 20%;
     height: auto;
   }
-}
+}*/
 
 /*About Page - desktop*/
 /*hero*/
