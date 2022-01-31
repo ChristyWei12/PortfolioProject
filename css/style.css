@@ -797,11 +797,14 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20rem;
+  padding-bottom: 3rem;
 }
 
 .Abouthero{
-  width: 40%;
+  width: 100%;
   top: 0;
   margin-bottom: 6rem;
   position: relative;
@@ -809,71 +812,233 @@ footer .Email img{
 }
 
 .Abouthero img{
-  width: 100%;
+  width: 23%;
   height: auto;
 }
 
 /*text*/
 .Abouttext{
   display: block;
-  width: 60%;
+  width: 100%;
   top: 0;
-  padding-bottom: 6rem;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-bottom: 3rem;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Abouttext p{
   padding-top: 0;
-  padding-bottom: 3rem;
 }
 
-.SmartCloset{
-	text-decoration: underline;
+.item1 { grid-area: Location; }
+.item2 { grid-area: Dog; }
+.item3 { grid-area: Cat; }
+.item4 {grid-area: Movie;}
+.item5 {grid-area: Design;}
+.item6 {grid-area: Tools;}
+.item7 {grid-area: Book;}
+.item8 {grid-area: Painting;}
+.item9 {grid-area: Music;}
+.item10 {grid-area: Game;}
+
+
+.Aboutme{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: auto
+  grid-template-areas:
+    'Location Dog Cat Movie'
+    'Design Tools Book Painting'
+    '. Music Game .';
+  grid-gap: 6%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 30rem;
+  text-align: center;
+  width: 100%;
 }
 
-.SmartCloset:hover{
-	color: #FF685F;
+.item1{
+  display: block;
+  position: relative;
 }
 
-.highlights{
-  font-weight: bold;
-  color: #FF6D72;
+.item2{
+  display: block;
+  position: relative;
+}
+
+.item3{
+  display: block;
+  position: relative;
+}
+
+.item4{
+  display: block;
+  position: relative;
+}
+
+.item5{
+  display: block;
+  position: relative;
+}
+
+.item6{
+  display: block;
+  position: relative;
+}
+
+.item7{
+  display: block;
+  position: relative;
+}
+
+.item8{
+  display: block;
+  position: relative;
+}
+
+.item9{
+  display: block;
+  position: relative;
+  grid-column-start: 2;
+}
+
+.item10{
+  display: block;
+  position: relative;
+  grid-column-start: 3;
 }
 
 /*About Page Media Query*/
 @media (max-width: 768px){
   /*hero*/
-.Aboutcontainer{
-  flex-direction: column;
-}
+  /*hero*/
+  .Aboutcontainer{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15rem;
+    padding-bottom: 3rem;
+  }
 
   .Abouthero{
-    margin-top: 0rem;
+    width: 100%;
+    top: 0;
     margin-bottom: 6rem;
     position: relative;
     display: block;
-    width: 100%;
+  }
+
+  .Abouthero img{
+    width: 50%;
+    height: auto;
   }
 
   /*text*/
   .Abouttext{
     display: block;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
     width: 100%;
+    top: 0;
+    padding-bottom: 3rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .Abouttext p{
-    padding-top: 1.5rem;
-    padding-bottom: 3rem;
+    padding-top: 0;
+  }
+
+  .item1 { grid-area: Location; }
+  .item2 { grid-area: Dog; }
+  .item3 { grid-area: Cat; }
+  .item4 {grid-area: Movie;}
+  .item5 {grid-area: Design;}
+  .item6 {grid-area: Tools;}
+  .item7 {grid-area: Book;}
+  .item8 {grid-area: Painting;}
+  .item9 {grid-area: Music;}
+  .item10 {grid-area: Game;}
+
+
+  .Aboutme{
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: auto
+    grid-template-areas:
+      'Location Dog'
+      'Cat Movie'
+      'Design Tools'
+      'Book Painting'
+      'Music Game';
+    grid-gap: 6%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 40rem;
+    padding-top: 6rem;
+    text-align: center;
     width: 100%;
   }
 
-.journey p{
-  padding-bottom: 6rem;
-  width: 100%;
-}
+  .item1{
+    display: block;
+    position: relative;
+  }
+
+  .item2{
+    display: block;
+    position: relative;
+  }
+
+  .item3{
+    display: block;
+    position: relative;
+  }
+
+  .item4{
+    display: block;
+    position: relative;
+  }
+
+  .item5{
+    display: block;
+    position: relative;
+  }
+
+  .item6{
+    display: block;
+    position: relative;
+  }
+
+  .item7{
+    display: block;
+    position: relative;
+  }
+
+  .item8{
+    display: block;
+    position: relative;
+  }
+
+  .item9{
+    display: block;
+    position: relative;
+    grid-column-start: 2;
+  }
+
+  .item10{
+    display: block;
+    position: relative;
+    grid-column-start: 3;
+  }
 }
 
 /*RooMate Project - desktop*/
