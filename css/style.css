@@ -877,6 +877,11 @@ footer .Email img{
 }
 
 /*RooMate Project - desktop*/
+.body-RooMate{
+  background-color: #ffffff;
+}
+
+
 /*hero section*/
 .RooMatehero{
   display: block;
@@ -7326,6 +7331,436 @@ font-size: 4.5rem;
       margin-left: 15%;
       margin-right: 15%;
       margin-bottom: 1.5rem;
+    }
+
+  }
+
+
+
+  /*Bubble Page - desktop*/
+  .body-bubble{
+    background-color: #6B61EC;
+    font-family: Muli;
+    line-height: 1.5;
+  }
+
+  /*header*/
+  .header-bubble{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 1vw;
+    z-index: 5;
+    background-color: rgba(10, 10, 10, 0);
+  }
+
+  .header-bubble .left-bubble{
+    display: block;
+    position: relative;
+    width: 50%;
+    left:0;
+  }
+
+  .logo-bubble{
+    height: 4.6rem;
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .logo-bubble img{
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .header-bubble .right-bubble{
+    display: block;
+    position: relative;
+    width: 50%;
+    right: 0;
+  }
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .toggle-bubble{
+    width: 2.7rem;
+    position: absolute;
+    right: 35px;
+    top: 12px;
+    background: #ffffff;
+    text-align: right;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 1.8rem;
+    display: none;
+  }
+
+  .header-bubble ul{
+    right: 0;
+    height: 4.6rem;
+    width: 100%;
+    position: relative;
+    top: 0;
+    padding-right: 0;
+    text-align: right;
+    /*background-color: rgba(10, 10, 10, 0.6);*/
+  }
+
+  .header-bubble ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 15px 15px;
+    width: auto;
+    text-align: center;
+  }
+
+  .header-bubble ul li a:hover{
+    color: #FF7072;
+  }
+
+  .header-bubble ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+
+  /*hero-bubble part*/
+.hero-bubble{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  padding-top: 20rem;
+  justify-content: center;
+}
+
+.hero-left{
+  display: block;
+  position: relative;
+  width: 40%;
+  padding-top: 10%;
+}
+
+.hero-left h1{
+  font-size: 72px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 100%;
+}
+
+.hero-right{
+  display: block;
+  position: relative;
+  width: 60%;
+}
+
+.hero-right img{
+  width: 100%;
+}
+
+/*bubble-sdescription- desktop*/
+.BubbleDescription{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  padding-top: 20rem;
+  justify-content: center;
+  background-color: #ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.des-left{
+  display: block;
+  position: relative;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.des-right{
+  display: block;
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.des-right h1{
+  color: #6B61EC;
+  font-weight: bold;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: bold;
+}
+
+/*Bubble Display - desktop*/
+.Bubble-display{
+  display: block;
+  position: relative;
+  background-color: #FFEAA7;
+}
+
+.Bubble-display img{
+  width: 100%;
+}
+
+/*Expressive-desktop*/
+.Text1{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.bubbletext{
+  display: block;
+  position: relative;
+  width: 60%;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.bubbletext h1{
+  color: #6B61EC;
+  font-weight: bold;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: bold;
+}
+
+.bubblevideo{
+  display: block;
+  position: relative;
+  width: 40%;
+}
+
+.bubblevideo .video{
+  border-radius: 23px;
+  transform: rotate(0deg);
+}
+
+/*Interactive - desktop*/
+.Text2{
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/*Collaborative*/
+.Text3{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.bubblevideo img{
+  width: 273px;
+  border-radius: 23px;
+  transform: rotate(0deg);
+}
+
+  /*Bubble app - mobile*/
+
+  @media (max-width: 822px){
+    .toggle-bubble{
+      display: block;
+      background-color: rgba(10, 10, 10, 0);
+    }
+
+    ul{
+      display: none;
+    }
+
+    .header-bubble ul{
+      top: 40px;
+      /*width: 100%;
+      right: 0;
+      position: relative;
+      background-color: #ffffff;*/
+    }
+
+    .header-bubble ul li{
+      display: block;
+      text-align: center;
+      width: 100%;
+      background-color: rgba(255, 164, 131, 0.7);*
+    }
+
+    .header-bubble ul li a{
+      font-size: 1.4rem;
+    }
+
+    .active{
+      display: block;
+    }
+
+    .logo-bubble{
+      /*width: 12rem;*/
+      background-color: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .logo-bubble img{
+      height: 60%;
+      display: block;
+      position: relative;
+      top: 0.5rem;
+    }
+
+    /*hero mobile*/
+    .hero-bubble{
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      text-align: center;
+      padding-top: 20rem;
+      padding-bottom: 20rem;
+      justify-content: center;
+    }
+
+    .hero-left{
+      display: block;
+      position: relative;
+      width: 100%;
+      padding-top: 10%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-left h1{
+      font-size: 40px;
+      font-weight: bold;
+      color: #ffffff;
+      width: 100%;
+    }
+
+    .hero-left img{
+      width: 20%;
+    }
+
+    .hero-right{
+      display: block;
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-right img{
+      width: 100%;
+    }
+
+    /*bubble-sdescription- mobile*/
+    .BubbleDescription{
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      text-align: center;
+      padding-top: 20rem;
+      justify-content: center;
+      background-color: #ffffff;
+    }
+
+    .des-left{
+      display: block;
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 6rem;
+      text-align: center;
+    }
+
+    .des-left img{
+      width: 50%;
+    }
+
+    .des-right{
+      display: block;
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      padding-top: 0rem;
+    }
+
+    /*Expressive-mobile*/
+    .Text1{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .bubbletext{
+      display: block;
+      position: relative;
+      width: 100%;
+      text-align: left;
+    }
+
+    .bubbletext h1{
+      color: #6B61EC;
+      font-weight: bold;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      font-weight: bold;
+    }
+
+    .bubblevideo{
+      display: block;
+      position: relative;
+      width: 100%;
+      padding-top: 6rem;
+    }
+
+    .bubblevideo .video{
+      border-radius: 23px;
+      transform: rotate(0deg);
+    }
+
+    .Text2{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .Text3{
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      text-align: center;
+      background-color: #ffffff;
     }
 
   }
