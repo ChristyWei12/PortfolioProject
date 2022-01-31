@@ -13,7 +13,7 @@ html{
 }
 
 body{
-  background-color: #ffffff;
+  background-color: #0A0A0A;
   font-family: Muli;
   line-height: 1.5;
 }
@@ -48,36 +48,54 @@ p{
 }
 
 section{
-  padding: 12rem 10%;
+  padding: 12rem 5%;
 }
 
 
 /*header*/
 .header{
-  display: block;
-  position: absolute;
-  height: 4.6rem;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  height: auto;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
+  padding-top: 3vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-bottom: 1vw;
   z-index: 5;
-  background-color: rgba(255, 255, 255, 100);
-  position: fixed;
+  background-color: rgba(10, 10, 10, 0.6);
+}
+
+.header .left{
+  display: block;
+  position: relative;
+  width: 50%;
+  left:0;
 }
 
 .logo{
-  width: 20rem;
+  height: 4.6rem;
   display: block;
   position: relative;
-  left: 5%;
-  top: 15px;
+  left: 0;
+  top: 0;
 }
 
 .logo img{
-  width: 100%;
+  height: 100%;
   display: block;
   position: relative;
+}
+
+.header .right{
+  display: block;
+  position: relative;
+  width: 50%;
+  right: 0;
 }
 
 a{
@@ -99,17 +117,23 @@ a{
 }
 
 .header ul{
-  right: 5%;
-  height: 46px;
-  position: absolute;
-  top: 0px;
-  background-color: rgba(255, 255, 255, 100);
+  right: 0;
+  height: 4.6rem;
+  width: 100%;
+  position: relative;
+  top: 0;
+  padding-right: 0;
+  text-align: right;
+  /*background-color: rgba(10, 10, 10, 0.6);*/
 }
 
 .header ul li{
   list-style: none;
   display: inline-block;
-  padding: 16px 14px;
+  position: relative;
+  padding: 15px 15px;
+  width: auto;
+  text-align: center;
 }
 
 .header ul li a:hover{
@@ -117,60 +141,176 @@ a{
 }
 
 .header ul li a{
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.8rem;
 }
+
+
 /*Homepage - desktop*/
 /*Homepage-Hero*/
 .Homepagehero{
+  display: flex;
+  flex-direction: row;
+  padding-top: 230px;
+  padding-bottom: 200px;
+  padding-left: 10%;
+  padding-right: 10%;
+  /*justify-content: center;*/
+}
+
+.video-mask{
   display: block;
   position: relative;
-  top: 46px;
-  padding-top: 27px;
-  padding-bottom: 200px;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.Homepagehero .illustration{
-  width: 30rem;
-  margin-bottom: 6rem;
   text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.Homepagehero .illustration2{
-  display: none;
+.video{
+  border-radius: 23px;
+  transform: rotate(-10deg);
 }
 
-.Homepagehero h1{
-  font-size: 4.8rem;
-  font-family: Montserrat;
+.hptext{
+  display: block;
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
 }
 
-.Homepagehero p{
-  font-size: 2.2rem;
-  width: 54rem;
-  margin-top: 3rem;
-  line-height: 3.6rem;
+.Homepagehero .sub-title{
+  color: #ADADAD;
+  font-weight: bold;
 }
 
-
-.Homepagehero a{
-  color: #FF6D72;
+.Homepagehero .title{
+  color: #ffffff;
+  font-weight: bolder;
 }
 
-/*fp*/
+.Homepagehero .introduction{
+  font-size: 2.4rem;
+  color: #ffffff;
+  font-weight: bold;
+  width: auto;
+  margin-top: 1rem;
+}
+
+.Homepagehero .hashtag{
+  font-size: 2.4rem;
+  color: #ADADAD;
+  font-weight: bold;
+  width: auto;
+  margin-top: 1rem;
+}
+
+/*fp-transition*/
 .FP{
-  font-size: 3.2rem;
-  font-family: Montserrat;
-  padding-left: 20%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/*Project1*/
+/*Projects*/
+.item1 { grid-area: HomepageProject4; }
+.item2 { grid-area: HomepageProject1; }
+.item3 { grid-area: HomepageProject3; }
+.item4 {grid-area: HomepageProject2;}
+.item5 {grid-area: HomepageProjectPG;}
+
+.Projects {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'HomepageProject4 HomepageProject1'
+    'HomepageProject3 HomepageProject2'
+    'HomepageProjectPG HomepageProjectPG';
+  grid-gap: 10px;
+}
+
+/*Project4-Bubble*/
+.HomepageProject4{
+  display: block;
+  position: relative;
+}
+
+.imageproject4{
+  width: 100%;
+  height: auto;
+}
+
+.project4{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.Homepagedisplay4{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.Homepageprojecttext4{
+  background-image: url("/image/BubbleHover.jpg");
+  background-size: cover;
+  background-color: #6B61EC;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project4:hover .Homepageprojecttext4{
+  opacity: 1;
+}
+
+
+.Homepageprojecttext4 h6{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.HomepageProject4 .button1{
+  background-color: #6B61EC;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  border-radius: 3px;
+}
+
+.HomepageProject4 .button1 h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #ffffff;
+}
+
+.HomepageProject4 .button1 h6:hover{
+  color: #000000;
+}
+
+
+/*Project1-RooMate*/
 .HomepageProject1{
-  padding: 6rem 20%;
   display: block;
   position: relative;
 }
@@ -195,7 +335,9 @@ a{
 }
 
 .Homepageprojecttext1{
-  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("/image/RooMateHover.jpg");
+  background-size: cover;
+  background-color: #2ABECC;
   top: 0;
   bottom: 0;
   left: 0;
@@ -205,31 +347,13 @@ a{
   opacity: 0;
   transition: .5s ease;
   position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project1:hover .Homepageprojecttext1{
   opacity: 1;
-}
-
-
-.text1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.Homepageprojecttext1 h2{
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: Montserrat;
-}
-
-.Homepageprojecttext1 h5{
-  text-align: center;
-  font-size: 2.4rem;
-  padding-top: 1.5rem;
 }
 
 .Homepageprojecttext1 h6{
@@ -247,12 +371,12 @@ a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
+  margin-top: 70%;
   border-radius: 3px;
 }
 
 .HomepageProject1 .button1 h6{
   font-size: 1.8rem;
-  padding-top: 0.8rem;
   color: #ffffff;
 }
 
@@ -260,14 +384,8 @@ a{
   color: #000000;
 }
 
-.project1mobile{
-  display: none;
-}
-
-/*project3 Desktop*/
-
+/*Project3-SmartCloset*/
 .HomepageProject3{
-  padding: 6rem 20%;
   display: block;
   position: relative;
 }
@@ -277,17 +395,12 @@ a{
   height: auto;
 }
 
-.project3mobile{
-  display: none;
-}
-
 .project3{
   width: 100%;
   height: auto;
   display: block;
   position: relative;
 }
-
 
 .Homepagedisplay3{
   display: block;
@@ -297,7 +410,9 @@ a{
 }
 
 .Homepageprojecttext3{
-  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("/image/SmartClosetHover.jpg");
+  background-size: cover;
+  background-color: #ffffff;
   top: 0;
   bottom: 0;
   left: 0;
@@ -307,32 +422,13 @@ a{
   opacity: 0;
   transition: .5s ease;
   position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project3:hover .Homepageprojecttext3{
   opacity: 1;
-}
-
-
-.text3{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-
-.Homepageprojecttext3 h2{
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: Montserrat;
-}
-
-.Homepageprojecttext3 h5{
-  text-align: center;
-  font-size: 2.4rem;
-  padding-top: 1.5rem;
 }
 
 .Homepageprojecttext3 h6{
@@ -341,9 +437,8 @@ a{
   padding-top: 1.5rem;
 }
 
-
-.HomepageProject3 .button3{
-  background-color: #202020;
+.HomepageProject3 .button1{
+  background-color: #ffffff00;
   width: 22rem;
   height: 4.2rem;
   display: block;
@@ -351,24 +446,21 @@ a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
+  margin-top: 70%;
   border-radius: 3px;
 }
 
-.HomepageProject3 .button3 h6{
+.HomepageProject3 .button1 h6{
   font-size: 1.8rem;
-  padding-top: 0.8rem;
-	color: #ffffff;
+  color: #ffffff;
 }
 
-.HomepageProject3 .button3 h6:hover{
-  color: #acacac;
+.HomepageProject3 .button1 h6:hover{
+  color: #AAAAAA;
 }
 
-
-/*project2 Desktop*/
-
-.HomepageProject2{
-  padding: 6rem 20% 6rem 20%;
+/*Project2-WeCloud - desktop*/
+.HomepageProject12{
   display: block;
   position: relative;
 }
@@ -376,10 +468,6 @@ a{
 .imageproject2{
   width: 100%;
   height: auto;
-}
-
-.project2mobile{
-  display: none;
 }
 
 .project2{
@@ -397,7 +485,9 @@ a{
 }
 
 .Homepageprojecttext2{
-  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("/image/WeCloudHover.jpg");
+  background-size: cover;
+  background-color: #8883BB;
   top: 0;
   bottom: 0;
   left: 0;
@@ -407,32 +497,13 @@ a{
   opacity: 0;
   transition: .5s ease;
   position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project2:hover .Homepageprojecttext2{
   opacity: 1;
-}
-
-
-.text2{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.Homepageprojecttext2 h2{
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: Montserrat;
-}
-
-
-.Homepageprojecttext2 h5{
-  text-align: center;
-  font-size: 2.4rem;
-  padding-top: 1.5rem;
 }
 
 .Homepageprojecttext2 h6{
@@ -441,7 +512,7 @@ a{
   padding-top: 1.5rem;
 }
 
-.HomepageProject2 .button2{
+.HomepageProject2 .button1{
   background-color: #8883BB;
   width: 22rem;
   height: 4.2rem;
@@ -450,122 +521,22 @@ a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
+  margin-top: 70%;
   border-radius: 3px;
 }
 
-.HomepageProject2 .button2 h6{
+.HomepageProject2 .button1 h6{
   font-size: 1.8rem;
-  padding-top: 0.8rem;
   color: #ffffff;
 }
 
-.HomepageProject2 .button2 h6:hover{
-  color: #000000;
-}
-
-
-/*Playground*/
-/*project2 Desktop*/
-
-.HomepageProjectPG{
-  padding: 6rem 20% 12rem 20%;
-  display: block;
-  position: relative;
-}
-
-.imageprojectPG{
-  width: 100%;
-  height: auto;
-}
-
-.projectPGmobile{
-  display: none;
-}
-
-.projectPG{
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-}
-
-.HomepagedisplayPG{
-  display: block;
-  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
-  height: auto;
-  position: relative;
-}
-
-.HomepageprojecttextPG{
-  background-color: rgba(255, 255, 255, 0.9);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  position: absolute;
-}
-
-.projectPG:hover .HomepageprojecttextPG{
-  opacity: 1;
-}
-
-
-.textPG{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.HomepageprojecttextPG h2{
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: Montserrat;
-}
-
-
-.HomepageprojecttextPG h5{
-  text-align: center;
-  font-size: 2.4rem;
-  padding-top: 1.5rem;
-}
-
-.HomepageprojecttextPG h6{
-  text-align: center;
-  font-size: 1.8rem;
-  padding-top: 1.5rem;
-}
-
-.HomepageProjectPG .buttonPG{
-  background-color: #2F2E41;
-  width: 22rem;
-  height: 4.2rem;
-  display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
-  border-radius: 3px;
-}
-
-.HomepageProjectPG .buttonPG h6{
-  font-size: 1.8rem;
-  padding-top: 0.8rem;
-  color: #ffffff;
-}
-
-.HomepageProjectPG .buttonPG h6:hover{
+.HomepageProject2 .button1 h6:hover{
   color: #000000;
 }
 
 /*footer*/
 footer{
-  background-color: #202020;
+  background-color: #0A0A0A;
   width: 100%;
   height: 30rem;
   padding-top: 6rem;
@@ -605,9 +576,10 @@ footer .Email img{
 }
 
 /*Homepage-Mobile*/
-@media (max-width: 768px){
+@media (max-width: 822px){
   .toggle{
     display: block;
+    background-color: rgba(10, 10, 10, 0);
   }
 
   ul{
@@ -615,18 +587,18 @@ footer .Email img{
   }
 
   .header ul{
-    top: 29px;
-    width: 100%;
+    top: 40px;
+    /*width: 100%;
     right: 0;
     position: relative;
-    background-color: #ffffff;
+    background-color: #ffffff;*/
   }
 
   .header ul li{
     display: block;
     text-align: center;
     width: 100%;
-    background-color: rgba(255, 164, 131, 0.7);
+    background-color: rgba(255, 164, 131, 0.7);*
   }
 
   .header ul li a{
@@ -638,18 +610,14 @@ footer .Email img{
   }
 
   .logo{
-    width: 12rem;
-    display: block;
-    /*background-color: red;*/
-    position: relative;
+    /*width: 12rem;*/
+    background-color: none;
     margin-left: auto;
     margin-right: auto;
-    top: 10px;
-    left: 0;
   }
 
   .logo img{
-    width: 100%;
+    height: 60%;
     display: block;
     position: relative;
     top: 0.5rem;
@@ -686,267 +654,72 @@ footer .Email img{
 
 /*hero*/
 .Homepagehero{
-  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
   padding-bottom: 180px;
-  padding-left: 15%;
-  padding-right: 15%;
 }
 
-.Homepagehero img{
+.video-mask{
   display: block;
   position: relative;
+  text-align: center;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 6rem;
-}
-
-.Homepagehero h1{
-  font-size: 3rem;
-  font-family: Montserrat;
-}
-
-.Homepagehero p{
-  font-size: 1.8rem;
-  margin-top: 3rem;
-  width: 100%;
   }
 
-/*fp*/
-  .FP{
-    font-size: 2rem;
-    padding-left: 15%;
+.video{
+  border-radius: 23px;
+  transform: rotate(0deg);
   }
 
-/*project1 mobile*/
-  .Homepagedisplay1-2{
-    height: 400px;
-    background-position: center;
-		background: url("../image/P1m.jpg");
-	  background-size: 100%;
-  }
-
-  .project1{
-    display: none;
-  }
-
-  .project1mobile{
+.hptext{
     display: block;
-  }
-
-  .HomepageProject1{
-    padding: 6rem 15%;
-  }
-
-  .Homepageprojecttext1-2 h2{
-    font-size: 2.4rem;
-    text-align: center;
-    font-family: Montserrat;
-    padding-top: 2rem;
-  }
-
-  .Homepageprojecttext1-2 h5{
-    font-size: 1.7rem;
-    text-align: center;
-    padding-top: 1.5rem;
-  }
-
-  .Homepageprojecttext1-2 h6{
-    font-size: 1.6rem;
-    text-align: center;
-    padding-top: 1.5rem;
-  }
-
-
-  .HomepageProject1 .button1{
-    width: 18rem;
-    height: 3.5rem;
+    position: relative;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .HomepageProject1 .button1 h6{
-    font-size: 1.6rem;
-    padding-top: 0.6rem;
-    color: #ffffff;
-  }
-
-  .HomepageProject1 .button1 h6:hover{
-    color: #000000;
-  }
-
-  /*project3 mobile*/
-
-	.Homepagedisplay3-2{
-		height: 400px;
-		background-position: center;
-		background: url("../image/P2m.jpg");
-		background-size: 130%;
-	}
-
-  .project3{
-    display: none;
-  }
-
-  .project3mobile{
-    display: block;
-  }
-
-  .HomepageProject3{
-    padding: 6rem 15%;
-  }
-
-
-
-	.Homepageprojecttext3-2 h2{
-		font-size: 2.4rem;
+    padding-top: 18rem;
     text-align: center;
-    font-family: Montserrat;
-    padding-top: 2rem;
-	}
+  }
 
-  .Homepageprojecttext3-2 h5{
-     font-size: 1.7rem;
-     text-align: center;
-     padding-top: 1.5rem;
-   }
+  .Homepagehero .sub-title{
+    font-size: 1.8rem;
+  }
 
-   .Homepageprojecttext3-2 h6{
-     font-size: 1.6rem;
-     text-align: center;
-     padding-top: 1.5rem;
-   }
+  .Homepagehero .introduction{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
 
-	.HomepageProject3 .button3{
-		width: 18rem;
-		height: 3.5rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.HomepageProject3 .button3 h6{
-		font-size: 1.6rem;
-		padding-top: 0.6rem;
-    color: #ffffff;
-	}
-
-  .HomepageProject3 .button3 h6:hover{
-    color: #000000;
+  .Homepagehero .hashtag{
+    font-size: 1.8rem;
+    margin-top: 1rem;
   }
 
 
-  /*project2 mobile*/
-  .Homepagedisplay2-2{
-    height: 400px;
-    background-position: left top;
-    background: url("../image/P3.jpg");
-    background-size: 200%;
-  }
+/*.video-mask{
+    border-radius: 25px;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-border-radius:40px;
+    -webkit-border-radius:40px;
+  }*/
 
-  .project2{
-     display: none;
-   }
-
-   .project2mobile{
-     display: block;
-   }
-
-   .HomepageProject2{
-     padding: 6rem 15%;
-   }
-
-   .Homepageprojecttext2-2 h2{
-     font-size: 2.4rem;
-     text-align: center;
-     font-family: Montserrat;
-     padding-top: 2rem;
-   }
-
-   .Homepageprojecttext2-2 h5{
-     font-size: 1.7rem;
-     text-align: center;
-     padding-top: 1.5rem;
-   }
-
-   .Homepageprojecttext2-2 h6{
-     font-size: 1.6rem;
-     text-align: center;
-     padding-top: 1.5rem;
-   }
-
-
-   .HomepageProject2 .button2{
-     width: 18rem;
-     height: 3.5rem;
-     margin-left: auto;
-     margin-right: auto;
-   }
-
-   .HomepageProject2 .button2 h6{
-     font-size: 1.6rem;
-     padding-top: 0.6rem;
-     color: #ffffff;
-   }
-
-   .HomepageProject2 .button2 h6:hover{
-     color: #000000;
-   }
-
-   /*projectPG mobile*/
-   .HomepagedisplayPG-2{
-     height: 400px;
-     background-position: left top;
-     background: url("../image/PGm.jpg");
-     background-size: 100%;
-   }
-
-   .projectPG{
-      display: none;
-    }
-
-    .projectPGmobile{
-      display: block;
-    }
-
-    .HomepageProjectPG{
-      padding: 6rem 15%;
-    }
-
-    .HomepageprojecttextPG-2 h2{
-      font-size: 2.4rem;
-      text-align: center;
-      font-family: Montserrat;
-      padding-top: 2rem;
-    }
-
-    .HomepageprojecttextPG-2 h5{
-      font-size: 1.7rem;
-      text-align: center;
-      padding-top: 1.5rem;
-    }
-
-    .HomepageprojecttextPG-2 h6{
-      font-size: 1.6rem;
-      text-align: center;
-      padding-top: 1.5rem;
-    }
-
-
-    .HomepageProjectPG .buttonPG{
-      width: 18rem;
-      height: 3.5rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .HomepageProjectPG .buttonPG h6{
-      font-size: 1.6rem;
-      padding-top: 0.6rem;
-      color: #ffffff;
-    }
-
-    .HomepageProjectPG .buttonPG h6:hover{
-      color: #000000;
-    }
+/*Projects - Mobile*/
+.Projects {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'HomepageProject4'
+    'HomepageProject1'
+    'HomepageProject3'
+    'HomepageProject2'
+    'HomepageProjectPG';
+  grid-gap: 0px;
+}
 
 
   footer h3{
@@ -959,7 +732,7 @@ footer .Email img{
 
 }
 
-@media (min-width: 1660px){
+/*@media (min-width: 1660px){
   .Homepagehero{
     padding-top: 15rem;
   }
@@ -986,9 +759,9 @@ footer .Email img{
   .Homepagehero .illustration2{
     width: 30%;
   }
-}
+}*/
 
-@media (min-width: 2500px){
+/*@media (min-width: 2500px){
   .Homepagehero{
     padding-top: 15rem;
   }
@@ -1016,7 +789,7 @@ footer .Email img{
     width: 20%;
     height: auto;
   }
-}
+}*/
 
 /*About Page - desktop*/
 /*hero*/
@@ -1024,11 +797,14 @@ footer .Email img{
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20rem;
+  padding-bottom: 3rem;
 }
 
 .Abouthero{
-  width: 40%;
+  width: 100%;
   top: 0;
   margin-bottom: 6rem;
   position: relative;
@@ -1036,74 +812,336 @@ footer .Email img{
 }
 
 .Abouthero img{
-  width: 100%;
+  width: 23%;
   height: auto;
 }
 
 /*text*/
 .Abouttext{
   display: block;
-  width: 60%;
+  width: 100%;
   top: 0;
-  padding-bottom: 6rem;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-bottom: 3rem;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Abouttext p{
   padding-top: 0;
-  padding-bottom: 3rem;
 }
 
-.SmartCloset{
-	text-decoration: underline;
+.item1 { grid-area: Location; }
+.item2 { grid-area: Dog; }
+.item3 { grid-area: Cat; }
+.item4 {grid-area: Movie;}
+.item5 {grid-area: Design;}
+.item6 {grid-area: Tools;}
+.item7 {grid-area: Book;}
+.item8 {grid-area: Painting;}
+.item9 {grid-area: Music;}
+.item10 {grid-area: Game;}
+
+
+.Aboutme{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: auto
+  grid-template-areas:
+    'Location Dog Cat Movie'
+    'Design Tools Book Painting'
+    '. Music Game .';
+  grid-gap: 6%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 30rem;
+  text-align: center;
+  width: 100%;
 }
 
-.SmartCloset:hover{
-	color: #FF685F;
+.item1{
+  display: block;
+  position: relative;
 }
 
-.highlights{
-  font-weight: bold;
-  color: #FF6D72;
+.item2{
+  display: block;
+  position: relative;
+}
+
+.item3{
+  display: block;
+  position: relative;
+}
+
+.item4{
+  display: block;
+  position: relative;
+}
+
+.item5{
+  display: block;
+  position: relative;
+}
+
+.item6{
+  display: block;
+  position: relative;
+}
+
+.item7{
+  display: block;
+  position: relative;
+}
+
+.item8{
+  display: block;
+  position: relative;
+}
+
+.item9{
+  display: block;
+  position: relative;
+  grid-column-start: 2;
+}
+
+.item10{
+  display: block;
+  position: relative;
+  grid-column-start: 3;
 }
 
 /*About Page Media Query*/
 @media (max-width: 768px){
   /*hero*/
-.Aboutcontainer{
-  flex-direction: column;
-}
+  /*hero*/
+  .Aboutcontainer{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15rem;
+    padding-bottom: 3rem;
+  }
 
   .Abouthero{
-    margin-top: 0rem;
+    width: 100%;
+    top: 0;
     margin-bottom: 6rem;
     position: relative;
     display: block;
-    width: 100%;
+  }
+
+  .Abouthero img{
+    width: 50%;
+    height: auto;
   }
 
   /*text*/
   .Abouttext{
     display: block;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
     width: 100%;
+    top: 0;
+    padding-bottom: 3rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .Abouttext p{
-    padding-top: 1.5rem;
-    padding-bottom: 3rem;
+    padding-top: 0;
+  }
+
+  .item1 { grid-area: Location; }
+  .item2 { grid-area: Dog; }
+  .item3 { grid-area: Cat; }
+  .item4 {grid-area: Movie;}
+  .item5 {grid-area: Design;}
+  .item6 {grid-area: Tools;}
+  .item7 {grid-area: Book;}
+  .item8 {grid-area: Painting;}
+  .item9 {grid-area: Music;}
+  .item10 {grid-area: Game;}
+
+
+  .Aboutme{
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: auto
+    grid-template-areas:
+      'Location Dog'
+      'Cat Movie'
+      'Design Tools'
+      'Book Painting'
+      'Music Game';
+    grid-gap: 6%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 40rem;
+    padding-top: 6rem;
+    text-align: center;
     width: 100%;
   }
 
-.journey p{
-  padding-bottom: 6rem;
-  width: 100%;
-}
+  .item1{
+    display: block;
+    position: relative;
+  }
+
+  .item2{
+    display: block;
+    position: relative;
+  }
+
+  .item3{
+    display: block;
+    position: relative;
+  }
+
+  .item4{
+    display: block;
+    position: relative;
+  }
+
+  .item5{
+    display: block;
+    position: relative;
+  }
+
+  .item6{
+    display: block;
+    position: relative;
+  }
+
+  .item7{
+    display: block;
+    position: relative;
+  }
+
+  .item8{
+    display: block;
+    position: relative;
+  }
+
+  .item9{
+    display: block;
+    position: relative;
+    grid-column-start: 2;
+  }
+
+  .item10{
+    display: block;
+    position: relative;
+    grid-column-start: 3;
+  }
 }
 
 /*RooMate Project - desktop*/
+.body-RooMate{
+  background-color: #ffffff;
+}
+
+/*header-RooMate - desktop*/
+.header-RooMate{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 3vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-bottom: 1vw;
+  z-index: 5;
+  background-color: rgba(10, 10, 10, 0);
+}
+
+.header-RooMate .left-RooMate{
+  display: block;
+  position: relative;
+  width: 50%;
+  left:0;
+}
+
+.logo-RooMate{
+  height: 4.6rem;
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.logo-RooMate img{
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.header-RooMate .right-RooMate{
+  display: block;
+  position: relative;
+  width: 50%;
+  right: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.toggle-RooMate{
+  width: 2.7rem;
+  position: absolute;
+  right: 35px;
+  top: 12px;
+  background: #ffffff;
+  text-align: right;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 1.8rem;
+  display: none;
+}
+
+.header-RooMate ul{
+  right: 0;
+  height: 4.6rem;
+  width: 100%;
+  position: relative;
+  top: 0;
+  padding-right: 0;
+  text-align: right;
+  /*background-color: rgba(10, 10, 10, 0.6);*/
+}
+
+.header-RooMate ul li{
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 15px 15px;
+  width: auto;
+  text-align: center;
+}
+
+.header-RooMate ul li a:hover{
+  color: #FF7072;
+}
+
+.header-RooMate ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+
+
 /*hero section*/
 .RooMatehero{
   display: block;
@@ -3065,6 +3103,53 @@ footer .Email img{
 
 /*RooMate Media Query*/
 @media (max-width: 768px){
+/*header-RooMate*/
+.toggle-RooMate{
+  display: block;
+  background-color: rgba(10, 10, 10, 0);
+}
+
+ul{
+  display: none;
+}
+
+.header-RooMate ul{
+  top: 40px;
+  /*width: 100%;
+  right: 0;
+  position: relative;
+  background-color: #ffffff;*/
+}
+
+.header-RooMate ul li{
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255, 164, 131, 0.7);*
+}
+
+.header-RooMate ul li a{
+  font-size: 1.4rem;
+}
+
+.active{
+  display: block;
+}
+
+.logo-RooMate{
+  /*width: 12rem;*/
+  background-color: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-RooMate img{
+  height: 60%;
+  display: block;
+  position: relative;
+  top: 0.5rem;
+}
+
 /*Hero*/
 .RooMatehero{
   display: block;
@@ -6874,7 +6959,7 @@ font-size: 4.5rem;
 .item1 { grid-area: Yoga; }
 .item2 { grid-area: Forest; }
 .item3 { grid-area: Cake; }
-.iten4 {grid-area: CBH;}
+.item4 {grid-area: CBH;}
 
 .grid-container {
   display: grid;
@@ -7117,7 +7202,7 @@ font-size: 4.5rem;
   padding-right: 20%;
   padding-top: 5rem;
   padding-bottom: 10rem;
-  top: 4.6rem;
+  top: 0rem;
   background-color: #F5EFF9;
 }
 
@@ -7194,7 +7279,7 @@ font-size: 4.5rem;
   padding-right: 20%;
   padding-top: 5rem;
   padding-bottom: 10rem;
-  top: 4.6rem;
+  top: 0rem;
   background-color: #AAB7B0;
 }
 
@@ -7282,7 +7367,7 @@ font-size: 4.5rem;
   padding-right: 20%;
   padding-top: 5rem;
   padding-bottom: 10rem;
-  top: 4.6rem;
+  top: 0rem;
   background-color: #FFFDE4;
 }
 
@@ -7357,7 +7442,7 @@ font-size: 4.5rem;
     padding-right: 20%;
     padding-top: 5rem;
     padding-bottom: 10rem;
-    top: 4.6rem;
+    top: 0rem;
     background-color: #65B3F1;
   }
 
@@ -7553,6 +7638,436 @@ font-size: 4.5rem;
       margin-left: 15%;
       margin-right: 15%;
       margin-bottom: 1.5rem;
+    }
+
+  }
+
+
+
+  /*Bubble Page - desktop*/
+  .body-bubble{
+    background-color: #6B61EC;
+    font-family: Muli;
+    line-height: 1.5;
+  }
+
+  /*header-bubble - desktop*/
+  .header-bubble{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 1vw;
+    z-index: 5;
+    background-color: rgba(10, 10, 10, 0);
+  }
+
+  .header-bubble .left-bubble{
+    display: block;
+    position: relative;
+    width: 50%;
+    left:0;
+  }
+
+  .logo-bubble{
+    height: 4.6rem;
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .logo-bubble img{
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .header-bubble .right-bubble{
+    display: block;
+    position: relative;
+    width: 50%;
+    right: 0;
+  }
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .toggle-bubble{
+    width: 2.7rem;
+    position: absolute;
+    right: 35px;
+    top: 12px;
+    background: #ffffff;
+    text-align: right;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 1.8rem;
+    display: none;
+  }
+
+  .header-bubble ul{
+    right: 0;
+    height: 4.6rem;
+    width: 100%;
+    position: relative;
+    top: 0;
+    padding-right: 0;
+    text-align: right;
+    /*background-color: rgba(10, 10, 10, 0.6);*/
+  }
+
+  .header-bubble ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 15px 15px;
+    width: auto;
+    text-align: center;
+  }
+
+  .header-bubble ul li a:hover{
+    color: #FF7072;
+  }
+
+  .header-bubble ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+
+  /*hero-bubble part*/
+.hero-bubble{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  padding-top: 20rem;
+  justify-content: center;
+}
+
+.hero-left{
+  display: block;
+  position: relative;
+  width: 40%;
+  padding-top: 10%;
+}
+
+.hero-left h1{
+  font-size: 72px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 100%;
+}
+
+.hero-right{
+  display: block;
+  position: relative;
+  width: 60%;
+}
+
+.hero-right img{
+  width: 100%;
+}
+
+/*bubble-sdescription- desktop*/
+.BubbleDescription{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  padding-top: 20rem;
+  justify-content: center;
+  background-color: #ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.des-left{
+  display: block;
+  position: relative;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.des-right{
+  display: block;
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.des-right h1{
+  color: #6B61EC;
+  font-weight: bold;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: bold;
+}
+
+/*Bubble Display - desktop*/
+.Bubble-display{
+  display: block;
+  position: relative;
+  background-color: #FFEAA7;
+}
+
+.Bubble-display img{
+  width: 100%;
+}
+
+/*Expressive-desktop*/
+.Text1{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.bubbletext{
+  display: block;
+  position: relative;
+  width: 60%;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.bubbletext h1{
+  color: #6B61EC;
+  font-weight: bold;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: bold;
+}
+
+.bubblevideo{
+  display: block;
+  position: relative;
+  width: 40%;
+}
+
+.bubblevideo .video{
+  border-radius: 23px;
+  transform: rotate(0deg);
+}
+
+/*Interactive - desktop*/
+.Text2{
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/*Collaborative*/
+.Text3{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.bubblevideo img{
+  width: 273px;
+  border-radius: 23px;
+  transform: rotate(0deg);
+}
+
+  /*Bubble app - mobile*/
+
+  @media (max-width: 822px){
+    .toggle-bubble{
+      display: block;
+      background-color: rgba(10, 10, 10, 0);
+    }
+
+    ul{
+      display: none;
+    }
+
+    .header-bubble ul{
+      top: 40px;
+      /*width: 100%;
+      right: 0;
+      position: relative;
+      background-color: #ffffff;*/
+    }
+
+    .header-bubble ul li{
+      display: block;
+      text-align: center;
+      width: 100%;
+      background-color: rgba(255, 164, 131, 0.7);*
+    }
+
+    .header-bubble ul li a{
+      font-size: 1.4rem;
+    }
+
+    .active{
+      display: block;
+    }
+
+    .logo-bubble{
+      /*width: 12rem;*/
+      background-color: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .logo-bubble img{
+      height: 60%;
+      display: block;
+      position: relative;
+      top: 0.5rem;
+    }
+
+    /*hero mobile*/
+    .hero-bubble{
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      text-align: center;
+      padding-top: 20rem;
+      padding-bottom: 20rem;
+      justify-content: center;
+    }
+
+    .hero-left{
+      display: block;
+      position: relative;
+      width: 100%;
+      padding-top: 10%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-left h1{
+      font-size: 40px;
+      font-weight: bold;
+      color: #ffffff;
+      width: 100%;
+    }
+
+    .hero-left img{
+      width: 20%;
+    }
+
+    .hero-right{
+      display: block;
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-right img{
+      width: 100%;
+    }
+
+    /*bubble-sdescription- mobile*/
+    .BubbleDescription{
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      text-align: center;
+      padding-top: 20rem;
+      justify-content: center;
+      background-color: #ffffff;
+    }
+
+    .des-left{
+      display: block;
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 6rem;
+      text-align: center;
+    }
+
+    .des-left img{
+      width: 50%;
+    }
+
+    .des-right{
+      display: block;
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      padding-top: 0rem;
+    }
+
+    /*Expressive-mobile*/
+    .Text1{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .bubbletext{
+      display: block;
+      position: relative;
+      width: 100%;
+      text-align: left;
+    }
+
+    .bubbletext h1{
+      color: #6B61EC;
+      font-weight: bold;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      font-weight: bold;
+    }
+
+    .bubblevideo{
+      display: block;
+      position: relative;
+      width: 100%;
+      padding-top: 6rem;
+    }
+
+    .bubblevideo .video{
+      border-radius: 23px;
+      transform: rotate(0deg);
+    }
+
+    .Text2{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .Text3{
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      text-align: center;
+      background-color: #ffffff;
     }
 
   }
