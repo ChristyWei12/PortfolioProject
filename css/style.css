@@ -7769,6 +7769,10 @@ font-size: 4.5rem;
   width: 100%;
 }
 
+.hero-left h3{
+  color: #ffffff;
+}
+
 .hero-right{
   display: block;
   position: relative;
@@ -7815,8 +7819,31 @@ font-size: 4.5rem;
   color: #6B61EC;
   font-weight: bold;
   padding-top: 3rem;
-  padding-bottom: 3rem;
   font-weight: bold;
+}
+
+.des-right p{
+  padding-top: 3rem;
+}
+
+.des-right .button{
+  background-color: #6B61EC;
+  width: 22rem;
+  height: 4.2rem;
+  margin-top: 3rem;
+  margin-left: 0;
+  border-radius: 3px;
+}
+
+.des-right .button h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.des-right .button h6:hover{
+  color: #000000;
 }
 
 /*Bubble Display - desktop*/
@@ -8006,6 +8033,18 @@ font-size: 4.5rem;
 
     .des-left img{
       width: 50%;
+    }
+
+    .des-right .button{
+      width: 18rem;
+      height: 3.5rem;
+    	margin-top: 4.5rem;
+    }
+
+    .des-right .button h6{
+      font-size: 1.6rem;
+      padding-top: 0.5rem;
+      text-align: center;
     }
 
     .des-right{
