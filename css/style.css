@@ -216,24 +216,101 @@ a{
 }
 
 /*Projects*/
-.item1 { grid-area: HomepageProject4; }
-.item2 { grid-area: HomepageProject1; }
-.item3 { grid-area: HomepageProject3; }
-.item4 {grid-area: HomepageProject2;}
-.item5 {grid-area: HomepageProjectPG;}
+.item1 { grid-area: HomepageProject5;}
+.item2 { grid-area: HomepageProject4; }
+.item3 { grid-area: HomepageProject1; }
+.item4 { grid-area: HomepageProject3; }
+.item5 {grid-area: HomepageProject2;}
+.item6 {grid-area: HomepageProjectPG;}
 
 .Projects {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   grid-template-areas:
-    'HomepageProject4 HomepageProject1'
-    'HomepageProject3 HomepageProject2'
-    'HomepageProjectPG HomepageProjectPG';
+    'HomepageProject5 HomepageProject4'
+    'HomepageProject1 HomepageProject3'
+    'HomepageProject2 HomepageProjectPG';
   grid-gap: 10px;
 }
 
 /*Project4-Bubble*/
+.HomepageProject5{
+  display: block;
+  position: relative;
+}
+
+.imageproject5{
+  width: 100%;
+  height: auto;
+}
+
+.project5{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.Homepagedisplay5{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.Homepageprojecttext5{
+  background-image: url("/image/BubbleHover.jpg");
+  background-size: cover;
+  background-color: #444444;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project5:hover .Homepageprojecttext5{
+  opacity: 1;
+}
+
+
+.Homepageprojecttext5 h6{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.HomepageProject5 .button1{
+  background-color: #444444;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  border-radius: 3px;
+}
+
+.HomepageProject5 .button1 h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #ffffff;
+}
+
+.HomepageProject5 .button1 h6:hover{
+  color: #000000;
+}
+
+
+/*Project4-PetThoughts*/
 .HomepageProject4{
   display: block;
   position: relative;
@@ -259,7 +336,7 @@ a{
 }
 
 .Homepageprojecttext4{
-  background-image: url("/image/BubbleHover.jpg");
+  background-image: url("/image/PTHover.jpg");
   background-size: cover;
   background-color: #6B61EC;
   top: 0;
@@ -713,6 +790,7 @@ footer .Email img{
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas:
+    'HomepageProject5'
     'HomepageProject4'
     'HomepageProject1'
     'HomepageProject3'
