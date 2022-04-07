@@ -7720,9 +7720,439 @@ font-size: 4.5rem;
 
   }
 
+  /*Bubble page - desktop*/
+  .body-bubble2{
+    background-color: #000000;
+    font-family: Muli;
+    line-height: 1.5;
+  }
+
+  /*header-bubble - desktop*/
+  .header-bubble2{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 1vw;
+    z-index: 5;
+    background-color: rgba(10, 10, 10, 0);
+  }
+
+  .header-bubble2 .left-bubble2{
+    display: block;
+    position: relative;
+    width: 50%;
+    left:0;
+  }
+
+  .logo-bubble2{
+    height: 4.6rem;
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .logo-bubble2 img{
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .header-bubble2 .right-bubble2{
+    display: block;
+    position: relative;
+    width: 50%;
+    right: 0;
+  }
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .toggle-bubble2{
+    width: 2.7rem;
+    position: absolute;
+    right: 35px;
+    top: 12px;
+    background: #ffffff;
+    text-align: right;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 1.8rem;
+    display: none;
+  }
+
+  .header-bubble2 ul{
+    right: 0;
+    height: 4.6rem;
+    width: 100%;
+    position: relative;
+    top: 0;
+    padding-right: 0;
+    text-align: right;
+    /*background-color: rgba(10, 10, 10, 0.6);*/
+  }
+
+  .header-bubble2 ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 15px 15px;
+    width: auto;
+    text-align: center;
+  }
+
+  .header-bubble2 ul li a:hover{
+    color: #FF7072;
+  }
+
+  .header-bubble2 ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+
+  /*Bubble header - desktop*/
+  .hero-bubble2{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    text-align: center;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    justify-content: center;
+  }
+
+  .hero-left{
+    display: block;
+    position: relative;
+    width: 40%;
+    padding-top: 10%;
+  }
+
+  .hero-left h1{
+    font-size: 72px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    font-family: nunito;
+  }
+
+  .hero-left h3{
+    color: #ffffff;
+    font-family: nunito;
+  }
+
+  .hero-right{
+    display: block;
+    position: relative;
+    width: 60%;
+    padding-left: 5%;
+    padding-right: 10%;
+  }
+
+  .hero-right img{
+    width: 100%;
+  }
+
+  /*Bubble Page description - desktop*/
+
+.Bubble2Description{
+  background-color: #ffffff;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.Bubble2Description h1{
+  padding-bottom: 3rem;
+}
+
+.Bubble2Description p{
+  padding-bottom: 3rem;
+}
+
+/*Bubble page image section - desktop*/
+.Bubble2Image{
+  background-color: #ffffff;
+  padding-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Bubble2Image img{
+  width: 100%;
+}
+
+/*Bubble page case study - desktop*/
+.Bubble2CaseStudy{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  padding-top: 10rem;
+  justify-content: center;
+  background-color: #ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Bubble2CaseStudy .des-left{
+  display: block;
+  position: relative;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Bubble2CaseStudy .des-right{
+  display: block;
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10%;
+}
 
 
-  /*Bubble Page - desktop*/
+.Bubble2CaseStudy .des-right p{
+  padding-top: 3rem;
+}
+
+.Bubble2CaseStudy .des-right .button{
+  background-color: #6B61EC;
+  width: 22rem;
+  height: 4.2rem;
+  margin-top: 3rem;
+  margin-left: 0;
+  border-radius: 3px;
+}
+
+.Bubble2CaseStudy .des-right .button h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Bubble2CaseStudy .des-right .button h6:hover{
+  color: #000000;
+}
+
+/*Bubble page download - desktop*/
+.Bubble2Download{
+  background-color: #ffffff;
+  display: block;
+  position: relative;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 20rem;
+}
+
+.Bubble2Download .downloadtext{
+  padding-bottom: 3rem;
+}
+
+.Bubble2Download .downloadtext .beta{
+  color: #6B61EC;
+}
+
+/*Bubble page image 2 - desktop*/
+.Bubble2Image2{
+  padding: 0;
+}
+
+.Bubble2Image2 img{
+  width: 100%;
+}
+
+
+  /*Bubble page - mobile*/
+  @media (max-width: 822px){
+    .toggle-bubble2{
+      display: block;
+      background-color: rgba(10, 10, 10, 0);
+    }
+
+    ul{
+      display: none;
+    }
+
+    .header-bubble2 ul{
+      top: 40px;
+      /*width: 100%;
+      right: 0;
+      position: relative;
+      background-color: #ffffff;*/
+    }
+
+    .header-bubble2 ul li{
+      display: block;
+      text-align: center;
+      width: 100%;
+      background-color: rgba(255, 164, 131, 0.7);*
+    }
+
+    .header-bubble2 ul li a{
+      font-size: 1.4rem;
+    }
+
+    .active{
+      display: block;
+    }
+
+    .logo-bubble2{
+      /*width: 12rem;*/
+      background-color: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .logo-bubble2 img{
+      height: 60%;
+      display: block;
+      position: relative;
+      top: 0.5rem;
+    }
+
+    /*hero mobile*/
+    .hero-bubble2{
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      text-align: center;
+      padding-top: 20rem;
+      padding-bottom: 20rem;
+      justify-content: center;
+    }
+
+    .hero-left{
+      display: block;
+      position: relative;
+      width: 100%;
+      padding-top: 10%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-left h1{
+      font-size: 40px;
+      font-weight: bold;
+      color: #ffffff;
+      width: 100%;
+    }
+
+    .hero-left img{
+      width: 20%;
+    }
+
+    .hero-right{
+      display: block;
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-right img{
+      width: 100%;
+    }
+
+   /*bubble description - mobile*/
+    .Bubble2Description{
+      background-color: #ffffff;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+  /*Bubble image - mobile*/
+  .Bubble2Image{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Bubble-description- mobile*/
+  .Bubble2CaseStudy{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    text-align: center;
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+
+  .Bubble2CaseStudy .des-left{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6rem;
+    text-align: center;
+  }
+
+  .Bubble2CaseStudy .des-left img{
+    width: 100%;
+  }
+
+  .Bubble2CaseStudy .des-right .button{
+    width: 18rem;
+    height: 3.5rem;
+    margin-top: 4.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Bubble2CaseStudy .des-right .button h6{
+    font-size: 1.6rem;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+
+  .Bubble2CaseStudy .des-right{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-top: 0%;
+  }
+
+  /*Bubble page download - mobile*/
+  .Bubble2Download{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0;
+    padding-bottom: 12rem;
+  }
+
+  .Bubble2Download .BubbleAppStore{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  }
+
+
+  /*PetThought Page - desktop*/
   .body-bubble{
     background-color: #6B61EC;
     font-family: Muli;
@@ -7861,7 +8291,7 @@ font-size: 4.5rem;
   width: 100%;
 }
 
-/*bubble-sdescription- desktop*/
+/*petthoughts-description- desktop*/
 .BubbleDescription{
   display: flex;
   flex-direction: row;
@@ -7924,7 +8354,7 @@ font-size: 4.5rem;
   color: #000000;
 }
 
-/*Bubble Display - desktop*/
+/*PetThoughts Display - desktop*/
 .Bubble-display{
   display: block;
   position: relative;
@@ -7996,7 +8426,7 @@ font-size: 4.5rem;
   transform: rotate(0deg);
 }
 
-  /*Bubble app - mobile*/
+  /*PetThoughts app - mobile*/
 
   @media (max-width: 822px){
     .toggle-bubble{
@@ -8088,7 +8518,7 @@ font-size: 4.5rem;
       width: 100%;
     }
 
-    /*bubble-sdescription- mobile*/
+    /*petthoughts-sdescription- mobile*/
     .BubbleDescription{
       display: flex;
       flex-direction: column-reverse;
