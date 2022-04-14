@@ -8618,3 +8618,23 @@ font-size: 4.5rem;
     }
 
   }
+
+/*bubble case study NDA page*/
+.bubblecs{
+  background-color: #FCDB56;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.bubblecs h2{
+  padding-bottom: 3rem;
+}
+
+.bubblecs h5{
+  color: #383B49;
+  padding-bottom: 3rem;
+}
