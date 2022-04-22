@@ -8087,6 +8087,8 @@ font-size: 4.5rem;
     margin-right: auto;
     text-align: left;
     padding-top: 0%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /*Bubble page download - mobile*/
@@ -8482,6 +8484,8 @@ font-size: 4.5rem;
       padding-top: 20rem;
       justify-content: center;
       background-color: #ffffff;
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
     .des-left{
@@ -8518,6 +8522,8 @@ font-size: 4.5rem;
       margin-right: auto;
       text-align: left;
       padding-top: 0rem;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     /*PetThoughts - display - mobile*/
@@ -8533,6 +8539,8 @@ font-size: 4.5rem;
       position: relative;
       text-align: center;
       background-color: #ffffff;
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
     .bubbletext{
@@ -8540,6 +8548,8 @@ font-size: 4.5rem;
       position: relative;
       width: 100%;
       text-align: left;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .bubbletext h1{
@@ -8568,6 +8578,8 @@ font-size: 4.5rem;
       position: relative;
       text-align: center;
       background-color: #ffffff;
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
     .Text3{
@@ -8576,6 +8588,8 @@ font-size: 4.5rem;
       position: relative;
       text-align: center;
       background-color: #ffffff;
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
   }
