@@ -8214,6 +8214,7 @@ font-size: 4.5rem;
   position: relative;
   text-align: center;
   padding-top: 20rem;
+  padding-bottom: 20rem;
   justify-content: center;
 }
 
@@ -8472,7 +8473,7 @@ font-size: 4.5rem;
       width: 100%;
     }
 
-    /*petthoughts-sdescription- mobile*/
+    /*petthoughts-description- mobile*/
     .BubbleDescription{
       display: flex;
       flex-direction: column-reverse;
@@ -8517,6 +8518,12 @@ font-size: 4.5rem;
       margin-right: auto;
       text-align: left;
       padding-top: 0rem;
+    }
+
+    /*PetThoughts - display - mobile*/
+    .Bubble-display{
+      padding-top: 6rem;
+      padding-bottom: 6rem;
     }
 
     /*Expressive-mobile*/
@@ -8565,7 +8572,7 @@ font-size: 4.5rem;
 
     .Text3{
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       position: relative;
       text-align: center;
       background-color: #ffffff;
