@@ -8420,7 +8420,32 @@ font-size: 4.5rem;
   color: #000000;
 }
 
-/*PetThoughts Display - desktop*/
+/*Slides - desktop*/
+.PTCasestudy{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #000000;
+}
+
+.PTCasestudy img{
+  width: 100%;
+}
+
+/*case text - desktop*/
+.Casetext h2{
+  color: #ffffff;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.Casetext p{
+  color: #ffffff;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+/*PetThoughts Display - desktop
 .Bubble-display{
   display: block;
   position: relative;
@@ -8429,7 +8454,7 @@ font-size: 4.5rem;
 
 .Bubble-display img{
   width: 100%;
-}
+}*/
 
 /*Expressive-desktop*/
 .Text1{
