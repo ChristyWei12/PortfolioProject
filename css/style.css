@@ -911,6 +911,15 @@ footer .iconset ul li{
   padding-top: 0;
 }
 
+.Abouttext h5{
+  padding-top: 3rem;
+}
+
+.Abouttext a{
+  color: #0A4EFF;
+  text-decoration: underline;
+}
+
 .item1 { grid-area: Location; }
 .item2 { grid-area: Dog; }
 .item3 { grid-area: Cat; }
