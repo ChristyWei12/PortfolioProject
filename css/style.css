@@ -611,6 +611,23 @@ a{
   color: #000000;
 }
 
+.Playground_text{
+  margin-left: auto;;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Playground_text h5{
+  color: #ffffff;
+}
+
+.Homepage_Playground .grid-container{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;;
+  margin-right: auto;
+}
+
 /*footer*/
 footer{
   background-color: #0A0A0A;
@@ -7088,13 +7105,15 @@ font-size: 4.5rem;
    display: block;
    position: relative;
    padding: 15rem 10% 8rem 10%;
-
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
   }
 
 .PGHero img{
-  width: 40%;
-  margin-left: 30%;
-  margin-right: 30%;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -7106,18 +7125,24 @@ font-size: 4.5rem;
   padding-top: 2.5rem;
 }
 
+.PGHero h1{
+  color: #FF9B26;
+  font-family: 'Chewy';
+}
+
 .item1 { grid-area: Yoga; }
 .item2 { grid-area: Forest; }
 .item3 { grid-area: Cake; }
 .item4 {grid-area: CBH;}
+.item5 {grid-area: Mario;}
 
 .grid-container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto;
   grid-template-areas:
-    'CBH Yoga Forest'
-    'Cake . .';
+    'Mario CBH Yoga'
+    'Forest Cake .';
   grid-gap: 10px;
   padding-left: 10%;
   padding-right: 10%;
@@ -7143,6 +7168,12 @@ font-size: 4.5rem;
 }
 
 .item4 img{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.item5 img{
   width: 100%;
   display: block;
   height: auto;
@@ -7300,14 +7331,54 @@ font-size: 4.5rem;
   font-size: 1.8rem;
 }
 
+/*item1*/
+.item5{
+  position: relative;
+}
+
+.item5 .overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.item5:hover .overlay {
+  height: 100%;
+}
+
+.item5 .overlaytext{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.item5 .link{
+  text-decoration: underline;
+  font-size: 1.8rem;
+}
+
+
 @media (max-width: 1000px){
   .grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-template-areas:
-      'CBH Yoga'
-      'Forest Cake';
+      'Mario CBH'
+      'Yoga Forest'
+      'Cake .';
     grid-gap: 10px;
     padding-left: 10%;
     padding-right: 10%;
@@ -7315,9 +7386,14 @@ font-size: 4.5rem;
   }
 }
 
-@media (max-width:465px){
+@media (max-width:768px){
+  .PGHero{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   .PGHero img{
-    width: 100%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -7331,6 +7407,7 @@ font-size: 4.5rem;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas:
+      'Mario Mario'
       'CBH CBH'
       'Yoga Yoga'
       'Forest Forest'
@@ -8578,9 +8655,9 @@ font-size: 4.5rem;
   margin-top: 6rem;
 }
 
-.item1 { grid-area: petapp;}
-.item2 { grid-area: socialapp; }
-.item3 { grid-area: cameraapp; }
+.petapp { grid-area: petapp;}
+.socialapp { grid-area: socialapp; }
+.cameraapp { grid-area: cameraapp; }
 
 
 .petapp{
