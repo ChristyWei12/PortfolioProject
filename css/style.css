@@ -8327,7 +8327,7 @@ font-size: 4.5rem;
     font-size: 1.8rem;
   }
 
-  /*hero-bubble part*/
+  /*PetThoughts hero-bubble part*/
 .hero-bubble{
   display: flex;
   flex-direction: row;
@@ -8356,6 +8356,11 @@ font-size: 4.5rem;
   color: #ffffff;
 }
 
+.hero-left h5{
+  padding-top: 3rem;
+  color: #ffffff;
+}
+
 .hero-right{
   display: block;
   position: relative;
@@ -8366,7 +8371,7 @@ font-size: 4.5rem;
   width: 100%;
 }
 
-/*petthoughts-description- desktop*/
+/*petthoughts-description - desktop*/
 .BubbleDescription{
   display: flex;
   flex-direction: row;
@@ -8401,7 +8406,7 @@ font-size: 4.5rem;
 .des-right h1{
   color: #6B61EC;
   font-weight: bold;
-  padding-top: 3rem;
+  padding-top: 0rem;
   font-weight: bold;
 }
 
@@ -8429,6 +8434,30 @@ font-size: 4.5rem;
   color: #000000;
 }
 
+/*PetThoughts the role part -- desktop*/
+.PTRole{
+  display: block;
+  position: relative;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+
+.PTRole h3{
+  font-weight: bold;
+}
+
+.PTRole p{
+  margin-top: 3rem;
+}
+
+.PTRole img{
+  margin-top: 3rem;
+  width: 100%;
+}
+
 /*Slides - desktop*/
 .PTCasestudy{
   margin-left: auto;
@@ -8439,6 +8468,186 @@ font-size: 4.5rem;
 
 .PTCasestudy img{
   width: 100%;
+}
+
+/*PetThoughts - Problem & Solutions - desktop*/
+.ProblemSolution{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: #ffffff;
+}
+
+.ProblemSolution h3{
+  font-weight: bold;
+}
+
+.ProblemSolution h5{
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.ProblemSolution p{
+  padding-top: 3rem;
+}
+
+.ProblemSolution .Solution{
+  margin-top: 6rem;
+}
+
+.ProblemSolution span{
+  font-weight: bolder;
+}
+
+/*PetThoughts - the goal - desktop*/
+.Goal{
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: #000000;
+}
+
+.Goal h3{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.Goal img{
+  width: 100%;
+  margin-top: 3rem;
+}
+
+/*PetThoughts - User Research - desktop*/
+.PTUserResearch{
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: #ffffff;
+}
+
+.PTUserResearch h3{
+  font-weight: bold;
+}
+
+.PTUserResearch .method{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.PTUserResearch .method img{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.PTUserResearch .findings{
+  margin-top: 6rem;
+}
+
+.PTUserResearch .findings p{
+  margin-top: 3rem;
+}
+
+/*PetThoughts - Competitor Analysis - desktop*/
+.PTCompete{
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #ffffff;
+}
+
+.PTCompete h3{
+  font-weight: bold;
+}
+
+.PTCompete h5{
+  margin-bottom: 3rem;
+}
+
+.PTCompete .table{
+  display: grid;
+  position: relative;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'petapp socialapp cameraapp';
+  grid-gap: 5%;
+  margin-top: 6rem;
+}
+
+.item1 { grid-area: petapp;}
+.item2 { grid-area: socialapp; }
+.item3 { grid-area: cameraapp; }
+
+
+.petapp{
+  display: block;
+  position: relative;
+}
+
+.petapp img{
+  width: 100%;
+}
+
+.PTCompete .table p{
+  margin-top: 3rem;
+}
+
+.socialapp{
+  display: block;
+  position: relative;
+}
+
+.socialapp img{
+  width: 100%;
+}
+
+.cameraapp{
+  display: block;
+  position: relative;
+}
+
+.cameraapp img{
+  width: 100%;
+}
+
+/*PetThoughts - Feature Priority - desktop*/
+.PTFeature{
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #ffffff;
+}
+
+.PTFeature h3{
+  font-weight: bold;
+}
+
+.PTFeature img{
+  width: 100%;
+  margin-top: 3rem;
+}
+
+/*PetThoughts - Idea Testing - desktop*/
+.PTIdeaTesting{
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #ffffff;
+}
+
+.PTIdeaTesting h3{
+  font-weight: bold;
+}
+
+.PTIdeaTesting p{
+  padding-top: 3rem;
+}
+
+.PTIdeaTesting img{
+  width: 100%;
+  margin-top: 3rem;
 }
 
 /*case text - desktop*/
@@ -8465,14 +8674,28 @@ font-size: 4.5rem;
   width: 100%;
 }*/
 
+/*PetThoughts - Feature Walkthrough - desktop*/
+.PTFeatureWalkthrough{
+  background-color: #000000;
+  padding-top: 12rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.PTFeatureWalkthrough h3{
+  color: #ffffff;
+}
+
 /*Expressive-desktop*/
 .Text1{
   display: flex;
   flex-direction: row;
   position: relative;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #000000;
 }
+
 
 .bubbletext{
   display: block;
@@ -8483,12 +8706,16 @@ font-size: 4.5rem;
   padding-right: 10%;
 }
 
-.bubbletext h1{
+.bubbletext h3{
   color: #6B61EC;
   font-weight: bold;
   padding-top: 3rem;
-  padding-bottom: 3rem;
   font-weight: bold;
+}
+
+.bubbletext p{
+  color: #ffffff;
+  padding-top: 3rem;
 }
 
 .bubblevideo{
@@ -8508,7 +8735,7 @@ font-size: 4.5rem;
   flex-direction: row-reverse;
   position: relative;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 /*Collaborative*/
@@ -8517,7 +8744,7 @@ font-size: 4.5rem;
   flex-direction: row;
   position: relative;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .bubblevideo img{
@@ -8525,6 +8752,99 @@ font-size: 4.5rem;
   border-radius: 23px;
   transform: rotate(0deg);
 }
+
+/*PetThoughts - Design Style - desktop*/
+.PTDesignSystem{
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PTDesignSystem h3{
+  font-weight: bold;
+}
+
+.PTDesignSystem img{
+  width: 100%;
+  margin-top: 3rem;
+}
+
+/*PetThoughts Metrics - desktop*/
+.PTMetrics{
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PTMetrics h3{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.PTMetrics p{
+  color: #ffffff;
+  padding-top: 3rem;
+}
+
+/*PetThoughts - Challenges - desktop*/
+.PTChallenges{
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PTChallenges h3{
+  font-weight: bold;
+}
+
+.PTChallenges p{
+  margin-top: 3rem;
+}
+
+.PTChallenges .notes{
+  margin-top: 1.5rem;
+  color: #979797;
+}
+
+/*PetThoughts Learned - desktop*/
+.PTLearned{
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PTLearned h3{
+  font-weight: bold;
+}
+
+.PTLearned p{
+  margin-top: 3rem;
+}
+
+.PTLearned img{
+  width: 100%;
+  margin-top: 3rem;
+}
+
+  /*PetThoughts Back to Top - desktop*/
+  .BacktoTop{
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .BacktoTop a{
+    text-decoration: underline;
+  }
+
 
   /*PetThoughts app - mobile*/
 
@@ -8575,7 +8895,7 @@ font-size: 4.5rem;
       top: 0.5rem;
     }
 
-    /*hero mobile*/
+    /* petthoughts hero mobile*/
     .hero-bubble{
       display: flex;
       flex-direction: column-reverse;
@@ -8593,12 +8913,18 @@ font-size: 4.5rem;
       padding-top: 10%;
       margin-left: auto;
       margin-right: auto;
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
     .hero-left h1{
       font-size: 40px;
       font-weight: bold;
       color: #ffffff;
+      width: 100%;
+    }
+
+    .hero-left h3{
       width: 100%;
     }
 
@@ -8664,7 +8990,7 @@ font-size: 4.5rem;
       margin-left: auto;
       margin-right: auto;
       text-align: left;
-      padding-top: 0rem;
+      padding-top: 0;
       padding-left: 0;
       padding-right: 0;
     }
@@ -8675,15 +9001,79 @@ font-size: 4.5rem;
       padding-bottom: 6rem;
     }
 
+    /*PetThoughts the role part -- mobile*/
+    .PTRole{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+  /*PetThoughts the problem part -- mobile*/
+    .ProblemSolution{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+  /*PetThoughts the goal - mobile*/
+    .Goal{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+  /*PetThoughts - User Research - mobile*/
+    .PTUserResearch{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .PTUserResearch .method img{
+      width: 100%;
+    }
+
+/*PetThoughts - Competitor Analysis - mobile*/
+    .PTCompete{
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 0;
+    }
+
+    .PTCompete .table{
+      display: grid;
+      position: relative;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-template-areas:
+       'petapp'
+       'socialapp'
+       'cameraapp';
+      grid-gap: 6rem;
+      margin-top: 6rem;
+}
+
+   /*PetThoughts - Feature Priority - mobile*/
+   .PTFeature{
+     padding-left: 5%;
+     padding-right: 5%;
+     padding-top: 0;
+    }
+
+
+    /*PetThoughts - Idea Testing - mobile*/
+    .PTIdeaTesting{
+      padding-left: 5%;
+      padding-right: 5%;
+      background-color: #ffffff;
+      padding-top: 0;
+    }
+
     /*Expressive-mobile*/
     .Text1{
       display: flex;
       flex-direction: column;
       position: relative;
       text-align: center;
-      background-color: #ffffff;
       padding-left: 5%;
       padding-right: 5%;
+      background-color: #000000;
     }
 
     .bubbletext{
@@ -8695,12 +9085,16 @@ font-size: 4.5rem;
       padding-right: 0;
     }
 
-    .bubbletext h1{
+    .bubbletext h3{
       color: #6B61EC;
       font-weight: bold;
       padding-top: 3rem;
       padding-bottom: 3rem;
       font-weight: bold;
+    }
+
+    .bubbletext p{
+      color: #ffffff
     }
 
     .bubblevideo{
@@ -8715,12 +9109,13 @@ font-size: 4.5rem;
       transform: rotate(0deg);
     }
 
+
     .Text2{
       display: flex;
       flex-direction: column;
       position: relative;
       text-align: center;
-      background-color: #ffffff;
+      background-color: #000000;
       padding-left: 5%;
       padding-right: 5%;
     }
@@ -8730,10 +9125,36 @@ font-size: 4.5rem;
       flex-direction: column;
       position: relative;
       text-align: center;
-      background-color: #ffffff;
+      background-color: #000000;
       padding-left: 5%;
       padding-right: 5%;
     }
+
+
+  /*PetThoughts - design system - mobile*/
+  .PTDesignSystem{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /*PetThoughts - Metrics - mobile*/
+  .PTMetrics{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /*PetThoughts - Challenges - mobile*/
+  .PTChallenges{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /*PetThoughts What I Learned - mobile*/
+  .PTLearned{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
 
   }
 
