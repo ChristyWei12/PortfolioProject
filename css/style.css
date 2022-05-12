@@ -215,7 +215,7 @@ a{
   margin-right: auto;
 }
 
-/*Projects*/
+/*Projects - desktop*/
 .item1 { grid-area: HomepageProject5;}
 .item2 { grid-area: HomepageProject4; }
 .item3 { grid-area: HomepageProject1; }
@@ -228,8 +228,8 @@ a{
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   grid-template-areas:
-    'HomepageProject5 HomepageProject4'
-    'HomepageProject1 HomepageProject3'
+    'HomepageProject4 HomepageProject1'
+    'HomepageProject5 HomepageProject3'
     'HomepageProject2 HomepageProjectPG';
   grid-gap: 10px;
 }
@@ -807,9 +807,9 @@ footer .iconset ul li{
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas:
-    'HomepageProject5'
     'HomepageProject4'
     'HomepageProject1'
+    'HomepageProject5'
     'HomepageProject3'
     'HomepageProject2'
     'HomepageProjectPG';
