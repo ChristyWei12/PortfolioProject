@@ -8456,6 +8456,38 @@ font-size: 4.5rem;
   width: 100%;
 }
 
+/*PetThoughts - opening - desktop*/
+.BubbleOpening{
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0;
+}
+
+.BubbleOpening h3{
+  font-weight: bold;
+  padding-top: 6rem;
+}
+
+.BubbleOpening p{
+  padding-top: 3rem;
+}
+
+.BubbleOpening img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 12rem;
+}
+
+
+
+
 /*petthoughts-description - desktop*/
 .BubbleDescription{
   display: flex;
@@ -8469,7 +8501,7 @@ font-size: 4.5rem;
   padding-right: 10%;
 }
 
-.des-left{
+.BubbleDescription .des-left{
   display: block;
   position: relative;
   width: 40%;
@@ -8477,29 +8509,36 @@ font-size: 4.5rem;
   margin-right: auto;
 }
 
-.des-right{
+.BubbleDescription .des-left img{
+  width: 50%;
+}
+
+.BubbleDescription .des-right{
   display: block;
   position: relative;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
-.des-right h1{
+.BubbleDescription .des-right h1{
   color: #6B61EC;
   font-weight: bold;
   padding-top: 0rem;
   font-weight: bold;
 }
 
-.des-right p{
+.BubbleDescription .des-right h5{
   padding-top: 3rem;
+  font-weight: bold;
 }
 
-.des-right .button{
+.BubbleDescription .des-right p{
+  padding-top: 1rem;
+}
+
+.BubbleDescription .des-right .button{
   background-color: #6B61EC;
   width: 22rem;
   height: 4.2rem;
@@ -8508,14 +8547,14 @@ font-size: 4.5rem;
   border-radius: 3px;
 }
 
-.des-right .button h6{
+.BubbleDescription .des-right .button h6{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   text-align: center;
   color: #ffffff;
 }
 
-.des-right .button h6:hover{
+.BubbleDescription .des-right .button h6:hover{
   color: #000000;
 }
 
@@ -8585,6 +8624,11 @@ font-size: 4.5rem;
 
 .ProblemSolution span{
   font-weight: bolder;
+}
+
+.ProblemSolution .emphasize{
+  color: #FF6262;
+  font-weight: bold;
 }
 
 /*PetThoughts - the goal - desktop*/
@@ -9029,6 +9073,13 @@ font-size: 4.5rem;
       width: 100%;
     }
 
+    /*PetThoughts - opening - mobile*/
+    .BubbleOpening{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+
     /*petthoughts-description- mobile*/
     .BubbleDescription{
       display: flex;
@@ -9052,9 +9103,6 @@ font-size: 4.5rem;
       text-align: center;
     }
 
-    .des-left img{
-      width: 50%;
-    }
 
     .des-right .button{
       width: 18rem;
@@ -9097,6 +9145,7 @@ font-size: 4.5rem;
       padding-left: 5%;
       padding-right: 5%;
     }
+
 
   /*PetThoughts the goal - mobile*/
     .Goal{
