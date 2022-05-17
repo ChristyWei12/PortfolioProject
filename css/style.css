@@ -209,6 +209,26 @@ a{
   margin-top: 1rem;
 }
 
+.Homepagehero .describe{
+  display: block;
+  position: relative;
+  font-size: 1.8rem;
+  color: #ADADAD;
+  font-weight: bold;
+  width: auto;
+  margin-top: 1rem;
+}
+
+.Homepagehero .describe2{
+  display: none;
+  position: relative;
+  font-size: 1.8rem;
+  color: #ADADAD;
+  font-weight: bold;
+  width: auto;
+  margin-top: 1rem;
+}
+
 /*fp-transition*/
 .FP{
   text-align: center;
@@ -790,6 +810,21 @@ footer .iconset ul li{
 
   .Homepagehero .hashtag{
     font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  .Homepagehero .describe{
+    display: none;
+    position: relative;
+  }
+
+  .Homepagehero .describe2{
+    display: block;
+    position: relative;
+    font-size: 1.8rem;
+    color: #ADADAD;
+    font-weight: bold;
+    width: auto;
     margin-top: 1rem;
   }
 
