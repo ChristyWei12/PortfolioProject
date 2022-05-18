@@ -229,6 +229,7 @@ a{
   margin-top: 1rem;
 }
 
+
 /*fp-transition*/
 .FP{
   text-align: center;
@@ -6459,7 +6460,7 @@ width: 100%;
 
 .SmartClosetIntro p{
  padding-top: 2.5rem;
- text-align: center;
+ text-align: left;
  margin-left: auto;
  margin-right: auto;
  width: 100%;
@@ -6609,6 +6610,27 @@ width: 100%;
 	padding-top: 2.5rem;
 }
 
+/*Smart Closet Problem & Solution - desktop*/
+.SmartClosetProblem{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 0;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.SmartClosetProblem .Solutions{
+  padding-top: 6rem;
+}
+
+.SmartClosetProblem p{
+  padding-top: 3rem;
+  text-align: left;
+}
+
 /*Smart Closet User Survey & Interview - Desktop*/
 .SmartClosetSurvey{
 	display: flex;
@@ -6643,7 +6665,7 @@ width: 100%;
 }
 
 .SmartClosetSurvey .left p{
-	text-align: center;
+	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
@@ -6695,7 +6717,7 @@ width: 100%;
 }
 
 .SmartClosetLaunch .right p{
-	text-align: center;
+	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
@@ -6737,7 +6759,7 @@ width: 100%;
 }
 
 .SmartClosetCommunity p{
-	text-align: center;
+	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
@@ -6990,6 +7012,12 @@ width: 100%;
 
 .SmartClosetDesignspec p{
   width: 80%;
+}
+
+/*SmartCloset Problem - mobile*/
+.SmartClosetProblem{
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /*Smart Closet User Survey & Interview - Mobile*/
