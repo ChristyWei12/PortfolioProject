@@ -560,7 +560,7 @@ a{
 
 /*Project2-WeCloud - desktop*/
 .HomepageProject2{
-  display: none;
+  display: block;
   position: relative;
 }
 
