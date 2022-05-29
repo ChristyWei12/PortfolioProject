@@ -1710,7 +1710,7 @@ a{
   padding-top: 2.5rem;
 }
 
-/*Discovery-Personas*/
+/*Discovery-Personas - desktop*/
 .RooMatePersonas{
   padding-top: 6rem;
 }
@@ -1745,7 +1745,7 @@ a{
 
 .RooMatePersonas .Pcontainer{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;
@@ -1765,7 +1765,7 @@ a{
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 0;
+  padding-top: 6rem;
   width: 100%;
 }
 
@@ -1774,7 +1774,7 @@ a{
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 0;
+  padding-top: 6rem;
   width: 100%;
 }
 
@@ -2542,7 +2542,7 @@ a{
 .RooMateUT h6{
   text-align: center;
   font-size: 2rem;
-  color: #AAAAAA;
+  color: #000000;
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
@@ -2761,7 +2761,7 @@ a{
   justify-content: center;
 }
 
-/*Visual Design*/
+/*Visual Design - desktop*/
 .RooMateVisualDesign{
   display: flex;
   flex-direction: column;
@@ -2794,6 +2794,10 @@ a{
 .RooMateVisualDesign .top .Line{
   margin-left: auto;
   margin-right: auto;
+}
+
+.RooMateVisualDesign .image img{
+  width: 70%;
 }
 
 /*VD-Onboarding*/
@@ -2836,19 +2840,23 @@ a{
   justify-content: center;
 }
 
+.RooMateOnboarding .onboardingdisplay img{
+  width: 25%;
+}
+
 .RooMateOnboarding .onboardingdisplay .image1{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .RooMateOnboarding .onboardingdisplay .image2{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .RooMateOnboarding .onboardingdisplay .image3{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /*VD-Lookforaroom*/
@@ -2899,6 +2907,8 @@ a{
   margin-right: auto;
   padding-top: 0rem;
 }
+
+
 
 /*VD-LookForaroommate*/
 .RooMateLookForaroommate{
@@ -3822,7 +3832,16 @@ width: 100%;
 }
 
 
-/*VD-Pnboarding*/
+/*VD-Onboarding- mobile*/
+.RooMateVisualDesign .image{
+   margin-left: auto;
+   margin-right:auto;
+}
+
+.RooMateVisualDesign .image img{
+  width: 100%;
+}
+
 .RooMateOnboarding p{
   width: 100%;
 }
@@ -3836,8 +3855,17 @@ width: 100%;
   display: none;
 }
 
+.RooMateOnboarding .onboardingdisplay img{
+  width: 100%;
+}
+
 .RooMateOnboarding .onboardingdisplay .image2{
   padding-top: 0rem;
+}
+
+.RooMateOnboarding .onboardingdisplay .image2{
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 .RooMateOnboarding .onboardingdisplay .image3{
