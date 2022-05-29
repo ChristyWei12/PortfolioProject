@@ -8060,6 +8060,17 @@ font-size: 4.5rem;
     padding-top: 10%;
   }
 
+  .hero-bubble2 .hero-left h5{
+    color: #ADADAD;
+    padding-top: 3rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hero-bubble2 .Email{
+    color: #B1BEFF;
+  }
+
   .hero-left h1{
     font-size: 72px;
     font-weight: bold;
@@ -8272,6 +8283,11 @@ font-size: 4.5rem;
       font-weight: bold;
       color: #ffffff;
       width: 100%;
+    }
+
+    .hero-bubble2 .hero-left h5{
+      padding-left: 0%;
+      padding-right: 0%;
     }
 
     .hero-left img{
