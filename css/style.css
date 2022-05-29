@@ -1243,16 +1243,16 @@ a{
   display: block;
   position: relative;
   top: 0px;
-  padding: 0.8rem 10% 0 10%;
+  padding: 0.8rem 0 0 0;
 }
 
-.RooMatehero .herologo{
+/*.RooMatehero .herologo{
   width: 7rem;
   display: block;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 .RooMatehero .hero{
   width: 100%;
@@ -1267,22 +1267,30 @@ a{
 }
 
 .RooMatehero .herotext{
-  width: 80%;
+  width: 100%;
   display: block;
   position: relative;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
-.RooMatehero .herotext h2{
+.RooMatehero .herotext h1{
+    font-weight: bold;
+}
+
+
+.RooMatehero .herotext h3{
   padding-top: 3rem;
-  font-weight: bold;
   font-style: normal;
 }
 
 .RooMatehero .herotext h5{
   padding-top: 3rem;
+  font-weight: lighter;
+  color: #868686;
 }
 
 /*what is roomate - desktop*/
@@ -3260,12 +3268,12 @@ ul{
   top: 0.5rem;
 }
 
-/*Hero*/
+/*Hero - mobile*/
 .RooMatehero{
   display: block;
   position: relative;
   top: 0px;
-  padding: 4rem 10% 0 10%;
+  padding: 4rem 0 0 0;
 }
 
 .RooMatehero .hero{
@@ -3274,6 +3282,8 @@ ul{
 
 .RooMatehero .herotext{
   width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .RooMatehero .heromobile{
@@ -8073,33 +8083,34 @@ font-size: 4.5rem;
   /*Bubble header - desktop*/
   .hero-bubble2{
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     position: relative;
     text-align: center;
     padding-top: 20rem;
     padding-bottom: 20rem;
     justify-content: center;
+    padding-left: 25%;
+    padding-right: 25%;
   }
 
-  .hero-left{
+  .hero-bubble2 .hero-left{
     display: block;
     position: relative;
-    width: 40%;
+    width: 100%;
     padding-top: 10%;
   }
 
   .hero-bubble2 .hero-left h5{
     color: #ADADAD;
     padding-top: 3rem;
-    padding-left: 5%;
-    padding-right: 5%;
+    font-weight: lighter;
   }
 
   .hero-bubble2 .Email{
     color: #B1BEFF;
   }
 
-  .hero-left h1{
+  .hero-bubble2 .hero-left h1{
     font-size: 72px;
     font-weight: bold;
     color: #ffffff;
@@ -8107,21 +8118,19 @@ font-size: 4.5rem;
     font-family: nunito;
   }
 
-  .hero-left h3{
+  .hero-bubble2 .hero-left h3{
     color: #ffffff;
-    font-family: nunito;
+    padding-top: 3rem;
   }
 
-  .hero-right{
+  .hero-bubble2 .hero-right{
     display: block;
     position: relative;
-    width: 60%;
-    padding-left: 5%;
-    padding-right: 10%;
+    width: 100%;
   }
 
-  .hero-right img{
-    width: 100%;
+  .hero-bubble2 .hero-right img{
+    width: 80%;
   }
 
   /*Bubble Page description - desktop*/
@@ -8295,9 +8304,11 @@ font-size: 4.5rem;
       padding-top: 20rem;
       padding-bottom: 20rem;
       justify-content: center;
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
-    .hero-left{
+    .hero-bubble2 .hero-left{
       display: block;
       position: relative;
       width: 100%;
@@ -8306,7 +8317,7 @@ font-size: 4.5rem;
       margin-right: auto;
     }
 
-    .hero-left h1{
+    .hero-bubble2 .hero-left h1{
       font-size: 40px;
       font-weight: bold;
       color: #ffffff;
@@ -8318,11 +8329,11 @@ font-size: 4.5rem;
       padding-right: 0%;
     }
 
-    .hero-left img{
+    .hero-bubble2 .hero-left img{
       width: 20%;
     }
 
-    .hero-right{
+    .hero-bubble2 .hero-right{
       display: block;
       position: relative;
       width: 100%;
@@ -8330,7 +8341,7 @@ font-size: 4.5rem;
       margin-right: auto;
     }
 
-    .hero-right img{
+    .hero-bubble2 .hero-right img{
       width: 100%;
     }
 
@@ -8520,47 +8531,49 @@ font-size: 4.5rem;
     font-size: 1.8rem;
   }
 
-  /*PetThoughts hero-bubble part*/
+  /*PetThoughts hero-bubble part - desktop*/
 .hero-bubble{
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   position: relative;
   text-align: center;
   padding-top: 20rem;
   padding-bottom: 20rem;
   justify-content: center;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
-.hero-left{
+.hero-bubble .hero-left{
   display: block;
   position: relative;
-  width: 40%;
+  width: 100%;
   padding-top: 10%;
 }
 
-.hero-left h1{
-  font-size: 72px;
+.hero-bubble .hero-left h1{
   font-weight: bold;
   color: #ffffff;
   width: 100%;
 }
 
-.hero-left h3{
-  color: #ffffff;
-}
-
-.hero-left h5{
+.hero-bubble .hero-left h3{
   padding-top: 3rem;
   color: #ffffff;
 }
 
-.hero-right{
-  display: block;
-  position: relative;
-  width: 60%;
+.hero-bubble .hero-left h5{
+  padding-top: 3rem;
+  color: #ffffff;
 }
 
-.hero-right img{
+.hero-bubble .hero-right{
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.hero-bubble .hero-right img{
   width: 100%;
 }
 
@@ -9141,35 +9154,35 @@ font-size: 4.5rem;
       padding-top: 20rem;
       padding-bottom: 20rem;
       justify-content: center;
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
-    .hero-left{
+    .hero-bubble .hero-left{
       display: block;
       position: relative;
       width: 100%;
       padding-top: 10%;
       margin-left: auto;
       margin-right: auto;
-      padding-left: 5%;
-      padding-right: 5%;
     }
 
-    .hero-left h1{
+    .hero-bubble .hero-left h1{
       font-size: 40px;
       font-weight: bold;
       color: #ffffff;
       width: 100%;
     }
 
-    .hero-left h3{
+    .hero-bubble .hero-left h3{
       width: 100%;
     }
 
-    .hero-left img{
+    .hero-bubble .hero-left img{
       width: 20%;
     }
 
-    .hero-right{
+    .hero-bubble .hero-right{
       display: block;
       position: relative;
       width: 100%;
@@ -9177,7 +9190,7 @@ font-size: 4.5rem;
       margin-right: auto;
     }
 
-    .hero-right img{
+    .hero-bubble .hero-right img{
       width: 100%;
     }
 
