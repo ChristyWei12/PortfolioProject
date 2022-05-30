@@ -243,7 +243,7 @@ a{
 .item3 { grid-area: HomepageProject1; }
 .item4 { grid-area: HomepageProject3; }
 .item5 {grid-area: HomepageProject2;}
-.item6 {grid-area: HomepageProjectPG;}
+.item6 {grid-area: HomepageProject6;}
 
 .Projects {
   display: grid;
@@ -252,7 +252,7 @@ a{
   grid-template-areas:
     'HomepageProject4 HomepageProject1'
     'HomepageProject5 HomepageProject3'
-    'HomepageProject2 HomepageProjectPG';
+    'HomepageProject2 HomepageProject6';
   grid-gap: 10px;
 }
 
@@ -650,6 +650,82 @@ a{
   margin-right: auto;
 }
 
+/*Project-Clipboard - desktop*/
+.HomepageProject6{
+  display: block;
+  position: relative;
+}
+
+.imageproject6{
+  width: 100%;
+  height: auto;
+}
+
+.project6{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.Homepagedisplay6{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.Homepageprojecttext6{
+  background-image: url("/image/ClipboardHover.png");
+  background-size: cover;
+  background-color: #ffffff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project6:hover .Homepageprojecttext6{
+  opacity: 1;
+}
+
+.Homepageprojecttext6 h6{
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+}
+
+.HomepageProject6 .button1{
+  background-color: #ffffff00;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-top: 70%;
+  border-radius: 3px;
+}
+
+.HomepageProject6 .button1 h6{
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.HomepageProject6 .button1 h6:hover{
+  color: #AAAAAA;
+}
+
+
 /*footer*/
 footer{
   background-color: #0A0A0A;
@@ -849,7 +925,7 @@ footer .iconset ul li{
     'HomepageProject5'
     'HomepageProject3'
     'HomepageProject2'
-    'HomepageProjectPG';
+    'HomepageProject6';
   grid-gap: 0px;
 }
 
@@ -7388,8 +7464,10 @@ font-size: 4.5rem;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto;
   grid-template-areas:
-    'Mario CBH Yoga'
-    'Forest Cake .';
+    'Mario Yoga Cake';
+    /*grid-template-areas:
+      'Mario CBH Yoga'
+      'Forest Cake .';*/
   grid-gap: 10px;
   padding-left: 10%;
   padding-right: 10%;
@@ -7623,9 +7701,12 @@ font-size: 4.5rem;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-template-areas:
-      'Mario CBH'
-      'Yoga Forest'
-      'Cake .';
+      'Mario Yoga'
+      'Cake Forest';
+    /*  grid-template-areas:
+        'Mario CBH'
+        'Yoga Forest'
+        'Cake .';*/
     grid-gap: 10px;
     padding-left: 10%;
     padding-right: 10%;
@@ -7655,7 +7736,6 @@ font-size: 4.5rem;
     grid-template-rows: auto;
     grid-template-areas:
       'Mario Mario'
-      'CBH CBH'
       'Yoga Yoga'
       'Forest Forest'
       'Cake Cake';
@@ -7943,6 +8023,7 @@ font-size: 4.5rem;
   .CBHContent h3{
     text-align: left;
     padding-bottom: 2.5rem;
+    padding-top: 6rem;
     margin-left: auto;
     margin-right: auto;
     font-weight:bold;
