@@ -1331,7 +1331,7 @@ a{
 }*/
 
 .RooMatehero .hero{
-  width: 100%;
+  width: 80%;
   display: block;
   position: relative;
   margin-left: auto;
@@ -4111,7 +4111,7 @@ width: 100%;
   display: block;
   position: relative;
   top: 46px;
-  padding: 10rem 25% 0 25%;
+  padding: 10rem 0 0 0;
 }
 
 .WeCloudhero .herologo{
@@ -4120,7 +4120,7 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 6rem;
-  width: 100%;
+  width: 80%;
 }
 
 .WeCloudhero .herotext{
