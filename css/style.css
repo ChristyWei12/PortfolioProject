@@ -8200,8 +8200,9 @@ font-size: 4.5rem;
   /*Bubble page - desktop*/
   .body-bubble2{
     background-color: #000000;
-    font-family: Muli;
-    line-height: 1.5;
+    font-family: 'Muli', sans-serif;
+    line-height: 1.8;
+    color: #555d6d;
   }
 
   /*header-bubble - desktop*/
@@ -8352,7 +8353,6 @@ font-size: 4.5rem;
   }
 
   /*Bubble Page description - desktop*/
-
 .Bubble2Description{
   background-color: #ffffff;
   padding-left: 25%;
@@ -8360,17 +8360,38 @@ font-size: 4.5rem;
 }
 
 .Bubble2Description h1{
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.Bubble2Description h3{
+  padding-top: 6rem;
+  font-weight: bold;
+  color: #000000;
 }
 
 .Bubble2Description p{
-  padding-bottom: 3rem;
+  padding-top: 3rem;
+  color: #555d6d;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.Bubble2Description .ilatic{
+  font-style: italic;
+}
+
+.Bubble2Description b{
+  font-weight: bold;
+  color: #000000;
 }
 
 /*Bubble page image section - desktop*/
 .Bubble2Image{
   background-color: #ffffff;
   padding-top: 0;
+  padding-bottom: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -8434,6 +8455,50 @@ font-size: 4.5rem;
 }
 
 .Bubble2CaseStudy .des-right .button h6:hover{
+  color: #000000;
+}
+
+/*Bubble Process - desktop*/
+.Bubble2Process{
+  background-color: #ffffff;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.Bubble2Process h3{
+  padding-top: 6rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.Bubble2Process p{
+  padding-top: 3rem;
+}
+
+/*Competitor - desktop*/
+.Bubble2Process img{
+  width: 100%;
+  padding-top: 3rem;
+}
+
+.BubbleAppStore{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.BubbleAppStore img{
+  width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Bubble2Process .beta{
+    color: #6B61EC;
+}
+
+.Bubble2Process b{
+  font-weight: bold;
   color: #000000;
 }
 
@@ -8569,6 +8634,13 @@ font-size: 4.5rem;
       padding-left: 5%;
       padding-right: 5%;
     }
+
+   /*bubble process - mobile*/
+   .Bubble2Process{
+     background-color: #ffffff;
+     padding-left: 5%;
+     padding-right: 5%;
+   }
 
   /*Bubble image - mobile*/
   .Bubble2Image{
