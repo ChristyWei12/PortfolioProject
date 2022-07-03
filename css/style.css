@@ -1039,10 +1039,12 @@ footer .iconset ul li{
 
 .Abouttext p{
   padding-top: 0;
+  color: #000000;
 }
 
 .Abouttext h5{
   padding-top: 3rem;
+  color: #000000;
 }
 
 .Abouttext a{
@@ -1216,6 +1218,9 @@ footer .iconset ul li{
 /*RooMate Project - desktop*/
 .body-RooMate{
   background-color: #ffffff;
+  font-family: 'Muli', sans-serif;
+  line-height: 1.8;
+  color: #555d6d;
 }
 
 /*header-RooMate - desktop*/
@@ -1355,12 +1360,14 @@ a{
 
 .RooMatehero .herotext h1{
     font-weight: bold;
+    color: #000000;
 }
 
 
 .RooMatehero .herotext h3{
   padding-top: 3rem;
   font-style: normal;
+      color: #000000;
 }
 
 .RooMatehero .herotext h5{
@@ -1389,6 +1396,8 @@ a{
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
+  font-weight: bold;
+  color: #000000;
 }
 
 .RooMateIntro p{
@@ -1432,7 +1441,7 @@ a{
 .RooMateDS .button{
   background-color: #2ABECC;
   width: 22rem;
-  height: 4.2rem;
+  height: 5rem;
   margin-top: 8rem;
   margin-left: auto;
   margin-right: auto;
@@ -1464,6 +1473,7 @@ a{
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
+  color: #000000;
 }
 
 .RooMateDesignspec .Line{
@@ -1642,6 +1652,7 @@ a{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+    color: #000000;
 }
 
 .RooMateDiscovery .Dtitle .Line{
@@ -1684,6 +1695,7 @@ a{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  color: #000000;
 }
 
 .RooMateUserSurvey p{
@@ -1765,6 +1777,7 @@ a{
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.5rem;
+  color: #000000;
 }
 
 .RooMateInterview .left p{
@@ -1818,6 +1831,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
+  color: #000000;
 }
 
 .RooMatePersonas .top p{
@@ -2003,6 +2017,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
+  color: #000000;
 }
 
 .RooMateCA .Ctop p{
@@ -2369,6 +2384,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
+  color: #000000;
 }
 
 .RooMateIA .top .Line{
@@ -2405,6 +2421,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
+  color: #000000;
 }
 
 .RooMateUSUF .top p{
@@ -2454,6 +2471,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 6rem;
 	text-align: center;
+  color: #000000;
 }
 
 .RooMateSitemap .map{
@@ -2507,6 +2525,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
+  color: #000000;
 }
 
 .RooMatePP .top p{
@@ -2561,6 +2580,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
+  color: #000000;
 }
 
 .RooMateWireframe .top p{
@@ -2603,6 +2623,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
+  color: #000000;
 }
 
 .RooMateUT p{
@@ -2757,6 +2778,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
+  color: #000000;
 }
 
 .RooMateABTesting .top p{
@@ -2764,6 +2786,7 @@ a{
   margin-right: auto;
   text-align: left;
   width: 100%;
+  color: #000000;
 }
 
 .RooMateABTesting .Test1{
@@ -2777,6 +2800,7 @@ a{
   margin-right: auto;
 	text-align: left;
   width: 100%;
+  color: #000000;
 }
 
 .RooMateABTesting .Test1 img{
@@ -2804,6 +2828,7 @@ a{
   margin-right: auto;
   text-align: left;
   width: 100%;
+  color: #000000;
 }
 
 .RooMateABTesting .Test2 img{
@@ -2830,6 +2855,7 @@ a{
   margin-right: auto;
 	text-align: left;
   width: 100%;
+  color: #000000;
 }
 
 .RooMateABTesting .Test3 img{
@@ -3159,7 +3185,7 @@ a{
 .RooMateVisualDesign .button{
   background-color: #2ABECC;
   width: 22rem;
-  height: 4.2rem;
+  height: 5rem;
   margin-top: 2.5rem;
   margin-left: auto;
   margin-right: auto;
@@ -3200,6 +3226,7 @@ a{
   margin-right: auto;
   padding-top: 2.5rem;
 	text-align: center;
+  color: #000000;
 }
 
 .RooMateFinal .Line{
@@ -3401,7 +3428,7 @@ ul{
 
 .RooMateDS .button{
   width: 18rem;
-  height: 3.5rem;
+  height: 4rem;
 	margin-top: 4.5rem;
 }
 
@@ -4061,7 +4088,7 @@ width: 100%;
 
 .RooMateprototype .button{
   width: 18rem;
-  height: 3.5rem;
+  height: 4rem;
 }
 
 /*Final - mobile*/
@@ -4136,10 +4163,12 @@ width: 100%;
   padding-top: 3rem;
   font-weight: bold;
   font-style: normal;
+  color: #000000;
 }
 
 .WeCloudhero .herotext h3{
   padding-top: 3rem;
+  color: #000000;
 }
 
 /*what is Wecloud*/
@@ -4164,6 +4193,8 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudIntro p{
@@ -4315,6 +4346,8 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudDesignspec .Line{
@@ -4403,6 +4436,7 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2.5rem;
+  font-weight: bold;
 }
 
 .WeCloudCS p{
@@ -4455,6 +4489,8 @@ width: 100%;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudDiscovery .Dtitle .Line{
@@ -4486,6 +4522,8 @@ width: 100%;
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudUserSurvey p{
@@ -4573,6 +4611,8 @@ width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudPersonas .top p{
@@ -4723,6 +4763,8 @@ width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudCA .Ctop p{
@@ -5081,6 +5123,8 @@ width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudIA .top .Line{
@@ -5116,6 +5160,8 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudUSUF .top p{
@@ -5190,6 +5236,8 @@ width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudPP .top p{
@@ -5240,6 +5288,8 @@ width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudWireframe .top p{
@@ -5292,6 +5342,8 @@ width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudUT .top p{
@@ -5393,6 +5445,8 @@ width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudABTesting .top p{
@@ -5400,6 +5454,7 @@ width: 100%;
   margin-right: auto;
   text-align: left;
   width: 100%;
+  color: #000000;
 }
 
 .WeCloudABTesting .Test1{
@@ -5412,6 +5467,7 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
+  color: #000000;
 }
 
 .WeCloudABTesting .Test1 img{
@@ -5436,6 +5492,7 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  color: #000000;
 }
 
 .WeCloudABTesting .Test2 img{
@@ -5799,6 +5856,8 @@ width: 100%;
   margin-right: auto;
   padding-top: 2.5rem;
 	text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .WeCloudFinal .Line{
@@ -6680,10 +6739,12 @@ width: 100%;
 .SmartClosetHero .herotext h1{
   padding-top: 3rem;
 	font-family: Playfair Display SC;
+  color: #000000;
 }
 
 .SmartClosetHero .herotext h3{
   padding-top: 3rem;
+  color: #000000;
 }
 
 /*what is Smart Closet - Desktop*/
@@ -6707,6 +6768,8 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 .SmartClosetIntro p{
@@ -6780,7 +6843,6 @@ width: 100%;
 }
 
 /*Smart Closet DS2*/
-
 .SmartClosetDS2{
   display: flex;
   flex-direction: column;
@@ -6803,7 +6865,7 @@ width: 100%;
 .SmartClosetDS2 .button{
   background-color: #202020;
   width: 22rem;
-  height: 4.2rem;
+  height: 5rem;
   margin-top: 8rem;
   margin-left: auto;
   margin-right: auto;
@@ -6845,6 +6907,8 @@ width: 100%;
 	margin-right: auto;
 	text-align: center;
 	padding-top: 2.5rem;
+  color: #000000;
+  font-weight: bold;
 }
 
 .SmartClosetDesignspec .Line{
@@ -6875,6 +6939,11 @@ width: 100%;
 
 .SmartClosetProblem .Solutions{
   padding-top: 6rem;
+}
+
+.SmartClosetProblem h3{
+  font-weight: bold;
+  color: #000000;
 }
 
 .SmartClosetProblem p{
@@ -6913,6 +6982,8 @@ width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
+  color: #000000;
+  font-weight: bold;
 }
 
 .SmartClosetSurvey .left p{
@@ -6965,6 +7036,8 @@ width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
+  color: #000000;
+  font-weight: bold;
 }
 
 .SmartClosetLaunch .right p{
@@ -7007,6 +7080,8 @@ width: 100%;
 	margin-right: auto;
 	padding-top: 2.5rem;
 	width: 50%;
+  color: #000000;
+  font-weight: bold;
 }
 
 .SmartClosetCommunity p{
@@ -7049,6 +7124,8 @@ width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
+  color: #000000;
+  font-weight: bold;
 }
 
 .SmartClosetMarketing p{
@@ -7092,6 +7169,8 @@ width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
+  color: #000000;
+  font-weight: bold;
 }
 
 .SmartClosetTutorial p{
@@ -7250,7 +7329,7 @@ width: 100%;
 
 .SmartClosetDS2 .button{
 	width: 18rem;
-	height: 3.5rem;
+	height: 4rem;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -7446,6 +7525,7 @@ font-size: 4.5rem;
   margin-right: auto;
   text-align: center;
   padding-top: 2.5rem;
+  color: #000000;
 }
 
 .PGHero h1{
@@ -7785,6 +7865,7 @@ font-size: 4.5rem;
   margin-left: auto;
   margin-right: auto;
   font-weight:bold;
+  color: #000000;
 }
 
 .YogaContent p{
@@ -7797,6 +7878,7 @@ font-size: 4.5rem;
 .YogaContent h5{
   padding-top:1.5rem;
   font-weight:bold;
+  color: #000000;
 }
 
 .YogaContent .link{
@@ -7950,6 +8032,7 @@ font-size: 4.5rem;
   margin-left: auto;
   margin-right: auto;
   font-weight:bold;
+  color: #000000;
 }
 
 .CakeContent p{
@@ -7962,6 +8045,7 @@ font-size: 4.5rem;
 .CakeContent h5{
   padding-top:1.5rem;
   font-weight:bold;
+  color: #000000;
 }
 
 .CakeContent .link{
@@ -8027,6 +8111,7 @@ font-size: 4.5rem;
     margin-left: auto;
     margin-right: auto;
     font-weight:bold;
+    color: #000000;
   }
 
   .CBHContent p{
@@ -8044,6 +8129,7 @@ font-size: 4.5rem;
   .CBHContent h5{
     padding-top:1.5rem;
     font-weight:bold;
+    color: #000000;
   }
 
   .CBHContent .link{
@@ -8723,8 +8809,9 @@ font-size: 4.5rem;
   /*PetThought Page - desktop*/
   .body-bubble{
     background-color: #6B61EC;
-    font-family: Muli;
-    line-height: 1.5;
+    font-family: 'Muli', sans-serif;
+    line-height: 1.8;
+    color: #555d6d;
   }
 
   /*header-bubble - desktop*/
@@ -8882,6 +8969,7 @@ font-size: 4.5rem;
 .BubbleOpening h3{
   font-weight: bold;
   padding-top: 6rem;
+  color: #000000;
 }
 
 .BubbleOpening p{
@@ -8940,6 +9028,11 @@ font-size: 4.5rem;
   font-weight: bold;
 }
 
+.BubbleDescription .des-right h3{
+    font-weight: bold;
+    color: #000000;
+}
+
 .BubbleDescription .des-right h5{
   padding-top: 3rem;
   font-weight: bold;
@@ -8952,7 +9045,7 @@ font-size: 4.5rem;
 .BubbleDescription .des-right .button{
   background-color: #6B61EC;
   width: 22rem;
-  height: 4.2rem;
+  height: 5rem;
   margin-top: 3rem;
   margin-left: 0;
   border-radius: 3px;
@@ -8982,6 +9075,7 @@ font-size: 4.5rem;
 
 .PTRole h3{
   font-weight: bold;
+  color: #000000;
 }
 
 .PTRole p{
@@ -9018,6 +9112,7 @@ font-size: 4.5rem;
 
 .ProblemSolution h3{
   font-weight: bold;
+  color: #000000;
 }
 
 .ProblemSolution h5{
@@ -9068,6 +9163,7 @@ font-size: 4.5rem;
 
 .PTUserResearch h3{
   font-weight: bold;
+  color: #000000;
 }
 
 .PTUserResearch .method{
@@ -9101,6 +9197,7 @@ font-size: 4.5rem;
 
 .PTCompete h3{
   font-weight: bold;
+  color: #000000;
 }
 
 .PTCompete h5{
@@ -9163,6 +9260,7 @@ font-size: 4.5rem;
 
 .PTFeature h3{
   font-weight: bold;
+  color: #000000;
 }
 
 .PTFeature img{
@@ -9179,6 +9277,7 @@ font-size: 4.5rem;
 
 .PTIdeaTesting h3{
   font-weight: bold;
+  color: #000000;
 }
 
 .PTIdeaTesting p{
@@ -9304,6 +9403,7 @@ font-size: 4.5rem;
 
 .PTDesignSystem h3{
   font-weight: bold;
+  color: #000000;
 }
 
 .PTDesignSystem img{
@@ -9340,6 +9440,7 @@ font-size: 4.5rem;
 
 .PTChallenges h3{
   font-weight: bold;
+  color: #000000;
 }
 
 .PTChallenges p{
@@ -9362,6 +9463,7 @@ font-size: 4.5rem;
 
 .PTLearned h3{
   font-weight: bold;
+  color: #000000;
 }
 
 .PTLearned p{
@@ -9517,7 +9619,7 @@ font-size: 4.5rem;
 
     .BubbleDescription .des-right .button{
       width: 18rem;
-      height: 3.5rem;
+      height: 4rem;
     	margin-top: 4.5rem;
     }
 
