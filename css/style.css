@@ -8963,7 +8963,6 @@ font-size: 4.5rem;
   padding-right: 25%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 0;
 }
 
 .BubbleOpening h3{
@@ -8981,10 +8980,18 @@ font-size: 4.5rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 12rem;
+  padding-top: 3rem;
 }
 
+.BubbleOpening h5{
+  padding-top: 3rem;
+  color: #000000;
+}
 
+.BubbleOpening b{
+  font-weight: bold;
+  color: #000000;
+}
 
 
 /*petthoughts-description - desktop*/
@@ -9099,6 +9106,7 @@ font-size: 4.5rem;
   width: 100%;
 }
 
+
 /*PetThoughts - Problem & Solutions - desktop*/
 .ProblemSolution{
   display: block;
@@ -9186,6 +9194,11 @@ font-size: 4.5rem;
 
 .PTUserResearch .findings p{
   margin-top: 3rem;
+}
+
+.PTUserResearch b{
+  font-weight: bold;
+  color: #000000;
 }
 
 /*PetThoughts - Competitor Analysis - desktop*/
@@ -9313,7 +9326,7 @@ font-size: 4.5rem;
   width: 100%;
 }*/
 
-/*PetThoughts - Feature Walkthrough - desktop*/
+/*PetThoughts - Design - desktop*/
 .PTFeatureWalkthrough{
   background-color: #000000;
   padding-top: 12rem;
@@ -9322,8 +9335,53 @@ font-size: 4.5rem;
   text-align: center;
 }
 
-.PTFeatureWalkthrough h3{
+.PTFeatureWalkthrough h2{
   color: #ffffff;
+  font-weight: bold;
+}
+
+/*CameraFlow - desktop*/
+.CameraFlow{
+  display: block;
+  position: relative;
+  background-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.CameraFlow h3{
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.CameraFlow p{
+  color: #ffffff;
+  padding-top: 3rem;
+}
+
+.CameraFlow img{
+  width: 100%;
+  padding-top: 3rem;
+}
+
+/*Encourage title - desktop*/
+.Encourage{
+  display: block;
+  position: relative;
+  background-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.Encourage h3{
+  color: #ffffff;
+  font-weight: bold;
 }
 
 /*Expressive-desktop*/
@@ -9417,15 +9475,15 @@ font-size: 4.5rem;
   padding-right: 25%;
   margin-left: auto;
   margin-right: auto;
+  background-color: #ffffff;
 }
 
 .PTMetrics h3{
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
 }
 
 .PTMetrics p{
-  color: #ffffff;
   padding-top: 3rem;
 }
 
@@ -9710,6 +9768,12 @@ font-size: 4.5rem;
       padding-right: 5%;
       background-color: #ffffff;
       padding-top: 0;
+    }
+
+    /*Design-Camera Flow - mobile*/
+    .CameraFlow{
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
     /*Expressive-mobile*/
