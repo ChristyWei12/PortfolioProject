@@ -276,6 +276,7 @@ margin-bottom: 3rem;
 
 
 /*fp-transition*/
+/*This part is hidden now*/
 .FP{
   text-align: center;
   margin-left: auto;
@@ -283,12 +284,12 @@ margin-bottom: 3rem;
 }
 
 /*Projects - desktop*/
-.item1 { grid-area: HomepageProject5;}
-.item2 { grid-area: HomepageProject4; }
-.item3 { grid-area: HomepageProject1; }
-.item4 { grid-area: HomepageProject3; }
-.item5 {grid-area: HomepageProject2;}
-.item6 {grid-area: HomepageProject6;}
+.item1 { grid-area: HomepageProjectBB; }
+.item2 { grid-area: HomepageProjectCMS; }
+.item3 { grid-area: HomepageProjectDS; }
+.item4 { grid-area: HomepageProjectBA; }
+.item5 { grid-area: HomepageProjectPT; }
+.item6 { grid-area: HomepageProjectSC; }
 
 .Projects {
   display: grid;
@@ -301,32 +302,32 @@ margin-bottom: 3rem;
   grid-gap: 10px;
 }
 
-/*Project4-Bubble*/
-.HomepageProject5{
+/*Project5-Bubble*/
+.HomepageProjectBB{
   display: block;
   position: relative;
 }
 
-.imageproject5{
+.imageprojectBB{
   width: 100%;
   height: auto;
 }
 
-.project5{
+.projectBB{
   width: 100%;
   height: auto;
   display: block;
   position: relative;
 }
 
-.Homepagedisplay5{
+.HomepagedisplayBB{
   display: block;
   width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
   height: auto;
   position: relative;
 }
 
-.Homepageprojecttext5{
+.HomepageprojecttextBB{
   background-image: url("/image/BubbleHover.png");
   background-size: cover;
   background-color: #444444;
@@ -344,17 +345,17 @@ margin-bottom: 3rem;
   margin-right: auto;
 }
 
-.project5:hover .Homepageprojecttext5{
+.projectBB:hover .HomepageprojecttextBB{
   opacity: 1;
 }
 
 
-.Homepageprojecttext5 h6{
+.HomepageprojecttextBB h6{
   text-align: center;
   font-size: 1.8rem;
 }
 
-.HomepageProject5 .button1{
+.HomepageProjectBB .button1{
   background-color: #444444;
   width: 22rem;
   height: 4.2rem;
@@ -366,43 +367,269 @@ margin-bottom: 3rem;
   border-radius: 3px;
 }
 
-.HomepageProject5 .button1 h6{
+.HomepageProjectBB .button1 h6{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   color: #ffffff;
 }
 
-.HomepageProject5 .button1 h6:hover{
+.HomepageProjectBB .button1 h6:hover{
   color: #000000;
 }
 
-
-/*Project4-PetThoughts*/
-.HomepageProject4{
+/*Project-CMS*/
+.HomepageProjectCMS{
   display: block;
   position: relative;
 }
 
-.imageproject4{
+.imageprojectCMS{
   width: 100%;
   height: auto;
 }
 
-.project4{
+.projectCMS{
   width: 100%;
   height: auto;
   display: block;
   position: relative;
 }
 
-.Homepagedisplay4{
+.HomepagedisplayCMS{
   display: block;
   width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
   height: auto;
   position: relative;
 }
 
-.Homepageprojecttext4{
+.HomepageprojecttextCMS{
+  background-image: url("/image/BubbleHover.png");
+  background-size: cover;
+  background-color: #444444;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectCMS:hover .HomepageprojecttextCMS{
+  opacity: 1;
+}
+
+
+.HomepageprojecttextCMS h6{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.HomepageProjectCMS .button1{
+  background-color: #444444;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  border-radius: 3px;
+}
+
+.HomepageProjectCMS .button1 h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #ffffff;
+}
+
+.HomepageProjectCMS .button1 h6:hover{
+  color: #000000;
+}
+
+/*Project-DS*/
+.HomepageProjectDS{
+  display: block;
+  position: relative;
+}
+
+.imageprojectDS{
+  width: 100%;
+  height: auto;
+}
+
+.projectDS{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.HomepagedisplayDS{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.HomepageprojecttextDS{
+  background-image: url("/image/BubbleHover.png");
+  background-size: cover;
+  background-color: #444444;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectDS:hover .HomepageprojecttextDS{
+  opacity: 1;
+}
+
+
+.HomepageprojecttextDS h6{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.HomepageProjectDS .button1{
+  background-color: #444444;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  border-radius: 3px;
+}
+
+.HomepageProjectDS .button1 h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #ffffff;
+}
+
+.HomepageProjectDS .button1 h6:hover{
+  color: #000000;
+}
+
+
+/*Project-BA: Beaconing*/
+.HomepageProjectBA{
+  display: block;
+  position: relative;
+}
+
+.imageprojectBA{
+  width: 100%;
+  height: auto;
+}
+
+.projectBA{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.HomepagedisplayBA{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.HomepageprojecttextBA{
+  background-image: url("/image/BubbleHover.png");
+  background-size: cover;
+  background-color: #444444;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectBA:hover .HomepageprojecttextBA{
+  opacity: 1;
+}
+
+
+.HomepageprojecttextBA h6{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.HomepageProjectBA .button1{
+  background-color: #444444;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  border-radius: 3px;
+}
+
+.HomepageProjectBA .button1 h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #ffffff;
+}
+
+.HomepageProjectBA .button1 h6:hover{
+  color: #000000;
+}
+
+
+/*Project4-PetThoughts*/
+.HomepageProjectPT{
+  display: block;
+  position: relative;
+}
+
+.imageprojectPT{
+  width: 100%;
+  height: auto;
+}
+
+.projectPT{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.HomepagedisplayPT{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.HomepageprojecttextPT{
   background-image: url("/image/PTHover.png");
   background-size: cover;
   background-color: #6B61EC;
@@ -420,17 +647,17 @@ margin-bottom: 3rem;
   margin-right: auto;
 }
 
-.project4:hover .Homepageprojecttext4{
+.projectPT:hover .HomepageprojecttextPT{
   opacity: 1;
 }
 
 
-.Homepageprojecttext4 h6{
+.HomepageprojecttextPT h6{
   text-align: center;
   font-size: 1.8rem;
 }
 
-.HomepageProject4 .button1{
+.HomepageProjectPT .button1{
   background-color: #6B61EC;
   width: 22rem;
   height: 4.2rem;
@@ -442,18 +669,18 @@ margin-bottom: 3rem;
   border-radius: 3px;
 }
 
-.HomepageProject4 .button1 h6{
+.HomepageProjectPT .button1 h6{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   color: #ffffff;
 }
 
-.HomepageProject4 .button1 h6:hover{
+.HomepageProjectPT .button1 h6:hover{
   color: #000000;
 }
 
 
-/*Project1-RooMate*/
+/*Project1-RooMate: This part is hidden now*/
 .HomepageProject1{
   display: block;
   position: relative;
@@ -528,32 +755,32 @@ margin-bottom: 3rem;
   color: #000000;
 }
 
-/*Project3-SmartCloset*/
-.HomepageProject3{
+/*Project3-SC: SmartCloset*/
+.HomepageProjectSC{
   display: block;
   position: relative;
 }
 
-.imageproject3{
+.imageprojectSC{
   width: 100%;
   height: auto;
 }
 
-.project3{
+.projectSC{
   width: 100%;
   height: auto;
   display: block;
   position: relative;
 }
 
-.Homepagedisplay3{
+.HomepagedisplaySC{
   display: block;
   width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
   height: auto;
   position: relative;
 }
 
-.Homepageprojecttext3{
+.HomepageprojecttextSC{
   background-image: url("/image/SmartClosetHover.png");
   background-size: cover;
   background-color: #ffffff;
@@ -571,17 +798,17 @@ margin-bottom: 3rem;
   margin-right: auto;
 }
 
-.project3:hover .Homepageprojecttext3{
+.projectSC:hover .HomepageprojecttextSC{
   opacity: 1;
 }
 
-.Homepageprojecttext3 h6{
+.HomepageprojecttextSC h6{
   text-align: center;
   font-size: 1.8rem;
   padding-top: 1.5rem;
 }
 
-.HomepageProject3 .button1{
+.HomepageProjectSC .button1{
   background-color: #ffffff00;
   width: 22rem;
   height: 4.2rem;
@@ -594,12 +821,12 @@ margin-bottom: 3rem;
   border-radius: 3px;
 }
 
-.HomepageProject3 .button1 h6{
+.HomepageProjectSC .button1 h6{
   font-size: 1.8rem;
   color: #ffffff;
 }
 
-.HomepageProject3 .button1 h6:hover{
+.HomepageProjectSC .button1 h6:hover{
   color: #AAAAAA;
 }
 
