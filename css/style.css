@@ -20,7 +20,7 @@ body{
   line-height: 1.5;
 }
 
-/*font size*/
+/*font size - desktop*/
 h1{
   font-size: 4.8rem;
   color:#303030
@@ -117,10 +117,10 @@ a{
   position: absolute;
   right: 35px;
   top: 12px;
-  background: #ffffff;
+  /*background: #ffffff;*/
   text-align: right;
   box-sizing: border-box;
-  color: #ffffff;
+  /*color: #ffffff;*/
   font-size: 1.8rem;
   display: none;
 }
@@ -1055,7 +1055,7 @@ footer .iconset ul li{
 @media (max-width: 822px){
   .toggle{
     display: block;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
   }
 
   ul{
