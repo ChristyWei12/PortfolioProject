@@ -8108,6 +8108,39 @@ font-size: 4.5rem;
 .pic10 { grid-area: France2;}
 .pic11 { grid-area: PaintFlowers;}
 .pic12 { grid-area: PaintRose;}
+.pic13 { grid-area: Jiangnan;}
+.pic14 { grid-area: Shuixiang1;}
+.pic15 { grid-area: Shuixiang2;}
+.pic16 { grid-area: TomatoPic;}
+.pic17 { grid-area: Tang;}
+.pic18 { grid-area: GardenHouse;}
+.pic19 { grid-area: Zelda;}
+.pic20 { grid-area: ColorHouses;}
+.pic21 { grid-area: Joshua;}
+.pic22 { grid-area: Cabos;}
+.pic23 { grid-area: YellowTree;}
+.pic24 { grid-area: Volcano;}
+.pic25 { grid-area: ShortHair;}
+.pic26 { grid-area: CoupleBySea;}
+.pic27 { grid-area: Banff;}
+.pic28 { grid-area: Chef;}
+.pic29 { grid-area: Lamp;}
+.pic30 { grid-area: SnowMount;}
+.pic31 { grid-area: Disney;}
+.pic32 { grid-area: JapaneseGarden;}
+.pic33 { grid-area: Shanxi;}
+.pic34 { grid-area: Architecture;}
+.pic35 { grid-area: WallPaper;}
+.pic36 { grid-area: Crowds;}
+.pic37 { grid-area: Summeryet;}
+.pic38 { grid-area: BlueDoor;}
+.pic39 { grid-area: Autumn;}
+.pic40 { grid-area: Cow;}
+.pic41 { grid-area: Motor;}
+.pic42 { grid-area: Remote;}
+.pic43 { grid-area: Iceland;}
+.pic44 { grid-area: PaloAlto;}
+
 
 
 .pic-grid {
@@ -8117,7 +8150,15 @@ font-size: 4.5rem;
   grid-template-areas:
     'Donut Peach France Cloudygirl'
     'Meditation Logos Cats Garden'
-    'Flowers France2 PaintFlowers PaintRose';
+    'Flowers France2 PaintFlowers PaintRose'
+    'Jiangnan Shuixiang1 Shuixiang2 TomatoPic'
+    'Tang GardenHouse Zelda ColorHouses'
+    'Joshua Cabos YellowTree Volcano'
+    'ShortHair CoupleBySea Banff Chef'
+    'Lamp SnowMount Disney JapaneseGarden'
+    'Shanxi Architecture WallPaper Crowds'
+    'Summeryet BlueDoor Autumn Cow'
+    'Motor Remote Iceland PaloAlto';
     /*grid-template-areas:
       'Mario CBH Yoga'
       'Forest Cake .';*/
@@ -8164,7 +8205,23 @@ font-size: 4.5rem;
       'Meditation Logos' 
       'Cats Garden'
       'Flowers France2' 
-      'PaintFlowers PaintRose';
+      'PaintFlowers PaintRose'
+      'Jiangnan Shuixiang1' 
+      'Shuixiang2 TomatoPic'
+      'Tang GardenHouse' 
+      'Zelda ColorHouses'
+      'Joshua Cabos' 
+      'YellowTree Volcano'
+      'ShortHair CoupleBySea' 
+      'Banff Chef'
+      'Lamp SnowMount' 
+      'Disney JapaneseGarden'
+      'Shanxi Architecture' 
+      'WallPaper Crowds'
+      'Summeryet BlueDoor' 
+      'Autumn Cow'
+      'Motor Remote' 
+      'Iceland PaloAlto';
       /*grid-template-areas:
         'Mario CBH Yoga'
         'Forest Cake .';*/
