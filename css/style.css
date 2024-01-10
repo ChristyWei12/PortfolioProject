@@ -201,85 +201,7 @@ margin-bottom: 3rem;
 }
 
 
-/*DELETE/ARCHIVE: the following is the old part of hero section, from homepagehero to prior to FP*/
-.Homepagehero{
-  display: flex;
-  flex-direction: row;
-  padding-top: 230px;
-  padding-bottom: 200px;
-  padding-left: 10%;
-  padding-right: 10%;
-  /*justify-content: center;*/
-}
 
-.video-mask{
-  display: block;
-  position: relative;
-  text-align: center;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.video{
-  border-radius: 23px;
-  transform: rotate(-10deg);
-}
-
-.hptext{
-  display: block;
-  position: relative;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-
-.Homepagehero .sub-title{
-  color: #ADADAD;
-  font-weight: bold;
-}
-
-.Homepagehero .title{
-  color: #ffffff;
-  font-weight: bolder;
-}
-
-.Homepagehero .introduction{
-  font-size: 2.4rem;
-  color: #ffffff;
-  font-weight: bold;
-  width: auto;
-  margin-top: 1rem;
-}
-
-.Homepagehero .hashtag{
-  font-size: 2.4rem;
-  color: #ADADAD;
-  font-weight: bold;
-  width: auto;
-  margin-top: 1rem;
-}
-
-.Homepagehero .describe{
-  display: block;
-  position: relative;
-  font-size: 1.8rem;
-  color: #ADADAD;
-  font-weight: bold;
-  width: auto;
-  margin-top: 1rem;
-}
-
-.Homepagehero .describe2{
-  display: none;
-  position: relative;
-  font-size: 1.8rem;
-  color: #ADADAD;
-  font-weight: bold;
-  width: auto;
-  margin-top: 1rem;
-}
 
 
 /*fp-transition*/
@@ -1030,6 +952,7 @@ footer h6{
   font-size: 1.8rem;
   text-align: center;
   padding-top: 3rem;
+  font-weight: lighter;
 }
 
 footer .iconset ul{
@@ -1154,66 +1077,7 @@ margin-right: auto;
 text-align: center;
 }
 
-/*The following part is moved to about page*/
-.Homepagehero{
-  display: flex;
-  flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 180px;
-}
 
-.video-mask{
-  display: block;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  }
-
-.video{
-  border-radius: 23px;
-  transform: rotate(0deg);
-  }
-
-.hptext{
-    display: block;
-    position: relative;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 18rem;
-    text-align: center;
-  }
-
-  .Homepagehero .sub-title{
-    font-size: 1.8rem;
-  }
-
-  .Homepagehero .introduction{
-    font-size: 1.8rem;
-    margin-top: 1rem;
-  }
-
-  .Homepagehero .hashtag{
-    font-size: 1.8rem;
-    margin-top: 1rem;
-  }
-
-  .Homepagehero .describe{
-    display: none;
-    position: relative;
-  }
-
-  .Homepagehero .describe2{
-    display: block;
-    position: relative;
-    font-size: 1.8rem;
-    color: #ADADAD;
-    font-weight: bold;
-    width: auto;
-    margin-top: 1rem;
-  }
 
 
 /*.video-mask{
@@ -1312,6 +1176,69 @@ text-align: center;
 }*/
 
 /*About Page - desktop*/
+/*the following is moved from homepagehero at Homepage*/
+.Homepagehero{
+  display: flex;
+  flex-direction: row;
+  padding-top: 230px;
+  padding-bottom: 200px;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video-mask{
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video{
+  border-radius: 23px;
+  transform: rotate(-10deg);
+}
+
+.hptext{
+  display: block;
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  justify-content: center;
+}
+
+.Homepagehero .sub-title{
+  color: #303030;
+  font-weight: lighter;
+}
+
+
+.Homepagehero .describe{
+  display: block;
+  position: relative;
+  font-size: 1.8rem;
+  color: #303030;
+  width: auto;
+  margin-top: 3rem;
+  font-weight: lighter;
+}
+
+.Homepagehero .describe2{
+  display: none;
+  position: relative;
+  font-size: 1.8rem;
+  color: #303030;
+  width: auto;
+  margin-top: 1rem;
+  font-weight: lighter;
+}
+
 /*hero*/
 .Aboutcontainer{
   margin-left: auto;
@@ -1364,6 +1291,21 @@ text-align: center;
   text-decoration: underline;
 }
 
+/*Some fun fact section title*/
+.sectiontitle2{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.sectiontitle2 h5{
+  font-weight: lighter;
+}
+
+/*Some fun fact grid - desktop*/
 .item1 { grid-area: Location; }
 .item2 { grid-area: Dog; }
 .item3 { grid-area: Cat; }
@@ -1387,7 +1329,8 @@ text-align: center;
   grid-gap: 6%;
   padding-left: 25%;
   padding-right: 25%;
-  padding-bottom: 30rem;
+  padding-bottom: 6rem;
+  padding-top: 3rem;
   text-align: center;
   width: 100%;
   min-width: 1rem;
@@ -1449,9 +1392,103 @@ text-align: center;
   grid-column-start: 3;
 }
 
-/*About Page Media Query*/
+/*AboutList - Desktop*/
+.AboutList {
+  display: block;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 15rem;
+}
+
+.AboutList h5{
+  text-align: center;
+  font-weight: lighter;
+}
+
+.AboutList .listunit{
+  padding-top: 3rem;
+}
+
+.AboutList .listunit .smalltitle{
+  font-size: 1.4rem;
+  color: #949494;
+  font-weight: lighter;
+}
+
+.AboutList p{
+  font-weight: lighter;
+  padding-top: 1.5rem;
+}
+
+.AboutList .Awards{
+  padding-top: 3rem;
+}
+
+/*About Page Media Query - mobile*/
 @media (max-width: 768px){
   /*hero*/
+  /*The following part is moved to about page*/
+.Homepagehero{
+  display: flex;
+  flex-direction: column;
+  padding-top: 15rem;
+  padding-bottom: 12rem;
+}
+
+.video-mask{
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.video{
+  border-radius: 23px;
+  transform: rotate(0deg);
+  }
+
+.hptext{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12rem;
+    text-align: center;
+  }
+
+  .Homepagehero .sub-title{
+    font-size: 1.8rem;
+  }
+
+  .Homepagehero .introduction{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  .Homepagehero .hashtag{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  .Homepagehero .describe{
+    display: none;
+    position: relative;
+  }
+
+  .Homepagehero .describe2{
+    display: block;
+    position: relative;
+    font-size: 1.4rem;
+    color: #303030;
+    width: auto;
+    margin-top: 3rem;
+  }
   /*hero*/
   .Aboutcontainer{
     margin-left: auto;
@@ -1519,12 +1556,81 @@ text-align: center;
     grid-gap: 6%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 40rem;
+    padding-bottom: 23rem;
     padding-top: 6rem;
     text-align: center;
     width: 100%;
   }
 
+  .AboutList {
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 15rem;
+  }
+
+}
+
+@media (min-width: 1660px){
+  /*.Homepagehero{
+    padding-top: 15rem;
+  }*/
+
+  .Homepagehero .illustration{
+    display: none;
+  }
+
+  .Homepagehero .illustration2{
+    display: block;
+    margin-right: 5%;
+  }
+
+  .Homepagehero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Homepagehero .hptext{
+    width: 65%;
+  }
+
+  .Homepagehero .illustration2{
+    width: 30%;
+  }
+}
+
+@media (min-width: 2500px){
+  .Homepagehero{
+    padding-top: 15rem;
+  }
+
+  .Homepagehero .illustration{
+    display: none;
+  }
+
+  .Homepagehero .illustration2{
+    display: block;
+    margin-right: 15%;
+  }
+
+  .Homepagehero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Homepagehero .hptext{
+    width: 65%;
+  }
+
+  .Homepagehero .illustration2{
+    width: 20%;
+    height: auto;
+  }
 }
 
 /*RooMate Project - desktop*/
@@ -7840,6 +7946,13 @@ font-size: 4.5rem;
   color: #000000;
 }
 
+.PGHero h3{
+  font-weight: lighter;
+}
+
+
+/*Section title in PG - Desktop*/
+/*This section also applies to About page about this site*/
 .sectiontitle{
   padding-left: 10%;
   padding-right: 10%;
@@ -7850,6 +7963,15 @@ font-size: 4.5rem;
 
 .sectiontitle h5{
   font-weight: lighter;
+}
+
+.sectiontitle p{
+  font-weight: lighter;
+  padding-top: 3rem;
+}
+
+.sectiontitle a{
+  color: #0A4EFF;
 }
 
 /*App Design Grid - desktop*/
