@@ -7974,6 +7974,31 @@ font-size: 4.5rem;
   color: #0A4EFF;
 }
 
+
+/*Section title in PG - Desktop*/
+/*This section also applies to About page about this site*/
+.testbubble1{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.testbubble1 h5{
+  font-weight: lighter;
+  text-align: center;
+}
+
+.testbubble1 p{
+  font-weight: lighter;
+  padding-top: 3rem;
+}
+
+.testbubble1 a{
+  color: #0A4EFF;
+}
+
 /*App Design Grid - desktop*/
 .item1 { grid-area: Yoga; }
 .item2 { grid-area: Forest; }
@@ -8385,6 +8410,7 @@ font-size: 4.5rem;
     padding-right: 10%;
     padding-bottom: 15rem;
   }
+}
 
   /*.pic-grid {
     display: grid;
@@ -8865,187 +8891,83 @@ font-size: 4.5rem;
       margin-right: 15%;
       margin-bottom: 1.5rem;
     }
-
   }
 
-  /*Bubble page - desktop*/
-  .body-bubble2{
-    background-color: #000000;
-    font-family: 'Muli', sans-serif;
-    line-height: 1.8;
-    color: #555d6d;
-  }
-
-  /*header-bubble - desktop*/
-  .header-bubble2{
+/*Bubble page - desktop*/
+  /*Bubble hero - desktop*/
+.herosection-bubble{
     display: flex;
-    flex-direction: row;
-    position: fixed;
-    height: auto;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding-top: 3vw;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-bottom: 1vw;
-    z-index: 5;
-    background-color: rgba(10, 10, 10, 0);
-  }
-
-  .header-bubble2 .left-bubble2{
-    display: block;
-    position: relative;
-    width: 50%;
-    left:0;
-  }
-
-  .logo-bubble2{
-    height: 4.6rem;
-    display: block;
-    position: relative;
-    left: 0;
-    top: 0;
-  }
-
-  .logo-bubble2 img{
-    height: 100%;
-    display: block;
-    position: relative;
-  }
-
-  .header-bubble2 .right-bubble2{
-    display: block;
-    position: relative;
-    width: 50%;
-    right: 0;
-  }
-
-  a{
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .toggle-bubble2{
-    width: 2.7rem;
-    position: absolute;
-    right: 35px;
-    top: 12px;
-    background: #ffffff;
-    text-align: right;
-    box-sizing: border-box;
-    color: #ffffff;
-    font-size: 1.8rem;
-    display: none;
-  }
-
-  .header-bubble2 ul{
-    right: 0;
-    height: 4.6rem;
-    width: 100%;
-    position: relative;
-    top: 0;
-    padding-right: 0;
-    text-align: right;
-    /*background-color: rgba(10, 10, 10, 0.6);*/
-  }
-
-  .header-bubble2 ul li{
-    list-style: none;
-    display: inline-block;
-    position: relative;
-    padding: 15px 15px;
-    width: auto;
-    text-align: center;
-  }
-
-  .header-bubble2 ul li a:hover{
-    color: #FF7072;
-  }
-
-  .header-bubble2 ul li a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.8rem;
-  }
-
-  /*Bubble header - desktop*/
-  .hero-bubble2{
-    display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: relative;
     text-align: center;
     padding-top: 20rem;
-    padding-bottom: 20rem;
+    padding-bottom: 0rem;
     justify-content: center;
     padding-left: 25%;
     padding-right: 25%;
-  }
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  .hero-bubble2 .hero-left{
+.herosection-bubble .hero-top{
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.herosection-bubble .hero-top img{
+width: 80%;
+}
+
+.herosection-bubble .hero-bottom{
     display: block;
     position: relative;
     width: 100%;
     padding-top: 10%;
-  }
+}
 
-  .hero-bubble2 .hero-left h5{
-    color: #ADADAD;
+.herosection-bubble .hero-bottom h5{
     padding-top: 3rem;
     font-weight: lighter;
-  }
+    color: #86898D;
+}
 
-  .hero-bubble2 .Email{
+.herosection-bubble .Email{
     color: #B1BEFF;
-  }
+}
 
-  .hero-bubble2 .hero-left h1{
-    font-size: 72px;
-    font-weight: bold;
-    color: #ffffff;
+.herosection-bubble .hero-bottom h1{
+    font-weight: lighter;
     width: 100%;
-    font-family: nunito;
-  }
+}
 
-  .hero-bubble2 .hero-left h3{
-    color: #ffffff;
+.herosection-bubble .hero-bottom h3{
     padding-top: 3rem;
-  }
+    font-weight: lighter;
+}
 
-  .hero-bubble2 .hero-right{
-    display: block;
-    position: relative;
-    width: 100%;
-  }
 
-  .hero-bubble2 .hero-right img{
-    width: 80%;
-  }
+.herosection-bubble .hero-bottom img{
+  display: none;
+}
+
+
 
   /*Bubble Page description - desktop*/
 .Bubble2Description{
-  background-color: #ffffff;
   padding-left: 25%;
   padding-right: 25%;
 }
 
-.Bubble2Description h1{
-  padding-bottom: 0rem;
-  font-weight: bold;
-  color: #000000;
-}
-
-.Bubble2Description h3{
+.Bubble2Description h5{
   padding-top: 6rem;
-  font-weight: bold;
-  color: #000000;
+  font-weight: lighter;
 }
 
 .Bubble2Description p{
   padding-top: 3rem;
   color: #555d6d;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 1.8;
 }
 
@@ -9054,8 +8976,8 @@ font-size: 4.5rem;
 }
 
 .Bubble2Description b{
-  font-weight: bold;
-  color: #000000;
+  font-weight: 400;
+  color: #303030;
 }
 
 /*Bubble page image section - desktop*/
@@ -9131,18 +9053,18 @@ font-size: 4.5rem;
 
 /*Bubble Process - desktop*/
 .Bubble2Process{
-  background-color: #ffffff;
   padding-left: 25%;
   padding-right: 25%;
 }
-.Bubble2Process h3{
+.Bubble2Process h5{
   padding-top: 6rem;
-  font-weight: bold;
-  color: #000000;
+  font-weight: lighter;
 }
 
 .Bubble2Process p{
   padding-top: 3rem;
+  font-weight: lighter;
+  color: #555d6d;
 }
 
 /*Competitor - desktop*/
@@ -9169,13 +9091,12 @@ font-size: 4.5rem;
 }
 
 .Bubble2Process b{
-  font-weight: bold;
-  color: #000000;
+  font-weight: 400;
+  color: #303030;
 }
 
 /*Bubble page download - desktop*/
 .Bubble2Download{
-  background-color: #ffffff;
   display: block;
   position: relative;
   padding-left: 25%;
@@ -9203,66 +9124,20 @@ font-size: 4.5rem;
 
   /*Bubble page - mobile*/
   @media (max-width: 822px){
-    .toggle-bubble2{
-      display: block;
-      background-color: rgba(10, 10, 10, 0);
-    }
-
-    ul{
-      display: none;
-    }
-
-    .header-bubble2 ul{
-      top: 40px;
-      /*width: 100%;
-      right: 0;
-      position: relative;
-      background-color: #ffffff;*/
-    }
-
-    .header-bubble2 ul li{
-      display: block;
-      text-align: center;
-      width: 100%;
-      background-color: rgba(255, 164, 131, 0.7);
-    }
-
-    .header-bubble2 ul li a{
-      font-size: 1.4rem;
-    }
-
-    .active{
-      display: block;
-    }
-
-    .logo-bubble2{
-      /*width: 12rem;*/
-      background-color: none;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .logo-bubble2 img{
-      height: 60%;
-      display: block;
-      position: relative;
-      top: 0.5rem;
-    }
-
     /*hero mobile*/
-    .hero-bubble2{
+    .herosection-bubble{
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       position: relative;
       text-align: center;
       padding-top: 20rem;
-      padding-bottom: 20rem;
+      padding-bottom: 0rem;
       justify-content: center;
       padding-left: 5%;
       padding-right: 5%;
     }
 
-    .hero-bubble2 .hero-left{
+    .herosection-bubble .hero-bottom{
       display: block;
       position: relative;
       width: 100%;
@@ -9271,23 +9146,21 @@ font-size: 4.5rem;
       margin-right: auto;
     }
 
-    .hero-bubble2 .hero-left h1{
+    .herosection-bubble .hero-bottom h1{
       font-size: 40px;
-      font-weight: bold;
-      color: #ffffff;
       width: 100%;
     }
 
-    .hero-bubble2 .hero-left h5{
+    .herosection-bubble .hero-bottom h5{
       padding-left: 0%;
       padding-right: 0%;
     }
 
-    .hero-bubble2 .hero-left img{
+    .herosection-bubble .hero-bottom img{
       width: 20%;
     }
 
-    .hero-bubble2 .hero-right{
+    .herosection-bubble .hero-top{
       display: block;
       position: relative;
       width: 100%;
@@ -9295,7 +9168,7 @@ font-size: 4.5rem;
       margin-right: auto;
     }
 
-    .hero-bubble2 .hero-right img{
+    .herosection-bubble .hero-top img{
       width: 100%;
     }
 
@@ -10127,7 +10000,11 @@ font-size: 4.5rem;
   }
 
   .BacktoTop a{
-    text-decoration: underline;
+    text-decoration: none;
+  }
+
+  .BacktoTop a h6{
+    color: #66dcd8;
   }
 
 
@@ -10465,11 +10342,11 @@ font-size: 4.5rem;
   text-align: center;
 }
 
-.bubblecs h2{
+.bubblecs h5{
+  color: #383B49;
   padding-bottom: 3rem;
 }
 
-.bubblecs h5{
-  color: #383B49;
+.bubblecs h2{
   padding-bottom: 3rem;
 }
