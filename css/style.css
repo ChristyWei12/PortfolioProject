@@ -7162,7 +7162,13 @@ width: 100%;
 
 .SmartClosetHero .herotext h3{
   padding-top: 3rem;
-  color: #000000;
+  font-weight: lighter;
+}
+
+.SmartClosetHero .herotext h5{
+  padding-top: 3rem;
+  font-weight: lighter;
+  color: #555d6d;
 }
 
 /*what is Smart Closet - Desktop*/
@@ -7181,13 +7187,12 @@ width: 100%;
   margin-right: auto;
 }
 
-.SmartClosetIntro h3{
+.SmartClosetIntro h5{
   padding-top: 2.5rem;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetIntro p{
@@ -7196,10 +7201,13 @@ width: 100%;
  margin-left: auto;
  margin-right: auto;
  width: 100%;
+ color: #555d6d;
+ line-height: 1.8;
+ font-weight: lighter;
 }
 
 .SmartClosetIntro .AppStore{
-  width: 100%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -7320,13 +7328,12 @@ width: 100%;
 	width: 4.5rem;
 }
 
-.SmartClosetDesignspec h3{
+.SmartClosetDesignspec h5{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	padding-top: 2.5rem;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetDesignspec .Line{
@@ -7341,6 +7348,9 @@ width: 100%;
 	margin-right: auto;
 	text-align: center;
 	padding-top: 2.5rem;
+  font-weight: lighter;
+  color: #555d6d;
+  line-height: 1.8;
 }
 
 /*Smart Closet Problem & Solution - desktop*/
@@ -7359,14 +7369,16 @@ width: 100%;
   padding-top: 6rem;
 }
 
-.SmartClosetProblem h3{
-  font-weight: bold;
-  color: #000000;
+.SmartClosetProblem h5{
+  font-weight: lighter;
 }
 
 .SmartClosetProblem p{
   padding-top: 3rem;
   text-align: left;
+  font-weight: lighter;
+  line-height: 1.8;
+  color: #555d6d;
 }
 
 /*Smart Closet User Survey & Interview - Desktop*/
@@ -7395,13 +7407,12 @@ width: 100%;
 	margin-right: auto;
 }
 
-.SmartClosetSurvey .left h3{
+.SmartClosetSurvey .left h5{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetSurvey .left p{
@@ -7410,6 +7421,9 @@ width: 100%;
 	margin-right: auto;
 	padding-top: 2.5rem;
 	width: 100%;
+  font-weight: lighter;
+  line-height: 1.8;
+  color:#555d6d;
 }
 
 .SmartClosetSurvey .image{
@@ -7449,13 +7463,12 @@ width: 100%;
 	margin-right: auto;
 }
 
-.SmartClosetLaunch .right h3{
+.SmartClosetLaunch .right h5{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetLaunch .right p{
@@ -7464,6 +7477,9 @@ width: 100%;
 	margin-right: auto;
 	padding-top: 2.5rem;
 	width: 100%;
+  font-weight: lighter;
+  color: #555d6d;
+  line-height: 1.8;
 }
 
 .SmartClosetLaunch .image{
@@ -7492,14 +7508,13 @@ width: 100%;
 	margin-right: auto;
 }
 
-.SmartClosetCommunity h3{
+.SmartClosetCommunity h5{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
 	width: 50%;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetCommunity p{
@@ -7508,6 +7523,9 @@ width: 100%;
 	margin-right: auto;
 	padding-top: 2.5rem;
 	width: 60%;
+  font-weight: lighter;
+  line-height: 1.8;
+  color: #555d6d;
 }
 
 .SmartClosetCommunity .Collage{
@@ -7582,13 +7600,12 @@ width: 100%;
 	margin-right: auto;
 }
 
-.SmartClosetTutorial h3{
+.SmartClosetTutorial h5{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetTutorial p{
@@ -7597,6 +7614,9 @@ width: 100%;
 	margin-right: auto;
 	padding-top: 2.5rem;
 	width: 60%;
+  font-weight: lighter;
+  color: #555d6d;
+  line-height: 1.8;
 }
 
 .SmartClosetTutorial .gif{
@@ -7687,7 +7707,7 @@ width: 100%;
 @media (max-width: 768px){
 /*Smart Closet hero - mobile*/
 .SmartClosetHero h3{
-	width: 80%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -7826,7 +7846,7 @@ width: 100%;
   padding-right: 5%;
 }
 
-.SmartClosetCommunity h3{
+.SmartClosetCommunity h5{
 	width: 60%;
 }
 
