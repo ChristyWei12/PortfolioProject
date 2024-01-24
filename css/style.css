@@ -216,8 +216,8 @@ margin-bottom: 3rem;
 .item1 { grid-area: HomepageProjectBB; }
 .item2 { grid-area: HomepageProjectCMS; }
 .item3 { grid-area: HomepageProjectDS; }
-.item4 { grid-area: HomepageProjectBA; }
-.item5 { grid-area: HomepageProjectPT; }
+.item4 { grid-area: HomepageProjectPT; }
+.item5 { grid-area: HomepageProjectBA; }
 .item6 { grid-area: HomepageProjectSC; }
 
 .Projects {
@@ -226,8 +226,8 @@ margin-bottom: 3rem;
   grid-template-rows: auto;
   grid-template-areas:
     'HomepageProjectBB HomepageProjectCMS'
-    'HomepageProjectDS HomepageProjectBA'
-    'HomepageProjectPT HomepageProjectSC';
+    'HomepageProjectDS HomepageProjectPT'
+    'HomepageProjectBA HomepageProjectSC';
   grid-gap: 4%;
   padding-left: 10%;
   padding-right: 10%;
@@ -8901,7 +8901,7 @@ font-size: 4.5rem;
     position: relative;
     text-align: center;
     padding-top: 20rem;
-    padding-bottom: 0rem;
+    padding-bottom: 12rem;
     justify-content: center;
     padding-left: 25%;
     padding-right: 25%;
@@ -9131,7 +9131,7 @@ width: 80%;
       position: relative;
       text-align: center;
       padding-top: 20rem;
-      padding-bottom: 0rem;
+      padding-bottom: 6rem;
       justify-content: center;
       padding-left: 5%;
       padding-right: 5%;
@@ -9266,13 +9266,14 @@ width: 80%;
 
   /*PetThought Page - desktop*/
   .body-bubble{
-    background-color: #6B61EC;
+    background-color: #ffffff;
     font-family: 'Muli', sans-serif;
     line-height: 1.8;
     color: #555d6d;
   }
 
   /*header-bubble - desktop*/
+  /*This part is merged into the general header*/
   .header-bubble{
     display: flex;
     flex-direction: row;
@@ -9373,7 +9374,7 @@ width: 80%;
   position: relative;
   text-align: center;
   padding-top: 20rem;
-  padding-bottom: 20rem;
+  padding-bottom: 12rem;
   justify-content: center;
   padding-left: 25%;
   padding-right: 25%;
@@ -9388,18 +9389,18 @@ width: 80%;
 
 .hero-bubble .hero-left h1{
   font-weight: bold;
-  color: #ffffff;
   width: 100%;
 }
 
 .hero-bubble .hero-left h3{
   padding-top: 3rem;
-  color: #ffffff;
+  font-weight: lighter;
 }
 
 .hero-bubble .hero-left h5{
   padding-top: 3rem;
-  color: #ffffff;
+  font-weight: lighter;
+  color: #86898D;
 }
 
 .hero-bubble .hero-right{
@@ -9416,21 +9417,22 @@ width: 80%;
 .BubbleOpening{
   display: block;
   position: relative;
-  background-color: #ffffff;
   padding-left: 25%;
   padding-right: 25%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.BubbleOpening h3{
-  font-weight: bold;
+.BubbleOpening h5{
+  font-weight: lighter;
   padding-top: 6rem;
-  color: #000000;
 }
 
 .BubbleOpening p{
   padding-top: 3rem;
+  color: #555d6d;
+  font-weight: lighter;
+  line-height: 1.8;
 }
 
 .BubbleOpening img{
@@ -9441,14 +9443,13 @@ width: 80%;
   padding-top: 3rem;
 }
 
-.BubbleOpening h5{
-  padding-top: 3rem;
-  color: #000000;
+.BubbleOpening .quote{
+  font-style: italic;
 }
 
 .BubbleOpening b{
-  font-weight: bold;
-  color: #000000;
+  font-weight: 400;
+  color: #303030;
 }
 
 
@@ -9460,7 +9461,6 @@ width: 80%;
   text-align: center;
   padding-top: 20rem;
   justify-content: center;
-  background-color: #ffffff;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -9494,17 +9494,19 @@ width: 80%;
 }
 
 .BubbleDescription .des-right h3{
-    font-weight: bold;
-    color: #000000;
+    font-weight: lighter;
 }
 
 .BubbleDescription .des-right h5{
   padding-top: 3rem;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .BubbleDescription .des-right p{
   padding-top: 1rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  color:#555d6d;
 }
 
 .BubbleDescription .des-right .button{
@@ -9545,6 +9547,7 @@ width: 80%;
 
 .PTRole p{
   margin-top: 3rem;
+  line-height: 1.8;
 }
 
 .PTRole img{
@@ -9588,6 +9591,7 @@ width: 80%;
 
 .ProblemSolution p{
   padding-top: 3rem;
+  line-height: 1.8;
 }
 
 .ProblemSolution .Solution{
@@ -9610,9 +9614,9 @@ width: 80%;
   background-color: #000000;
 }
 
-.Goal h3{
+.Goal h5{
   color: #ffffff;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .Goal img{
@@ -9627,9 +9631,8 @@ width: 80%;
   background-color: #ffffff;
 }
 
-.PTUserResearch h3{
-  font-weight: bold;
-  color: #000000;
+.PTUserResearch h5{
+  font-weight: lighter;
 }
 
 .PTUserResearch .method{
@@ -9652,27 +9655,28 @@ width: 80%;
 
 .PTUserResearch .findings p{
   margin-top: 3rem;
+  font-weight: lighter;
+  color: #555d6d;
 }
 
 .PTUserResearch b{
-  font-weight: bold;
-  color: #000000;
+  font-weight: 400;
+  color: #303030;
 }
 
 /*PetThoughts - Competitor Analysis - desktop*/
 .PTCompete{
   padding-left: 15%;
   padding-right: 15%;
-  background-color: #ffffff;
-}
-
-.PTCompete h3{
-  font-weight: bold;
-  color: #000000;
 }
 
 .PTCompete h5{
+  font-weight: lighter;
+}
+
+.PTCompete h6{
   margin-bottom: 3rem;
+  font-weight: lighter;
 }
 
 .PTCompete .table{
@@ -9702,6 +9706,9 @@ width: 80%;
 
 .PTCompete .table p{
   margin-top: 3rem;
+  font-weight: lighter;
+  color: #555d6d;
+  line-height: 1.8;
 }
 
 .socialapp{
@@ -9743,16 +9750,17 @@ width: 80%;
 .PTIdeaTesting{
   padding-left: 15%;
   padding-right: 15%;
-  background-color: #ffffff;
 }
 
-.PTIdeaTesting h3{
-  font-weight: bold;
-  color: #000000;
+.PTIdeaTesting h5{
+  font-weight: lighter;
 }
 
 .PTIdeaTesting p{
   padding-top: 3rem;
+  font-weight: lighter;
+  color:#555d6d;
+  line-height: 1.8;
 }
 
 .PTIdeaTesting img{
@@ -9795,7 +9803,7 @@ width: 80%;
 
 .PTFeatureWalkthrough h2{
   color: #ffffff;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 /*CameraFlow - desktop*/
@@ -9810,15 +9818,17 @@ width: 80%;
   padding-right: 25%;
 }
 
-.CameraFlow h3{
+.CameraFlow h5{
   color: #ffffff;
-  font-weight: bold;
+  font-weight: lighter;
   text-align: center;
 }
 
 .CameraFlow p{
   color: #ffffff;
   padding-top: 3rem;
+  font-weight: lighter;
+  line-height: 1.8;
 }
 
 .CameraFlow img{
@@ -9837,9 +9847,9 @@ width: 80%;
   padding-bottom: 0;
 }
 
-.Encourage h3{
+.Encourage h5{
   color: #ffffff;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 /*Expressive-desktop*/
@@ -9861,16 +9871,17 @@ width: 80%;
   padding-right: 10%;
 }
 
-.bubbletext h3{
-  color: #6B61EC;
-  font-weight: bold;
+.bubbletext h5{
+  color: #a29cf5;
+  font-weight: lighter;
   padding-top: 3rem;
-  font-weight: bold;
 }
 
 .bubbletext p{
   color: #ffffff;
   padding-top: 3rem;
+  font-weight: lighter;
+  line-height: 1.8;
 }
 
 .bubblevideo{
@@ -9917,9 +9928,8 @@ width: 80%;
   margin-right: auto;
 }
 
-.PTDesignSystem h3{
-  font-weight: bold;
-  color: #000000;
+.PTDesignSystem h5{
+  font-weight: lighter;
 }
 
 .PTDesignSystem img{
@@ -9936,13 +9946,15 @@ width: 80%;
   background-color: #ffffff;
 }
 
-.PTMetrics h3{
-  color: #000000;
-  font-weight: bold;
+.PTMetrics h5{
+  font-weight: lighter;
 }
 
 .PTMetrics p{
   padding-top: 3rem;
+  color:#555d6d;
+  font-weight: lighter;
+  line-height: 1.8;
 }
 
 /*PetThoughts - Challenges - desktop*/
@@ -9954,18 +9966,21 @@ width: 80%;
   margin-right: auto;
 }
 
-.PTChallenges h3{
-  font-weight: bold;
-  color: #000000;
+.PTChallenges h5{
+  font-weight: lighter;
 }
 
 .PTChallenges p{
   margin-top: 3rem;
+  font-weight: lighter;
+  color:#555d6d;
+  line-height: 1.8;
 }
 
 .PTChallenges .notes{
   margin-top: 1.5rem;
-  color: #979797;
+  color: #626262;
+  font-style: italic;
 }
 
 /*PetThoughts Learned - desktop*/
@@ -9977,13 +9992,15 @@ width: 80%;
   margin-right: auto;
 }
 
-.PTLearned h3{
-  font-weight: bold;
-  color: #000000;
+.PTLearned h5{
+  font-weight: lighter;
 }
 
 .PTLearned p{
   margin-top: 3rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  color:#555d6d;
 }
 
 .PTLearned img{
@@ -10057,14 +10074,14 @@ width: 80%;
       top: 0.5rem;
     }
 
-    /* petthoughts hero mobile*/
+    /*petthoughts hero mobile*/
     .hero-bubble{
       display: flex;
       flex-direction: column-reverse;
       position: relative;
       text-align: center;
       padding-top: 20rem;
-      padding-bottom: 20rem;
+      padding-bottom: 6rem;
       justify-content: center;
       padding-left: 5%;
       padding-right: 5%;
@@ -10228,7 +10245,6 @@ width: 80%;
     .PTIdeaTesting{
       padding-left: 5%;
       padding-right: 5%;
-      background-color: #ffffff;
       padding-top: 0;
     }
 
