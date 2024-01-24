@@ -14,38 +14,46 @@ html{
 }
 
 body{
-  background-color: #0A0A0A;
-  font-family: Muli;
+  background-color: #ffffff;
+  /*font-family: Muli;*/
+  font-family: 'Muli', sans-serif;
   line-height: 1.5;
 }
 
-/*font size*/
+/*font size - desktop*/
 h1{
   font-size: 4.8rem;
+  color:#303030
 }
 
 h2{
   font-size: 4rem;
+  color:#303030;
 }
 
 h3{
   font-size: 3.4rem;
+  color:#303030;
 }
 
 h4{
   font-size: 3.6rem;
+  color:#303030;
 }
 
 h5{
   font-size: 2.4rem;
+  color:#303030;
 }
 
 h6{
   font-size: 1.8rem;
+  color:#303030;
 }
 
 p{
   font-size: 1.8rem;
+  color:#303030;
 }
 
 section{
@@ -68,7 +76,7 @@ section{
   padding-right: 3vw;
   padding-bottom: 1vw;
   z-index: 5;
-  background-color: rgba(10, 10, 10, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .header .left{
@@ -109,10 +117,10 @@ a{
   position: absolute;
   right: 35px;
   top: 12px;
-  background: #ffffff;
+  /*background: #ffffff;*/
   text-align: right;
   box-sizing: border-box;
-  color: #ffffff;
+  /*color: #ffffff;*/
   font-size: 1.8rem;
   display: none;
 }
@@ -135,24 +143,25 @@ a{
   padding: 15px 15px;
   width: auto;
   text-align: center;
+  font-weight: lighter;
 }
 
 .header ul li a:hover{
-  color: #FF7072;
+  color: #66DCD8;
 }
 
 .header ul li a{
-  color: #ffffff;
+  color: #303030;
   text-decoration: none;
   font-size: 1.8rem;
 }
 
 
 /*Homepage - desktop*/
-/*Homepage-Hero*/
-.Homepagehero{
+/*Homepage-Herov2*/
+.Homepageherov2{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-top: 230px;
   padding-bottom: 200px;
   padding-left: 10%;
@@ -160,77 +169,43 @@ a{
   /*justify-content: center;*/
 }
 
-.video-mask{
-  display: block;
-  position: relative;
+.Homepageherov2 .avatar{
+  padding-left: 20%;
+  padding-right: 20%;
   text-align: center;
-  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.video{
-  border-radius: 23px;
-  transform: rotate(-10deg);
+.Homepageherov2 .avatar img{
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
 }
 
-.hptext{
-  display: block;
-  position: relative;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
+.Homepageherov2 .herotext{
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+margin-top: 6rem;
 }
 
-.Homepagehero .sub-title{
-  color: #ADADAD;
-  font-weight: bold;
+.Homepageherov2 .herotext h3{
+margin-bottom: 3rem;
 }
 
-.Homepagehero .title{
-  color: #ffffff;
-  font-weight: bolder;
+.Homepageherov2 .herotext h6{
+  font-weight: lighter;
+  margin-bottom: 1.5rem;
 }
 
-.Homepagehero .introduction{
-  font-size: 2.4rem;
-  color: #ffffff;
-  font-weight: bold;
-  width: auto;
-  margin-top: 1rem;
-}
 
-.Homepagehero .hashtag{
-  font-size: 2.4rem;
-  color: #ADADAD;
-  font-weight: bold;
-  width: auto;
-  margin-top: 1rem;
-}
 
-.Homepagehero .describe{
-  display: block;
-  position: relative;
-  font-size: 1.8rem;
-  color: #ADADAD;
-  font-weight: bold;
-  width: auto;
-  margin-top: 1rem;
-}
-
-.Homepagehero .describe2{
-  display: none;
-  position: relative;
-  font-size: 1.8rem;
-  color: #ADADAD;
-  font-weight: bold;
-  width: auto;
-  margin-top: 1rem;
-}
 
 
 /*fp-transition*/
+/*This part is hidden now*/
 .FP{
   text-align: center;
   margin-left: auto;
@@ -238,50 +213,56 @@ a{
 }
 
 /*Projects - desktop*/
-.item1 { grid-area: HomepageProject5;}
-.item2 { grid-area: HomepageProject4; }
-.item3 { grid-area: HomepageProject1; }
-.item4 { grid-area: HomepageProject3; }
-.item5 {grid-area: HomepageProject2;}
-.item6 {grid-area: HomepageProject6;}
+.item1 { grid-area: HomepageProjectBB; }
+.item2 { grid-area: HomepageProjectCMS; }
+.item3 { grid-area: HomepageProjectDS; }
+.item4 { grid-area: HomepageProjectPT; }
+.item5 { grid-area: HomepageProjectBA; }
+.item6 { grid-area: HomepageProjectSC; }
 
 .Projects {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 48% 48%;
   grid-template-rows: auto;
   grid-template-areas:
-    'HomepageProject4 HomepageProject1'
-    'HomepageProject5 HomepageProject3'
-    'HomepageProject2 HomepageProject6';
-  grid-gap: 10px;
+    'HomepageProjectBB HomepageProjectCMS'
+    'HomepageProjectDS HomepageProjectPT'
+    'HomepageProjectBA HomepageProjectSC';
+  grid-gap: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 20rem;
 }
 
-/*Project4-Bubble*/
-.HomepageProject5{
+/*Project5-Bubble*/
+.HomepageProjectBB{
   display: block;
   position: relative;
 }
 
-.imageproject5{
+.imageprojectBB{
   width: 100%;
   height: auto;
 }
 
-.project5{
+.projectBB{
   width: 100%;
   height: auto;
   display: block;
   position: relative;
 }
 
-.Homepagedisplay5{
+.HomepagedisplayBB{
   display: block;
   width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
   height: auto;
   position: relative;
 }
 
-.Homepageprojecttext5{
+.HomepageprojecttextBB{
   background-image: url("/image/BubbleHover.png");
   background-size: cover;
   background-color: #444444;
@@ -299,17 +280,17 @@ a{
   margin-right: auto;
 }
 
-.project5:hover .Homepageprojecttext5{
+.projectBB:hover .HomepageprojecttextBB{
   opacity: 1;
 }
 
 
-.Homepageprojecttext5 h6{
+.HomepageprojecttextBB h6{
   text-align: center;
   font-size: 1.8rem;
 }
 
-.HomepageProject5 .button1{
+.HomepageProjectBB .button1{
   background-color: #444444;
   width: 22rem;
   height: 4.2rem;
@@ -321,43 +302,269 @@ a{
   border-radius: 3px;
 }
 
-.HomepageProject5 .button1 h6{
+.HomepageProjectBB .button1 h6{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   color: #ffffff;
 }
 
-.HomepageProject5 .button1 h6:hover{
+.HomepageProjectBB .button1 h6:hover{
   color: #000000;
 }
 
-
-/*Project4-PetThoughts*/
-.HomepageProject4{
+/*Project-CMS*/
+.HomepageProjectCMS{
   display: block;
   position: relative;
 }
 
-.imageproject4{
+.imageprojectCMS{
   width: 100%;
   height: auto;
 }
 
-.project4{
+.projectCMS{
   width: 100%;
   height: auto;
   display: block;
   position: relative;
 }
 
-.Homepagedisplay4{
+.HomepagedisplayCMS{
   display: block;
   width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
   height: auto;
   position: relative;
 }
 
-.Homepageprojecttext4{
+.HomepageprojecttextCMS{
+  background-image: url("/image/BubbleHover.png");
+  background-size: cover;
+  background-color: #444444;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectCMS:hover .HomepageprojecttextCMS{
+  opacity: 1;
+}
+
+
+.HomepageprojecttextCMS h6{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.HomepageProjectCMS .button1{
+  background-color: #444444;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  border-radius: 3px;
+}
+
+.HomepageProjectCMS .button1 h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #ffffff;
+}
+
+.HomepageProjectCMS .button1 h6:hover{
+  color: #000000;
+}
+
+/*Project-DS*/
+.HomepageProjectDS{
+  display: block;
+  position: relative;
+}
+
+.imageprojectDS{
+  width: 100%;
+  height: auto;
+}
+
+.projectDS{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.HomepagedisplayDS{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.HomepageprojecttextDS{
+  background-image: url("/image/BubbleHover.png");
+  background-size: cover;
+  background-color: #444444;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectDS:hover .HomepageprojecttextDS{
+  opacity: 1;
+}
+
+
+.HomepageprojecttextDS h6{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.HomepageProjectDS .button1{
+  background-color: #444444;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  border-radius: 3px;
+}
+
+.HomepageProjectDS .button1 h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #ffffff;
+}
+
+.HomepageProjectDS .button1 h6:hover{
+  color: #000000;
+}
+
+
+/*Project-BA: Beaconing*/
+.HomepageProjectBA{
+  display: block;
+  position: relative;
+}
+
+.imageprojectBA{
+  width: 100%;
+  height: auto;
+}
+
+.projectBA{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.HomepagedisplayBA{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.HomepageprojecttextBA{
+  background-image: url("/image/BubbleHover.png");
+  background-size: cover;
+  background-color: #444444;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectBA:hover .HomepageprojecttextBA{
+  opacity: 1;
+}
+
+
+.HomepageprojecttextBA h6{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.HomepageProjectBA .button1{
+  background-color: #444444;
+  width: 22rem;
+  height: 4.2rem;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  border-radius: 3px;
+}
+
+.HomepageProjectBA .button1 h6{
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #ffffff;
+}
+
+.HomepageProjectBA .button1 h6:hover{
+  color: #000000;
+}
+
+
+/*Project4-PetThoughts*/
+.HomepageProjectPT{
+  display: block;
+  position: relative;
+}
+
+.imageprojectPT{
+  width: 100%;
+  height: auto;
+}
+
+.projectPT{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.HomepagedisplayPT{
+  display: block;
+  width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
+  height: auto;
+  position: relative;
+}
+
+.HomepageprojecttextPT{
   background-image: url("/image/PTHover.png");
   background-size: cover;
   background-color: #6B61EC;
@@ -375,17 +582,17 @@ a{
   margin-right: auto;
 }
 
-.project4:hover .Homepageprojecttext4{
+.projectPT:hover .HomepageprojecttextPT{
   opacity: 1;
 }
 
 
-.Homepageprojecttext4 h6{
+.HomepageprojecttextPT h6{
   text-align: center;
   font-size: 1.8rem;
 }
 
-.HomepageProject4 .button1{
+.HomepageProjectPT .button1{
   background-color: #6B61EC;
   width: 22rem;
   height: 4.2rem;
@@ -397,18 +604,18 @@ a{
   border-radius: 3px;
 }
 
-.HomepageProject4 .button1 h6{
+.HomepageProjectPT .button1 h6{
   font-size: 1.8rem;
   padding-top: 0.8rem;
   color: #ffffff;
 }
 
-.HomepageProject4 .button1 h6:hover{
+.HomepageProjectPT .button1 h6:hover{
   color: #000000;
 }
 
 
-/*Project1-RooMate*/
+/*Project1-RooMate: This part is hidden now*/
 .HomepageProject1{
   display: block;
   position: relative;
@@ -483,32 +690,32 @@ a{
   color: #000000;
 }
 
-/*Project3-SmartCloset*/
-.HomepageProject3{
+/*Project3-SC: SmartCloset*/
+.HomepageProjectSC{
   display: block;
   position: relative;
 }
 
-.imageproject3{
+.imageprojectSC{
   width: 100%;
   height: auto;
 }
 
-.project3{
+.projectSC{
   width: 100%;
   height: auto;
   display: block;
   position: relative;
 }
 
-.Homepagedisplay3{
+.HomepagedisplaySC{
   display: block;
   width: 100%; /*100% means the Project1 part (excluding padding) times 100%*/
   height: auto;
   position: relative;
 }
 
-.Homepageprojecttext3{
+.HomepageprojecttextSC{
   background-image: url("/image/SmartClosetHover.png");
   background-size: cover;
   background-color: #ffffff;
@@ -526,17 +733,17 @@ a{
   margin-right: auto;
 }
 
-.project3:hover .Homepageprojecttext3{
+.projectSC:hover .HomepageprojecttextSC{
   opacity: 1;
 }
 
-.Homepageprojecttext3 h6{
+.HomepageprojecttextSC h6{
   text-align: center;
   font-size: 1.8rem;
   padding-top: 1.5rem;
 }
 
-.HomepageProject3 .button1{
+.HomepageProjectSC .button1{
   background-color: #ffffff00;
   width: 22rem;
   height: 4.2rem;
@@ -549,12 +756,12 @@ a{
   border-radius: 3px;
 }
 
-.HomepageProject3 .button1 h6{
+.HomepageProjectSC .button1 h6{
   font-size: 1.8rem;
   color: #ffffff;
 }
 
-.HomepageProject3 .button1 h6:hover{
+.HomepageProjectSC .button1 h6:hover{
   color: #AAAAAA;
 }
 
@@ -726,26 +933,26 @@ a{
 }
 
 
-/*footer*/
+/*footer - desktop*/
 footer{
-  background-color: #0A0A0A;
+  background-color: #F7F7F7;
   width: 100%;
   height: 30rem;
   padding-top: 6rem;
+  margin-top: 12rem;
 }
 
 footer h3{
   font-size: 3.2rem;
   text-align: center;
-  color: #ffffff;
   font-family: Montserrat;
 }
 
 footer h6{
   font-size: 1.8rem;
   text-align: center;
-  color: #ffffff;
   padding-top: 3rem;
+  font-weight: lighter;
 }
 
 footer .iconset ul{
@@ -771,7 +978,7 @@ footer .iconset ul li{
 @media (max-width: 822px){
   .toggle{
     display: block;
-    background-color: rgba(10, 10, 10, 0);
+    /*background-color: #ffffff;*/
   }
 
   ul{
@@ -790,7 +997,7 @@ footer .iconset ul li{
     display: block;
     text-align: center;
     width: 100%;
-    background-color: rgba(255, 164, 131, 0.7);*
+    background-color: rgba(202, 252, 254, 0.7);
   }
 
   .header ul li a{
@@ -809,11 +1016,12 @@ footer .iconset ul li{
   }
 
   .logo img{
-    height: 60%;
+    height: 80%;
     display: block;
     position: relative;
     top: 0.5rem;
   }
+  
 
 	/*font size*/
 	h1{
@@ -844,66 +1052,32 @@ footer .iconset ul li{
 	  font-size: 1.7rem;
 	}
 
-/*hero*/
-.Homepagehero{
+/*hero-mobile*/
+/*Homepage-Herov2-mobile*/
+.Homepageherov2{
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 180px;
+  padding-top: 120px;
+  padding-bottom: 200px;
+  /*justify-content: center;*/
 }
 
-.video-mask{
-  display: block;
-  position: relative;
+.Homepageherov2 .avatar{
+  padding-left: 5%;
+  padding-right: 5%;
   text-align: center;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  }
+}
 
-.video{
-  border-radius: 23px;
-  transform: rotate(0deg);
-  }
+.Homepageherov2 .avatar img{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
 
-.hptext{
-    display: block;
-    position: relative;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 18rem;
-    text-align: center;
-  }
 
-  .Homepagehero .sub-title{
-    font-size: 1.8rem;
-  }
-
-  .Homepagehero .introduction{
-    font-size: 1.8rem;
-    margin-top: 1rem;
-  }
-
-  .Homepagehero .hashtag{
-    font-size: 1.8rem;
-    margin-top: 1rem;
-  }
-
-  .Homepagehero .describe{
-    display: none;
-    position: relative;
-  }
-
-  .Homepagehero .describe2{
-    display: block;
-    position: relative;
-    font-size: 1.8rem;
-    color: #ADADAD;
-    font-weight: bold;
-    width: auto;
-    margin-top: 1rem;
-  }
 
 
 /*.video-mask{
@@ -926,7 +1100,9 @@ footer .iconset ul li{
     'HomepageProject3'
     'HomepageProject2'
     'HomepageProject6';
-  grid-gap: 0px;
+  grid-gap: 3rem;
+  padding-top: 6rem;
+  margin-bottom: 12rem;
 }
 
 
@@ -1000,6 +1176,69 @@ footer .iconset ul li{
 }*/
 
 /*About Page - desktop*/
+/*the following is moved from homepagehero at Homepage*/
+.Homepagehero{
+  display: flex;
+  flex-direction: row;
+  padding-top: 230px;
+  padding-bottom: 200px;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video-mask{
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video{
+  border-radius: 23px;
+  transform: rotate(-10deg);
+}
+
+.hptext{
+  display: block;
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  justify-content: center;
+}
+
+.Homepagehero .sub-title{
+  color: #303030;
+  font-weight: lighter;
+}
+
+
+.Homepagehero .describe{
+  display: block;
+  position: relative;
+  font-size: 1.8rem;
+  color: #303030;
+  width: auto;
+  margin-top: 3rem;
+  font-weight: lighter;
+}
+
+.Homepagehero .describe2{
+  display: none;
+  position: relative;
+  font-size: 1.8rem;
+  color: #303030;
+  width: auto;
+  margin-top: 1rem;
+  font-weight: lighter;
+}
+
 /*hero*/
 .Aboutcontainer{
   margin-left: auto;
@@ -1039,12 +1278,12 @@ footer .iconset ul li{
 
 .Abouttext p{
   padding-top: 0;
-  color: #000000;
+  color: #303030;
 }
 
 .Abouttext h5{
   padding-top: 3rem;
-  color: #000000;
+  color: #303030;
 }
 
 .Abouttext a{
@@ -1052,6 +1291,21 @@ footer .iconset ul li{
   text-decoration: underline;
 }
 
+/*Some fun fact section title*/
+.sectiontitle2{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.sectiontitle2 h5{
+  font-weight: lighter;
+}
+
+/*Some fun fact grid - desktop*/
 .item1 { grid-area: Location; }
 .item2 { grid-area: Dog; }
 .item3 { grid-area: Cat; }
@@ -1075,7 +1329,8 @@ footer .iconset ul li{
   grid-gap: 6%;
   padding-left: 25%;
   padding-right: 25%;
-  padding-bottom: 30rem;
+  padding-bottom: 6rem;
+  padding-top: 3rem;
   text-align: center;
   width: 100%;
   min-width: 1rem;
@@ -1137,9 +1392,103 @@ footer .iconset ul li{
   grid-column-start: 3;
 }
 
-/*About Page Media Query*/
+/*AboutList - Desktop*/
+.AboutList {
+  display: block;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 15rem;
+}
+
+.AboutList h5{
+  text-align: center;
+  font-weight: lighter;
+}
+
+.AboutList .listunit{
+  padding-top: 3rem;
+}
+
+.AboutList .listunit .smalltitle{
+  font-size: 1.4rem;
+  color: #949494;
+  font-weight: lighter;
+}
+
+.AboutList p{
+  font-weight: lighter;
+  padding-top: 1.5rem;
+}
+
+.AboutList .Awards{
+  padding-top: 3rem;
+}
+
+/*About Page Media Query - mobile*/
 @media (max-width: 768px){
   /*hero*/
+  /*The following part is moved to about page*/
+.Homepagehero{
+  display: flex;
+  flex-direction: column;
+  padding-top: 15rem;
+  padding-bottom: 12rem;
+}
+
+.video-mask{
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.video{
+  border-radius: 23px;
+  transform: rotate(0deg);
+  }
+
+.hptext{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12rem;
+    text-align: center;
+  }
+
+  .Homepagehero .sub-title{
+    font-size: 1.8rem;
+  }
+
+  .Homepagehero .introduction{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  .Homepagehero .hashtag{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  .Homepagehero .describe{
+    display: none;
+    position: relative;
+  }
+
+  .Homepagehero .describe2{
+    display: block;
+    position: relative;
+    font-size: 1.4rem;
+    color: #303030;
+    width: auto;
+    margin-top: 3rem;
+  }
   /*hero*/
   .Aboutcontainer{
     margin-left: auto;
@@ -1207,12 +1556,81 @@ footer .iconset ul li{
     grid-gap: 6%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 40rem;
+    padding-bottom: 23rem;
     padding-top: 6rem;
     text-align: center;
     width: 100%;
   }
 
+  .AboutList {
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 15rem;
+  }
+
+}
+
+@media (min-width: 1660px){
+  /*.Homepagehero{
+    padding-top: 15rem;
+  }*/
+
+  .Homepagehero .illustration{
+    display: none;
+  }
+
+  .Homepagehero .illustration2{
+    display: block;
+    margin-right: 5%;
+  }
+
+  .Homepagehero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Homepagehero .hptext{
+    width: 65%;
+  }
+
+  .Homepagehero .illustration2{
+    width: 30%;
+  }
+}
+
+@media (min-width: 2500px){
+  .Homepagehero{
+    padding-top: 15rem;
+  }
+
+  .Homepagehero .illustration{
+    display: none;
+  }
+
+  .Homepagehero .illustration2{
+    display: block;
+    margin-right: 15%;
+  }
+
+  .Homepagehero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Homepagehero .hptext{
+    width: 65%;
+  }
+
+  .Homepagehero .illustration2{
+    width: 20%;
+    height: auto;
+  }
 }
 
 /*RooMate Project - desktop*/
@@ -1360,7 +1778,7 @@ a{
 
 .RooMatehero .herotext h1{
     font-weight: bold;
-    color: #000000;
+    color: #303030;
 }
 
 
@@ -1397,7 +1815,7 @@ a{
   margin-right: auto;
 	text-align: center;
   font-weight: bold;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateIntro p{
@@ -1473,7 +1891,7 @@ a{
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateDesignspec .Line{
@@ -1695,7 +2113,7 @@ a{
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateUserSurvey p{
@@ -1831,7 +2249,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMatePersonas .top p{
@@ -2384,7 +2802,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateIA .top .Line{
@@ -2471,7 +2889,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 6rem;
 	text-align: center;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateSitemap .map{
@@ -2580,7 +2998,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateWireframe .top p{
@@ -2647,7 +3065,7 @@ a{
 .RooMateUT h6{
   text-align: center;
   font-size: 2rem;
-  color: #000000;
+  color: #303030;
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
@@ -2673,7 +3091,7 @@ a{
   }
 
 .RooMateUT .button h6:hover{
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateUT .feedback{
@@ -2778,7 +3196,7 @@ a{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 	text-align: center;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateABTesting .top p{
@@ -2786,7 +3204,7 @@ a{
   margin-right: auto;
   text-align: left;
   width: 100%;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateABTesting .Test1{
@@ -2800,7 +3218,7 @@ a{
   margin-right: auto;
 	text-align: left;
   width: 100%;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateABTesting .Test1 img{
@@ -2855,7 +3273,7 @@ a{
   margin-right: auto;
 	text-align: left;
   width: 100%;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateABTesting .Test3 img{
@@ -3226,7 +3644,7 @@ a{
   margin-right: auto;
   padding-top: 2.5rem;
 	text-align: center;
-  color: #000000;
+  color: #303030;
 }
 
 .RooMateFinal .Line{
@@ -3287,7 +3705,7 @@ a{
 }
 
 .RooMateNextProject .text h1{
-  color: #000000;
+  color: #303030;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
@@ -3346,7 +3764,7 @@ ul{
   display: block;
   text-align: center;
   width: 100%;
-  background-color: rgba(255, 164, 131, 0.7);*
+  background-color: rgba(255, 164, 131, 0.7);
 }
 
 .header-RooMate ul li a{
@@ -4112,7 +4530,7 @@ width: 100%;
 }
 
 .RooMateNextProject .text h1{
-  color: #000000;
+  color: #303030;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
@@ -4168,7 +4586,7 @@ width: 100%;
 
 .WeCloudhero .herotext h3{
   padding-top: 3rem;
-  color: #000000;
+  color: #303030;
 }
 
 /*what is Wecloud*/
@@ -4329,7 +4747,7 @@ width: 100%;
 }
 
 .WeCloudDS .button h6:hover{
-  color: #000000;
+  color: #303030;
 }
 
 /*Design Spec - desktop*/
@@ -6744,7 +7162,13 @@ width: 100%;
 
 .SmartClosetHero .herotext h3{
   padding-top: 3rem;
-  color: #000000;
+  font-weight: lighter;
+}
+
+.SmartClosetHero .herotext h5{
+  padding-top: 3rem;
+  font-weight: lighter;
+  color: #555d6d;
 }
 
 /*what is Smart Closet - Desktop*/
@@ -6763,13 +7187,12 @@ width: 100%;
   margin-right: auto;
 }
 
-.SmartClosetIntro h3{
+.SmartClosetIntro h5{
   padding-top: 2.5rem;
   margin-left: auto;
   margin-right: auto;
 	text-align: center;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetIntro p{
@@ -6778,10 +7201,13 @@ width: 100%;
  margin-left: auto;
  margin-right: auto;
  width: 100%;
+ color: #555d6d;
+ line-height: 1.8;
+ font-weight: lighter;
 }
 
 .SmartClosetIntro .AppStore{
-  width: 100%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -6902,13 +7328,12 @@ width: 100%;
 	width: 4.5rem;
 }
 
-.SmartClosetDesignspec h3{
+.SmartClosetDesignspec h5{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	padding-top: 2.5rem;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetDesignspec .Line{
@@ -6923,6 +7348,9 @@ width: 100%;
 	margin-right: auto;
 	text-align: center;
 	padding-top: 2.5rem;
+  font-weight: lighter;
+  color: #555d6d;
+  line-height: 1.8;
 }
 
 /*Smart Closet Problem & Solution - desktop*/
@@ -6941,14 +7369,16 @@ width: 100%;
   padding-top: 6rem;
 }
 
-.SmartClosetProblem h3{
-  font-weight: bold;
-  color: #000000;
+.SmartClosetProblem h5{
+  font-weight: lighter;
 }
 
 .SmartClosetProblem p{
   padding-top: 3rem;
   text-align: left;
+  font-weight: lighter;
+  line-height: 1.8;
+  color: #555d6d;
 }
 
 /*Smart Closet User Survey & Interview - Desktop*/
@@ -6977,13 +7407,12 @@ width: 100%;
 	margin-right: auto;
 }
 
-.SmartClosetSurvey .left h3{
+.SmartClosetSurvey .left h5{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetSurvey .left p{
@@ -6992,6 +7421,9 @@ width: 100%;
 	margin-right: auto;
 	padding-top: 2.5rem;
 	width: 100%;
+  font-weight: lighter;
+  line-height: 1.8;
+  color:#555d6d;
 }
 
 .SmartClosetSurvey .image{
@@ -7031,13 +7463,12 @@ width: 100%;
 	margin-right: auto;
 }
 
-.SmartClosetLaunch .right h3{
+.SmartClosetLaunch .right h5{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetLaunch .right p{
@@ -7046,6 +7477,9 @@ width: 100%;
 	margin-right: auto;
 	padding-top: 2.5rem;
 	width: 100%;
+  font-weight: lighter;
+  color: #555d6d;
+  line-height: 1.8;
 }
 
 .SmartClosetLaunch .image{
@@ -7074,14 +7508,13 @@ width: 100%;
 	margin-right: auto;
 }
 
-.SmartClosetCommunity h3{
+.SmartClosetCommunity h5{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
 	width: 50%;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetCommunity p{
@@ -7090,6 +7523,9 @@ width: 100%;
 	margin-right: auto;
 	padding-top: 2.5rem;
 	width: 60%;
+  font-weight: lighter;
+  line-height: 1.8;
+  color: #555d6d;
 }
 
 .SmartClosetCommunity .Collage{
@@ -7164,13 +7600,12 @@ width: 100%;
 	margin-right: auto;
 }
 
-.SmartClosetTutorial h3{
+.SmartClosetTutorial h5{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2.5rem;
-  color: #000000;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .SmartClosetTutorial p{
@@ -7179,6 +7614,9 @@ width: 100%;
 	margin-right: auto;
 	padding-top: 2.5rem;
 	width: 60%;
+  font-weight: lighter;
+  color: #555d6d;
+  line-height: 1.8;
 }
 
 .SmartClosetTutorial .gif{
@@ -7269,7 +7707,7 @@ width: 100%;
 @media (max-width: 768px){
 /*Smart Closet hero - mobile*/
 .SmartClosetHero h3{
-	width: 80%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -7408,7 +7846,7 @@ width: 100%;
   padding-right: 5%;
 }
 
-.SmartClosetCommunity h3{
+.SmartClosetCommunity h5{
 	width: 60%;
 }
 
@@ -7502,7 +7940,7 @@ font-size: 4.5rem;
 }
 
 
-/*Playground page - desktop*/
+/*Playground or Fun page - desktop*/
 .PGHero{
    display: block;
    position: relative;
@@ -7528,11 +7966,60 @@ font-size: 4.5rem;
   color: #000000;
 }
 
-.PGHero h1{
-  color: #FF9B26;
-  font-family: 'Chewy';
+.PGHero h3{
+  font-weight: lighter;
 }
 
+
+/*Section title in PG - Desktop*/
+/*This section also applies to About page about this site*/
+.sectiontitle{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.sectiontitle h5{
+  font-weight: lighter;
+}
+
+.sectiontitle p{
+  font-weight: lighter;
+  padding-top: 3rem;
+}
+
+.sectiontitle a{
+  color: #0A4EFF;
+}
+
+
+/*Section title in PG - Desktop*/
+/*This section also applies to About page about this site*/
+.testbubble1{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.testbubble1 h5{
+  font-weight: lighter;
+  text-align: center;
+}
+
+.testbubble1 p{
+  font-weight: lighter;
+  padding-top: 3rem;
+}
+
+.testbubble1 a{
+  color: #0A4EFF;
+}
+
+/*App Design Grid - desktop*/
 .item1 { grid-area: Yoga; }
 .item2 { grid-area: Forest; }
 .item3 { grid-area: Cake; }
@@ -7551,6 +8038,7 @@ font-size: 4.5rem;
   grid-gap: 10px;
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 3rem;
   padding-bottom: 15rem;
 }
 
@@ -7774,6 +8262,87 @@ font-size: 4.5rem;
   font-size: 1.8rem;
 }
 
+/*Art & Photography Grid - desktop*/
+.pic1 { grid-area: Donut; }
+.pic2 { grid-area: Peach; }
+.pic3 { grid-area: France; }
+.pic4 { grid-area: Cloudygirl;}
+.pic5 { grid-area: Meditation;}
+.pic6 { grid-area: Logos;}
+.pic7 { grid-area: Cats;}
+.pic8 { grid-area: Garden;}
+.pic9 { grid-area: Flowers;}
+.pic10 { grid-area: France2;}
+.pic11 { grid-area: PaintFlowers;}
+.pic12 { grid-area: PaintRose;}
+.pic13 { grid-area: Jiangnan;}
+.pic14 { grid-area: Shuixiang1;}
+.pic15 { grid-area: Shuixiang2;}
+.pic16 { grid-area: TomatoPic;}
+.pic17 { grid-area: Tang;}
+.pic18 { grid-area: GardenHouse;}
+.pic19 { grid-area: Zelda;}
+.pic20 { grid-area: ColorHouses;}
+.pic21 { grid-area: Joshua;}
+.pic22 { grid-area: Cabos;}
+.pic23 { grid-area: YellowTree;}
+.pic24 { grid-area: Volcano;}
+.pic25 { grid-area: ShortHair;}
+.pic26 { grid-area: CoupleBySea;}
+.pic27 { grid-area: Banff;}
+.pic28 { grid-area: Chef;}
+.pic29 { grid-area: Lamp;}
+.pic30 { grid-area: SnowMount;}
+.pic31 { grid-area: Disney;}
+.pic32 { grid-area: JapaneseGarden;}
+.pic33 { grid-area: Shanxi;}
+.pic34 { grid-area: Architecture;}
+.pic35 { grid-area: WallPaper;}
+.pic36 { grid-area: Crowds;}
+.pic37 { grid-area: Summeryet;}
+.pic38 { grid-area: BlueDoor;}
+.pic39 { grid-area: Autumn;}
+.pic40 { grid-area: Cow;}
+.pic41 { grid-area: Motor;}
+.pic42 { grid-area: Remote;}
+.pic43 { grid-area: Iceland;}
+.pic44 { grid-area: PaloAlto;}
+
+
+
+.pic-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'Donut Peach France Cloudygirl'
+    'Meditation Logos Cats Garden'
+    'Flowers France2 PaintFlowers PaintRose'
+    'Jiangnan Shuixiang1 Shuixiang2 TomatoPic'
+    'Tang GardenHouse Zelda ColorHouses'
+    'Joshua Cabos YellowTree Volcano'
+    'ShortHair CoupleBySea Banff Chef'
+    'Lamp SnowMount Disney JapaneseGarden'
+    'Shanxi Architecture WallPaper Crowds'
+    'Summeryet BlueDoor Autumn Cow'
+    'Motor Remote Iceland PaloAlto';
+    /*grid-template-areas:
+      'Mario CBH Yoga'
+      'Forest Cake .';*/
+  grid-gap: 0px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3rem;
+  padding-bottom: 15rem;
+}
+
+.pic-grid img{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+
 
 @media (max-width: 1000px){
   .grid-container {
@@ -7792,13 +8361,50 @@ font-size: 4.5rem;
     padding-right: 10%;
     padding-bottom: 15rem;
   }
+
+  .pic-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'Donut Peach' 
+      'France Cloudygirl'
+      'Meditation Logos' 
+      'Cats Garden'
+      'Flowers France2' 
+      'PaintFlowers PaintRose'
+      'Jiangnan Shuixiang1' 
+      'Shuixiang2 TomatoPic'
+      'Tang GardenHouse' 
+      'Zelda ColorHouses'
+      'Joshua Cabos' 
+      'YellowTree Volcano'
+      'ShortHair CoupleBySea' 
+      'Banff Chef'
+      'Lamp SnowMount' 
+      'Disney JapaneseGarden'
+      'Shanxi Architecture' 
+      'WallPaper Crowds'
+      'Summeryet BlueDoor' 
+      'Autumn Cow'
+      'Motor Remote' 
+      'Iceland PaloAlto';
+      /*grid-template-areas:
+        'Mario CBH Yoga'
+        'Forest Cake .';*/
+    grid-gap: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3rem;
+    padding-bottom: 15rem;
+  }
 }
 
 @media (max-width:768px){
-  .PGHero{
+  /*.PGHero{
     padding-left: 5%;
     padding-right: 5%;
-  }
+  }*/
 
   .PGHero img{
     width: 50%;
@@ -7825,6 +8431,31 @@ font-size: 4.5rem;
     padding-bottom: 15rem;
   }
 }
+
+  /*.pic-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'Donut Donut'
+      'Peach Peach' 
+      'France France' 
+      'Cloudygirl Cloudygirl'
+      'Meditation Meditation'
+      'Logos Logos'
+      'Cats Cats'
+      'Garden Garden'
+      'Flowers Flowers'
+      'France2 France2'
+      'PaintFlowers PaintFlowers'
+      'PaintRose PaintRose';
+    grid-gap: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3rem;
+    padding-bottom: 15rem;
+  }
+}*/
 
 /*Side Project - Yoga - desktop*/
 .YogaHero{
@@ -8280,187 +8911,83 @@ font-size: 4.5rem;
       margin-right: 15%;
       margin-bottom: 1.5rem;
     }
-
   }
 
-  /*Bubble page - desktop*/
-  .body-bubble2{
-    background-color: #000000;
-    font-family: 'Muli', sans-serif;
-    line-height: 1.8;
-    color: #555d6d;
-  }
-
-  /*header-bubble - desktop*/
-  .header-bubble2{
+/*Bubble page - desktop*/
+  /*Bubble hero - desktop*/
+.herosection-bubble{
     display: flex;
-    flex-direction: row;
-    position: fixed;
-    height: auto;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding-top: 3vw;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-bottom: 1vw;
-    z-index: 5;
-    background-color: rgba(10, 10, 10, 0);
-  }
-
-  .header-bubble2 .left-bubble2{
-    display: block;
-    position: relative;
-    width: 50%;
-    left:0;
-  }
-
-  .logo-bubble2{
-    height: 4.6rem;
-    display: block;
-    position: relative;
-    left: 0;
-    top: 0;
-  }
-
-  .logo-bubble2 img{
-    height: 100%;
-    display: block;
-    position: relative;
-  }
-
-  .header-bubble2 .right-bubble2{
-    display: block;
-    position: relative;
-    width: 50%;
-    right: 0;
-  }
-
-  a{
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .toggle-bubble2{
-    width: 2.7rem;
-    position: absolute;
-    right: 35px;
-    top: 12px;
-    background: #ffffff;
-    text-align: right;
-    box-sizing: border-box;
-    color: #ffffff;
-    font-size: 1.8rem;
-    display: none;
-  }
-
-  .header-bubble2 ul{
-    right: 0;
-    height: 4.6rem;
-    width: 100%;
-    position: relative;
-    top: 0;
-    padding-right: 0;
-    text-align: right;
-    /*background-color: rgba(10, 10, 10, 0.6);*/
-  }
-
-  .header-bubble2 ul li{
-    list-style: none;
-    display: inline-block;
-    position: relative;
-    padding: 15px 15px;
-    width: auto;
-    text-align: center;
-  }
-
-  .header-bubble2 ul li a:hover{
-    color: #FF7072;
-  }
-
-  .header-bubble2 ul li a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.8rem;
-  }
-
-  /*Bubble header - desktop*/
-  .hero-bubble2{
-    display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: relative;
     text-align: center;
     padding-top: 20rem;
-    padding-bottom: 20rem;
+    padding-bottom: 12rem;
     justify-content: center;
     padding-left: 25%;
     padding-right: 25%;
-  }
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  .hero-bubble2 .hero-left{
+.herosection-bubble .hero-top{
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.herosection-bubble .hero-top img{
+width: 80%;
+}
+
+.herosection-bubble .hero-bottom{
     display: block;
     position: relative;
     width: 100%;
     padding-top: 10%;
-  }
+}
 
-  .hero-bubble2 .hero-left h5{
-    color: #ADADAD;
+.herosection-bubble .hero-bottom h5{
     padding-top: 3rem;
     font-weight: lighter;
-  }
+    color: #86898D;
+}
 
-  .hero-bubble2 .Email{
+.herosection-bubble .Email{
     color: #B1BEFF;
-  }
+}
 
-  .hero-bubble2 .hero-left h1{
-    font-size: 72px;
-    font-weight: bold;
-    color: #ffffff;
+.herosection-bubble .hero-bottom h1{
+    font-weight: lighter;
     width: 100%;
-    font-family: nunito;
-  }
+}
 
-  .hero-bubble2 .hero-left h3{
-    color: #ffffff;
+.herosection-bubble .hero-bottom h3{
     padding-top: 3rem;
-  }
+    font-weight: lighter;
+}
 
-  .hero-bubble2 .hero-right{
-    display: block;
-    position: relative;
-    width: 100%;
-  }
 
-  .hero-bubble2 .hero-right img{
-    width: 80%;
-  }
+.herosection-bubble .hero-bottom img{
+  display: none;
+}
+
+
 
   /*Bubble Page description - desktop*/
 .Bubble2Description{
-  background-color: #ffffff;
   padding-left: 25%;
   padding-right: 25%;
 }
 
-.Bubble2Description h1{
-  padding-bottom: 0rem;
-  font-weight: bold;
-  color: #000000;
-}
-
-.Bubble2Description h3{
+.Bubble2Description h5{
   padding-top: 6rem;
-  font-weight: bold;
-  color: #000000;
+  font-weight: lighter;
 }
 
 .Bubble2Description p{
   padding-top: 3rem;
   color: #555d6d;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 1.8;
 }
 
@@ -8469,8 +8996,8 @@ font-size: 4.5rem;
 }
 
 .Bubble2Description b{
-  font-weight: bold;
-  color: #000000;
+  font-weight: 400;
+  color: #303030;
 }
 
 /*Bubble page image section - desktop*/
@@ -8546,18 +9073,18 @@ font-size: 4.5rem;
 
 /*Bubble Process - desktop*/
 .Bubble2Process{
-  background-color: #ffffff;
   padding-left: 25%;
   padding-right: 25%;
 }
-.Bubble2Process h3{
+.Bubble2Process h5{
   padding-top: 6rem;
-  font-weight: bold;
-  color: #000000;
+  font-weight: lighter;
 }
 
 .Bubble2Process p{
   padding-top: 3rem;
+  font-weight: lighter;
+  color: #555d6d;
 }
 
 /*Competitor - desktop*/
@@ -8584,13 +9111,12 @@ font-size: 4.5rem;
 }
 
 .Bubble2Process b{
-  font-weight: bold;
-  color: #000000;
+  font-weight: 400;
+  color: #303030;
 }
 
 /*Bubble page download - desktop*/
 .Bubble2Download{
-  background-color: #ffffff;
   display: block;
   position: relative;
   padding-left: 25%;
@@ -8618,66 +9144,20 @@ font-size: 4.5rem;
 
   /*Bubble page - mobile*/
   @media (max-width: 822px){
-    .toggle-bubble2{
-      display: block;
-      background-color: rgba(10, 10, 10, 0);
-    }
-
-    ul{
-      display: none;
-    }
-
-    .header-bubble2 ul{
-      top: 40px;
-      /*width: 100%;
-      right: 0;
-      position: relative;
-      background-color: #ffffff;*/
-    }
-
-    .header-bubble2 ul li{
-      display: block;
-      text-align: center;
-      width: 100%;
-      background-color: rgba(255, 164, 131, 0.7);*
-    }
-
-    .header-bubble2 ul li a{
-      font-size: 1.4rem;
-    }
-
-    .active{
-      display: block;
-    }
-
-    .logo-bubble2{
-      /*width: 12rem;*/
-      background-color: none;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .logo-bubble2 img{
-      height: 60%;
-      display: block;
-      position: relative;
-      top: 0.5rem;
-    }
-
     /*hero mobile*/
-    .hero-bubble2{
+    .herosection-bubble{
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       position: relative;
       text-align: center;
       padding-top: 20rem;
-      padding-bottom: 20rem;
+      padding-bottom: 6rem;
       justify-content: center;
       padding-left: 5%;
       padding-right: 5%;
     }
 
-    .hero-bubble2 .hero-left{
+    .herosection-bubble .hero-bottom{
       display: block;
       position: relative;
       width: 100%;
@@ -8686,23 +9166,21 @@ font-size: 4.5rem;
       margin-right: auto;
     }
 
-    .hero-bubble2 .hero-left h1{
+    .herosection-bubble .hero-bottom h1{
       font-size: 40px;
-      font-weight: bold;
-      color: #ffffff;
       width: 100%;
     }
 
-    .hero-bubble2 .hero-left h5{
+    .herosection-bubble .hero-bottom h5{
       padding-left: 0%;
       padding-right: 0%;
     }
 
-    .hero-bubble2 .hero-left img{
+    .herosection-bubble .hero-bottom img{
       width: 20%;
     }
 
-    .hero-bubble2 .hero-right{
+    .herosection-bubble .hero-top{
       display: block;
       position: relative;
       width: 100%;
@@ -8710,7 +9188,7 @@ font-size: 4.5rem;
       margin-right: auto;
     }
 
-    .hero-bubble2 .hero-right img{
+    .herosection-bubble .hero-top img{
       width: 100%;
     }
 
@@ -8808,13 +9286,14 @@ font-size: 4.5rem;
 
   /*PetThought Page - desktop*/
   .body-bubble{
-    background-color: #6B61EC;
+    background-color: #ffffff;
     font-family: 'Muli', sans-serif;
     line-height: 1.8;
     color: #555d6d;
   }
 
   /*header-bubble - desktop*/
+  /*This part is merged into the general header*/
   .header-bubble{
     display: flex;
     flex-direction: row;
@@ -8915,7 +9394,7 @@ font-size: 4.5rem;
   position: relative;
   text-align: center;
   padding-top: 20rem;
-  padding-bottom: 20rem;
+  padding-bottom: 12rem;
   justify-content: center;
   padding-left: 25%;
   padding-right: 25%;
@@ -8930,18 +9409,18 @@ font-size: 4.5rem;
 
 .hero-bubble .hero-left h1{
   font-weight: bold;
-  color: #ffffff;
   width: 100%;
 }
 
 .hero-bubble .hero-left h3{
   padding-top: 3rem;
-  color: #ffffff;
+  font-weight: lighter;
 }
 
 .hero-bubble .hero-left h5{
   padding-top: 3rem;
-  color: #ffffff;
+  font-weight: lighter;
+  color: #86898D;
 }
 
 .hero-bubble .hero-right{
@@ -8958,21 +9437,22 @@ font-size: 4.5rem;
 .BubbleOpening{
   display: block;
   position: relative;
-  background-color: #ffffff;
   padding-left: 25%;
   padding-right: 25%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.BubbleOpening h3{
-  font-weight: bold;
+.BubbleOpening h5{
+  font-weight: lighter;
   padding-top: 6rem;
-  color: #000000;
 }
 
 .BubbleOpening p{
   padding-top: 3rem;
+  color: #555d6d;
+  font-weight: lighter;
+  line-height: 1.8;
 }
 
 .BubbleOpening img{
@@ -8983,14 +9463,13 @@ font-size: 4.5rem;
   padding-top: 3rem;
 }
 
-.BubbleOpening h5{
-  padding-top: 3rem;
-  color: #000000;
+.BubbleOpening .quote{
+  font-style: italic;
 }
 
 .BubbleOpening b{
-  font-weight: bold;
-  color: #000000;
+  font-weight: 400;
+  color: #303030;
 }
 
 
@@ -9002,7 +9481,6 @@ font-size: 4.5rem;
   text-align: center;
   padding-top: 20rem;
   justify-content: center;
-  background-color: #ffffff;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -9036,17 +9514,19 @@ font-size: 4.5rem;
 }
 
 .BubbleDescription .des-right h3{
-    font-weight: bold;
-    color: #000000;
+    font-weight: lighter;
 }
 
 .BubbleDescription .des-right h5{
   padding-top: 3rem;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .BubbleDescription .des-right p{
   padding-top: 1rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  color:#555d6d;
 }
 
 .BubbleDescription .des-right .button{
@@ -9087,6 +9567,7 @@ font-size: 4.5rem;
 
 .PTRole p{
   margin-top: 3rem;
+  line-height: 1.8;
 }
 
 .PTRole img{
@@ -9130,6 +9611,7 @@ font-size: 4.5rem;
 
 .ProblemSolution p{
   padding-top: 3rem;
+  line-height: 1.8;
 }
 
 .ProblemSolution .Solution{
@@ -9152,9 +9634,9 @@ font-size: 4.5rem;
   background-color: #000000;
 }
 
-.Goal h3{
+.Goal h5{
   color: #ffffff;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .Goal img{
@@ -9169,9 +9651,8 @@ font-size: 4.5rem;
   background-color: #ffffff;
 }
 
-.PTUserResearch h3{
-  font-weight: bold;
-  color: #000000;
+.PTUserResearch h5{
+  font-weight: lighter;
 }
 
 .PTUserResearch .method{
@@ -9194,27 +9675,28 @@ font-size: 4.5rem;
 
 .PTUserResearch .findings p{
   margin-top: 3rem;
+  font-weight: lighter;
+  color: #555d6d;
 }
 
 .PTUserResearch b{
-  font-weight: bold;
-  color: #000000;
+  font-weight: 400;
+  color: #303030;
 }
 
 /*PetThoughts - Competitor Analysis - desktop*/
 .PTCompete{
   padding-left: 15%;
   padding-right: 15%;
-  background-color: #ffffff;
-}
-
-.PTCompete h3{
-  font-weight: bold;
-  color: #000000;
 }
 
 .PTCompete h5{
+  font-weight: lighter;
+}
+
+.PTCompete h6{
   margin-bottom: 3rem;
+  font-weight: lighter;
 }
 
 .PTCompete .table{
@@ -9244,6 +9726,9 @@ font-size: 4.5rem;
 
 .PTCompete .table p{
   margin-top: 3rem;
+  font-weight: lighter;
+  color: #555d6d;
+  line-height: 1.8;
 }
 
 .socialapp{
@@ -9285,16 +9770,17 @@ font-size: 4.5rem;
 .PTIdeaTesting{
   padding-left: 15%;
   padding-right: 15%;
-  background-color: #ffffff;
 }
 
-.PTIdeaTesting h3{
-  font-weight: bold;
-  color: #000000;
+.PTIdeaTesting h5{
+  font-weight: lighter;
 }
 
 .PTIdeaTesting p{
   padding-top: 3rem;
+  font-weight: lighter;
+  color:#555d6d;
+  line-height: 1.8;
 }
 
 .PTIdeaTesting img{
@@ -9337,7 +9823,7 @@ font-size: 4.5rem;
 
 .PTFeatureWalkthrough h2{
   color: #ffffff;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 /*CameraFlow - desktop*/
@@ -9352,15 +9838,17 @@ font-size: 4.5rem;
   padding-right: 25%;
 }
 
-.CameraFlow h3{
+.CameraFlow h5{
   color: #ffffff;
-  font-weight: bold;
+  font-weight: lighter;
   text-align: center;
 }
 
 .CameraFlow p{
   color: #ffffff;
   padding-top: 3rem;
+  font-weight: lighter;
+  line-height: 1.8;
 }
 
 .CameraFlow img{
@@ -9379,9 +9867,9 @@ font-size: 4.5rem;
   padding-bottom: 0;
 }
 
-.Encourage h3{
+.Encourage h5{
   color: #ffffff;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 /*Expressive-desktop*/
@@ -9403,16 +9891,17 @@ font-size: 4.5rem;
   padding-right: 10%;
 }
 
-.bubbletext h3{
-  color: #6B61EC;
-  font-weight: bold;
+.bubbletext h5{
+  color: #a29cf5;
+  font-weight: lighter;
   padding-top: 3rem;
-  font-weight: bold;
 }
 
 .bubbletext p{
   color: #ffffff;
   padding-top: 3rem;
+  font-weight: lighter;
+  line-height: 1.8;
 }
 
 .bubblevideo{
@@ -9459,9 +9948,8 @@ font-size: 4.5rem;
   margin-right: auto;
 }
 
-.PTDesignSystem h3{
-  font-weight: bold;
-  color: #000000;
+.PTDesignSystem h5{
+  font-weight: lighter;
 }
 
 .PTDesignSystem img{
@@ -9478,13 +9966,15 @@ font-size: 4.5rem;
   background-color: #ffffff;
 }
 
-.PTMetrics h3{
-  color: #000000;
-  font-weight: bold;
+.PTMetrics h5{
+  font-weight: lighter;
 }
 
 .PTMetrics p{
   padding-top: 3rem;
+  color:#555d6d;
+  font-weight: lighter;
+  line-height: 1.8;
 }
 
 /*PetThoughts - Challenges - desktop*/
@@ -9496,18 +9986,21 @@ font-size: 4.5rem;
   margin-right: auto;
 }
 
-.PTChallenges h3{
-  font-weight: bold;
-  color: #000000;
+.PTChallenges h5{
+  font-weight: lighter;
 }
 
 .PTChallenges p{
   margin-top: 3rem;
+  font-weight: lighter;
+  color:#555d6d;
+  line-height: 1.8;
 }
 
 .PTChallenges .notes{
   margin-top: 1.5rem;
-  color: #979797;
+  color: #626262;
+  font-style: italic;
 }
 
 /*PetThoughts Learned - desktop*/
@@ -9519,13 +10012,15 @@ font-size: 4.5rem;
   margin-right: auto;
 }
 
-.PTLearned h3{
-  font-weight: bold;
-  color: #000000;
+.PTLearned h5{
+  font-weight: lighter;
 }
 
 .PTLearned p{
   margin-top: 3rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  color:#555d6d;
 }
 
 .PTLearned img{
@@ -9542,7 +10037,11 @@ font-size: 4.5rem;
   }
 
   .BacktoTop a{
-    text-decoration: underline;
+    text-decoration: none;
+  }
+
+  .BacktoTop a h6{
+    color: #66dcd8;
   }
 
 
@@ -9570,7 +10069,7 @@ font-size: 4.5rem;
       display: block;
       text-align: center;
       width: 100%;
-      background-color: rgba(255, 164, 131, 0.7);*
+      background-color: rgba(255, 164, 131, 0.7);
     }
 
     .header-bubble ul li a{
@@ -9595,14 +10094,14 @@ font-size: 4.5rem;
       top: 0.5rem;
     }
 
-    /* petthoughts hero mobile*/
+    /*petthoughts hero mobile*/
     .hero-bubble{
       display: flex;
       flex-direction: column-reverse;
       position: relative;
       text-align: center;
       padding-top: 20rem;
-      padding-bottom: 20rem;
+      padding-bottom: 6rem;
       justify-content: center;
       padding-left: 5%;
       padding-right: 5%;
@@ -9766,7 +10265,6 @@ font-size: 4.5rem;
     .PTIdeaTesting{
       padding-left: 5%;
       padding-right: 5%;
-      background-color: #ffffff;
       padding-top: 0;
     }
 
@@ -9880,11 +10378,81 @@ font-size: 4.5rem;
   text-align: center;
 }
 
+.bubblecs h5{
+  color: #383B49;
+  padding-bottom: 3rem;
+}
+
 .bubblecs h2{
   padding-bottom: 3rem;
 }
 
-.bubblecs h5{
-  color: #383B49;
-  padding-bottom: 3rem;
+/*NDA Page design - desktop*/
+.NDA{
+  display: flex;
+  flex-direction: column;
+  padding-top: 24rem;
+  padding-bottom: 12rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  /*justify-content: center;*/
+}
+
+.NDA .picture{
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NDA .picture img{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+.NDA .herotext{
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+margin-top: 6rem;
+}
+
+.NDA .herotext h3{
+margin-bottom: 3rem;
+font-weight: lighter;
+}
+
+.NDA .herotext h6{
+  font-weight: lighter;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 822px){
+/*NDA-mobile*/
+.NDA{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rem;
+  padding-bottom: 12rem;
+  /*justify-content: center;*/
+}
+
+.NDA .picture{
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NDA .picture img{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
 }
