@@ -10350,3 +10350,73 @@ width: 80%;
 .bubblecs h2{
   padding-bottom: 3rem;
 }
+
+/*NDA Page design - desktop*/
+.NDA{
+  display: flex;
+  flex-direction: column;
+  padding-top: 24rem;
+  padding-bottom: 12rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  /*justify-content: center;*/
+}
+
+.NDA .picture{
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NDA .picture img{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+.NDA .herotext{
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+margin-top: 6rem;
+}
+
+.NDA .herotext h3{
+margin-bottom: 3rem;
+font-weight: lighter;
+}
+
+.NDA .herotext h6{
+  font-weight: lighter;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 822px){
+/*NDA-mobile*/
+.NDA{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rem;
+  padding-bottom: 12rem;
+  /*justify-content: center;*/
+}
+
+.NDA .picture{
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NDA .picture img{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+}
