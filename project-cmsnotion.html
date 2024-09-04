@@ -1,0 +1,1961 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+      Redesigning Lotic CMS: How to enhance flexibility and streamline Content
+      Management
+    </title>
+    <style>
+      /* cspell:disable-file */
+      /* webkit printing magic: print all background colors */
+      html {
+        -webkit-print-color-adjust: exact;
+      }
+      * {
+        box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      @media only screen {
+        body {
+          margin: 2em auto;
+          max-width: 900px;
+          color: rgb(55, 53, 47);
+        }
+      }
+
+	  /*general headerg*/
+.headerg{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 3vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-bottom: 1vw;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.headerg .leftg{
+  display: block;
+  position: relative;
+  width: 50%;
+  left:0;
+}
+
+.logo{
+  height: 4.6rem;
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.logo img{
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.headerg .rightg{
+  display: block;
+  position: relative;
+  width: 50%;
+  right: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.toggleg{
+  width: 2.7rem;
+  position: absolute;
+  right: 35px;
+  top: 12px;
+  /*background: #ffffff;*/
+  text-align: right;
+  box-sizing: border-box;
+  /*color: #ffffff;*/
+  font-size: 1.8rem;
+  display: none;
+}
+
+.headerg ul{
+  right: 0;
+  height: 4.6rem;
+  width: 100%;
+  position: relative;
+  top: 0;
+  padding-right: 0;
+  text-align: right;
+  /*background-color: rgba(10, 10, 10, 0.6);*/
+}
+
+.headerg ul li{
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 15px 15px;
+  width: auto;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.headerg ul li a:hover{
+  color: #66DCD8;
+}
+
+.headerg ul li a{
+  color: #303030;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+/*Homepage-Mobile*/
+@media (max-width: 822px){
+  .toggle{
+    display: block;
+    /*background-color: #ffffff;*/
+  }
+
+  ul{
+    display: none;
+  }
+
+  .headerg ul{
+    top: 40px;
+    /*width: 100%;
+    right: 0;
+    position: relative;
+    background-color: #ffffff;*/
+  }
+
+  .headerg ul li{
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(202, 252, 254, 0.7);
+  }
+
+  .headerg ul li a{
+    font-size: 1.4rem;
+  }
+
+  .active{
+    display: block;
+  }
+
+  .logo{
+    /*width: 12rem;*/
+    background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo img{
+    height: 80%;
+    display: block;
+    position: relative;
+    top: 0.5rem;
+  }
+}
+
+
+     /*header end*/
+      body {
+        line-height: 1.5;
+        white-space: normal;
+      }
+
+      a,
+      a.visited {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      .pdf-relative-link-path {
+        font-size: 80%;
+        color: #444;
+      }
+
+      h1,
+      h2,
+      h3 {
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      .page-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0.75em;
+      }
+
+      h1 {
+        font-size: 1.875rem;
+        margin-top: 1.875rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+      }
+
+      .source {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 1.5em;
+        word-break: break-all;
+      }
+
+      .callout {
+        border-radius: 3px;
+        padding: 1rem;
+      }
+
+      figure {
+        margin: 1.25em 0;
+        page-break-inside: avoid;
+      }
+
+      figcaption {
+        opacity: 0.5;
+        font-size: 85%;
+        margin-top: 0.5em;
+      }
+
+      mark {
+        background-color: transparent;
+      }
+
+      .indented {
+        padding-left: 1.5em;
+      }
+
+      hr {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 1px;
+        visibility: visible;
+        border: none;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      @media only print {
+        img {
+          max-height: 100vh;
+          object-fit: contain;
+        }
+      }
+
+      @page {
+        margin: 1in;
+      }
+
+      .collection-content {
+        font-size: 0.875rem;
+      }
+
+      .column-list {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .column {
+        padding: 0 1em;
+      }
+
+      .column:first-child {
+        padding-left: 0;
+      }
+
+      .column:last-child {
+        padding-right: 0;
+      }
+
+      .table_of_contents-item {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.3;
+        padding: 0.125rem;
+      }
+
+      .table_of_contents-indent-1 {
+        margin-left: 1.5rem;
+      }
+
+      .table_of_contents-indent-2 {
+        margin-left: 3rem;
+      }
+
+      .table_of_contents-indent-3 {
+        margin-left: 4.5rem;
+      }
+
+      .table_of_contents-link {
+        text-decoration: none;
+        opacity: 0.7;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid rgba(55, 53, 47, 0.09);
+        border-collapse: collapse;
+      }
+
+      table {
+        border-left: none;
+        border-right: none;
+      }
+
+      th,
+      td {
+        font-weight: normal;
+        padding: 0.25em 0.5em;
+        line-height: 1.5;
+        min-height: 1.5em;
+        text-align: left;
+      }
+
+      th {
+        color: rgba(55, 53, 47, 0.6);
+      }
+
+      ol,
+      ul {
+        margin: 0;
+        margin-block-start: 0.6em;
+        margin-block-end: 0.6em;
+      }
+
+      li > ol:first-child,
+      li > ul:first-child {
+        margin-block-start: 0.6em;
+      }
+
+      ul > li {
+        list-style: disc;
+      }
+
+      ul.to-do-list {
+        padding-inline-start: 0;
+      }
+
+      ul.to-do-list > li {
+        list-style: none;
+      }
+
+      .to-do-children-checked {
+        text-decoration: line-through;
+        opacity: 0.375;
+      }
+
+      ul.toggle > li {
+        list-style: none;
+      }
+
+      ul {
+        padding-inline-start: 1.7em;
+      }
+
+      ul > li {
+        padding-left: 0.1em;
+      }
+
+      ol {
+        padding-inline-start: 1.6em;
+      }
+
+      ol > li {
+        padding-left: 0.2em;
+      }
+
+      .mono ol {
+        padding-inline-start: 2em;
+      }
+
+      .mono ol > li {
+        text-indent: -0.4em;
+      }
+
+      .toggle {
+        padding-inline-start: 0em;
+        list-style-type: none;
+      }
+
+      /* Indent toggle children */
+      .toggle > li > details {
+        padding-left: 1.7em;
+      }
+
+      .toggle > li > details > summary {
+        margin-left: -1.1em;
+      }
+
+      .selected-value {
+        display: inline-block;
+        padding: 0 0.5em;
+        background: rgba(206, 205, 202, 0.5);
+        border-radius: 3px;
+        margin-right: 0.5em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        white-space: nowrap;
+      }
+
+      .collection-title {
+        display: inline-block;
+        margin-right: 1em;
+      }
+
+      .page-description {
+        margin-bottom: 2em;
+      }
+
+      .simple-table {
+        margin-top: 1em;
+        font-size: 0.875rem;
+        empty-cells: show;
+      }
+      .simple-table td {
+        height: 29px;
+        min-width: 120px;
+      }
+
+      .simple-table th {
+        height: 29px;
+        min-width: 120px;
+      }
+
+      .simple-table-header-color {
+        background: rgb(247, 246, 243);
+        color: black;
+      }
+      .simple-table-header {
+        font-weight: 500;
+      }
+
+      time {
+        opacity: 0.5;
+      }
+
+      .icon {
+        display: inline-block;
+        max-width: 1.2em;
+        max-height: 1.2em;
+        text-decoration: none;
+        vertical-align: text-bottom;
+        margin-right: 0.5em;
+      }
+
+      img.icon {
+        border-radius: 3px;
+      }
+
+      .user-icon {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+      }
+
+      .user-icon-inner {
+        font-size: 0.8em;
+      }
+
+      .text-icon {
+        border: 1px solid #000;
+        text-align: center;
+      }
+
+      .page-cover-image {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        max-height: 30vh;
+      }
+
+      .page-header-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .page-header-icon-with-cover {
+        margin-top: -0.72em;
+        margin-left: 0.07em;
+      }
+
+      .page-header-icon img {
+        border-radius: 3px;
+      }
+
+      .link-to-page {
+        margin: 1em 0;
+        padding: 0;
+        border: none;
+        font-weight: 500;
+      }
+
+      p > .user {
+        opacity: 0.5;
+      }
+
+      td > .user,
+      td > time {
+        white-space: nowrap;
+      }
+
+      input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-right: 0.6em;
+        vertical-align: middle;
+      }
+
+      p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+
+      .image {
+        border: none;
+        margin: 1.5em 0;
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+      }
+
+      .code,
+      code {
+        background: rgba(135, 131, 120, 0.15);
+        border-radius: 3px;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 85%;
+        tab-size: 2;
+      }
+
+      code {
+        color: #eb5757;
+      }
+
+      .code {
+        padding: 1.5em 1em;
+      }
+
+      .code-wrap {
+        white-space: normal;
+        word-break: break-all;
+      }
+
+      .code > code {
+        background: none;
+        padding: 0;
+        font-size: 100%;
+        color: inherit;
+      }
+
+      blockquote {
+        font-size: 1.25em;
+        margin: 1em 0;
+        padding-left: 1em;
+        border-left: 3px solid rgb(55, 53, 47);
+      }
+
+      .bookmark {
+        text-decoration: none;
+        max-height: 8em;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+      }
+
+      .bookmark-title {
+        font-size: 0.85em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1.75em;
+        white-space: nowrap;
+      }
+
+      .bookmark-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .bookmark-info {
+        flex: 4 1 180px;
+        padding: 12px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .bookmark-image {
+        width: 33%;
+        flex: 1 1 180px;
+        display: block;
+        position: relative;
+        object-fit: cover;
+        border-radius: 1px;
+      }
+
+      .bookmark-description {
+        color: rgba(55, 53, 47, 0.6);
+        font-size: 0.75em;
+        overflow: hidden;
+        max-height: 4.5em;
+        word-break: break-word;
+      }
+
+      .bookmark-href {
+        font-size: 0.75em;
+        margin-top: 0.25em;
+      }
+
+      .sans {
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI Variable Display", "Segoe UI", Helvetica,
+          "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+          "Segoe UI Symbol";
+      }
+      .code {
+        font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono",
+          "Liberation Mono", Courier, monospace;
+      }
+      .serif {
+        font-family: Lyon-Text, Georgia, ui-serif, serif;
+      }
+      .mono {
+        font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+      }
+      .pdf .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI Variable Display", "Segoe UI", Helvetica,
+          "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+          "Segoe UI Symbol", "Twemoji", "Noto Color Emoji", "Noto Sans CJK JP";
+      }
+      .pdf:lang(zh-CN) .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI Variable Display", "Segoe UI", Helvetica,
+          "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+          "Segoe UI Symbol", "Twemoji", "Noto Color Emoji", "Noto Sans CJK SC";
+      }
+      .pdf:lang(zh-TW) .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI Variable Display", "Segoe UI", Helvetica,
+          "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+          "Segoe UI Symbol", "Twemoji", "Noto Color Emoji", "Noto Sans CJK TC";
+      }
+      .pdf:lang(ko-KR) .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI Variable Display", "Segoe UI", Helvetica,
+          "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+          "Segoe UI Symbol", "Twemoji", "Noto Color Emoji", "Noto Sans CJK KR";
+      }
+      .pdf .code {
+        font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+          "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+          "Noto Color Emoji", "Noto Sans Mono CJK JP";
+      }
+      .pdf:lang(zh-CN) .code {
+        font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+          "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+          "Noto Color Emoji", "Noto Sans Mono CJK SC";
+      }
+      .pdf:lang(zh-TW) .code {
+        font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+          "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+          "Noto Color Emoji", "Noto Sans Mono CJK TC";
+      }
+      .pdf:lang(ko-KR) .code {
+        font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+          "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+          "Noto Color Emoji", "Noto Sans Mono CJK KR";
+      }
+      .pdf .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, "Twemoji",
+          "Noto Color Emoji", "Noto Serif CJK JP";
+      }
+      .pdf:lang(zh-CN) .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, "Twemoji",
+          "Noto Color Emoji", "Noto Serif CJK SC";
+      }
+      .pdf:lang(zh-TW) .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, "Twemoji",
+          "Noto Color Emoji", "Noto Serif CJK TC";
+      }
+      .pdf:lang(ko-KR) .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, "Twemoji",
+          "Noto Color Emoji", "Noto Serif CJK KR";
+      }
+      .pdf .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          "Twemoji", "Noto Color Emoji", "Noto Sans Mono CJK JP";
+      }
+      .pdf:lang(zh-CN) .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          "Twemoji", "Noto Color Emoji", "Noto Sans Mono CJK SC";
+      }
+      .pdf:lang(zh-TW) .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          "Twemoji", "Noto Color Emoji", "Noto Sans Mono CJK TC";
+      }
+      .pdf:lang(ko-KR) .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          "Twemoji", "Noto Color Emoji", "Noto Sans Mono CJK KR";
+      }
+      .highlight-default {
+        color: rgba(55, 53, 47, 1);
+      }
+      .highlight-gray {
+        color: rgba(120, 119, 116, 1);
+        fill: rgba(120, 119, 116, 1);
+      }
+      .highlight-brown {
+        color: rgba(159, 107, 83, 1);
+        fill: rgba(159, 107, 83, 1);
+      }
+      .highlight-orange {
+        color: rgba(217, 115, 13, 1);
+        fill: rgba(217, 115, 13, 1);
+      }
+      .highlight-yellow {
+        color: rgba(203, 145, 47, 1);
+        fill: rgba(203, 145, 47, 1);
+      }
+      .highlight-teal {
+        color: rgba(68, 131, 97, 1);
+        fill: rgba(68, 131, 97, 1);
+      }
+      .highlight-blue {
+        color: rgba(51, 126, 169, 1);
+        fill: rgba(51, 126, 169, 1);
+      }
+      .highlight-purple {
+        color: rgba(144, 101, 176, 1);
+        fill: rgba(144, 101, 176, 1);
+      }
+      .highlight-pink {
+        color: rgba(193, 76, 138, 1);
+        fill: rgba(193, 76, 138, 1);
+      }
+      .highlight-red {
+        color: rgba(212, 76, 71, 1);
+        fill: rgba(212, 76, 71, 1);
+      }
+      .highlight-default_background {
+        color: rgba(55, 53, 47, 1);
+      }
+      .highlight-gray_background {
+        background: rgba(241, 241, 239, 1);
+      }
+      .highlight-brown_background {
+        background: rgba(244, 238, 238, 1);
+      }
+      .highlight-orange_background {
+        background: rgba(251, 236, 221, 1);
+      }
+      .highlight-yellow_background {
+        background: rgba(251, 237, 214, 1);
+      }
+      .highlight-teal_background {
+        background: rgba(237, 243, 236, 1);
+      }
+      .highlight-blue_background {
+        background: rgba(231, 243, 248, 1);
+      }
+      .highlight-purple_background {
+        background: rgba(244, 240, 247, 0.8);
+      }
+      .highlight-pink_background {
+        background: rgba(249, 238, 243, 0.8);
+      }
+      .highlight-red_background {
+        background: rgba(253, 235, 236, 1);
+      }
+      .block-color-default {
+        color: inherit;
+        fill: inherit;
+      }
+      .block-color-gray {
+        color: rgba(120, 119, 116, 1);
+        fill: rgba(120, 119, 116, 1);
+      }
+      .block-color-brown {
+        color: rgba(159, 107, 83, 1);
+        fill: rgba(159, 107, 83, 1);
+      }
+      .block-color-orange {
+        color: rgba(217, 115, 13, 1);
+        fill: rgba(217, 115, 13, 1);
+      }
+      .block-color-yellow {
+        color: rgba(203, 145, 47, 1);
+        fill: rgba(203, 145, 47, 1);
+      }
+      .block-color-teal {
+        color: rgba(68, 131, 97, 1);
+        fill: rgba(68, 131, 97, 1);
+      }
+      .block-color-blue {
+        color: rgba(51, 126, 169, 1);
+        fill: rgba(51, 126, 169, 1);
+      }
+      .block-color-purple {
+        color: rgba(144, 101, 176, 1);
+        fill: rgba(144, 101, 176, 1);
+      }
+      .block-color-pink {
+        color: rgba(193, 76, 138, 1);
+        fill: rgba(193, 76, 138, 1);
+      }
+      .block-color-red {
+        color: rgba(212, 76, 71, 1);
+        fill: rgba(212, 76, 71, 1);
+      }
+      .block-color-default_background {
+        color: inherit;
+        fill: inherit;
+      }
+      .block-color-gray_background {
+        background: rgba(241, 241, 239, 1);
+      }
+      .block-color-brown_background {
+        background: rgba(244, 238, 238, 1);
+      }
+      .block-color-orange_background {
+        background: rgba(251, 236, 221, 1);
+      }
+      .block-color-yellow_background {
+        background: rgba(251, 237, 214, 1);
+      }
+      .block-color-teal_background {
+        background: rgba(237, 243, 236, 1);
+      }
+      .block-color-blue_background {
+        background: rgba(231, 243, 248, 1);
+      }
+      .block-color-purple_background {
+        background: rgba(244, 240, 247, 0.8);
+      }
+      .block-color-pink_background {
+        background: rgba(249, 238, 243, 0.8);
+      }
+      .block-color-red_background {
+        background: rgba(253, 235, 236, 1);
+      }
+      .select-value-color-uiBlue {
+        background-color: rgba(35, 131, 226, 0.07);
+      }
+      .select-value-color-pink {
+        background-color: rgba(245, 224, 233, 1);
+      }
+      .select-value-color-purple {
+        background-color: rgba(232, 222, 238, 1);
+      }
+      .select-value-color-green {
+        background-color: rgba(219, 237, 219, 1);
+      }
+      .select-value-color-gray {
+        background-color: rgba(227, 226, 224, 1);
+      }
+      .select-value-color-transparentGray {
+        background-color: rgba(227, 226, 224, 0);
+      }
+      .select-value-color-translucentGray {
+        background-color: rgba(0, 0, 0, 0.06);
+      }
+      .select-value-color-orange {
+        background-color: rgba(250, 222, 201, 1);
+      }
+      .select-value-color-brown {
+        background-color: rgba(238, 224, 218, 1);
+      }
+      .select-value-color-red {
+        background-color: rgba(255, 226, 221, 1);
+      }
+      .select-value-color-yellow {
+        background-color: rgba(249, 228, 188, 1);
+      }
+      .select-value-color-blue {
+        background-color: rgba(211, 229, 239, 1);
+      }
+      .select-value-color-pageGlass {
+        background-color: undefined;
+      }
+      .select-value-color-washGlass {
+        background-color: undefined;
+      }
+
+      .checkbox {
+        display: inline-flex;
+        vertical-align: text-bottom;
+        width: 16;
+        height: 16;
+        background-size: 16px;
+        margin-left: 2px;
+        margin-right: 5px;
+      }
+
+      .checkbox-on {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+      }
+
+      .checkbox-off {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+      }
+    </style>
+  </head>
+  <body>
+    <article id="06ff8699-e399-4d33-8b58-eb3b198fa309" class="page sans">
+      <header>
+        <h1 class="page-title">
+          Redesigning Lotic CMS: How to enhance flexibility and streamline
+          Content Management
+        </h1>
+        <p class="page-description"></p>
+      </header>
+      <div class="page-body">
+        <p id="58e9a6a9-7574-4883-9a70-48b2aaaafb4b" class=""></p>
+        <p id="0dbfe580-8c08-4162-b227-36591a9db797" class="">
+          In this case study, I want to share how we solved the problem of
+          empowering creators to streamline and simplify their content
+          management on the Lotic CMS platform.
+        </p>
+        <p id="5064a9ba-f2c7-48ec-94e4-0ec621f3b6b1" class=""></p>
+        <figure id="99c7253d-70a0-49f9-838a-c37d5274acff" class="image">
+          <a href="image/CMS_coverimage.png"
+            ><img style="width: 864px" src="image/CMS_coverimage.png"
+          /></a>
+        </figure>
+        <p id="f2c84405-41a0-4d9a-b373-b38c67435cd7" class=""></p>
+        <h3 id="f4c62f88-64d6-4226-9c3a-e7a5627ccee5" class="">
+          My role and the team
+        </h3>
+        <p id="5c00e9d6-e684-454a-ae69-09333323d7b7" class="">
+          As the sole designer on this project, I collaborated closely with the
+          product, development, content, and data science teams. I led the
+          project from concept to execution, taking on key responsibilities such
+          as defining the problem and project scope, brainstorming and
+          prioritizing features, designing the visual interface, and conducting
+          user testing.
+        </p>
+        <p id="319706ac-084c-4230-a856-e1611e79872f" class=""></p>
+        <p id="21fe9293-36d5-43c9-a493-7984327da323" class="">
+          <a href="https://www.linkedin.com/in/sarascheuermann/"
+            >Sara Scheuermann</a
+          >
+          is my designer manager who provided support and design feedback
+          throughout the whole project. And I also got great support from the
+          team:
+        </p>
+        <ul id="f89aacb5-5a91-4e28-b1bf-dd89652fa619" class="bulleted-list">
+          <li style="list-style-type: disc">
+            <a href="https://www.linkedin.com/in/stephanie-padula-mba-4460a122/"
+              >Stephanie Padula</a
+            >
+            — Senior Director of Product Management
+          </li>
+        </ul>
+        <ul id="5e813c6b-d439-463e-a927-65f78abd4b6b" class="bulleted-list">
+          <li style="list-style-type: disc">
+            <a href="https://www.linkedin.com/in/andrew-linzie/"
+              >Andrew Linzie</a
+            >
+            — Product Manager
+          </li>
+        </ul>
+        <ul id="c290209b-c6ac-4818-aedc-22963fcd4bdc" class="bulleted-list">
+          <li style="list-style-type: disc">
+            <a href="https://www.linkedin.com/in/michaelachacon/"
+              >Michael Chacon</a
+            >
+            - Chief Architecture Officer &amp; Director of Engineering
+          </li>
+        </ul>
+        <ul id="55a7a78f-9772-4e53-a33e-fec93973730a" class="bulleted-list">
+          <li style="list-style-type: disc">
+            <a href="https://www.linkedin.com/in/mmoral/">Moody Moral</a> —
+            Senior Content Creator
+          </li>
+        </ul>
+        <ul id="d6aefb45-cd08-4b39-9f98-f4566954f434" class="bulleted-list">
+          <li style="list-style-type: disc">
+            <a href="https://www.linkedin.com/in/gavinpatient/"
+              >Gavin Patient</a
+            >
+            — Senior Data Scientist
+          </li>
+        </ul>
+        <p id="47228e48-7315-46c7-833b-842e171e5340" class=""></p>
+        <h3 id="27d50516-268d-45bf-9900-db7e013aa9ad" class="">Context</h3>
+        <p id="f61b0952-4ff5-4829-a6c7-5962c6ace17e" class="">
+          Lotic CMS is a content management system where team controls all
+          content deployment across all Lotic platforms. Currently, it serves as
+          an internal tool for the in-house content and data science teams, with
+          future plans to expand its capabilities to external business partners
+          looking to distribute their content across the Lotic ecosystem.
+        </p>
+        <p id="822c5e59-f28e-4cfb-9d0e-16ef34b96ef8" class=""></p>
+        <p id="c71c7d6b-ded9-4c3e-a432-cfa89d339b73" class="">
+          You might wonder why Lotic decided to build its own CMS tool instead
+          of opting for a third-party solution. The reasons are multifaceted. A
+          primary factor is that third-party CMS tools cannot support the
+          complex data structure that Lotic uses in its backend. Integrating
+          with these tools would significantly increase both cost and
+          complexity. Additionally, Lotic aims to use its CMS as a tool for data
+          science team to manage tagging system for AI algorithm recommendation
+          — something third-party tools couldn&#x27;t adequately support.
+        </p>
+        <p id="313a8acc-2487-4e18-9c8c-c021984d7259" class=""></p>
+        <p id="4153ff8a-1335-4c55-aeb9-0772c73b9983" class="">
+          At this stage, Lotic&#x27;s primary users are the content team, whose
+          daily tasks involve creating content, organizing it into various
+          packages, and scheduling deployments to Lotic users.
+        </p>
+        <p id="8ff982ce-aba2-4ef6-a3e4-317880415daf" class=""></p>
+        <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="image">
+          <a href="image/CMS_mapping.png"
+            ><img style="width: 1056px" src="image/CMS_mapping.png"
+          /></a>
+          <figcaption>
+            Content Deployment from Lotic CMS to Talk2Me app
+          </figcaption>
+        </figure>
+        <p id="0e914c41-2d11-44ea-b631-c17d9e04f9b0" class=""></p>
+        <p id="a097fb97-ffba-4de8-a53e-37746c29202b" class=""></p>
+        <h3 id="c74fcaf9-3461-4808-bd0c-908bfa0a771f" class="">Objective</h3>
+        <p id="cd1e5654-6a9a-4b77-85a5-926939db12c2" class="">
+          However, the content team found their daily experience with the
+          current Lotic CMS to be frustrating and challenging, making it
+          difficult to complete their tasks efficiently. This poor user
+          experience slowed down the content deployment process. As a result,
+          the goal of this project was to redesign the Lotic CMS and
+          significantly improve the user experience, in other words, to
+          <strong>create a streamlined and simplified user experience</strong>.
+        </p>
+        <p id="4c859fd5-f885-421e-8aeb-52dd12adcfd3" class=""></p>
+        <h3 id="cc0d80b3-014e-4a88-bdc0-3996d95265ed" class="">
+          Success metrics
+        </h3>
+        <p id="7c8242c5-7bcf-497e-928b-a1a2e51f8f33" class="">
+          For this project, we identified two key success metrics:
+          <strong>user satisfaction</strong> and
+          <strong>content deployment speed</strong>. User satisfaction, measured
+          through surveys, will indicate whether we&#x27;ve successfully
+          enhanced the user experience. Content deployment speed will reveal if
+          the redesign has effectively accelerated the content deployment
+          process.
+        </p>
+        <p id="275d9e2c-3e9c-4476-ba9b-ef3dd18fa5df" class=""></p>
+        <h2 id="812b7599-905b-4612-9ec0-f54873ed3a07" class="">
+          Solve the problem:
+        </h2>
+        <h3 id="41fe25d7-65ad-491b-84f1-f932c761750c" class="">
+          Initial feelings
+        </h3>
+        <p id="02ae0dd9-0e0a-49d9-a3ce-a977f1aeb16a" class="">
+          When I first started the project, the PM handed me a PRD packed with
+          an overwhelming number of requests from various teams, many of which
+          had vague even conflicting requirements. The list included numerous
+          issues the product team wanted to address, along with several missing
+          features that needed to be added. However, with a tight deadline and
+          limited resources, it was clear we couldn’t tackle everything, making
+          it difficult to determine where to begin.
+        </p>
+        <p id="26354124-ca73-4eb9-a475-b589ca1bc912" class=""></p>
+        <h3 id="9a82e265-8e6d-46dc-b433-b41cb32d0d84" class="">
+          The old CMS website
+        </h3>
+        <p id="631542c3-43e6-4db9-ae0f-221a3e56ca9e" class="">
+          After auditing the old CMS website, it quickly became evident why
+          users struggled with it. The UI was outdated. There are multiple
+          sections displaying the same content causing confusion. The navigation
+          was unclear, making it difficult for users to grasp the nesting
+          concepts and how they related to different Lotic platforms.
+          Additionally, the system lacked flexibility, forcing users to go
+          through unnecessary steps to rearrange content.
+        </p>
+        <p id="639dbc82-0bda-493d-9714-ef37ee3c9172" class=""></p>
+        <figure id="67640a4f-0ca4-45c7-ab73-a08cdca36f95" class="image">
+          <a href="image/CMS_oldcms.png"
+            ><img style="width: 1248px" src="image/CMS_oldcms.png"
+          /></a>
+          <figcaption>Old CMS</figcaption>
+        </figure>
+        <p id="dfb6e754-e88d-498b-95e2-1873ed97ecac" class=""></p>
+        <h3 id="84f6a463-2080-4056-b766-af80f12061b4" class="">
+          Kickoff meeting to get all stakeholders aligned
+        </h3>
+        <p id="a1733ee8-e63c-406a-9eeb-970f24aa6041" class="">
+          Given the numerous requests from different teams with unclear
+          requirements, I organized a project kickoff meeting with all major
+          stakeholders. The goal was to align everyone and clarify the vague and
+          even conflicting requirements. The meeting was very successful: we
+          resolved conflicting requests and clarified others. Later project
+          kickoff meetings became a standard practice in Lotic&#x27;s product
+          development process.
+        </p>
+        <p id="67974679-6323-4343-882d-9ad6cafbc750" class=""></p>
+        <figure
+          class="block-color-gray_background callout"
+          style="white-space: normal; display: flex"
+          id="bda7e2ef-8886-426a-8812-25abafe73f2e"
+        >
+          <div style="font-size: 1.5em"><span class="icon">😐</span></div>
+          <div style="width: 100%">
+            <p id="0b7814b4-f8f7-47e0-849d-70d350b6a9c8" class="">
+              One example of the conflicting requests: Product team wanted to
+              remove ID of a content post, Content team wanted the ability to
+              edit ID and Data Science team insisted on retaining
+              system-generated IDs.
+            </p>
+          </div>
+        </figure>
+        <p id="ffab59c8-0b34-4a17-948a-afae06e69687" class=""></p>
+        <figure
+          class="block-color-gray_background callout"
+          style="white-space: normal; display: flex"
+          id="cd13b83d-497f-4859-ada1-ceac69605289"
+        >
+          <div style="font-size: 1.5em"><span class="icon">😟</span></div>
+          <div style="width: 100%">
+            <p id="618649c5-e819-4d43-a88c-6f8a482073db" class="">
+              Another example of conflicting requests: The content team wanted
+              to continue adding images via external links, while the product
+              team preferred to avoid external links due to potential
+              unpredictable behavior in the backend.
+            </p>
+          </div>
+        </figure>
+        <p id="25f1eb9d-da2b-4f57-8cb4-268f74b0dafc" class=""></p>
+        <h3 id="2f680ddf-465d-4e25-9986-d63121f4c692" class="">
+          Dive deeper in each individual interviews
+        </h3>
+        <p id="a502aad4-c2de-4f8a-9c92-573220a27c40" class="">
+          Following the kickoff meeting, I conducted a series of individual
+          interviews with each stakeholder and CMS users, including the content
+          and data science teams. These interviews helped me understand the
+          rationale behind each request and allowed me to further refine the
+          project requirements.
+        </p>
+        <p id="165d3dd3-dffe-41e0-9b31-2893848f8760" class=""></p>
+        <figure
+          class="block-color-gray_background callout"
+          style="white-space: normal; display: flex"
+          id="f1e6a085-387a-46f3-8c1e-20a70def7f9d"
+        >
+          <div style="font-size: 1.5em"><span class="icon">🤔</span></div>
+          <div style="width: 100%">
+            <p id="bb508922-9025-476d-921c-20206ccab64b" class="">
+              User request: <br />&quot;Add more flexibility for users to create
+              content within a nested structure.&quot;<br />
+            </p>
+          </div>
+        </figure>
+        <figure
+          class="block-color-orange_background callout"
+          style="white-space: normal; display: flex"
+          id="6341ded3-b018-4366-aea0-8d64406fe312"
+        >
+          <div style="font-size: 1.5em"><span class="icon">☝🏻</span></div>
+          <div style="width: 100%">
+            <p id="3747794e-53af-4695-852c-f7452430894c" class="">
+              Rationale behind:<br />&quot;When creating content, users
+              typically start by creating packages and sequences (higher-level
+              content) before filling in or reusing existing individual posts
+              (lower-level content). However, the current CMS only allows users
+              to edit in the opposite order.&quot;<br />
+            </p>
+          </div>
+        </figure>
+        <p id="3f9c482a-5b19-4be3-acc8-f9aed295088f" class=""></p>
+        <figure
+          class="block-color-gray_background callout"
+          style="white-space: normal; display: flex"
+          id="1216dd7e-d000-4ba8-bbf5-b00b89034a44"
+        >
+          <div style="font-size: 1.5em"><span class="icon">🤔</span></div>
+          <div style="width: 100%">
+            <p id="5d996ada-e79a-4ae2-8330-8ff51d2dfa46" class="">
+              User request: <br />&quot;Allow users to edit the ID in the
+              CMS.&quot;<br />
+            </p>
+          </div>
+        </figure>
+        <figure
+          class="block-color-orange_background callout"
+          style="white-space: normal; display: flex"
+          id="5da4cc74-8d5a-440d-81a3-226fb6e91240"
+        >
+          <div style="font-size: 1.5em"><span class="icon">☝🏻</span></div>
+          <div style="width: 100%">
+            <p id="1f685702-210c-419d-80d8-9a36af1cdfda" class="">
+              Rationale behind:<br />&quot;Before entering anything into the
+              CMS, I prepare everything in a spreadsheet where all items are
+              created and organized. However, since the CMS generates IDs
+              automatically, I have to manually update the IDs in the
+              spreadsheet, which is time-consuming.&quot; — The user isn&#x27;t
+              actually asking to edit the ID; instead, they want to ensure both
+              systems are aligned with the same numbers.<br />
+            </p>
+          </div>
+        </figure>
+        <p id="d1529754-f2e7-4782-b439-f036083ebe61" class=""></p>
+        <figure
+          class="block-color-gray_background callout"
+          style="white-space: normal; display: flex"
+          id="26ca07b0-40ea-417a-9280-cfaf7d9dd3f6"
+        >
+          <div style="font-size: 1.5em"><span class="icon">🤔</span></div>
+          <div style="width: 100%">
+            <p id="612ec891-fbaa-4a73-a96e-8bb2d6bdc3df" class="">
+              User request:<br />“Allow users to open multiple pages at the same
+              time.”<br />
+            </p>
+          </div>
+        </figure>
+        <figure
+          class="block-color-orange_background callout"
+          style="white-space: normal; display: flex"
+          id="c9f83ced-22b4-475b-b879-97a1f39e66f2"
+        >
+          <div style="font-size: 1.5em"><span class="icon">☝🏻</span></div>
+          <div style="width: 100%">
+            <p id="fa5ebbac-d380-4cd3-a175-6e7c764c7507" class="">
+              Rationale behind:<br />“I want to open each page entirely but be
+              able to quick navigate through related pages.” — The user actually
+              is asking to navigate through pages more easily and flexibly.<br />
+            </p>
+          </div>
+        </figure>
+        <p id="90821686-e12f-44f8-800b-e52a06579a1c" class=""></p>
+        <h3 id="ee3f1a8c-67e7-482c-a7d7-c5a60f987d0b" class="">
+          Nested data structure in the backend
+        </h3>
+        <p id="78f36d49-c2b1-4982-9c93-ff7e0b43d4bc" class="">
+          One of the key challenges in this project was designing a system that
+          could support the complex data structure in the backend. Since Lotic
+          CMS serves as the platform for content deployment across all other
+          Lotic platforms, it needed to align with how the data is organized.
+        </p>
+        <p id="f6a4a9bd-ba85-4cd6-ac3f-d5f9f7fe6efb" class=""></p>
+        <p id="36b8e59a-bfc3-4c24-b5dc-d3dfaea36350" class="">
+          Through discussions with the data science team, I learned that the
+          data is structured into three hierarchies: Sequence &gt; Package &gt;
+          Post.
+        </p>
+        <p id="58974bf2-be46-457b-8a7b-7eb05f75b662" class=""></p>
+        <figure
+          class="block-color-gray_background callout"
+          style="white-space: normal; display: flex"
+          id="ae10437f-8e42-4ab5-b029-eb310fd97b25"
+        >
+          <div style="font-size: 1.5em"><span class="icon">📖</span></div>
+          <div style="width: 100%">
+            <ul id="22e9f996-c87e-4d38-9133-5f33a9396437" class="bulleted-list">
+              <li style="list-style-type: disc">
+                a Post represents the individual content consumed by the end
+                user,
+              </li>
+            </ul>
+            <ul id="2a530581-22ed-4042-8bcb-9e2b888021d5" class="bulleted-list">
+              <li style="list-style-type: disc">
+                a Package is a collection of Posts for a single day,
+              </li>
+            </ul>
+            <ul id="9f402e28-0145-4989-b7a5-aa035649a7d2" class="bulleted-list">
+              <li style="list-style-type: disc">
+                a Sequence is the assignment of content across different dates
+                to the same user.
+              </li>
+            </ul>
+          </div>
+        </figure>
+        <p id="9825b78b-6d21-4cfc-8213-195f8686abd4" class=""></p>
+        <p id="9e384543-9be2-4298-8783-67b327c15b0c" class="">
+          One major issue with the old CMS was its lack of intuitiveness in
+          showing how users create content across these different hierarchies
+          which ultimately hindered a streamlined user experience.
+        </p>
+        <p id="f84ac73a-0a3c-466c-922a-c06e13ac170e" class=""></p>
+        <h3 id="a899d90d-003c-49ed-8725-d6e5c0b21d73" class="">Ideation</h3>
+        <p id="c1988753-5a70-42bb-b2ad-a91c516ff714" class="">
+          At the same time, I want to take a step back and ask a more
+          fundamental question first:
+        </p>
+        <p id="20e7cd28-6dc0-414a-8030-0e0615e48e9f" class=""></p>
+        <blockquote id="c60e84b0-976d-432d-8d61-eae816c39328" class="">
+          <em
+            >“What are the daily tasks users engage in that have the greatest
+            impact on their overall experience?”</em
+          >
+        </blockquote>
+        <p id="56d15499-708c-47c9-bfad-698c8619e726" class=""></p>
+        <p id="dc9eddda-684b-40ee-be78-a89a4ba0541f" class="">
+          In order to further explore this question, I listed some user stories
+          below based on the user interviews:
+        </p>
+        <figure
+          class="block-color-purple_background callout"
+          style="white-space: normal; display: flex"
+          id="b4761a68-c7f2-45d8-b4bb-8402cd618383"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            <p id="92af0a64-2691-4fa9-a743-aee15b1b4031" class="">As a user</p>
+            <ul id="fab35178-e600-4794-815c-8eaddab929de" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to view last changes made, last context, who &amp; when
+                did what on dashboard
+              </li>
+            </ul>
+            <ul id="28de59c1-a0e5-4945-adcc-9aeb57493c01" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to view limitations/usage on data storage
+              </li>
+            </ul>
+            <ul id="d2977d25-a974-4f87-ab86-c9043942b22c" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want like to check warnings on unpublished stuff on Dashboard
+              </li>
+            </ul>
+            <ul id="c4e9bac6-c3fa-4311-a938-be4b026129f3" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to create a context page
+              </li>
+            </ul>
+            <ul id="62838cc0-fef8-4e9a-b455-c1ca0234d010" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to edit text for context
+              </li>
+            </ul>
+            <ul id="637fe479-d9f8-4de6-9f6b-0f33abff98df" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to insert image into text for context
+              </li>
+            </ul>
+            <ul id="5a3bca4a-c59b-46c2-be72-6cdd757684c4" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to check the text formatting, alignment, text weight and
+                text color
+              </li>
+            </ul>
+            <ul id="56e9845b-30ac-45c6-9d6f-cca4983dfdeb" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to preview the content without publishing
+              </li>
+            </ul>
+            <ul id="553e6ea6-830f-4cdb-9338-3964399727ba" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to easily add media asset (video or audio) into context
+                page
+              </li>
+            </ul>
+            <ul id="353ddb01-8fac-47fa-9601-ff86a388e71a" class="bulleted-list">
+              <li style="list-style-type: disc">I want to edit the id</li>
+            </ul>
+            <ul id="3831d3b3-88b3-475f-ab83-7442fa4bc6be" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to sort the id in alphabetic/numeric order
+              </li>
+            </ul>
+            <ul id="7ba338b6-8a84-4a7c-93f6-da527e362591" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to check the draft that has not been published and
+                assigned
+              </li>
+            </ul>
+            <ul id="d7d3265a-21d1-4f19-8594-0316dbbb8bea" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to open different context pages at the same time and
+                navigate easily through them
+              </li>
+            </ul>
+            <ul id="3c9d1acf-c1b0-4750-8d40-b2a95347215f" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to replace a video file without having to delete it
+              </li>
+            </ul>
+            <ul id="a5f7aa14-588e-4812-bfa1-e4933a529059" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to have a read-along feature for text
+              </li>
+            </ul>
+            <ul id="9ad5e380-d80a-4afe-b07b-674191eb716e" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to easily check whether a page is a draft or not
+              </li>
+            </ul>
+            <ul id="da1934a9-a46e-4385-a308-c1cb5b99a94c" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to easily tell the linked packages and be able to click
+                it
+              </li>
+            </ul>
+            <ul id="21a84bc6-31d0-4a0f-800f-ba00fd3ada1e" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to check how the content looks like on mobile
+              </li>
+            </ul>
+            <ul id="18590009-55b6-45a4-8d7c-e140dd477030" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to see context, wind down, learn in one place and put
+                under different categories
+              </li>
+            </ul>
+            <ul id="e6bfb57f-9e72-4fd3-a35a-5578f1e59984" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to choose different product UI to view the content layout
+              </li>
+            </ul>
+            <ul id="c2ed80d3-8069-4fee-889b-d867235e84fa" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to edit text and image in an easy way
+              </li>
+            </ul>
+            <ul id="7cc709f1-b90d-4099-bdc5-d9dc1d010100" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to link multiple pages to create a context post
+              </li>
+            </ul>
+            <ul id="3b30ade9-43a5-4253-8b75-cda3d80bb150" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to have more entity types
+              </li>
+            </ul>
+            <ul id="4da47f98-996e-49e8-b0bb-11a7426bbf58" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to also upload subtitle files for our videos. Similar to
+                Youtube, how it uses .srt files.
+              </li>
+            </ul>
+            <ul id="f0fcaa87-7977-4c6d-950d-90ad5008e49e" class="bulleted-list">
+              <li style="list-style-type: disc">
+                I want to upload media asset from local drive
+              </li>
+            </ul>
+            <ul id="5bdbca01-58a8-409c-8dc5-5dfd50caa2fe" class="bulleted-list">
+              <li style="list-style-type: disc">…</li>
+            </ul>
+          </div>
+        </figure>
+        <p id="0a4e705f-0772-447d-8a68-4d0b3456d97d" class=""></p>
+        <h3 id="d20e08bd-6c3c-4bb8-b8dc-6cac2f7291bc" class="">
+          Competitor Analysis
+        </h3>
+        <p id="c3c79bb1-24c8-41c0-b99d-f8b4cd80d38b" class="">
+          I conducted a competitor analysis on the leading CMS products in the
+          market, including Web CMS, WordPress, HubSpot CMS Hub, WiX, Ghost,
+          Strapi, and Hygraph. My research focused on the following key aspects:
+        </p>
+        <ul id="25b35709-9782-4188-9c0f-b9ee831b1125" class="bulleted-list">
+          <li style="list-style-type: disc">Core features and functionality</li>
+        </ul>
+        <ul id="79e9107e-e470-4140-8cdf-e491f62ee70e" class="bulleted-list">
+          <li style="list-style-type: disc">Interface design</li>
+        </ul>
+        <ul id="69645d2f-fe71-4578-aa74-b4d06b2de9e7" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Integration between the CMS and various platforms
+          </li>
+        </ul>
+        <p id="ce360304-3b57-4aa4-aeeb-ad469f5ad4d1" class=""></p>
+        <p id="bc442faf-8140-43a9-bba4-23c2d6053afa" class="">
+          Throughout the research, I paid particular attention to
+          <strong
+            >how these platforms structure their interfaces to give user a
+            streamlined experience</strong
+          >, like allowing users to easily create, manage, and deploy content.
+          Here are some insights I gained from the competitor analysis:
+        </p>
+        <ul id="b9ba4bc7-fbde-4e4e-b958-2afd078b7092" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Most of the platforms only support a single layer of content,
+            meaning they do not accommodate a nested structure. As a result,
+            they offer little guidance on how to manage the hierarchical data.
+          </li>
+        </ul>
+        <ul id="e0f74c3e-83c2-4942-8b34-f314273b911c" class="bulleted-list">
+          <li style="list-style-type: disc">
+            They addressed the flexibility challenge by introducing ‘Blocks’—a
+            versatile editing unit that supports multiple media types.
+          </li>
+        </ul>
+        <ul id="e71bcb12-ec18-46f8-99ca-1ab3524e79b5" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Some features like the live content preview function will facilitate
+            the content creation and deployment speed.
+          </li>
+        </ul>
+        <p id="28faaae2-b6cd-4a26-a635-6e73cbc35757" class=""></p>
+        <figure id="46dc6570-e10f-4818-b911-d4792bf9fee7" class="image">
+          <a href="image/CMS_competitor.png"
+            ><img style="width: 1440px" src="image/CMS_competitor.png"
+          /></a>
+          <figcaption>Some competitors</figcaption>
+        </figure>
+        <p id="2de17449-4113-46da-92a4-8d5d074f89bb" class=""></p>
+        <h2 id="ba3f72e3-3bff-4143-8900-b8ac14f967c8" class="">
+          Information Architecture
+        </h2>
+        <h3 id="15fb63ae-8351-46c9-ae2c-2f0c8abea9c0" class="">Pain points</h3>
+        <p id="a712b3fe-984b-4eaf-8355-dcdaf973f298" class="">
+          By gathering all the insights from research and interviews, I had a
+          brainstorming meeting with the product manager to prioritize the key
+          pain points. Here are the top 3 pain points that we agreed on:
+        </p>
+        <figure
+          class="block-color-gray_background callout"
+          style="white-space: normal; display: flex"
+          id="bbe6d41d-18f5-4aec-8e85-62413e8d1010"
+        >
+          <div style="font-size: 1.5em"><span class="icon">🤜🏻</span></div>
+          <div style="width: 100%">
+            <ul id="06d8f422-c99e-4576-b525-69ad696e583b" class="bulleted-list">
+              <li style="list-style-type: disc">
+                hierarchy of data is confusing and it isn’t reflected clearly in
+                CMS.<br />e.g. flat structure vs content in different levels
+                (Sequence &gt; Package &gt; Post)<br />
+              </li>
+            </ul>
+            <ul id="ac32dd4d-87f3-4fcf-aa50-dc3be3625abf" class="bulleted-list">
+              <li style="list-style-type: disc">
+                The current content creation flow only supports one direction in
+                the data hierarchy: Post → Package → Sequence, whereas the
+                content team prefers the flow to follow Sequence → Package →
+                Post which is not supported.
+              </li>
+            </ul>
+            <ul id="a317b4f6-7bb3-4e00-b2fd-dca5c748e6f7" class="bulleted-list">
+              <li style="list-style-type: disc">
+                lack flexibility in editing the content.
+              </li>
+            </ul>
+          </div>
+        </figure>
+        <p id="97a1895b-d85b-464a-bde2-2259ad72c4de" class=""></p>
+        <h3 id="015b7dc8-bcaa-40cb-a0ec-f2b44f68fae3" class="">
+          User flow and site map
+        </h3>
+        <p id="b5fcb895-bba8-4bae-be0e-efb2faa261ec" class="">
+          I analyzed the existing user flow, which helped me identify key pain
+          points and inefficiencies in the content management process. It also
+          revealed why users were limited to creating content in only one
+          direction (Post → Package → Sequence). I then redesigned the flow to
+          streamline the process, making content creation, management, and
+          deployment more intuitive and efficient while accounting for the
+          complex nested structure. This new user flow supports bi-direction
+          creation and has reduced steps to create the content in the nested
+          structure.
+        </p>
+        <p id="4e437a66-9f19-4258-b6dd-74438f6094ff" class=""></p>
+        <p id="703cfb99-19da-49b6-82ff-b7010f0178a7" class="">
+          Here is a comparison between old and new user flow of how user create
+          content in nested structure:
+        </p>
+        <p id="e92e7993-5860-43f3-99a7-502ef1c3e8be" class=""></p>
+        <figure id="bf5ecb51-17ea-4eea-9352-f0c4f3a0a793" class="image">
+          <a href="image/CMS_userflow.png"
+            ><img style="width: 1344px" src="image/CMS_userflow.png"
+          /></a>
+          <figcaption>Old vs new user flow</figcaption>
+        </figure>
+        <p id="c1bdac07-f7c8-435f-8f86-71471e887d7a" class=""></p>
+        <p id="d3690457-2fd8-42d4-9f95-2299810bafd4" class="">
+          At the same time, to improve navigation and content organization, I
+          also analyzed the existing site map, identifying areas of complexity
+          and redundancy. Here is a comparison between the old and new site map:
+        </p>
+        <p id="88b03790-58ca-46bc-a99c-cafd0868d8ff" class=""></p>
+        <figure id="8338aed0-f139-4b6c-98e3-9c8fd6d63837" class="image">
+          <a href="image/CMS_oldsitemap.png"
+            ><img style="width: 1392px" src="image/CMS_oldsitemap.png"
+          /></a>
+        </figure>
+        <figure id="4163a9a0-188a-4e83-a817-c9c799ec9cfc" class="image">
+          <a href="image/CMS_newsitemap.png"
+            ><img style="width: 1392px" src="image/CMS_newsitemap.png"
+          /></a>
+          <figcaption>Old vs new sitemap</figcaption>
+        </figure>
+        <p id="9280add5-bf35-413c-aa0f-eb868f3907aa" class=""></p>
+        <p id="f1dcd38d-aeef-49b8-a623-f9ae363f8465" class=""></p>
+        <h3 id="91b6ad1a-9f26-4584-941b-9f2a9317b874" class="">
+          Wireframe and user testing
+        </h3>
+        <p id="af48142c-cf63-4100-ad85-ef728fa7877b" class="">
+          Creating a wireframe without focusing on detailed UI design allows me
+          to quickly develop the layout, prioritizing functionality over
+          aesthetics. Thus I was able to conduct moderated user testing on its
+          prototype and gather user feedback early in the process.
+        </p>
+        <p id="82a6ea61-290d-4698-a84a-12435a9fa00b" class=""></p>
+        <figure id="cdbc79e0-cee3-47ee-8cfc-9933dd418658" class="image">
+          <a href="image/CMS_wireframe.png"
+            ><img style="width: 1344px" src="image/CMS_wireframe.png"
+          /></a>
+          <figcaption>Wireframe</figcaption>
+        </figure>
+        <p id="8eac0341-64d0-4acc-801b-69d1ec2a7179" class=""></p>
+        <p id="035d2656-0ee3-4b22-8a93-ff136ee7cd29" class="">
+          One of the key pieces of feedback I received from the user testing was
+          that users greatly appreciated the flexibility to create content in
+          either direction—whether starting from a lower level and building up
+          (Post → Package → Sequence) or beginning at a higher level and working
+          down (Sequence → Package → Post). This flexibility allowed users to
+          tailor the content creation process to their specific needs and
+          workflows, making the system more intuitive and efficient for diverse
+          use cases.
+        </p>
+        <p id="69dd4de0-c41f-4b0d-891e-b4d5005020ac" class=""></p>
+        <h2 id="c3b3f7b4-e179-4278-9705-c606a20ed943" class="">
+          Visual designs
+        </h2>
+        <p id="68382d8d-f0d4-49c7-92e9-1b1c9f8a6f3e" class="">
+          With the new design system I created (details provided below), I was
+          able to proceed with designing the high-fidelity mockups.
+        </p>
+        <p id="b0fdb4ad-73b1-4b0d-b5e8-1d9c33719b7b" class=""></p>
+        <p id="120cf211-5b02-49e4-9681-9581022f2e89" class="">
+          The new CMS is organized into the following sections:
+        </p>
+        <ul id="8f1baf9d-ce80-449a-be2b-f656f37909e4" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Dashboard: A new section where users can monitor incomplete drafts
+            awaiting publication, track space usage, access tutorials, and view
+            recent activities. I plan to discuss the design process for this
+            page in a separate case study.
+          </li>
+        </ul>
+        <figure id="35cb6756-8638-4807-819c-91aba8d27e5e" class="image">
+          <a href="image/CMS_dashboard.png"
+            ><img style="width: 4320px" src="image/CMS_dashboard.png"
+          /></a>
+          <figcaption>Dashboard</figcaption>
+        </figure>
+        <p id="07e1e7f6-52b1-4e19-8caa-7d73a6e810db" class=""></p>
+        <ul id="51f2c9ec-52fa-486d-b0eb-3d34371cba82" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Content Creation Section: This area encompasses three content
+            hierarchies—Sequence, Package, and Post (referred to as Activity in
+            the new CMS).
+          </li>
+        </ul>
+        <p id="e761b096-f191-4e0f-a084-168cc9bb8f18" class=""></p>
+        <p id="ec180856-d06c-4e58-9c97-9480865393b8" class="">
+          In designing this section, I focused on providing users
+          <strong
+            >with greater flexibility to create content across different
+            hierarchies</strong
+          >.
+        </p>
+        <p id="ca32f361-5b6e-44a0-ae3f-932f6bbbaea7" class=""></p>
+        <p id="327cf933-5916-452d-b624-144960b33fb2" class="">
+          a. A unified starting point
+        </p>
+        <p id="18826b6c-e100-4b25-b6af-1d7b785c2a9f" class="">
+          Users can now begin content creation from a single location—the
+          &quot;Create&quot; button—rather than navigating to different
+          sections. In the new CMS, all content, regardless of its level, is
+          treated as a singular unit called a &#x27;Page.&#x27; It aims to
+          simplify the user experience and reduce the time required to create
+          various types of content.
+        </p>
+        <figure id="6e269ae2-183a-4d73-8457-ea4700058745" class="image">
+          <a href="image/CMS_create.png"
+            ><img style="width: 4320px" src="image/CMS_create.png"
+          /></a>
+          <figcaption>Create Page</figcaption>
+        </figure>
+        <p id="c4644387-8d96-4273-86c9-5904b5a41db8" class=""></p>
+        <p id="27057ada-3aaa-44f6-9935-40c2ce9ad789" class="">
+          b, Support content creation in both directions
+        </p>
+        <p id="15615299-fb52-4251-8c36-983c2888e66a" class="">
+          In the old CMS, users had to prepare all Activity-level content before
+          they could aggregate it into Package and Sequence levels. The new CMS
+          supports both directions, allowing users to start by setting up the
+          Sequence page first, then create or select an existing Package, and
+          finally create or choose the Activity/Post content.<strong>
+            It is better aligned with user behavior, as revealed through user
+            interviews.</strong
+          >
+        </p>
+        <figure id="411ea77c-19ad-4ff2-8f48-374556192350" class="image">
+          <a href="image/CMS_Sequencehierarchy.png"
+            ><img style="width: 4320px" src="image/CMS_Sequencehierarchy.png"
+          /></a>
+          <figcaption>
+            User can create a Package Page directly inside the Sequence Page
+          </figcaption>
+        </figure>
+        <figure id="6bf0927e-b54c-4c26-8c2c-6fd6e526e6b3" class="image">
+          <a href="image/CMS_Packagehierarchy.png"
+            ><img style="width: 4320px" src="image/CMS_Packagehierarchy.png"
+          /></a>
+          <figcaption>
+            User can create a Activity/Post Page directly inside the Package
+            Page
+          </figcaption>
+        </figure>
+        <p id="19c446e3-4f97-4e42-94b1-55db791fc6d8" class=""></p>
+        <p id="f2f5875a-2e2b-444f-99b0-0775c62450f1" class="">
+          c, Clear visual representation of data Hierarchies
+        </p>
+        <p id="8e43c099-1305-461b-9ed6-8b2c7f3d308f" class="">
+          The new CMS features multiple areas where the data hierarchy is
+          visually represented, allowing users to easily understand the flow of
+          created content. This provides a clear overview, helping users grasp
+          the bigger picture without getting lost in the details.
+        </p>
+        <figure id="f71be825-21c8-4a41-ae73-b0078e7ff509" class="image">
+          <a href="image/CMS_navigation.png"
+            ><img style="width: 4320px" src="image/CMS_navigation.png"
+          /></a>
+          <figcaption>The navigation bar shows a hierarchy of data</figcaption>
+        </figure>
+        <figure id="59fcaa06-513d-45ae-bca3-5c7eca31c609" class="image">
+          <a href="image/CMS_linkingsection.png"
+            ><img style="width: 708px" src="image/CMS_linkingsection.png"
+          /></a>
+          <figcaption>
+            The section inside the content page which shows the nested structure
+          </figcaption>
+        </figure>
+        <p id="0fdf7e0b-0128-456d-9309-10c1644f0aba" class=""></p>
+        <p id="856fd074-00db-44d4-88c0-108f64950d55" class="">
+          d, Introduce ‘Block’ as the basic editing tool
+        </p>
+        <p id="86f284d2-d215-4de0-9a1f-0d607a4e58de" class="">
+          In the new CMS, I introduced ‘Block’ which enables users to add and
+          rearrange various types of media, such as text, images, and videos,
+          with ease and flexibility.
+        </p>
+        <figure id="e7efb93d-ccd3-4346-b1f4-5e465c0213ce" class="image">
+          <a href="image/CMS_block.png"
+            ><img style="width: 3072px" src="image/CMS_block.png"
+          /></a>
+          <figcaption>
+            Block varies depending on the type of the page
+          </figcaption>
+        </figure>
+        <p id="5ad6c588-098c-4f01-b122-82646248eb6a" class=""></p>
+        <ul id="85be76f1-fc5a-44f8-a35c-8c8a428c1889" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Other sections to support requested features: Library, Tag, etc.
+          </li>
+        </ul>
+        <figure id="e1863ac1-615b-4377-a676-ddea338d3aca" class="image">
+          <a href="image/CMS_tag.png"
+            ><img style="width: 4320px" src="image/CMS_tag.png"
+          /></a>
+          <figcaption>Tag</figcaption>
+        </figure>
+        <p id="eb37d136-8b85-41fa-aa5a-eac584d7005f" class=""></p>
+        <h3 id="af0cdad9-4005-43d5-8d44-d8d2eed5e955" class="">
+          Design library
+        </h3>
+        <p id="a6d75ae7-d8e6-42f7-a5ec-10ceecf538eb" class="">
+          One of the key requests was to design a design system for the CMS
+          website. After discussing with the engineering team, we decided to
+          base the system on the Material UI library (MUI), customizing it to
+          meet the specific needs of the CMS. The main challenge was ensuring
+          that the CMS design system remained consistent with Lotic’s existing
+          design system.
+        </p>
+        <p id="b8ca9da9-9d5b-4522-9a20-efc1d40e195c" class=""></p>
+        <p id="87c726cd-8910-4247-8705-be2561b2e98e" class="">
+          To ensure consistency across design systems while meeting the needs of
+          the CMS, I took the following steps:
+        </p>
+        <ul id="1c3aa7cd-21c1-46df-b267-2a96df13509c" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Foundations: I adjusted typography, color schemes, spacing, and
+            other elements of MUI to align with Lotic’s style guide.
+          </li>
+        </ul>
+        <ul id="6a2c13cc-a213-494d-9841-43720b0aa593" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Custom Components: I developed customized pre-built components for
+            the CMS, building on the foundation of MUI to suit its specific
+            requirements.
+          </li>
+        </ul>
+        <figure id="ff7f66c3-b4f0-4bc7-bdaa-36b6d5567cc4" class="image">
+          <a href="image/CMS_designsystem.png"
+            ><img style="width: 3072px" src="image/CMS_designsystem.png"
+          /></a>
+        </figure>
+        <p id="c8f75215-1783-48c9-946a-85c82f70f1f8" class=""></p>
+        <h2 id="cb971292-2bb9-4931-ab0e-67c823cacb88" class="">Results</h2>
+        <p id="b899c0ea-f10a-443e-93a4-2a516875f33c" class="">
+          After the website went live, the following metrics were achieved:
+        </p>
+        <ul id="5e588b2f-eb31-4aea-a438-03fc434f8f97" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Increased User Satisfaction: User surveys indicated higher
+            satisfaction with the new CMS.
+          </li>
+        </ul>
+        <ul id="5812ac87-a43a-4400-bcdb-f4083dbf2f50" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Improved Content Deployment Speed: The new CMS demonstrated a 40%
+            increase in content deployment speed on average.
+          </li>
+        </ul>
+        <p id="7a542254-d27f-4b50-8c60-8d669baa7dd3" class=""></p>
+        <h2 id="81371c10-47a0-444e-8eae-34603d4e0c07" class="">Learning</h2>
+        <p id="9a31975c-e9c7-4416-9f22-4f2110a437c7" class="">
+          <strong>1, Tackling ambiguity</strong>
+        </p>
+        <p id="0245bb7a-9efe-4032-8be1-cc931b931f76" class="">
+          One of the biggest challenges in this project was navigating through
+          ambiguity, especially at the beginning. I felt overwhelmed and even
+          didn’t know where to start by reading the PRD filled with numerous
+          vague and conflicting requests. By organizing a project kickoff
+          meeting, conducting rounds of individual interviews with stakeholders
+          and holding regular design reviews, I was able to clarify the
+          requirements and align everyone on the same page.
+        </p>
+        <p id="3077cdb4-0952-4708-be6d-4834a687598a" class=""></p>
+        <p id="d4709a84-e1dd-4276-8395-b6a6e1c78542" class="">
+          <strong
+            >2, Effective communication &amp; stakeholder management</strong
+          >
+        </p>
+        <p id="d43f112f-8632-4134-abcd-87dbbe08b215" class="">
+          Throughout the project, clear and consistent communication was key to
+          success. From collaborating closely with the product manager during
+          brainstorming sessions to discussing technical requirements with the
+          engineering and data science teams, effective communication played a
+          crucial role in keeping everyone aligned.
+          <strong
+            >I’ve learnt the value of maintaining open communication across all
+            teams involved in this project</strong
+          >.
+        </p>
+        <p id="06bfc4b7-f7ee-4aca-a071-2f97197daeb3" class=""></p>
+        <p id="d02d5656-7000-4a37-a838-16dd104e73f1" class="">
+          <strong>3, Complex data structure </strong>
+        </p>
+        <p id="54b13f02-8ab1-4493-807d-c5487d6574c9" class="">
+          Designing the CMS that supports a complex data hierarchy was a
+          valuable learning experience to me. It was also my first time
+          <strong
+            >closely collaborating with the data science team to understand how
+            data is structured in the backend, which greatly informed and
+            improved the design</strong
+          >.
+        </p>
+        <p id="1141c487-f5a7-4814-832a-0559dc2ad348" class=""></p>
+        <h3 id="71f583a1-00cd-4532-aaae-9305da2a654d" class="">
+          Parting words
+        </h3>
+        <p id="7a374dc7-2b6f-4286-8a88-4b6f3d9f3006" class="">
+          While working on this project, I really enjoyed collaborating within a
+          cross-functional team, where diverse expertise and perspectives came
+          together to create a great product. Here are some words from my team:
+        </p>
+        <p id="d4625139-4f4c-4189-9d0f-529ee0fc2de7" class=""></p>
+        <div id="332ea7b8-ec26-45eb-9213-fe8d03b6774b" class="column-list">
+          <div
+            id="8f691667-3ff0-4a49-80b2-950faa1c947b"
+            style="width: 33.333333333333336%"
+            class="column"
+          >
+            <blockquote
+              id="5cb966e6-89ec-495b-bce6-79cccd2b9ab7"
+              class="block-color-pink_background"
+            >
+              I’m very impressed with how detailed, organized and well thought
+              out these are. I like the way that you did great research and the
+              design is well supported by the research you’ve done. Nicely done,
+              Chuchu!<br /><br />from my design manager Sara<br />
+            </blockquote>
+          </div>
+          <div
+            id="2117761f-23dc-4993-aae4-2ba780b25a20"
+            style="width: 33.33333333333333%"
+            class="column"
+          >
+            <blockquote
+              id="ce6341f6-783b-4936-8736-e68bcd6e02a0"
+              class="block-color-purple_background"
+            >
+              Chuchu is so good at taking so little information and put it into
+              a very useful work.<br /><br />from Mike, Chief Architecture
+              Officer &amp; Director of Engineering<br />
+            </blockquote>
+            <p id="0b2eb55b-a745-4f95-880c-ae9a67d68564" class=""></p>
+          </div>
+          <div
+            id="f1416d41-c1a2-4540-8691-85c71bbcb56f"
+            style="width: 33.33333333333334%"
+            class="column"
+          >
+            <blockquote
+              id="8cbe350b-b6f8-4946-b1e6-a995f2889626"
+              class="block-color-blue_background"
+            >
+              Chuchu is the most organized person I’ve met at work.
+              <br /><br />from Alina, Director of content<br />
+            </blockquote>
+          </div>
+        </div>
+        <p id="aa8e2bf8-4608-46f0-bce5-e8dd42166d49" class=""></p>
+        <p id="963e667c-8444-4d02-91d7-92683460d812" class="">
+          Thank you for taking the time to read this case study. I’m happy to
+          answer any questions or discuss further. Feel free to contact me via
+          email or LinkedIn.
+        </p>
+        <p id="ab845aaf-1d17-4ed7-8302-c0d4365d2fd3" class=""></p>
+        <p id="c5610278-3c92-4ce5-83f1-381a5021c216" class=""></p>
+        <p id="fd6731e3-85ca-4b5a-9266-15260f2953df" class=""></p>
+        <p id="bdc403df-d6ee-4c54-b0f1-375e83e874a8" class=""></p>
+        <p id="5ad389aa-86f6-4fe9-a627-55b2cb57188a" class=""></p>
+        <p id="32355c35-4941-45d3-8d55-884608d8cff8" class=""></p>
+        <p id="ba86e867-244c-41a5-9af0-47a89842411f" class=""></p>
+        <p id="1ab79825-e72d-4e30-9aec-ae1e3705023e" class=""></p>
+        <p id="f11d5c2d-146d-4240-b3e8-5719c126fb84" class=""></p>
+        <p id="ebc2d7c4-cd8b-49c5-a0a2-d949d4164eca" class=""></p>
+        <p id="3a00f111-91eb-4638-aaa6-1ec7fb0c7abd" class=""></p>
+        <p id="45ff86c1-1569-43b0-a316-625d1b6538d0" class=""></p>
+        <p id="9160bcff-1418-4316-901b-0fe9c4988603" class=""></p>
+        <p id="9cb15ade-e650-42a2-91f8-5705177ae38f" class=""></p>
+      </div>
+    </article>
+    <span class="sans" style="font-size: 14px; padding-top: 2em"></span>
+	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+	<script src="homepage.js"></script>
+  </body>
+</html>
