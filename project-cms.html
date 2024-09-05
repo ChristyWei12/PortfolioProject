@@ -62,20 +62,25 @@
       </div>
 
 
-     <section class="Bubble2Process">
+     <div class="ProcessSection">
+       <!--Introduction sentence-->
        <p>In this case study, I want to share how we solved the problem of empowering creators to streamline and simplify their content management on the Lotic CMS platform.</p>
        <p class="ilatic">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information in this case study 
         is my own and does not necessarily reflect the views of Lotic.ai.</p>
+       
+        <!--Role-->
        <h5>My role and the team</h5>
        <p>As the sole designer on this project, I collaborated closely with the product, development, content, and data science teams. I led the project from concept to execution, 
         taking on key responsibilities such as defining the problem and project scope, brainstorming and prioritizing features, designing the visual interface, and conducting user testing.</p>
-       <p><b><a href="https://www.linkedin.com/in/sarascheuermann/">Sara Scheuermann</a> </b>is my designer manager who provided support and design feedback throughout the whole project. And I also got great support from the team:</p>
-       <p>- <b><a href="https://www.linkedin.com/in/stephanie-padula-mba-4460a122/">Stephanie Padula</a></b> - Senior Director of Product Management<br>
-          - <b><a href="https://www.linkedin.com/in/andrew-linzie/">Andrew Linzie</a></b> - Product Manager<br>
-          - <b><a href="https://www.linkedin.com/in/michaelachacon/">Michael Chacon</a></b> - Chief Architecture Officer & Director of Engineering<br>
-          - <b><a href="https://www.linkedin.com/in/mmoral/">Moody Moral</a></b> - Senior Content Creator<br>
-          - <b><a href="https://www.linkedin.com/in/gavinpatient/">Gavin Patient</a></b> - Senior Data Scientist
-      </p>
+       <p><b><a href="https://www.linkedin.com/in/sarascheuermann/" target="_blank">Sara Scheuermann</a> </b>is my designer manager who provided support and design feedback throughout the whole project. And I also got great support from the team:</p>
+       <p>- <b><a href="https://www.linkedin.com/in/stephanie-padula-mba-4460a122/" target="_blank">Stephanie Padula</a></b> - Senior Director of Product Management<br>
+          - <b><a href="https://www.linkedin.com/in/andrew-linzie/" target="_blank">Andrew Linzie</a></b> - Product Manager<br>
+          - <b><a href="https://www.linkedin.com/in/michaelachacon/" target="_blank">Michael Chacon</a></b> - Chief Architecture Officer & Director of Engineering<br>
+          - <b><a href="https://www.linkedin.com/in/mmoral/" target="_blank">Moody Moral</a></b> - Senior Content Creator<br>
+          - <b><a href="https://www.linkedin.com/in/gavinpatient/" target="_blank">Gavin Patient</a></b> - Senior Data Scientist
+       </p>
+       
+       <!--Context-->
        <h5>Context</h5>
        <p>Lotic CMS is a content management system where team controls all content deployment across all Lotic platforms. Currently, it serves as an internal tool for the in-house content 
         and data science teams, with future plans to expand its capabilities to external business partners looking to distribute their content across the Lotic ecosystem.</p>
@@ -83,481 +88,387 @@
         cannot support the complex data structure that Lotic uses in its backend. Integrating with these tools would significantly increase both cost and complexity. Additionally, Lotic aims to use 
         its CMS as a tool for data science team to manage tagging system for AI algorithm recommendation — something third-party tools couldn't adequately support.</p>
        <p>At this stage, Lotic's primary users are the content team, whose daily tasks involve creating content, organizing it into various packages, and scheduling deployments to Lotic users.</p>
-    </section>
+       
+       <!--<img src="image/CMS_mapping.png" alt="Image" class="fullwidth">-->
+       <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="full-width-figure">
+        <img src="image/CMS_mapping.png" alt="CMS Mapping Image"/>
+        <!--<a href="image/CMS_mapping.png" target="_blank" rel="noopener noreferrer">
+          <img src="image/CMS_mapping.png" alt="CMS Mapping Image"/>
+        </a>--hide this because this is the full-width figure which doesn't need to zoom in-->
+        <figcaption>
+          Content Deployment from Lotic CMS to Talk2Me app
+        </figcaption>
+      </figure>
 
-
-    <section class="Bubble2Image">
-       <img src="image/CMS_mapping.png" alt="Image">
-    </section>
-
-
-    <section class="Bubble2Process">
-      <!--objective-->
-      <h5>Objective</h5>
-      <p>However, the content team found their daily experience with the current Lotic CMS to be frustrating and 
+       <!--objective-->
+       <h5>Objective</h5>
+       <p>However, the content team found their daily experience with the current Lotic CMS to be frustrating and 
         challenging, making it difficult to complete their tasks efficiently. This poor user experience slowed down the content deployment process. 
         As a result, the goal of this project was to redesign the Lotic CMS and significantly improve the user experience, in other words, to <b>create a streamlined and simplified user experience</b>.</p>
  
-     <!--Success metrics-->
-     <h5>Success metrics</h5>
-     <p>For this project, we identified two key success metrics: <b>user satisfaction</b> and <b>content deployment speed</b>. User satisfaction, measured through surveys, will indicate whether we've successfully enhanced 
+       <!--Success metrics-->
+       <h5>Success metrics</h5>
+       <p>For this project, we identified two key success metrics: <b>user satisfaction</b> and <b>content deployment speed</b>. User satisfaction, measured through surveys, will indicate whether we've successfully enhanced 
       the user experience. Content deployment speed will reveal if the redesign has effectively accelerated the content deployment process.</p>
      
-     <!--Solve the provblem-->
-     <h5>Solve the problem:</h5>
-     <h5>Initial feelings</h5>
-     <p>When I first started the project, the PM handed me a PRD packed with an overwhelming number of requests from various teams, many of which had vague even conflicting requirements. 
+       <!--Solve the provblem-->
+       <h5>Solve the problem:</h5>
+       <!--Initial feelings-->
+       <h5>Initial feelings</h5>
+       <p>When I first started the project, the PM handed me a PRD packed with an overwhelming number of requests from various teams, many of which had vague even conflicting requirements. 
       The list included numerous issues the product team wanted to address, along with several missing features that needed to be added. However, with a tight deadline and limited resources, it was clear we couldn’t 
       tackle everything, making it difficult to determine where to begin.</p>
 
-     <!--The old CMS-->
-     <h5>The old CMS</h5>
-     <p>After auditing the old CMS website, it quickly became evident why users struggled with it. The UI was outdated. There are multiple sections displaying the same content causing confusion. 
-      The navigation was unclear, making it difficult for users to grasp the nesting concepts and how they related to different Lotic platforms. Additionally, the system lacked flexibility, forcing users 
-      to go through unnecessary steps to rearrange content.</p>
-      <img src="image/CMS_oldcms.png" alt="Image">
-      <figcaption>Old CMS</figcaption>
+       <!--The old CMS-->
+       <h5>The old CMS</h5>
+       <p>After auditing the old CMS website, it quickly became evident why users struggled with it. The UI was outdated. There are multiple sections displaying the same content causing confusion. 
+       The navigation was unclear, making it difficult for users to grasp the nesting concepts and how they related to different Lotic platforms. Additionally, the system lacked flexibility, forcing users 
+       to go through unnecessary steps to rearrange content.</p>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="full-width-figure">
+        <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+          <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+            <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+          </a>-->
+          <figcaption>
+            Old CMS
+          </figcaption>
+        </figure>
 
-      <!--Kickoff meeting-->
-      <h5>Kickoff meeting to get all stakeholders aligned</h5>
-      <p>Given the numerous requests from different teams with unclear requirements, I organized a project kickoff meeting with all major stakeholders. The goal was to align everyone and clarify the vague and even 
+       <!--Kickoff meeting-->
+       <h5>Kickoff meeting to get all stakeholders aligned</h5>
+       <p>Given the numerous requests from different teams with unclear requirements, I organized a project kickoff meeting with all major stakeholders. The goal was to align everyone and clarify the vague and even 
         conflicting requirements. The meeting was very successful: we resolved conflicting requests and clarified others. Later project kickoff meetings became a standard practice in Lotic's product development process.</p>
-        <figure
-        class="block-color-gray_background callout"
-        style="white-space: normal; display: flex"
-        id="bda7e2ef-8886-426a-8812-25abafe73f2e"
-      >
-        <div style="font-size: 1.5em"><span class="icon">😐</span></div>
-        <div style="width: 100%">
-          <p id="0b7814b4-f8f7-47e0-849d-70d350b6a9c8" class="">
-            One example of the conflicting requests: Product team wanted to
-            remove ID of a content post, Content team wanted the ability to
-            edit ID and Data Science team insisted on retaining
-            system-generated IDs.
-          </p>
-        </div>
-      </figure>
-      <figure
-      class="block-color-gray_background callout"
-      style="white-space: normal; display: flex"
-      id="cd13b83d-497f-4859-ada1-ceac69605289"
-    >
-      <div style="font-size: 1.5em"><span class="icon">😟</span></div>
-      <div style="width: 100%">
-        <p id="618649c5-e819-4d43-a88c-6f8a482073db" class="">
-          Another example of conflicting requests: The content team wanted
-          to continue adding images via external links, while the product
-          team preferred to avoid external links due to potential
-          unpredictable behavior in the backend.
-        </p>
-      </div>
-    </figure>
-    <p id="25f1eb9d-da2b-4f57-8cb4-268f74b0dafc" class=""></p>
 
-    <h5>
+        <!--callout box-->
+        <div class="callout">
+          <span class="emoji">😕</span>
+          <p>One example of the conflicting requests: Product team wanted to remove ID of a content post, Content team wanted the ability to edit ID, and Data Science team insisted on retaining system-generated IDs.</p>
+        </div>
+
+        <div class="callout">
+          <span class="emoji">😕</span>
+          <p>Another example of conflicting requests: The content team wanted
+            to continue adding images via external links, while the product
+            team preferred to avoid external links due to potential
+            unpredictable behavior in the backend.</p>
+        </div>
+        
+     <!--individual interviews-->   
+     <h5>
       Dive deeper in each individual interviews
-    </h5>
-    <p id="a502aad4-c2de-4f8a-9c92-573220a27c40" class="">
-      Following the kickoff meeting, I conducted a series of individual
+     </h5>
+     <p>Following the kickoff meeting, I conducted a series of individual
       interviews with each stakeholder and CMS users, including the content
       and data science teams. These interviews helped me understand the
       rationale behind each request and allowed me to further refine the
       project requirements.
-    </p>
-    <p id="165d3dd3-dffe-41e0-9b31-2893848f8760" class=""></p>
-    <figure
-      class="block-color-gray_background callout"
-      style="white-space: normal; display: flex"
-      id="f1e6a085-387a-46f3-8c1e-20a70def7f9d"
-    >
-      <div style="font-size: 1.5em"><span class="icon">🤔</span></div>
-      <div style="width: 100%">
-        <p id="bb508922-9025-476d-921c-20206ccab64b" class="">
-          User request: <br />&quot;Add more flexibility for users to create
-          content within a nested structure.&quot;<br />
-        </p>
-      </div>
-    </figure>
-    <figure
-      class="block-color-orange_background callout"
-      style="white-space: normal; display: flex"
-      id="6341ded3-b018-4366-aea0-8d64406fe312"
-    >
-      <div style="font-size: 1.5em"><span class="icon">☝🏻</span></div>
-      <div style="width: 100%">
-        <p id="3747794e-53af-4695-852c-f7452430894c" class="">
-          Rationale behind:<br />&quot;When creating content, users
-          typically start by creating packages and sequences (higher-level
-          content) before filling in or reusing existing individual posts
-          (lower-level content). However, the current CMS only allows users
-          to edit in the opposite order.&quot;<br />
-        </p>
-      </div>
-    </figure>
+     </p>
+     <!--user request callout 1-->
+     <div class="callout ">
+      <span class="emoji">🤔</span>
+      <p>User request:<br>
+        "Add more flexibility for users to create content within a nested structure."</p>
+    </div>
+    <div class="callout callout-orange">
+      <span class="emoji">☝🏻</span>
+      <p>Rationale behind:<br>
+        "When creating content, users typically start by creating packages and sequences (higher-level content) 
+        before filling in or reusing existing individual posts (lower-level content). However, the current CMS only 
+        allows users to edit in the opposite order."</p>
+    </div>
     <p id="3f9c482a-5b19-4be3-acc8-f9aed295088f" class=""></p>
-    <figure
-      class="block-color-gray_background callout"
-      style="white-space: normal; display: flex"
-      id="1216dd7e-d000-4ba8-bbf5-b00b89034a44"
-    >
-      <div style="font-size: 1.5em"><span class="icon">🤔</span></div>
-      <div style="width: 100%">
-        <p id="5d996ada-e79a-4ae2-8330-8ff51d2dfa46" class="">
-          User request: <br />&quot;Allow users to edit the ID in the
-          CMS.&quot;<br />
-        </p>
-      </div>
-    </figure>
-    <figure
-      class="block-color-orange_background callout"
-      style="white-space: normal; display: flex"
-      id="5da4cc74-8d5a-440d-81a3-226fb6e91240"
-    >
-      <div style="font-size: 1.5em"><span class="icon">☝🏻</span></div>
-      <div style="width: 100%">
-        <p id="1f685702-210c-419d-80d8-9a36af1cdfda" class="">
-          Rationale behind:<br />&quot;Before entering anything into the
-          CMS, I prepare everything in a spreadsheet where all items are
-          created and organized. However, since the CMS generates IDs
-          automatically, I have to manually update the IDs in the
-          spreadsheet, which is time-consuming.&quot; — The user isn&#x27;t
-          actually asking to edit the ID; instead, they want to ensure both
-          systems are aligned with the same numbers.<br />
-        </p>
-      </div>
-    </figure>
-    <p id="d1529754-f2e7-4782-b439-f036083ebe61" class=""></p>
-    <figure
-      class="block-color-gray_background callout"
-      style="white-space: normal; display: flex"
-      id="26ca07b0-40ea-417a-9280-cfaf7d9dd3f6"
-    >
-      <div style="font-size: 1.5em"><span class="icon">🤔</span></div>
-      <div style="width: 100%">
-        <p id="612ec891-fbaa-4a73-a96e-8bb2d6bdc3df" class="">
-          User request:<br />“Allow users to open multiple pages at the same
-          time.”<br />
-        </p>
-      </div>
-    </figure>
-    <figure
-      class="block-color-orange_background callout"
-      style="white-space: normal; display: flex"
-      id="c9f83ced-22b4-475b-b879-97a1f39e66f2"
-    >
-      <div style="font-size: 1.5em"><span class="icon">☝🏻</span></div>
-      <div style="width: 100%">
-        <p id="fa5ebbac-d380-4cd3-a175-6e7c764c7507" class="">
-          Rationale behind:<br />“I want to open each page entirely but be
-          able to quick navigate through related pages.” — The user actually
-          is asking to navigate through pages more easily and flexibly.<br />
-        </p>
-      </div>
-    </figure>
 
-    <h5>Nested data structure in the backend</h5>
-    <p>One of the key challenges in this project was designing a system that could support the complex data structure 
+    <!--user request callout2-->
+    <div class="callout ">
+      <span class="emoji">🤔</span>
+      <p>User request:<br>
+        "Allow users to edit the ID in the CMS."</p>
+    </div>
+    <div class="callout callout-orange">
+      <span class="emoji">☝🏻</span>
+      <p>Rationale behind:<br>
+        "Before entering anything into the CMS, I prepare everything in a spreadsheet where all items are 
+        created and organized. However, since the CMS generates IDs automatically, I have to manually update 
+        the IDs in the spreadsheet, which is time-consuming." — The user isn't actually asking to edit the ID; 
+        instead, they want to ensure both systems are aligned with the same numbers.</p>
+    </div>
+    <p id="3f9c482a-5b19-4be3-acc8-f9aed295088f" class=""></p>
+
+
+     <!--user request callout3-->
+     <div class="callout ">
+      <span class="emoji">🤔</span>
+      <p>User request:<br>
+        “Allow users to open multiple pages at the same time.”</p>
+    </div>
+    <div class="callout callout-orange">
+      <span class="emoji">☝🏻</span>
+      <p>Rationale behind:<br>
+        “I want to open each page entirely but be able to quick navigate through related pages.” — The user actually is 
+        asking to navigate through pages more easily and flexibly.</p>
+    </div>
+     
+     <!--nested data structure-->
+     <h5>Nested data structure in the backend</h5>
+     <p>One of the key challenges in this project was designing a system that could support the complex data structure 
       in the backend. Since Lotic CMS serves as the platform for content deployment across all other Lotic platforms, it needed to align with how the data is organized.</p>
-    <p>Through discussions with the data science team, I learned that the data is structured into three hierarchies: Sequence > Package > Post.</p>
-    <figure
-          class="block-color-gray_background callout"
-          style="white-space: normal; display: flex"
-          id="ae10437f-8e42-4ab5-b029-eb310fd97b25"
-        >
-          <div style="font-size: 1.5em"><span class="icon">📖</span></div>
-          <div style="width: 100%">
-            <ul id="22e9f996-c87e-4d38-9133-5f33a9396437" class="bulleted-list">
-              <li style="list-style-type: disc">
-                a Post represents the individual content consumed by the end
-                user,
-              </li>
-            </ul>
-            <ul id="2a530581-22ed-4042-8bcb-9e2b888021d5" class="bulleted-list">
-              <li style="list-style-type: disc">
-                a Package is a collection of Posts for a single day,
-              </li>
-            </ul>
-            <ul id="9f402e28-0145-4989-b7a5-aa035649a7d2" class="bulleted-list">
-              <li style="list-style-type: disc">
-                a Sequence is the assignment of content across different dates
-                to the same user.
-              </li>
-            </ul>
-          </div>
-        </figure>
+     <p>Through discussions with the data science team, I learned that the data is structured into three hierarchies: Sequence > Package > Post.</p>
+     <div class="callout ">
+      <span class="emoji">📖</span>
+      <p> - a Post represents the individual content consumed by the end user,<br>
+         - a Package is a collection of Posts for a single day,<br>
+         - a Sequence is the assignment of content across different dates to the same user.</p>
+      </div>
         <p>One major issue with the old CMS was its lack of intuitiveness in showing how users 
           create content across these different hierarchies which ultimately hindered a streamlined user experience.</p>
 
-    <!--Ideation-->
-    <h5>Ideation</h5>
-    <p>At the same time, I want to take a step back and ask a more fundamental question first:</p>
-    <blockquote id="c60e84b0-976d-432d-8d61-eae816c39328" class="">
-      <em
-        >“What are the daily tasks users engage in that have the greatest
-        impact on their overall experience?”</em
-      >
-    </blockquote>
-    <p>In order to further explore this question, I listed some user stories below based on the user interviews:</p>
-    <figure
-          class="block-color-purple_background callout"
-          style="white-space: normal; display: flex"
-          id="b4761a68-c7f2-45d8-b4bb-8402cd618383"
-        >
-          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
-          <div style="width: 100%">
-            <p id="92af0a64-2691-4fa9-a743-aee15b1b4031" class="">As a user</p>
-            <ul id="fab35178-e600-4794-815c-8eaddab929de" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to view last changes made, last context, who &amp; when
-                did what on dashboard
-              </li>
-            </ul>
-            <ul id="28de59c1-a0e5-4945-adcc-9aeb57493c01" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to view limitations/usage on data storage
-              </li>
-            </ul>
-            <ul id="d2977d25-a974-4f87-ab86-c9043942b22c" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want like to check warnings on unpublished stuff on Dashboard
-              </li>
-            </ul>
-            <ul id="c4e9bac6-c3fa-4311-a938-be4b026129f3" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to create a context page
-              </li>
-            </ul>
-            <ul id="62838cc0-fef8-4e9a-b455-c1ca0234d010" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to edit text for context
-              </li>
-            </ul>
-            <ul id="637fe479-d9f8-4de6-9f6b-0f33abff98df" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to insert image into text for context
-              </li>
-            </ul>
-            <ul id="5a3bca4a-c59b-46c2-be72-6cdd757684c4" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to check the text formatting, alignment, text weight and
-                text color
-              </li>
-            </ul>
-            <ul id="56e9845b-30ac-45c6-9d6f-cca4983dfdeb" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to preview the content without publishing
-              </li>
-            </ul>
-            <ul id="553e6ea6-830f-4cdb-9338-3964399727ba" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to easily add media asset (video or audio) into context
-                page
-              </li>
-            </ul>
-            <ul id="353ddb01-8fac-47fa-9601-ff86a388e71a" class="bulleted-list">
-              <li style="list-style-type: disc">I want to edit the id</li>
-            </ul>
-            <ul id="3831d3b3-88b3-475f-ab83-7442fa4bc6be" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to sort the id in alphabetic/numeric order
-              </li>
-            </ul>
-            <ul id="7ba338b6-8a84-4a7c-93f6-da527e362591" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to check the draft that has not been published and
-                assigned
-              </li>
-            </ul>
-            <ul id="d7d3265a-21d1-4f19-8594-0316dbbb8bea" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to open different context pages at the same time and
-                navigate easily through them
-              </li>
-            </ul>
-            <ul id="3c9d1acf-c1b0-4750-8d40-b2a95347215f" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to replace a video file without having to delete it
-              </li>
-            </ul>
-            <ul id="a5f7aa14-588e-4812-bfa1-e4933a529059" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to have a read-along feature for text
-              </li>
-            </ul>
-            <ul id="9ad5e380-d80a-4afe-b07b-674191eb716e" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to easily check whether a page is a draft or not
-              </li>
-            </ul>
-            <ul id="da1934a9-a46e-4385-a308-c1cb5b99a94c" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to easily tell the linked packages and be able to click
-                it
-              </li>
-            </ul>
-            <ul id="21a84bc6-31d0-4a0f-800f-ba00fd3ada1e" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to check how the content looks like on mobile
-              </li>
-            </ul>
-            <ul id="18590009-55b6-45a4-8d7c-e140dd477030" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to see context, wind down, learn in one place and put
-                under different categories
-              </li>
-            </ul>
-            <ul id="e6bfb57f-9e72-4fd3-a35a-5578f1e59984" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to choose different product UI to view the content layout
-              </li>
-            </ul>
-            <ul id="c2ed80d3-8069-4fee-889b-d867235e84fa" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to edit text and image in an easy way
-              </li>
-            </ul>
-            <ul id="7cc709f1-b90d-4099-bdc5-d9dc1d010100" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to link multiple pages to create a context post
-              </li>
-            </ul>
-            <ul id="3b30ade9-43a5-4253-8b75-cda3d80bb150" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to have more entity types
-              </li>
-            </ul>
-            <ul id="4da47f98-996e-49e8-b0bb-11a7426bbf58" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to also upload subtitle files for our videos. Similar to
-                Youtube, how it uses .srt files.
-              </li>
-            </ul>
-            <ul id="f0fcaa87-7977-4c6d-950d-90ad5008e49e" class="bulleted-list">
-              <li style="list-style-type: disc">
-                I want to upload media asset from local drive
-              </li>
-            </ul>
-            <ul id="5bdbca01-58a8-409c-8dc5-5dfd50caa2fe" class="bulleted-list">
-              <li style="list-style-type: disc">…</li>
-            </ul>
-          </div>
-        </figure>
+     <!--Ideation-->
+     <h5>Ideation</h5>
+     <p>At the same time, I want to take a step back and ask a more fundamental question first:</p>
+     <blockquote class="">
+      <em>“What are the daily tasks users engage in that have the greatest
+        impact on their overall experience?”</em>
+     </blockquote>
+     <p>In order to further explore this question, I listed some user stories below based on the user interviews:</p>
+     <!--user story-->
+     <div class="callout callout-pink">
+      <span class="emoji">💡</span>
+      <p> As a user<br>
+
+        - I want to view last changes made, last context, who & when did what on dashboard<br>
+        - I want to view limitations/usage on data storage<br>
+        - I want like to check warnings on unpublished stuff on Dashboard<br>
+        - I want to create a context page<br>
+        - I want to edit text for context<br>
+        - I want to insert image into text for context<br>
+        - I want to check the text formatting, alignment, text weight and text color<br>
+        - I want to preview the content without publishing<br>
+        - I want to easily add media asset (video or audio) into context page<br>
+        - I want to edit the id<br>
+        - I want to sort the id in alphabetic/numeric order<br>
+        - I want to check the draft that has not been published and assigned<br>
+        - I want to open different context pages at the same time and navigate easily through them<br>
+        - I want to replace a video file without having to delete it<br>
+        - I want to have a read-along feature for text<br>
+        - I want to easily check whether a page is a draft or not<br>
+        - I want to easily tell the linked packages and be able to click it<br>
+        - I want to check how the content looks like on mobile<br>
+        - I want to see context, wind down, learn in one place and put under different categories<br>
+        - I want to choose different product UI to view the content layout<br>
+        - I want to edit text and image in an easy way<br>
+        - I want to link multiple pages to create a context post<br>
+        - I want to have more entity types<br>
+        - I want to also upload subtitle files for our videos. Similar to Youtube, how it uses .srt files<br>
+        - I want to upload media asset from local drive<br>
+        - …</p>
+      </div>
+
+        <!--Competitor analysis-->
         <h5>Competitor Analysis</h5>
         <p>I conducted a competitor analysis on the leading CMS products in the market, including Web CMS, WordPress, HubSpot CMS Hub, 
           WiX, Ghost, Strapi, and Hygraph. My research focused on the following key aspects:</p>
-        <p>- Core features and functionality<br>
-          - Interface design<br>
-          - Integration between the CMS and various platforms</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;- Core features and functionality<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;- Interface design<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;- Integration between the CMS and various platforms</p>
         <p>Throughout the research, I paid particular attention to how these platforms structure their interfaces to give user a streamlined experience, 
           like allowing users to easily create, manage, and deploy content. Here are some insights I gained from the competitor analysis:</p>
-        <p>- Most of the platforms only support a single layer of content, meaning they do not accommodate a nested structure. As a result, they offer little guidance on how to manage the hierarchical data.<br>
-          - They addressed the flexibility challenge by introducing ‘Blocks’—a versatile editing unit that supports multiple media types.<br>
-          - Some features like the live content preview function will facilitate the content creation and deployment speed.</p>
-        <img src="image/CMS_competitor.png" alt="Image">
-        <figcaption>Some competitors</figcaption>
-
-        <h5>Information Architecture</h5>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;- Most of the platforms only support a single layer of content, meaning they do not accommodate a nested structure. As a result, they offer little guidance on how to manage the hierarchical data.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;- They addressed the flexibility challenge by introducing ‘Blocks’—a versatile editing unit that supports multiple media types.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;- Some features like the live content preview function will facilitate the content creation and deployment speed.</p>
+        
+        <!--Competitors Image-->      
+        <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="full-width-figure">
+         <img src="image/CMS_competitor.png" alt="Competitor Image"/>
+        <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+          <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+        </a>-->
+        <figcaption>
+          Some competitors
+        </figcaption>
+      </figure>
+          
+          
+      <!--Information Architecture-->   
+        <h5>Information Architecture:</h5>
         <h5>Pain points</h5>
         <p>By gathering all the insights from research and interviews, I had a brainstorming meeting with the product manager to prioritize the key pain points. Here are the top 3 pain points that we agreed on:</p>
-        <figure
-        class="block-color-gray_background callout"
-        style="white-space: normal; display: flex"
-        id="bbe6d41d-18f5-4aec-8e85-62413e8d1010"
-      >
-        <div style="font-size: 1.5em"><span class="icon">🤜🏻</span></div>
-        <div style="width: 100%">
-          <ul id="06d8f422-c99e-4576-b525-69ad696e583b" class="bulleted-list">
-            <li style="list-style-type: disc">
-              hierarchy of data is confusing and it isn’t reflected clearly in
-              CMS.<br />e.g. flat structure vs content in different levels
-              (Sequence &gt; Package &gt; Post)<br />
-            </li>
-          </ul>
-          <ul id="ac32dd4d-87f3-4fcf-aa50-dc3be3625abf" class="bulleted-list">
-            <li style="list-style-type: disc">
-              The current content creation flow only supports one direction in
-              the data hierarchy: Post → Package → Sequence, whereas the
-              content team prefers the flow to follow Sequence → Package →
-              Post which is not supported.
-            </li>
-          </ul>
-          <ul id="a317b4f6-7bb3-4e00-b2fd-dca5c748e6f7" class="bulleted-list">
-            <li style="list-style-type: disc">
-              lack flexibility in editing the content.
-            </li>
-          </ul>
+        <div class="callout ">
+          <span class="emoji">🤜🏻</span>
+          <p>- hierarchy of data is confusing and it isn’t reflected clearly in CMS.<br>
+            e.g. flat structure vs content in different levels (Sequence > Package > Post)<br>
+            - The current content creation flow only supports one direction in the data hierarchy: Post → Package → Sequence, whereas the content team prefers the flow to follow Sequence → Package → Post which is not supported.<br>
+            - lack flexibility in editing the content.</p>
         </div>
-      </figure>
-
+        
+       <!--User flow & site map-->   
       <h5>User flow and site map</h5>
       <p>I analyzed the existing user flow, which helped me identify key pain points and inefficiencies in the content management process. 
         It also revealed why users were limited to creating content in only one direction (Post → Package → Sequence). I then redesigned the flow to streamline the process, 
         making content creation, management, and deployment more intuitive and efficient while accounting for the complex nested structure. This new user flow supports bi-direction 
         creation and has reduced steps to create the content in the nested structure.</p>
       <p>Here is a comparison between old and new user flow of how user create content in nested structure:</p>
-      <img src="image/CMS_userflow.png" alt="Image">
-      <p>At the same time, to improve navigation and content organization, I also analyzed the existing site map, identifying areas of complexity and redundancy. Here is a comparison between the old and new site map:</p>
-      <img src="image/CMS_oldsitemap.png" alt="Image">
-      <img src="image/CMS_newsitemap.png" alt="Image">
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="full-width-figure">
+        <img src="image/CMS_userflow.png" alt="User Flow Image"/>
+       <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+         <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+       </a>-->
+       <figcaption>
+         Old vs new user flow
+       </figcaption>
+     </figure>
 
+      <p>At the same time, to improve navigation and content organization, I also analyzed the existing site map, identifying areas of complexity and redundancy. Here is a comparison between the old and new site map:</p>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="full-width-figure">
+        <img src="image/CMS_oldsitemap.png" alt="Old site map Image"/>
+       <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+         <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+       </a>-->
+       <figcaption>
+         Old site map
+       </figcaption>
+     </figure>
+
+     <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="full-width-figure">
+      <img src="image/CMS_newsitemap.png" alt="New site map Image"/>
+     <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+       <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+     </a>-->
+     <figcaption>
+       New site map
+     </figcaption>
+   </figure>
+      
+      <!--Wireframe and user testing-->  
       <h5>Wireframe and user testing</h5>
       <p>Creating a wireframe without focusing on detailed UI design allows me to quickly develop the layout, prioritizing functionality over aesthetics. Thus I was able to conduct moderated user testing on its prototype and gather user feedback early in the process.</p>
-      <img src="image/CMS_wireframe.png" alt="Image">
-      <figcaption>Wireframe</figcaption>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="full-width-figure">
+        <img src="image/CMS_wireframe.png" alt="CMS wireframe Image"/>
+       <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+         <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+       </a>-->
+       <figcaption>
+         Wireframe
+       </figcaption>
+     </figure>
+      
       <p>One of the key pieces of feedback I received from the user testing was that users greatly appreciated the flexibility to create content in either direction—whether starting from a lower level and building up
          (Post → Package → Sequence) or beginning at a higher level and working down (Sequence → Package → Post). This flexibility allowed users to tailor the content creation process to their specific needs and workflows, making the system more intuitive and efficient for diverse use cases.</p>
 
+      <!--Visual Design-->  
       <h5>Visual designs</h5>
       <p>With the new design system I created (details provided below), I was able to proceed with designing the high-fidelity mockups.</p>
       <p>The new CMS is organized into the following sections:</p>
       <p>Part 1 - Dashboard: A new section where users can monitor incomplete drafts awaiting publication, track space usage, access tutorials, and view recent activities. I plan to discuss the design process for this page in a separate case study.</p>
-      <img src="image/CMS_dashboard.png" alt="Image">
-      <figcaption>Dashboard</figcaption>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+       <a href="image/CMS_dashboard.png" target="_blank" rel="noopener noreferrer">
+        <img src="image/CMS_dashboard.png" alt="CMS Dashboard Page"/>
+       </a>
+       <figcaption>
+          
+       </figcaption>
+     </figure>
+      
 
       <p>Part 2 - Content Creation Section: This area encompasses three content hierarchies—Sequence, Package, and Post (referred to as Activity in the new CMS).</p>
-      <p>In designing this section, I focused on providing users with greater flexibility to create content across different hierarchies.</p>
+      <p>Based on the work during Information Architecture Phase, I found that <b>creating content across the 3 hierarchy of data is the daily task that users engage in most and 
+        has the greatest impact on their overall experience</b>. In designing this section, I focused on providing users with greater flexibility to create content across different hierarchies.</p>
       <p>a, A unified starting point</p>
       <p>Users can now begin content creation from a single location—the "Create" button—rather than navigating to different sections. In the new CMS, all content, regardless of its level, is treated as a singular unit called a 'Page.' It aims to simplify the user experience and reduce the time required to create various types of content.</p>
-      <img src="image/CMS_create.png" alt="Image">
-      <figcaption>Create Page</figcaption>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <a href="image/CMS_create.png" target="_blank" rel="noopener noreferrer">
+         <img src="image/CMS_create.png" alt="CMS Create Page"/>
+        </a>
+        <figcaption>
+           
+        </figcaption>
+      </figure>
 
       <p>b, Support content creation in both directions</p>
       <p>In the old CMS, users had to prepare all Activity-level content before they could aggregate it into Package and Sequence levels. The new CMS supports both directions, allowing users to start by setting up the Sequence page first, then create or select an existing Package, and finally create or choose the Activity/Post content. It is better aligned with user behavior, as revealed through user interviews.</p>
-      <img src="image/CMS_Sequencehierarchy.png" alt="Image">
-      <figcaption>User can create a Package Page directly inside the Sequence Page</figcaption>
-      <img src="image/CMS_Packagehierarchy.png" alt="Image">
-      <figcaption>User can create a Activity/Post Page directly inside the Package Page</figcaption>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <a href="image/CMS_Sequencehierarchy.png" target="_blank" rel="noopener noreferrer">
+         <img src="image/CMS_Sequencehierarchy.png" alt="CMS Sequence Page"/>
+        </a>
+        <figcaption>
+           
+        </figcaption>
+      </figure>
+
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <a href="image/CMS_Packagehierarchy.png" target="_blank" rel="noopener noreferrer">
+         <img src="image/CMS_Packagehierarchy.png" alt="CMS Package Page"/>
+        </a>
+        <figcaption>
+           
+        </figcaption>
+      </figure>
+    
 
       <p>c, Clear visual representation of data Hierarchies</p>
       <p>The new CMS features multiple areas where the data hierarchy is visually represented, allowing users to easily understand the flow of created content. This provides a clear overview, helping users grasp the bigger picture without getting lost in the details.</p>
-      <img src="image/CMS_navigation.png" alt="Image">
-      <figcaption>The navigation bar shows a hierarchy of data</figcaption>
-      <img src="image/CMS_linkingsection.png" alt="Image">
-      <figcaption>The section inside the content page which shows the nested structure</figcaption>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <a href="image/CMS_navigation.png" target="_blank" rel="noopener noreferrer">
+         <img src="image/CMS_navigation.png" alt="CMS Navigation Image"/>
+        </a>
+        <figcaption>
+           
+        </figcaption>
+      </figure>
+
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <a href="image/CMS_linkingsection.png" target="_blank" rel="noopener noreferrer">
+         <img src="image/CMS_linkingsection.png" alt="CMS Linking Section Image"/>
+        </a>
+        <figcaption>
+           
+        </figcaption>
+      </figure>
+      
 
       <p>d, Introduce ‘Block’ as the basic editing tool</p>
       <p>In the new CMS, I introduced ‘Block’ which enables users to add and rearrange various types of media, such as text, images, and videos, with ease and flexibility.</p>
-      <img src="image/CMS_block.png" alt="Image">
-      <figcaption>Block varies depending on the type of the page</figcaption>
+      
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <a href="image/CMS_block.png" target="_blank" rel="noopener noreferrer">
+         <img src="image/CMS_block.png" alt="CMS Block Image"/>
+        </a>
+        <figcaption>
+           
+        </figcaption>
+      </figure>
 
       <p>Part 3 - Other sections to support requested features: Library, Tag, etc.</p>
-      <img src="image/CMS_tag.png" alt="Image">
-      <figcaption>Tag</figcaption>
-
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <a href="image/CMS_tag.png" target="_blank" rel="noopener noreferrer">
+         <img src="image/CMS_tag.png" alt="CMS Tag Image"/>
+        </a>
+        <figcaption>
+           
+        </figcaption>
+      </figure>
+      
+      <!--Design Library--> 
       <h5>Design library</h5>
       <p>One of the key requests was to design a design system for the CMS website. After discussing with the engineering team, we decided to base the system on the Material UI library (MUI), customizing it to meet the specific needs of the CMS. The main challenge was ensuring that the CMS design system remained consistent with Lotic’s existing design system.</p>
       <p>To ensure consistency across design systems while meeting the needs of the CMS, I took the following steps:<br>
 
-        - Foundations: I adjusted typography, color schemes, spacing, and other elements of MUI to align with Lotic’s style guide.<br>
-        - Custom Components: I developed customized pre-built components for the CMS, building on the foundation of MUI to suit its specific requirements.</p>
-        <img src="image/CMS_designsystem.png" alt="Image">
-        <figcaption>Design library</figcaption>
-
+        &nbsp;&nbsp;&nbsp;&nbsp;- Foundations: I adjusted typography, color schemes, spacing, and other elements of MUI to align with Lotic’s style guide.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Custom Components: I developed customized pre-built components for the CMS, building on the foundation of MUI to suit its specific requirements.</p>
+        <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+          <a href="image/CMS_designsystem.png" target="_blank" rel="noopener noreferrer">
+           <img src="image/CMS_designsystem.png" alt="CMS Design System Image"/>
+          </a>
+          <figcaption>
+             
+          </figcaption>
+        </figure>
+        
+      <!--Result--> 
       <h5>Result</h5>
       <p>After the website went live, the following metrics were achieved:<br>
 
-        - Increased User Satisfaction: User surveys indicated higher satisfaction with the new CMS.<br>
-        - Improved Content Deployment Speed: The new CMS demonstrated a 40% increase in content deployment speed on average.</p>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Increased User Satisfaction: User surveys indicated higher satisfaction with the new CMS.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Improved Content Deployment Speed: The new CMS demonstrated a 40% increase in content deployment speed on average.</p>
       
       <h5>Learning</h5>
       <p>1, Tackling ambiguity</p>
@@ -572,54 +483,27 @@
 
       <h5>Parting words</h5>
       <p>While working on this project, I really enjoyed collaborating within a cross-functional team, where diverse expertise and perspectives came together to create a great product. Here are some words from my team:</p>
-      <div id="332ea7b8-ec26-45eb-9213-fe8d03b6774b" class="column-list">
-        <div
-          id="8f691667-3ff0-4a49-80b2-950faa1c947b"
-          style="width: 33.333333333333336%"
-          class="column"
-        >
-          <blockquote
-            id="5cb966e6-89ec-495b-bce6-79cccd2b9ab7"
-            class="block-color-pink_background"
-          >
-            I’m very impressed with how detailed, organized and well thought
-            out these are. I like the way that you did great research and the
-            design is well supported by the research you’ve done. Nicely done,
-            Chuchu!<br /><br />from my design manager Sara<br />
-          </blockquote>
-        </div>
-        <div
-          id="2117761f-23dc-4993-aae4-2ba780b25a20"
-          style="width: 33.33333333333333%"
-          class="column"
-        >
-          <blockquote
-            id="ce6341f6-783b-4936-8736-e68bcd6e02a0"
-            class="block-color-purple_background"
-          >
-            Chuchu is so good at taking so little information and put it into
-            a very useful work.<br /><br />from Mike, Chief Architecture
-            Officer &amp; Director of Engineering<br />
-          </blockquote>
-          <p id="0b2eb55b-a745-4f95-880c-ae9a67d68564" class=""></p>
-        </div>
-        <div
-          id="f1416d41-c1a2-4540-8691-85c71bbcb56f"
-          style="width: 33.33333333333334%"
-          class="column"
-        >
-          <blockquote
-            id="8cbe350b-b6f8-4946-b1e6-a995f2889626"
-            class="block-color-blue_background"
-          >
-            Chuchu is the most organized person I’ve met at work.
-            <br /><br />from Alina, Director of content<br />
-          </blockquote>
+      <blockquote class="endquote">
+        <em>I’m very impressed with how detailed, organized and well thought
+          out these are. I like the way that you did great research and the
+          design is well supported by the research you’ve done. Nicely done,
+          Chuchu!<br /><br />from my design manager Sara<br /></em>
+       </blockquote>
+
+       <blockquote class="endquote">
+        <em>Chuchu is so good at taking so little information and put it into
+          a very useful work.<br /><br />from Mike, Chief Architecture
+          Officer &amp; Director of Engineering<br /></em>
+       </blockquote>
+
+       <blockquote class="endquote">
+        <em>Chuchu is the most organized person I’ve met at work.
+            <br /><br />from Alina, Director of content<br /></em>
+       </blockquote>
+      
 
       <p>Thank you for taking the time to read this case study. I’m happy to answer any questions or discuss further. Feel free to contact me via email or LinkedIn.</p>
-
-
-    </section>
+    </div>
 
     <section class="BacktoTop">
      <a class="BtT" href="project-cms.html"><h6>Back to Top</h6></a>

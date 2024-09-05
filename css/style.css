@@ -50,25 +50,6 @@ section{
   padding: 12rem 5%;
 }
 
-/*temporary location: block style*/
-figure {
-  margin: 1.25em 0;
-  page-break-inside: avoid;
-}
-
-figcaption {
-  opacity: 0.5;
-  font-size: 85%;
-  margin-top: 0.5em;
-}
-
-blockquote {
-  font-size: 1.25em;
-  margin: 1em 0;
-  padding-left: 1em;
-  border-left: 3px solid rgb(55, 53, 47);
-}
-
 
 /*header*/
 .header{
@@ -8924,6 +8905,7 @@ font-size: 4.5rem;
 /*General Case Study - desktop*/
 /*I'm going to use this as a general template for all case study*/
   
+/*Title Section - desktop*/
   .TitleSection{
     display: flex;
     flex-direction: column;
@@ -8972,9 +8954,160 @@ width: 80%;
   display: none;
 }
 
+/*Process Section - desktop*/
+.ProcessSection{
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  padding-left: 25%;
+  padding-right: 25%;
+  position: relative;
+}
+
+.ProcessSection h5{
+  padding-top: 6rem;
+  font-weight: lighter;
+}
+
+.ProcessSection p{
+  padding-top: 3rem;
+  font-weight: lighter;
+  color: #555d6d;
+  line-height: 1.8;
+}
+
+.ProcessSection .ilatic{
+  font-style: italic;
+}
+
+/*.ProcessSection img{
+  width: 100%;
+  padding-top: 3rem;
+}
+
+/*.ProcessSection .fullwidth{
+  width: calc(100% + 50%); /* Add back the 25% on both sides 
+  margin-left: -25%; /* Offset the parent's 25% padding 
+  padding-top: 3rem;
+}*/
+
+.ProcessSections .beta{
+    color: #6B61EC;
+}
+
+.ProcessSection b{
+  font-weight: 800;
+  color: #303030;
+}
+
+/*figure, figcap, block style - desktop*/
+figure {
+  margin: 1.25em 0;
+  page-break-inside: avoid;
+  padding-top: 3rem;
+}
+
+figcaption {
+  opacity: 0.5;
+  font-size: 120%;
+  margin-top: 0.5em;
+}
+
+/*full width - desktop*/
+.full-width-figure {
+  position: relative;
+  left: -50%; /* Offset parent's padding */
+  width: calc(100vw); /* Full viewport width accounting for the viewport */
+}
+
+.full-width-figure img {
+  width: 100%; /* Ensure the image takes full width of the figure */
+  display: block;
+}
+
+.full-width-figure figcaption {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/*half width - desktop*/
+.half-width-figure {
+  position: relative;
+  /*left: 30%; /* Offset parent's padding */
+  width: calc(100vw); /* Full viewport width accounting for the viewport */
+}
+
+.half-width-figure img {
+  width: 50%; /* Ensure the image takes half width of the figure */
+  display: block;
+}
+
+.half-width-figure figcaption {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+
+blockquote {
+  font-size: 1.8em;
+  margin-top: 3rem;
+  margin-left: 0;
+  margin-right: 0;
+  /*margin: 1em 0;*/
+  padding-left: 1em;
+  border-left: 3px solid rgb(55, 53, 47);
+}
+
+.endquote {
+  font-size: 1.8em;
+  margin-top: 3rem;
+  margin-left: 0;
+  margin-right: 0;
+  /*margin: 1em 0;*/
+  padding-left: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-left: 3px solid rgb(75, 75, 75);
+  background-color: #fffadf;
+  border-radius: 8px;
+  
+}
+
+ /*callout box - desktop*/
+ .callout {
+  display: flex;
+  align-items: baseline;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+/* Callout specific background color classes */
+.callout-orange {
+  background-color: #F9EDDF; /* Light orange */
+}
+
+.callout-pink {
+  background-color: #F6F3F9; /* Light pink */
+}
+
+.callout .emoji {
+  font-size: 2rem;
+  margin-right: 0.75rem;
+  line-height: 1;
+}
+
+.callout p {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  /*font-size: 1rem;*/
+}
+
+
  /*Bubble page - mobile*/
  @media (max-width: 822px){
-  /*hero mobile*/
+  /*Title Section - mobile*/
   .TitleSection{
     display: flex;
     flex-direction: column;
@@ -9013,9 +9146,46 @@ width: 80%;
     padding-right: 0%;
   }
 
- }
+  /*Process Section - mobile*/
+     .ProcessSection{
+      background-color: #ffffff;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
 
-/*Bubble page - desktop*/
+    .ProcessSection .fullwidth{
+      width: calc(100% + 10%); /* Add back the 5% on both sides */
+      margin-left: -5%; /* Offset the parent's 5% padding */
+    }
+
+    .full-width-figure {
+      position: relative;
+      left: -5.5%; /* Offset parent's padding */
+      width: calc(100vw); /* Full viewport width accounting for the viewport */
+    }
+
+    /*half width - desktop*/
+     .half-width-figure {
+      position: relative;
+      left: 5%; /* Offset parent's padding */
+      width: calc(100vw); /* Full viewport width accounting for the viewport */
+    }
+    
+    .half-width-figure img {
+      width: 80%; /* Ensure the image takes full width of the figure */
+      display: block;
+    }
+
+    .half-width-figure figcaption {
+      display: none;
+      text-align: center;
+      padding-top: 1rem;
+    }
+
+ }
+/*end of general template*/
+
+ /*Bubble page - desktop*/
   /*Bubble hero - desktop*/
 .herosection-bubble{
     display: flex;
@@ -9111,63 +9281,6 @@ width: 80%;
   width: 100%;
 }
 
-/*Bubble page case study - desktop*/
-.Bubble2CaseStudy{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  text-align: center;
-  padding-top: 10rem;
-  justify-content: center;
-  background-color: #ffffff;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.Bubble2CaseStudy .des-left{
-  display: block;
-  position: relative;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.Bubble2CaseStudy .des-right{
-  display: block;
-  position: relative;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 10%;
-}
-
-
-.Bubble2CaseStudy .des-right p{
-  padding-top: 3rem;
-}
-
-.Bubble2CaseStudy .des-right .button{
-  background-color: #6B61EC;
-  width: 22rem;
-  height: 4.2rem;
-  margin-top: 3rem;
-  margin-left: 0;
-  border-radius: 3px;
-}
-
-.Bubble2CaseStudy .des-right .button h6{
-  font-size: 1.8rem;
-  padding-top: 0.8rem;
-  text-align: center;
-  color: #ffffff;
-}
-
-.Bubble2CaseStudy .des-right .button h6:hover{
-  color: #000000;
-}
 
 /*Bubble Process - desktop*/
 .Bubble2Process{
@@ -9317,58 +9430,6 @@ width: 80%;
     margin-right: auto;
   }
 
-  /*Bubble-description- mobile*/
-  .Bubble2CaseStudy{
-    display: flex;
-    flex-direction: column-reverse;
-    position: relative;
-    text-align: center;
-    padding-top: 0rem;
-    padding-left: 0rem;
-    padding-right: 0rem;
-    justify-content: center;
-    background-color: #ffffff;
-  }
-
-  .Bubble2CaseStudy .des-left{
-    display: block;
-    position: relative;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 6rem;
-    text-align: center;
-  }
-
-  .Bubble2CaseStudy .des-left img{
-    width: 100%;
-  }
-
-  .Bubble2CaseStudy .des-right .button{
-    width: 18rem;
-    height: 3.5rem;
-    margin-top: 4.5rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .Bubble2CaseStudy .des-right .button h6{
-    font-size: 1.6rem;
-    padding-top: 0.5rem;
-    text-align: center;
-  }
-
-  .Bubble2CaseStudy .des-right{
-    display: block;
-    position: relative;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    padding-top: 0%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
 
   /*Bubble page download - mobile*/
   .Bubble2Download{
