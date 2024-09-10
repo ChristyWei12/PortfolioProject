@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172404977-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172404977-1');
+</script>
+    <meta charset="utf-8">
+    <meta name="author" content="Chuchu Wei">
+    <meta name="keywords" content="Chuchu, Wei, Portfolio, UX, Design">
+    <meta name="description" content="A website of Chuchu Wei as a UX Designer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chuchu Wei's Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display">
+  </head>
+  <body class="body">
+    <div class="container">
+      <nav class="header">
+        <div class="left">
+          <a href="index.html" class="logo">
+            <img src="image/logo/signaturelogo3.svg" alt="logoimage">
+          </a>
+      </div>
+           <!--<img class="logoimage" src="image/logo/signaturelogo.svg" alt="SignatureLogo">-->
+      <div class="right">
+        <a href="#" class="toggle"> <!-- Media Query here -->
+         <img class="menu" src="image/logo/Menuicon2.svg" alt="Menu">
+       </a>
+       <!--Nav-->
+       <ul id="navlist">
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="playground.html">Fun</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+       </ul>
+      </div>
+      </nav>
+
+      <div class="TitleSection">
+        <div class="Top">
+          <img src="image/DS_Cover2.png" alt="Design Token Screenshots">
+        </div>
+        <div class="Bottom">
+          <h3>From Inconsistency to Scalability: Building a Comprehensive Design Token System at Lotic.ai</h3>
+          <h6>Lotic Design System Case Study | 📍Product design at Lotic.ai</h6>
+        </div>
+      </div>
+
+
+     <div class="ProcessSection">
+       <!--Introduction sentence-->
+       <p>This case study explores how I built a comprehensive design token system by leveraging the newly introduced Figma Variable features to enhance its functionality and integration.</p>
+       <p class="ilatic">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information in this case study 
+        is my own and does not necessarily reflect the views of Lotic.ai.</p>
+       
+        <!--Context & Role-->
+       <h5>Context & my role</h5>
+       <p>Lotic.ai is creating an ecosystem with various products, including Talk2Me App, Lotic Delta, Lotic Labs, and Lotic CMS, each featuring its own design library. The design team consists 
+        of six designers, none of whom are dedicated solely to managing the design system. Instead, each designer plays a role in collaboratively developing and refining the design system.</p>
+       <p>As more products continued to join the Lotic ecosystem, we increasingly noticed inconsistencies within the existing design system across different products. Such issues are common, particularly 
+        in a rapidly growing startup environment, but they pose a significant challenge to the scalability of the design system and its ability to accommodate new requests, such as multi-theme support. 
+        Recognizing these inconsistencies, I proposed to the leadership team that I take the lead on a project to address and resolve these design system issues. In this project, I served as the design lead, 
+        working closely with the Chief Architecture Officer, the engineering and the product team to find and implement solutions.</p>
+       
+       
+       <!--The problem-->
+       <h5>The problem</h5>
+       <p>To understand the challenges faced by the design system, I conducted several rounds of interviews with the design, product, and engineering teams. Through these discussions, we identified the following problems:</p>
+       <p>- <b>Inconsistency</b>: The design system exhibits inconsistencies across various products, including:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Mixed use of hard-coded values (e.g., color hex codes) and Figma styles.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- UI elements that do not align with the Lotic brand.</p>
+       <p>- <b>Scalability</b>: The design system struggles to scale effectively:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- It cannot accommodate new requests, such as supporting multi-theme brands or light mode (the main app started with dark mode).<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- It struggles to integrate with new products.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- It lacks support for testing purposes.</p>
+
+       <!--Pain point-->
+       <h5>Pain point</h5>
+       <p>These issues lead to several pain points:</p>
+       <p>- <b>Design team</b>: The current design system hampers the growth of the design team and their ability to collaborate effectively.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Onboarding new designers is time-consuming, and they often face confusion when creating new components.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- The design team struggles to collaborate effectively due to the lack of a standard visual language, leading to inconsistent design outputs and inefficient workflows.</p>
+       <p>- <b>Engineer team</b>: The engineering team finds it difficult to implement components due to inconsistent styles.</p>
+       <p>- <b>Product team</b>: The product team faces challenges when creating tickets that specify requirements, due to the lack of a standardized design system.</p>
+
+        <!--Project goals-->
+        <h5>Project goals</h5>
+        <p>The primary goal of this project was to address the inconsistencies and scalability issues within the existing design system at Lotic.ai. Specifically, the objectives were to establish a unified 
+          design language across all products, streamline the integration of design tokens to support multi-theme and light mode functionalities (we started off by dark mode), and improve overall scalability to accommodate new products 
+          and future design requests. </p>
+
+        <!--Figma variables-->
+        <h5>Figma variables</h5>
+        <p>In the summer of 2023, Figma introduced a new feature called Figma Variables in Config 2023. With the release of Config 2023, Figma Variables were officially launched, allowing users to store reusable 
+          values for various design properties and prototyping actions. Initially, it supports four types of values: color, number, string, and boolean. Additionally, it offers modes to facilitate multi-theme 
+          systems. Given these capabilities, I saw an opportune moment to leverage Figma Variables to address the design system's challenges.</p>
+       
+       <!--image-->
+       <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <img src="image/DS_FigmaVariable.png" alt="Figma Variable Image"/>
+        <!--<a href="image/CMS_mapping.png" target="_blank" rel="noopener noreferrer">
+          <img src="image/CMS_mapping.png" alt="CMS Mapping Image"/>
+        </a>--hide this because this is the full-width figure which doesn't need to zoom in-->
+        <figcaption>
+           
+        </figcaption>
+      </figure>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <img src="image/DS_FigmaVariableCategory.png" alt="Figma Variable Type Image"/>
+        <!--<a href="image/CMS_mapping.png" target="_blank" rel="noopener noreferrer">
+          <img src="image/CMS_mapping.png" alt="CMS Mapping Image"/>
+        </a>--hide this because this is the full-width figure which doesn't need to zoom in-->
+        <figcaption>
+           
+        </figcaption>
+      </figure>
+
+       <!--Research-->
+       <h5>Research</h5>
+       <p>My research revealed that a well-implemented token system could address the issues we faced. To deepen my understanding, I studied 
+        established design systems from leading companies such as Salesforce, Amazon, Spotify, Intuit, Atlassian, and Bloomberg. My focus areas included:</p>
+        <div class="callout">
+          <span class="emoji">🤔</span>
+          <p>· What design tokens are and their origins.<br>
+            · The benefits of using design tokens.<br>
+            · How other companies manage their design tokens.</p>
+        </div>
+        <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="full-width-figure">
+          <img src="image/DS_Research.png" alt="Research Image"/>
+          <!--<a href="image/CMS_mapping.png" target="_blank" rel="noopener noreferrer">
+            <img src="image/CMS_mapping.png" alt="CMS Mapping Image"/>
+          </a>--hide this because this is the full-width figure which doesn't need to zoom in-->
+          <figcaption>
+            Research
+          </figcaption>
+        </figure>
+ 
+       <!--The solution-->
+       <h5>The solution</h5>
+       <p>When developing the token taxonomy, I adhered to the following principles:</p>
+       <div class="callout callout-pink">
+        <span class="emoji">🤔</span>
+        <p>- <b>Clarity</b>: Ensure that each token is clearly defined.<br>
+          - <b>Consistency</b>: Maintain uniformity across platforms.<br>
+          - <b>Scalability</b>: Design the system to be easily expandable.<br>
+          - <b>Semantic and Use Case-Oriented</b>: Use naming conventions that reflect each token’s purpose in design.</p>
+      </div>
+      <p>By applying these principles, I created a token system that is intuitive and user-friendly.</p>
+
+      
+     
+       <!--Create a intuitive token taxonomy-->
+       <h5>Create an intuitive token taxonomy</h5>
+       <p>The token system is structured into two levels: Primitive tokens and Component tokens.</p>
+       <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <img src="image/DS_TokenStructure.png" alt="Token Tructure Image"/>
+        <!--<a href="image/CMS_mapping.png" target="_blank" rel="noopener noreferrer">
+          <img src="image/CMS_mapping.png" alt="CMS Mapping Image"/>
+        </a>--hide this because this is the full-width figure which doesn't need to zoom in-->
+        <figcaption>
+        
+        </figcaption>
+      </figure>
+      <p>Given the current limitations of Figma Variables, we support the following types of tokens: color, spacing, and shape (such as corner radius).</p>
+
+
+       <!--Primitive tokens-->
+       <h5>Primitive tokens</h5>
+       <p>Primitive Tokens are the foundational elements of the token system, each assigned specific values for various properties, such as colors, spacing, or shape. 
+        For instance, tokens might be labeled as "Primary 50," "Secondary 200," or "Tertiary 500." These labels provide a clear and consistent naming convention for 
+        these values without specifying their contextual use in design. This ensures that the tokens are easily referenced and applied across different design elements.</p>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="full-width-figure">
+        <img src="image/DS_PrimitiveTokens.png" alt="Primitive Tokens"/>
+          <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+            <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+          </a>-->
+          <figcaption>
+            Primitive tokens
+          </figcaption>
+        </figure>
+
+       <!--Component tokens-->
+       <h5>Component tokens</h5>
+       <p>Component Tokens bridge the gap between primitive tokens and their practical application in design. They link the fundamental values, such as "Primary 100," to specific 
+        design functions or elements, like "color-text-primary." This approach assigns context to the primitive values, making it clear how they should be used in different design scenarios. 
+        By defining tokens in this way, the system ensures consistency and clarity in how design properties are applied across various components.</p>
+
+       <!--Color tokens-->
+       <h5>Color tokens</h5>
+       <p>In the primitive token collection, I assigned hard-coded values to names such as Primary.100: #C2CEFE. For the component tokens, I established a naming convention that clearly defines 
+        each token using the following structure: Category - Property - Item - Variant - State - Scale. This approach, ordered from the most generic to the most specific, aligns with industry 
+        standards revealed through my research.</p>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <img src="image/DS_ColorTokens.png" alt="Color Tokens"/>
+          <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+            <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+          </a>-->
+          <figcaption>
+            
+          </figcaption>
+        </figure>
+
+      <!--Shape tokens-->
+       <h5>Shape tokens</h5>
+       <p>The Shape token, especially the radius token, ensures consistency in defining the corner radius of components. In the primitive token collection, I used the T-shirt sizing method to categorize 
+        these tokens. For component tokens, the naming follows this structure: Category - Property - Item - Variant - State - Scale.</p>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <img src="image/DS_ShapeTokens.png" alt="Shape Tokens"/>
+          <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+            <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+          </a>-->
+          <figcaption>
+            
+          </figcaption>
+        </figure>
+
+      <!--Spacing tokens-->
+       <h5>Spacing tokens</h5>
+       <p>The spacing token ensures uniformity in defining the spacing both within and between components. In the primitive token collection, I adopted a scale from 1 to 24, with corresponding values ranging 
+        from 4 to 96 pixels. This approach provides a clear and consistent way to manage spacing sizes. For component tokens, the naming convention follows a structured format: Category - Property - Item - Variant - State - Scale. </p>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+        <img src="image/DS_SpacingTokens.png" alt="Spacing Tokens"/>
+          <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+            <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+          </a>-->
+          <figcaption>
+            
+          </figcaption>
+        </figure>
+
+        
+     <!--Thinking-->   
+     <h5>Thinking</h5>
+     <p>When I was structuring the tokens, an engineer asked, </p>
+     <blockquote class="">
+      <em>"Why do we need different levels of tokens? Can we just hard-code the values in component tokens?" </em>
+     </blockquote>
+     <p>This question prompted me to reflect on the rationale behind the entire token system. There are several reasons for using multiple levels of tokens. 
+      First, primitive tokens provide a consistent foundation by defining basic values like colors and spacing in a centralized manner. This consistency ensures 
+      that design elements are uniformly applied across the system; Second, component tokens build on these primitive tokens by linking them to specific design 
+      functions and contexts, such as defining how a color is used for text or backgrounds. This layered approach enhances scalability, as changes to primitive 
+      tokens automatically propagate through component tokens, simplifying updates and maintaining coherence; Lastly, separating tokens into different levels allows 
+      for greater flexibility and adaptability in design, supporting various themes and design requirements without the need for hard-coding values directly into components.</p>
+
+     <!--Workshop-->   
+     <h5>Workshop to audit the all designs</h5>
+     <p>After establishing the naming conventions for the primitive and component tokens, I organized a workshop with another designer to audit all the components in the design system. 
+      This workshop allowed us to review each component and map the tokens to their real-time application in the design. It also provided an opportunity to address and correct inconsistencies as we conducted the audit and mapping.</p>
+    <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="full-width-figure">
+        <img src="image/DS_Workshop.png" alt="Workshop"/>
+          <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+            <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+          </a>-->
+          <figcaption>
+            Workshop
+          </figcaption>
+      </figure>
+
+
+     
+     <!--How it supports the multi-theme system-->
+     <h5>How it supports the multi-theme system</h5>
+     <p>The token system also supports a multi-theme design system. With the introduction of Modes in Figma Variables, we can easily switch between different modes and themes by 
+      just dragging and dropping frames across various parent layers. When I was presenting this project to the entire company, I created a playful Barbie theme for our product, 
+      which brought a lot of laughs, especially since the Barbie movie was a summer hit.</p>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="full-width-figure">
+        <img src="image/DS_MultiTheme.png" alt="Workshop"/>
+          <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+            <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+          </a>-->
+          <figcaption>
+            Different themes
+          </figcaption>
+      </figure>     
+
+
+    <!--Tested by design and engineer team-->
+    <h5>Tested by design and engineer team</h5>
+    <p>To ensure the token system's effectiveness, both the design and engineering teams conducted thorough testing. The design team used the tokens in various design scenarios 
+      to evaluate their applicability and consistency across different components. They tested how well the tokens integrated with existing design elements and verified that the 
+      system maintained visual coherence. Simultaneously, the engineering team implemented the tokens in the codebase to assess their functionality and ease of use. They ran tests 
+      to confirm that the tokens were correctly applied and that any updates or changes were reflected accurately in the user interface. Feedback from both teams was collected to 
+      identify and address any issues, leading to refinements that enhanced the overall robustness of the token system.</p>
+
+    <!--Handoff and implementation-->
+    <h5>Handoff and implementation</h5>
+    <p>I worked closely with the engineering team to implement the token system on the backend. To support their efforts, I created a detailed design specification that serves as 
+      a definitive reference for both engineers and designers using the design tokens. This document evolves alongside the token system. I also organized a presentation for the entire 
+      engineering team, including Lotic’s overseas team in Europe, where we reviewed and discussed the system and addressed their questions.</p>
+    <p>Throughout the implementation process, I frequently assisted with technical issues and responded to engineers' inquiries. Based on their feedback, we iterated on the token system to refine and improve it.</p>
+
+        
+    <!--Presentation and team training--> 
+      <h5>Presentation and team training</h5>
+      <p>Once the token system was implemented, I introduced it to the entire company during our company-wide event known as Wed Show & Tells. The presentation was a success and generated significant interest 
+        in the design system. Additionally, I organized a series of training sessions for the design team to ensure they were well-acquainted with the new system and could effectively integrate it into their workflows.</p>
+      <figure id="db5dc7be-6f4d-4dc4-9bbd-eef388c3e32a" class="half-width-figure">
+          <img src="image/DS_Presentation.png" alt="Slack notes"/>
+            <!--<a href="image/CMS_oldcms.png" target="_blank" rel="noopener noreferrer">
+              <img src="image/CMS_oldcms.png" alt="Old CMS Image"/>
+            </a>-->
+            <figcaption>
+            
+            </figcaption>
+      </figure>     
+
+     <!--Measuring the success--> 
+     <h5>Measuring the success</h5>
+     <p>The design token system enabled the design team to maintain consistency and scalability across different platforms. It also facilitated the implementation of new requests, such as light mode and partnership branding themes, effectively supporting evolving design needs.</p>
+
+
+      
+      <!--Learning--> 
+      <h5>Learning</h5>
+      <p>Building the design token system at Lotic.ai was a challenging yet rewarding experience. I learned that creating a comprehensive token system requires not just technical knowledge but also a deep understanding of the 
+        design needs and challenges faced by various teams. The iterative process of refining tokens based on feedback from both design and engineering teams highlighted the necessity of ongoing communication and collaboration.</p>
+      <p>Another significant learning was the value of thorough documentation and training. Providing a detailed design specification and conducting training sessions helped bridge the gap between design and implementation, 
+        ensuring that the token system was used consistently and effectively across the board.</p>
+
+      <!--Summary--> 
+      <h5>Summary</h5>
+      <p>Creating a comprehensive design token system is no easy task that requires careful consideration and a balance of strategic thinking, expertise, and collaboration. The challenge intensifies when the system must cater 
+        to diverse design needs and evolving requirements. Success in this endeavor involves integrating thoughtful planning with user-centered methodologies, including interviews, research, user testing, and workshops to ensure 
+        that the system is both effective and adaptable.</p>
+      
+     
+      <h5>Parting words</h5>
+      <blockquote class="endquote">
+        <em>I had the pleasure of working with Chuchu at Lotic.ai, where she consistently demonstrated her exceptional talent as a product designer and systems thinker. Chuchu was instrumental in managing and 
+          organizing our design system, ensuring every detail was captured and documented. Her initiative in taking on tasks and responsibilities was impressive.
+          <br>
+          <br>
+          Chuchu is not only detail-oriented but also highly collaborative. She worked well with both product and engineering teams, ensuring that everyone was aligned and that her design vision was effectively 
+          translated into engineering handoff artifacts. Her craft and curiosity made her a critical asset to the team.<br /><br />From Deanna Glaze, Senior Director, UX and Design<br /></em>
+       </blockquote>
+      
+
+      <p>Thank you for taking the time to read this case study. I’m happy to answer any questions or discuss further. Feel free to contact me via email or LinkedIn.</p>
+    </div>
+
+    <section class="BacktoTop">
+     <a class="BtT" href="project-designsystem.html"><h6>Back to Top</h6></a>
+   </section>
+
+
+
+    <!--Footer-->
+    <footer>
+      <h3>Get In Touch</h3>
+      <div class="iconset">
+        <ul>
+          <li>
+            <a href="mailto:christywei31@gmail.com" class="Email" target="_blank">
+              <img class="icon" src="image/logo/mail_icon_dark.svg" alt="Email">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/chuchuwei/" class="LinkedIn" target="_blank">
+              <img class="icon" src="image/logo/linkedin_icon_dark.svg" alt="LinkedIn">  <!-- Why there is a block of black? -->
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ChristyWei12" class="Github" target="_blank">
+              <img class="icon" src="image/logo/github_icon_dark.svg" alt="Github">
+            </a>
+          </li>
+      </ul>
+    </div>
+    <h6>© Designed & Developed by Chuchu Wei</h6>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+  <script src="homepage.js"></script>
+</body>
+</html>
